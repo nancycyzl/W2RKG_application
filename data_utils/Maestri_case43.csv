@@ -1,0 +1,11 @@
+case_id,exchange_id,donor_name,donor_business,receiver_name,receiver_business,waste,resource
+43,"43,36,1",Kawasaki,Urban entity,ND,Iron and steel production,Waste car,Raw material for Iron and steel production
+43,"43,36,2",Kawasaki,Urban entity,ND,Iron and steel production,Discarded home appliances,Raw material for Iron and steel production
+43,"43,36,3",Kawasaki,Urban entity,ND,Iron and steel production,Discarded home appliances,Substitution for coke
+43,"43,36,4",Kawasaki,Urban entity,ND,Iron and steel production,Waste plastic,Substitution for coke
+43,"43,36,5",Kawasaki,Urban entity,ND,Chemical industry,Waste plastic,Raw material to produce ammonia
+43,"43,36,6",Kawasaki,Urban entity,ND,Cement industry,Waste plastic,Substitution for coal
+43,"43,36,7",ND,Iron and steel production,ND,Cement industry,BF slag,Raw material for Cement industry
+43,"43,36,8",Kawasaki,Urban entity,ND,Paper and pulp industry,Waste paper,Raw material for Paper and pulp industry
+43,"43,36,9",ND,Paper and pulp industry,ND,Cement industry,Paper sludge,Raw material for Cement industry
+43,"43,36,10",Kawasaki,Urban entity,ND,Cement industry,Sewage sludge,Raw material for Cement industry

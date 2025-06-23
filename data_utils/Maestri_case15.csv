@@ -1,0 +1,11 @@
+case_id,exchange_id,donor_name,donor_business,receiver_name,receiver_business,waste,resource
+15,"15,17,1",ND,Steel dust recycling,Landskrona,Urban entity,Heat,Heat
+15,"15,17,2",ND,Lead battery recycling,Landskrona,Urban entity,Heat,Heat
+15,"15,17,3",ND,Agricultural seeds production,Landskrona,Urban entity,Dusty organic materials,Heat
+15,"15,17,4",ND,Production of binders for paint manufacturing,ND,Agricultural seeds production,"""Glue like"" waste",Ingredient to bind the dusty organic material
+15,"15,17,5",ND,Industrial and urban waste management,Landskrona,Urban entity,Plastic pellets,Heat
+15,"15,17,6",ND,Car glass production,ND,Glass fiber production,Glass waste,Raw material for Glass fiber production
+15,"15,17,7",ND,Car glass production,ND,Construction industry,Glass waste,Raw material for Construction industry
+15,"15,17,8",ND,Car glass production,ND,Printing,Waste water,Water used to replace quality drinking water in the wet scrubber removing VOCs from the flue gases
+15,"15,17,9",ND,Printing,ND,Heat generation,Ethanol,"Ethanol content of wastewater is increased after exchange 15,17,8 because the scrubber becomes more efficient and is used in the wastewater treatment "
+15,"15,17,10",ND,Agricultural seeds production,ND,Electricity generation,Organic waste,Fuel

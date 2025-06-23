@@ -1,0 +1,11 @@
+case_id,exchange_id,donor_name,donor_business,receiver_name,receiver_business,waste,resource
+13,"13,14,1",ND,Cane fields,"Nanning Sugar Co., Ltd.",Sugar production,Cane,Raw material for Sugar production
+13,"13,14,2","Nanning Sugar Co., Ltd.",Sugar production,ND,Cane fields,Molasses,Compound fertilizer
+13,"13,14,3","Nanning Sugar Co., Ltd.",Sugar production,ND,Compound fertilizer production,Filter sludge,Raw material for Compound fertilizer production
+13,"13,14,4","Nanning Sugar Co., Ltd.",Sugar production,ND,Blocks production,Bagasse pitch,Raw material for Blocks production
+13,"13,14,5","Nanning Sugar Co., Ltd.",Sugar production,ND,Blocks production,Waste gas,Waste gas is used to fuel boilers where coal ash is obtained
+13,"13,14,6",ND,Pulp production,ND,Blocks production,Bleaching water,Raw material for Blocks production
+13,"13,14,7",ND,Pulp production,ND,Alkali recovery,Black liquid,Raw material for Alkali recovery
+13,"13,14,8",ND,Alkali recovery,ND,Pulp production,Alkali,Process material
+13,"13,14,9",ND,Pulp production,ND,Cement production,Black liquid,Raw material for Cement production
+13,"13,14,10",ND,Paper production,ND,Pulp production,White water,Process material

@@ -14,46 +14,19 @@ from sentence_transformers import SentenceTransformer
 import pandas as pd
 import numpy as np
 import json
+from sklearn.metrics.pairwise import cosine_similarity
 
 from utils import save_list_to_text, read_list_from_text
 
 
-def read_maestri_data(file_path):
+def embed_profile_and_save(profiles_df, model):
+    # obtain case_id
+    case_id_all = profiles_df['case_id'].unique().tolist()
+    case_id = case_id_all[0] if len(case_id_all) == 1 else None
 
-    # Read the Excel file with header=[0, 1] to handle multi-level headers
-    maestri_df = pd.read_excel(file_path, header=[0, 1, 2])
-
-    # Extract two columns: waste description and final use (transformed resource) and rename them
-    maestri_df.columns = ['_'.join(col).strip() for col in maestri_df.columns.values]
-    w2r_df = maestri_df[['EXCHANGE IDENTIFICATION_Unnamed: 0_level_1_Exchange Identifier ("Case Identifier, Source identifier, Progressive number")',
-                            'INVOLVED COMPANIES_Donor_Company name', 'INVOLVED COMPANIES_Donor_Main business',
-                            'INVOLVED COMPANIES_Receiver_Company name', 'INVOLVED COMPANIES_Receiver_Main business',
-                            'EXCHANGE DESCRIPTION_Exchange Input_Waste description', 
-                            'EXCHANGE DESCRIPTION_Exchange details_Final use of the waste by the receiver company']].dropna()
-
-    w2r_df.columns = ['exchange_id', 'donor_name', 'donor_business', 'receiver_name', 'receiver_business', 'waste', 'resource']
-    
-    # obtain the case_id from exchange_id (case_id, source_id, progressive_number)
-    w2r_df['case_id'] = w2r_df['exchange_id'].str.split(',').str[0].astype(int)
-    
-    # Move case_id to the first column
-    cols = ['case_id'] + [col for col in w2r_df.columns if col != 'case_id']
-    w2r_df = w2r_df[cols]
-
-    return w2r_df
-
-def read_w2rkg_data(file_path):
-    w2rkg_dict = json.load(open(file_path, 'r', encoding='utf-8'))
-    return w2rkg_dict     # list of dicts
-
-
-def create_embeddings_maestri(w2r_df, model, case_id=None):
-    # filter case if provided
-    if case_id is not None:
-        w2r_df = w2r_df[w2r_df['case_id'] == case_id]
-
-    waste_list = w2r_df['waste'].unique().tolist()
-    resource_list = w2r_df['resource'].unique().tolist()
+    # obtain waste / resource names and create embeddings
+    waste_list = profiles_df['waste'].unique().tolist()
+    resource_list = profiles_df['resource'].unique().tolist()
 
     waste_embeddings = model.encode(waste_list, convert_to_tensor=True)
     waste_embeddings_np = waste_embeddings.cpu().numpy()
@@ -69,13 +42,16 @@ def create_embeddings_maestri(w2r_df, model, case_id=None):
     np.save(f'app_data/maestri_waste_embeddings{case_id_placeholder}.npy', waste_embeddings_np)
     np.save(f'app_data/maestri_resource_embeddings{case_id_placeholder}.npy', resource_embeddings_np)
 
+    print(f"Created profile embeddings for case {case_id} and saved to app_data/.")
+
     return waste_list, resource_list, waste_embeddings_np, resource_embeddings_np
 
 
-def create_embeddings_w2rkg(w2r_df, model):
+def embed_w2rkg_and_save(w2rkg_dict, model):
     waste_list = []
     resource_list = []
-    for w2r in w2r_df:
+    print(f"In embed_w2rkg_and_save, w2rkg_dict has {len(w2rkg_dict)} entries.")
+    for w2r in w2rkg_dict:
         waste_list.append(w2r['waste'])
         resource_list.append(w2r['transformed_resource'])
 
@@ -96,55 +72,111 @@ def create_embeddings_w2rkg(w2r_df, model):
     np.save('app_data/w2rkg_waste_embeddings.npy', waste_embeddings_np)
     np.save('app_data/w2rkg_resource_embeddings.npy', resource_embeddings_np) 
 
+    print(f"Created W2RKG embeddings and saved to app_data/.")
+
     return waste_list, resource_list, waste_embeddings_np, resource_embeddings_np
 
 
-def embed_maestri_and_save(model, case_id=None):
-    maestri_df = read_maestri_data('data_utils/Maestri.xlsx')
-    print("Embedding Maestri...")
-    maestri_waste_list, maestri_resource_list, maestri_waste_embeddings, maestri_resource_embeddings = create_embeddings_maestri(maestri_df, model, case_id=case_id)
-    print(f"Total waste: {len(maestri_waste_list)}, total resource: {len(maestri_resource_list)}")
+def obtain_profile_embeddings(profiles_df, model):
+    # obtain case_id
+    case_id_all = profiles_df['case_id'].unique().tolist()
+    case_id = case_id_all[0] if len(case_id_all) == 1 else None
+    case_id_placeholder = f"_case{case_id}" if case_id is not None else ""
 
-    return maestri_waste_list, maestri_resource_list, maestri_waste_embeddings, maestri_resource_embeddings
-
-
-def embed_w2rkg_and_save(model):
-    w2rkg_dict = read_w2rkg_data('data_utils/fused_triples_aggregated.json')
-    print("Embedding W2RKG...")
-    w2rkg_waste_list, w2rkg_resource_list, w2rkg_waste_embeddings, w2rkg_resource_embeddings = create_embeddings_w2rkg(w2rkg_dict, model)
-    print(f"Total waste: {len(w2rkg_waste_list)}, total resource: {len(w2rkg_resource_list)}")
-
-    return w2rkg_waste_list, w2rkg_resource_list, w2rkg_waste_embeddings, w2rkg_resource_embeddings
-
-
-def load_list_and_embeddings(data_type, model):
     try:
-        waste_list = read_list_from_text(f'app_data/{data_type}_waste_list.txt')
-        resource_list = read_list_from_text(f'app_data/{data_type}_resource_list.txt')
-        waste_embeddings = np.load(f'app_data/{data_type}_waste_embeddings.npy')
-        resource_embeddings = np.load(f'app_data/{data_type}_resource_embeddings.npy')
-        print(f"Loaded {data_type} list and embeddings successfully")
-
+        waste_list = read_list_from_text(f'app_data/maestri_waste_list{case_id_placeholder}.txt')
+        resource_list = read_list_from_text(f'app_data/maestri_resource_list{case_id_placeholder}.txt')
+        waste_embeddings = np.load(f'app_data/maestri_waste_embeddings{case_id_placeholder}.npy')
+        resource_embeddings = np.load(f'app_data/maestri_resource_embeddings{case_id_placeholder}.npy')
+        print("Loaded profile embeddings successfully")
     except Exception as e:
-        print(f"Error loading {data_type} list and embeddings: {e}")
-        print(f"File not found for {data_type}, create from scratch")
-        if data_type == 'maestri':
-            waste_list, resource_list, waste_embeddings, resource_embeddings = embed_maestri_and_save(model, case_id=None)
-        elif data_type == 'w2rkg':
-            waste_list, resource_list, waste_embeddings, resource_embeddings = embed_w2rkg_and_save(model)
+        print(f"Error loading profile embeddings: {e}")
+        print("Creating profile embeddings from scratch...")
+        waste_list, resource_list, waste_embeddings, resource_embeddings = embed_profile_and_save(profiles_df, model)
+     
+    return waste_list, resource_list, waste_embeddings, resource_embeddings
+
+
+def obtain_W2RKG_embeddings(kg_triples, model):
+    try:
+        waste_list = read_list_from_text('app_data/w2rkg_waste_list.txt')
+        resource_list = read_list_from_text('app_data/w2rkg_resource_list.txt')
+        waste_embeddings = np.load('app_data/w2rkg_waste_embeddings.npy')
+        resource_embeddings = np.load('app_data/w2rkg_resource_embeddings.npy')
+        print("Loaded W2RKG embeddings successfully")
+    except Exception as e:
+        print(f"Error loading W2RKG embeddings: {e}")
+        print("Creating W2RKG embeddings from scratch")
+        waste_list, resource_list, waste_embeddings, resource_embeddings = embed_w2rkg_and_save(kg_triples, model)
 
     return waste_list, resource_list, waste_embeddings, resource_embeddings
 
 
+def match_material_to_G(material, P_material_list, P_material_embeddings, G_material_list, G_material_embeddings, similarity_threshold):
+    '''
+    1. get the embedding of the material (from profile)
+    2. calculate cosine similarity between the material and the W2RKG
+    3. return the matched material list (similarity score > threshold)
+    '''
+    material_embedding = P_material_embeddings[P_material_list.index(material)]
+    similarity_scores = cosine_similarity(material_embedding.reshape(1, -1), G_material_embeddings)
+    matched_indices = [i for i in range(len(G_material_list)) if similarity_scores[0][i] >= similarity_threshold]
+    
+    return matched_indices
 
-def main():
-    model = SentenceTransformer('Alibaba-NLP/gte-large-en-v1.5', trust_remote_code=True)
 
-    # load name list and embeddings
-    maestri_waste_list, maestri_resource_list, maestri_waste_embeddings, maestri_resource_embeddings = load_list_and_embeddings('maestri', model)
-    w2rkg_waste_list, w2rkg_resource_list, w2rkg_waste_embeddings, w2rkg_resource_embeddings = load_list_and_embeddings('w2rkg', model)
+def build_W2R_Comp_network(G, profiles_df, similarity_threshold,
+                           G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
+                           P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings):
+    # Add company nodes and their connections to wastes/resources
+    for _, row in profiles_df.iterrows():
+        donor_name = row['donor_name']
+        donor_business = row['donor_business'] 
+        receiver_name = row['receiver_name']
+        receiver_business = row['receiver_business']
+        waste = row['waste']
+        resource = row['resource']
+
+        if donor_name == "ND":
+            donor_name = f"ND - {donor_business}"
+        if receiver_name == "ND":
+            receiver_name = f"ND - {receiver_business}"
+
+        # add company node and its properties
+        if G.has_node(donor_name):
+            # If 'waste' already exists, append; else, create a new list
+            if 'waste' in G.nodes[donor_name]:
+                if isinstance(G.nodes[donor_name]['waste'], list):
+                    G.nodes[donor_name]['waste'].append(waste)
+                else:
+                    G.nodes[donor_name]['waste'] = [G.nodes[donor_name]['waste'], waste]
+            else:
+                G.nodes[donor_name]['waste'] = [waste]
+        else:
+            G.add_node(donor_name, type='company', business=donor_business, waste=[waste])
+
+        if G.has_node(receiver_name):
+            # If 'resource' already exists, append; else, create a new list
+            if 'resource' in G.nodes[receiver_name]:
+                if isinstance(G.nodes[receiver_name]['resource'], list):
+                    G.nodes[receiver_name]['resource'].append(resource)
+                else:
+                    G.nodes[receiver_name]['resource'] = [G.nodes[receiver_name]['resource'], resource]
+            else:
+                G.nodes[receiver_name]['resource'] = [resource]
+        else:
+            G.add_node(receiver_name, type='company', business=receiver_business, resource=[resource])
 
 
+        # match company's waste
+        matched_G_waste_ids = match_material_to_G(waste, P_waste_list, P_waste_embeddings, G_waste_list, G_waste_embeddings, similarity_threshold)
+        for matched_G_waste_id in matched_G_waste_ids:
+            G.add_edge(donor_name, G_waste_list[matched_G_waste_id], type='generates')
 
-if __name__ == '__main__':
-    main()
+        # match company's resource
+        matched_G_resource_ids = match_material_to_G(resource, P_resource_list, P_resource_embeddings, G_resource_list, G_resource_embeddings, similarity_threshold)
+        for matched_G_resource_id in matched_G_resource_ids:
+            G.add_edge(G_resource_list[matched_G_resource_id], receiver_name, type='supplies')
+
+    return G
+

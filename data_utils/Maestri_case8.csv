@@ -1,0 +1,11 @@
+case_id,exchange_id,donor_name,donor_business,receiver_name,receiver_business,waste,resource
+8,"8,35,1",Ulsan metropolitan city,Urban entity,SK Chemical Corp.,Petrochemical,General organic waste,Fuel
+8,"8,35,2",Ulsan metropolitan city,Urban entity,ND,Metropolitan water treatment,General organic waste,Fuel
+8,"8,35,3",Ulsan metropolitan city,Urban entity,Kumho Petrochem Corp.,Petrochemical,General organic waste,Fuel
+8,"8,35,4",ND,Different companies in the industrial park,SK Corp.,Oil treatment,Industrial waste,Process heat
+8,"8,35,5",SK Corp.,Oil treatment,Taeyoug Industry Corp.,Logistics,Steam,Process heat
+8,"8,35,6",SK Corp.,Oil treatment,Koentec Corp.,Incineration and sanitary landfill,Pure water,Water
+8,"8,35,7",LS-NIKKO Corp.,Electrolytic refining,Hankuk Paper Corp.,Paper manufacturing,Steam,Process heat
+8,"8,35,8",LS-NIKKO Corp.,Electrolytic refining,Koreazinc Corp.,Zinc production,Zn recovery,Raw material for Zinc production
+8,"8,35,9",Koreazinc Corp.,Zinc production,LS-NIKKO Corp.,Electrolytic refining,Cu recovery,Raw material for Electrolytic refining
+8,"8,35,10",Hyunday motors corp.,Automotive industry,Energy Corp.,Energy production,Industrial waste,Fuel

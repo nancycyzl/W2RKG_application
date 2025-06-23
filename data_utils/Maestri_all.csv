@@ -1,0 +1,432 @@
+case_id,exchange_id,donor_name,donor_business,receiver_name,receiver_business,waste,resource
+1,"1,12,1",Enipower power station,Power plant,ENI refinery,Refinery,Vapour and demineralised water,Process heat
+1,"1,12,2",Enipower power station,Power plant,ENI refinery,Refinery,Electricity,Process energy
+1,"1,12,3",Enipower power station,Power plant,ENI refinery,Refinery,"Sea and well water, condensing vapour",Water
+1,"1,12,4",ENI refinery,Refinery,Enipower power station,Power plant,Fuel gas,Fuel
+1,"1,12,5",ENI refinery,Refinery,Enipower power station,Power plant,Fuel oil,Fuel
+1,"1,12,6",ILVA,Steelworks,Enipower power station,Power plant,Demineralised water,Water
+1,"1,12,7",ILVA,Steelworks,Edison power station,Power plant,Exhaust gas,Process heat
+1,"1,12,8",Edison power station,Power plant,ILVA,Steelworks,Electricity,Process energy
+1,"1,12,9",Edison power station,Power plant,ILVA,Steelworks,Steam,Process heat
+1,"1,12,10",ILVA,Steelworks,CEMENTIR,Cement production,Mill scales,Raw material for Cement production
+1,"1,12,11",ILVA,Steelworks,CEMENTIR,Cement production,BF slag,Raw material for Cement production
+1,"1,12,12",CEMENTIR,Cement production,ND,Construction materials production,Coal fly ash,Raw material for Construction materials production
+1,"1,12,13",ND,Construction materials production,ND,Road construction,Construction and demolition waste,Raw material for Road construction
+1,"1,12,14",ND,Wine production,ND,Distilleries,Marc and dregs,Raw material for Distilleries
+1,"1,12,15",ND,Olive oil production,ND,Agroindustry,Oil mill waste water,Fertilizer
+1,"1,12,16",ILVA,Steelworks,Taranto,Urban entity,Waste heat,Heat
+1,"1,12,17",ILVA,Steelworks,Taranto,Urban entity,Waste coolant,Cooling
+1,"1,12,18",ILVA,Steelworks,ND,Road construction,Refractories,Raw materials
+1,"1,12,19",ILVA,Steelworks,ND,Road construction,BFS/BOSF,Road foundations
+1,"1,12,20",ILVA,Steelworks,ND,Road construction,BOSF,Paving
+1,"1,12,21",ILVA,Steelworks,ND,Agroindustry,BFS,Fertiliser
+1,"1,12,22",ILVA,Steelworks,ND,Marine embarkments,BFS/BOSF,Raw material for Marine embarkments
+1,"1,12,23",ILVA,Steelworks,ND,Isolated buildings,BFS,Removal or retention of phosphorous from wastewater
+1,"1,12,24",ILVA,Steelworks,ND,Steelworks,Mill scales,Raw material for Steelworks
+1,"1,12,25",ILVA,Steelworks,ND,Production of refractories,BFS,Raw material for Production of refractories
+1,"1,12,26",ILVA,Steelworks,ND,Production of concrete,BOFS as aggregate,Raw material for Production of concrete
+1,"1,12,27",ILVA,Steelworks,ND,Production of bricks,BFS,Raw material for Production of bricks
+1,"1,12,28",ILVA,Steelworks,ND,Rock wool production,BFS,Raw material for Rock wool production
+1,"1,12,29",ILVA,Steelworks,ND,Glass and glass-ceramic production,BFS,Raw material for Glass and glass-ceramic production
+1,"1,12,30",ND,Power plant,ND,Agroindustry,Fly ash,Soil quality improvement and fertiliser
+1,"1,12,31",ND,Power plant,ND,Road construction,Fly ash,Raw material for Road construction
+1,"1,12,32",ND,Power plant,ND,Glass and glass-ceramic production,Fly ash,Raw material for Glass and glass-ceramic production
+1,"1,12,33",ND,Power plant,ND,Production of bricks,Fly ash,Raw material for Production of bricks
+1,"1,12,34",Edison power station,Power plant,Taranto,Urban entity,Waste heat,Heat
+1,"1,12,35",EniPower power station,Power plant,Taranto,Urban entity,Waste heat,Heat
+1,"1,12,36",EniPower power station,Power plant,ND,Electricity production - Organic Rankine Cycle,Waste heat,Process heat
+1,"1,12,37",ENI refinery,Refinery,Taranto,Urban entity,Waste heat,Heat
+1,"1,12,38",ENI refinery,Refinery,ND,Electricity production - Organic Rankine Cycle,Waste heat,Process heat
+1,"1,12,39",CEMENTIR,Cement production,Taranto,Urban entity,Waste heat,Heat
+1,"1,12,40",CEMENTIR,Cement production,ND,Electricity production - Organic Rankine Cycle,Waste heat,Process heat
+1,"1,12,41",ND,Electricity production - Organic Rankine Cycle,CEMENTIR,Cement production,Electricity,Process energy
+1,"1,12,42",ND,Electricity production - Organic Rankine Cycle,ENI refinery,Refinery,Electricity,Process energy
+1,"1,12,43",ND,Electricity production - Organic Rankine Cycle,EniPower power station,Power plant,Electricity,Process energy
+1,"1,12,44",ND,Electricity production - Organic Rankine Cycle,Edison power station,Power plant,Electricity,Process energy
+1,"1,12,45",ND,Electricity production - Organic Rankine Cycle,ILVA,Steelworks,Electricity,Process energy
+2,"2,16,1",ND,Hydropower plant,ND,Pulp and paper plant,Electricity,Process energy
+2,"2,16,2",ND,Pulp mill,ND,Paper mill,Electricity,Process energy
+2,"2,16,3",ND,Pulp and paper plant,ND,Calcium carbonate plant,Electricity,Process energy
+2,"2,16,4",ND,Pulp and paper plant,ND,Calcium carbonate plant,CO2,Raw material for Calcium carbonate plant
+2,"2,16,5",ND,Calcium carbonate plant,ND,Pulp and paper plant,Calcium carbonate,Raw material for Pulp and paper plant
+2,"2,16,6",ND,Pulp and paper plant,ND,Chlorine dioxide plant,Electricity,Process energy
+2,"2,16,7",ND,Chlorine dioxide plant,ND,Pulp and paper plant,Chlorine dioxide,Raw material for Pulp and paper plant
+2,"2,16,8",ND,Chlorine dioxide plant,ND,Pulp and paper plant,Sodium hydroxide,Raw material for Pulp and paper plant
+2,"2,16,9",ND,Pulp and paper plant,ND,Power plant,Bark,Fuel
+2,"2,16,10",ND,Pulp and paper plant,ND,Power plant,Sodium hydroxide,Raw material for Power plant
+2,"2,16,11",ND,Power plant,ND,Pulp and paper plant,Electricity,Process energy
+2,"2,16,12",ND,Pulp and paper plant,ND,Urban entity,Bark,Heat
+2,"2,16,13",ND,Chlorine dioxide plant,ND,Pulp and paper plant,Waste water,Water
+2,"2,16,14",ND,Chlorine dioxide plant,ND,Power plant,Waste water,Water
+2,"2,16,15",ND,Chlorine dioxide plant,ND,Calcium carbonate plant,Waste water,Water
+2,"2,16,16",ND,Chlorine dioxide plant,ND,Water purification plant,Chlorine,Raw material for Water purification plant
+2,"2,16,17",ND,Pulp and paper plant,ND,Power plant,Sludge,Fuel
+3,"3,27,1",Chamusca,Urban entity,ND,Paper pulp production,Urban waste,Process energy
+3,"3,27,2",ND,Paper pulp production,ND,Fertilizer company,Ash,Raw material for Fertilizer company
+3,"3,27,3",ND,Local farms,ND,Fertilizer company,Food waste,Raw material for Fertilizer company
+3,"3,27,4",ND,Aviary,ND,Fertilizer company,Sludge,Raw material for Fertilizer company
+3,"3,24,5",ND,Wastewater treatment,ND,Fertilizer company,Sludge,Raw material for Fertilizer company
+4,"4,28,1",Energy E2 Asnaes Power Station,Power plant,Statoil refinery,Refinery,Steam,Process heat
+4,"4,28,2",Energy E2 Asnaes Power Station,Power plant,"Novo Nordisk A/S
+Novozymes A/S
+Pharmaceuticals",Pharmaceuticals,Steam,Process heat
+4,"4,28,3",Energy E2 Asnaes Power Station,Power plant,ND,Fish farming,Steam,Process heat
+4,"4,28,4",Energy E2 Asnaes Power Station,Power plant,Kalundborg,Urban entity,Steam,Heat
+4,"4,28,5","Novo Nordisk A/S
+Novozymes A/S
+Pharmaceuticals",Pharmaceuticals,Kalundborg,Urban entity,Waste hot water,Heat
+4,"4,28,6",Statoil refinery,Refinery,ND,Liquid fertiliser producer,Sulfur,Raw material for Liquid fertiliser producer
+4,"4,28,7",Energy E2 Asnaes Power Station,Power plant,BPB Gyproc A/S,Wall-board plant,Scrubber sludge,Raw material for Wall-board plant
+4,"4,28,8",Statoil refinery,Refinery,Energy E2 Asnaes Power Station,Power plant,Waste water,Water
+4,"4,28,9",Statoil refinery,Refinery,Energy E2 Asnaes Power Station,Power plant,Cooling water,Process cooling
+4,"4,28,10",Energy E2 Asnaes Power Station,Power plant,ND,Cement manufacturing,Fly ash,Raw material for Cement manufacturing
+4,"4,28,11",ND,Fish farming,ND,Local farms,Organic residues,Animal feeding
+4,"4,28,12","Novo Nordisk A/S
+Novozymes A/S
+Pharmaceuticals",Pharmaceuticals,ND,Local farms,Yeast slurry and sludge,Animal feeding
+5,"5,25,1",ND,Food and fish processing,ND,Refinery,Waste edible oils,Raw material for Refinery
+5,"5,25,2",ND,Refinery,ND,CHP plant,Refinery by-products,Fuel
+5,"5,25,3",ND,CHP plant,ND,Refinery,Steam,Process heat
+5,"5,25,4",ND,CHP plant,ND,Chemical industry,Steam,Process heat
+5,"5,25,5",ND,Chemical industry,ND,Refinery,Hydrogen,Process material
+5,"5,25,6",ND,Chemical industry,ND,Plaster board manufacturer,Gypsum,Raw material for Plaster board manufacturer
+5,"5,25,7",ND,CHP plant,ND,Food and fish processing,Steam,Process heat
+5,"5,25,8",ND,CHP plant,ND,Gasifier,Steam,Process heat
+5,"5,25,9",ND,Wastewater treatment,ND,Gasifier,Dry organic pellets,Raw material for Gasifier
+5,"5,25,10",ND,Food and fish processing,ND,Gasifier,Organic waste,Raw material for Gasifier
+5,"5,25,11",ND,Local farms,ND,Gasifier,Organic waste,Raw material for Gasifier
+5,"5,25,12",ND,Wastewater treatment,ND,Local farms,Dry organic pellets,Raw material for Local farms
+5,"5,25,13",ND,Food and fish processing,ND,Local farms,Organic waste,Raw material for Local farms
+5,"5,25,14",ND,Furniture production,ND,Local farms,Wood dust and chips,Process energy
+5,"5,25,15",ND,Food and fish processing,ND,Pet food,Organic waste,Raw material for Pet food
+5,"5,25,16",ND,Food and fish processing,ND,Interior decoration products,Polystyrene waste,Raw material for Interior decoration products
+5,"5,25,17",ND,Food and fish processing,ND,Protein extraction,Offal,Raw material for Protein extraction
+5,"5,25,18",ND,Iron and steel production,ND,Cement manufacturing,Steel slag,Raw material for Cement manufacturing
+6,"6,21,1",Boyne Smelters Ltd,Smelting,Cement Australia's Gladstone,Cement production,Spent cell linings,Alternative fuel and raw material in clinker production
+6,"6,21,2",ND,ND,Cement Australia's Gladstone,Cement production,Waste solvent materials,Solvent-based fuels as AFR in clinker production
+6,"6,21,3",NRG,Power plant,Cement Australia's Gladstone,Cement production,Fly ash,Cement additive
+6,"6,21,4",ND,ND,NRG,Power plant,Waste water,Water used in red mud washing operations
+6,"6,21,5",ND,ND,Queensland alumina limited refinery,Alumina refinery,Water,Water used in red mud washing operations
+6,"6,21,6",Orica Ltd,Ammonium nitrate and sodium cyanide production,ND,Agricultural companies,Fertiliser,Fertiliser
+6,"6,21,7",Queensland Energy Resources Limited,Petroleum exctaction,Queensland alumina limited refinery,Alumina refinery,Spent shale,Spent shale is used in the rehabilitation of red muds from alumina refinery.
+6,"6,21,8",Queensland Energy Resources Limited,Petroleum exctaction,Cement Australia's Gladstone,Cement production,Spent shale,Alternative fuel and raw material in clinker production
+6,"6,21,9",ND,Urban entity,Queensland Energy Resources Limited,Petroleum exctaction,Old tyres,Processing of oil shale
+6,"6,21,10",Queensland Energy Resources Limited,Petroleum exctaction,Orica Ltd,Ammonium nitrate and sodium cyanide production,Sour gas,Raw material for Ammonium nitrate and sodium cyanide production
+6,"6,21,11",Queensland Energy Resources Limited,Petroleum exctaction,Gladstone Pacific Nickel Ltd,Nickel/cobalt refinery,Sour gas,Raw material for Nickel/cobalt refinery
+6,"6,21,12",Queensland alumina limited refinery/Rio Tinto Alcan Yarwun,Alumina refinery,Cement Australia's Gladstone,Cement production,Red mud,Raw material for Cement production
+6,"6,21,13",Gladstone Pacific Nickel Ltd,Nickel/cobalt refinery,Rio Tinto Alcan Yarwun,Alumina refinery,Barren liquor,Raw material for Alumina refinery
+6,"6,21,14",Boyne Smelters Ltd,Smelting,ND,Construction,Refractory materials,Raw material for Construction
+6,"6,21,15",Boyne Smelters Ltd,Smelting,Boulder Steel Limited,Steelworks,Metallurgical coke dust and fines,Fuel
+6,"6,21,16",NRG,Power plant,ND,Bricks manufacturer,Bottom ash,Raw material for Bricks manufacturer
+6,"6,21,17",Orica Ltd,Ammonium nitrate and sodium cyanide production,Gladstone Pacific Nickel Ltd,Nickel/cobalt refinery,Sulphuric acid,Raw material for Nickel/cobalt refinery
+6,"6,21,18",Cement Australia's Gladstone,Cement production,LNG projects,Liquified natural gas processing,Off-spec lime,Soil additive
+6,"6,21,19",Boulder Steel Limited,Steelworks,Cement Australia's Gladstone,Cement production,Steel slag,Raw material for Cement production
+6,"6,21,20",Boulder Steel Limited,Steelworks,ND,Road construction,Steel slag,Raw material for Road construction
+6,"6,21,21",ND,Urban entity,Northern oil,Oil refinery,Waste lubricants,Raw material for Oil refinery
+7,"7,33,1",QD beer brewery,Beer brewery,CQ fertiliser factory,Fertiliser company,Vinesse,Raw material for Fertiliser company
+7,"7,33,2",RW distillery,Distillery,CQ fertiliser factory,Fertiliser company,Vinesse,Raw material for Fertiliser company
+7,"7,33,3",RW distillery,Distillery,ND,Feed mill,Vinesse,Raw material for Feed mill
+7,"7,33,4",ND,Citrate acid factory,ND,Feed mill,Residue,Raw material for Feed mill
+7,"7,33,5",YTSB Pulp and Paper Limited Company,Pulp and paper plant,SB fertilizer factory,Fertiliser company,Sludge,Raw material for Fertiliser company
+7,"7,33,6",YTSB Pulp and Paper Limited Company,Pulp and paper plant,ND,Citrate acid factory,White sludge,Used instead of calcium carbonate
+7,"7,33,7",YTSB Pulp and Paper Limited Company,Pulp and paper plant,YT building material factory,Building material production,Green mud,Raw material for Building material production
+7,"7,33,8",YTSB Pulp and Paper Limited Company,Pulp and paper plant,Port of Rizhao,Port,Reclaimed water,Water
+7,"7,33,9",YTSB Pulp and Paper Limited Company,Pulp and paper plant,ND,Aquaculture mill,Waste hot water,Process heat
+7,"7,33,10",YTSB Pulp and Paper Limited Company,Pulp and paper plant,JZ charcoal factory,Charcoal production,Wood chips,Fuel
+7,"7,33,11",CQ wood factory,Wood factory,YTSB Pulp and Paper Limited Company,Pulp and paper plant,Wood board,Raw material for Pulp and paper plant
+7,"7,33,12",YTSB Pulp and Paper Limited Company,Pulp and paper plant,HY cement plant,Cement production,White sludge,Raw material for Cement production
+7,"7,33,13",YTSB Pulp and Paper Limited Company,Pulp and paper plant,HY cement plant,Cement production,Fly ash,Raw material for Cement production
+7,"7,33,14",ND,Power plant,HY cement plant,Cement production,Fly ash,Raw material for Cement production
+7,"7,33,15",ND,Power plant,YT building material factory,Building material production,Coal slag,Raw material for Building material production
+7,"7,33,16",XL Oil / BYSW Oil,Oil and fat factory,ND,Power plant,Condensed water,Water
+7,"7,33,17",JJ algae plant,Algae growing,YK organic agricultural company,Agricultural company,Seaweed residues,Raw material for Agricultural company
+7,"7,33,18",YK organic agricultural company,Agricultural company,XT fertiliser factory,Fertiliser company,Waste residue,Raw material for Fertiliser company
+7,"7,33,19",YQ clay-oil factory,Clay-oil production,XT fertiliser factory,Fertiliser company,Waste clay,Raw material for Fertiliser company
+7,"7,33,20",XL Oil / BYSW Oil,Oil and fat factory,YQ clay-oil factory,Clay-oil production,Clay-oil,Raw material for Clay-oil production
+7,"7,33,21",SY textile mill,Textile production,ND,Toy factory,Leftovers,Raw material for Toy factory
+7,"7,33,22",HX knitwear mill,Knitwear production,ND,Toy factory,Leftovers,Raw material for Toy factory
+7,"7,33,23",LYH sugar plant,Sugar refinery,HD alcohol plant,Alcohol production,Waste molasses,Used instead of manihot
+7,"7,33,24",HD alcohol plant,Alcohol production,LY packing house,Packaging site,Carbon dioxide,Raw material for Packaging site
+7,"7,33,25",WY auto engine works,Auto engine production,ND,Metallurgical enterprises,Scrap metal,Raw material for Metallurgical enterprises
+7,"7,33,26",HB machinery making factory,Machinery production,ND,Metallurgical enterprises,Scrap metal,Raw material for Metallurgical enterprises
+8,"8,35,1",Ulsan metropolitan city,Urban entity,SK Chemical Corp.,Petrochemical,General organic waste,Fuel
+8,"8,35,2",Ulsan metropolitan city,Urban entity,ND,Metropolitan water treatment,General organic waste,Fuel
+8,"8,35,3",Ulsan metropolitan city,Urban entity,Kumho Petrochem Corp.,Petrochemical,General organic waste,Fuel
+8,"8,35,4",ND,Different companies in the industrial park,SK Corp.,Oil treatment,Industrial waste,Process heat
+8,"8,35,5",SK Corp.,Oil treatment,Taeyoug Industry Corp.,Logistics,Steam,Process heat
+8,"8,35,6",SK Corp.,Oil treatment,Koentec Corp.,Incineration and sanitary landfill,Pure water,Water
+8,"8,35,7",LS-NIKKO Corp.,Electrolytic refining,Hankuk Paper Corp.,Paper manufacturing,Steam,Process heat
+8,"8,35,8",LS-NIKKO Corp.,Electrolytic refining,Koreazinc Corp.,Zinc production,Zn recovery,Raw material for Zinc production
+8,"8,35,9",Koreazinc Corp.,Zinc production,LS-NIKKO Corp.,Electrolytic refining,Cu recovery,Raw material for Electrolytic refining
+8,"8,35,10",Hyunday motors corp.,Automotive industry,Energy Corp.,Energy production,Industrial waste,Fuel
+9,"9,19,1",ND,Pharmaceutical,ND,Power plant,Industrial waste,Fuel
+9,"9,19,2",ND,Power plant,ND,Pharmaceutical,Electricity,Process energy
+9,"9,19,3",ND,Power plant,ND,Pharmaceutical,Steam,Process heat
+9,"9,19,4",ND,Pharmaceutical,ND,Paint manufacture,Off-spec solvents,Raw material for Paint manufacture
+9,"9,19,5",ND,Pharmaceutical,ND,Hay farm,Waste water,Substrate and fertiliser
+10,"10,39,1",Guitang Group,Sugar refinery,ND,Alcohol production,Molasses,Raw material for Alcohol production
+10,"10,39,2",Guitang Group,Sugar refinery,ND,Cement mill,Filter mud,Raw material for Cement mill
+10,"10,39,3",Guitang Group,Sugar refinery,ND,Calcium carbonate plant,Used carbon dioxide,Raw material for Calcium carbonate plant
+10,"10,39,4",Guitang Group,Sugar refinery,ND,Pulp and paper plant,Bagasse,Raw material for Pulp and paper plant
+10,"10,39,5",Guitang Group,Sugar refinery,ND,Compound fertilizer production,Bagasse,Raw material for Compound fertilizer production
+10,"10,39,6",Guitang Group,Sugar refinery,ND,Cement mill,Bagasse,Raw material for Cement mill
+10,"10,39,7",ND,Alcohol production,ND,Compound fertilizer production,Alcohol residue,Raw material for Compound fertilizer production
+10,"10,39,8",ND,Pulp and paper plant,ND,Calcium carbonate plant,Black liquor,Raw material for Calcium carbonate plant
+11,"11,4,1",Akay Mining Industry Foreign Trade ltd,Lime manufacture,Limkon Food Industry Trade Inc.,Fruit juice concentrate producer,Heat,Process heat
+11,"11,4,2",Limkon Food Industry Trade Inc.,Fruit juice concentrate producer,ND,Animal raising,Fruit pulp waste,Animal feeding
+12,"12,7,1",Hamburger Rieger GmbH,Paper mill,Spreerecycling GmBH,RDF fueled CHP plant,Pulper and sludges,Fuel
+12,"12,7,2",Spreerecycling GmBH,RDF fueled CHP plant,Hamburger Rieger GmbH,Paper mill,Electricity,Energy
+12,"12,7,3",Spreerecycling GmBH,RDF fueled CHP plant,Hamburger Rieger GmbH,Paper mill,Steam,Heat
+13,"13,14,1",ND,Cane fields,"Nanning Sugar Co., Ltd.",Sugar production,Cane,Raw material for Sugar production
+13,"13,14,2","Nanning Sugar Co., Ltd.",Sugar production,ND,Cane fields,Molasses,Compound fertilizer
+13,"13,14,3","Nanning Sugar Co., Ltd.",Sugar production,ND,Compound fertilizer production,Filter sludge,Raw material for Compound fertilizer production
+13,"13,14,4","Nanning Sugar Co., Ltd.",Sugar production,ND,Blocks production,Bagasse pitch,Raw material for Blocks production
+13,"13,14,5","Nanning Sugar Co., Ltd.",Sugar production,ND,Blocks production,Waste gas,Waste gas is used to fuel boilers where coal ash is obtained
+13,"13,14,6",ND,Pulp production,ND,Blocks production,Bleaching water,Raw material for Blocks production
+13,"13,14,7",ND,Pulp production,ND,Alkali recovery,Black liquid,Raw material for Alkali recovery
+13,"13,14,8",ND,Alkali recovery,ND,Pulp production,Alkali,Process material
+13,"13,14,9",ND,Pulp production,ND,Cement production,Black liquid,Raw material for Cement production
+13,"13,14,10",ND,Paper production,ND,Pulp production,White water,Process material
+14,"14,15,1",ND,Distillery,ND,Alcohol distributor,Paddy husk,Process energy
+14,"14,15,2",ND,Distillery,ND,ND,CO2,Raw material for ND
+14,"14,15,3",ND,Distillery,ND,Dairy industry,Isopropyl alcohol,Sterilizer
+14,"14,15,4",ND,Sugar refinery,ND,Agriculture,Bagasse,Soil amendment
+14,"14,15,5",ND,Sugar refinery,ND,Distillery,Molasses,Raw material for Distillery
+14,"14,15,6",ND,Distillery,ND,Paper manufacturer,Paddy husk,Process heat
+14,"14,15,7",ND,Distillery,ND,Paper manufacturer,Paddy husk,Process energy
+14,"14,15,8",ND,Paper manufacturer,ND,Agriculture,Boiler and fly ashes,Soil amendment
+14,"14,15,9",ND,Paper manufacturer,ND,Fertilizer company,ETP sludge,Raw material for Fertilizer company
+14,"14,15,10",ND,Coffee and milk beverage producer,ND,Oil extraction facility,Spent coffee grounds,Raw material for Oil extraction facility
+14,"14,15,11",ND,Oil extraction facility,ND,Coffee and milk beverage producer,Biomass fuel,Fuel
+14,"14,15,12",ND,Oil extraction facility,ND,Brick manufacturer,Fly ash,Raw material for Brick manufacturer
+14,"14,15,13",ND,Oil extraction facility,ND,ND,Dessiccated coffee grounds,Fuel
+14,"14,15,14",ND,Oil extraction facility,ND,Cattle feed production,Residual coconut,Raw material for Cattle feed production
+14,"14,15,15",ND,Plywood manufacturing,ND,Oil extraction facility,Sawdust,Process heat
+14,"14,15,16",ND,Plywood manufacturing,ND,Granite polishing facilities,Boiler ash,Raw material for Granite polishing facilities
+15,"15,17,1",ND,Steel dust recycling,Landskrona,Urban entity,Heat,Heat
+15,"15,17,2",ND,Lead battery recycling,Landskrona,Urban entity,Heat,Heat
+15,"15,17,3",ND,Agricultural seeds production,Landskrona,Urban entity,Dusty organic materials,Heat
+15,"15,17,4",ND,Production of binders for paint manufacturing,ND,Agricultural seeds production,"""Glue like"" waste",Ingredient to bind the dusty organic material
+15,"15,17,5",ND,Industrial and urban waste management,Landskrona,Urban entity,Plastic pellets,Heat
+15,"15,17,6",ND,Car glass production,ND,Glass fiber production,Glass waste,Raw material for Glass fiber production
+15,"15,17,7",ND,Car glass production,ND,Construction industry,Glass waste,Raw material for Construction industry
+15,"15,17,8",ND,Car glass production,ND,Printing,Waste water,Water used to replace quality drinking water in the wet scrubber removing VOCs from the flue gases
+15,"15,17,9",ND,Printing,ND,Heat generation,Ethanol,"Ethanol content of wastewater is increased after exchange 15,17,8 because the scrubber becomes more efficient and is used in the wastewater treatment "
+15,"15,17,10",ND,Agricultural seeds production,ND,Electricity generation,Organic waste,Fuel
+16,"16,20,1",ND,Oil refinery,ND,Power plant,Fuel gas,Fuel
+16,"16,20,2",ND,Power plant,ND,Oil refinery,Steam,Process heat
+16,"16,20,3",ND,Power plant,ND,Oil refinery,Electricity,Process energy
+16,"16,20,4",ND,Power plant,ND,Oil refinery,Waste water,Process water
+16,"16,20,5",ND,Oil refinery,ND,Industrial chemical & ferilizer producer,Waste water,Process water
+16,"16,20,6",ND,Industrial chemical producer,ND,Industrial chemical & ferilizer producer,Waste water,Process water
+16,"16,20,7",ND,Coal-fired power station,ND,Industrial chemical & ferilizer producer,Demineralised water,Process water
+16,"16,20,8",ND,Coal-fired power station,ND,Gas fired power station,Demineralised water,Process water
+16,"16,20,9",ND,Gas fired power station,ND,Coal-fired power station,Boiler blow-down,Raw material for Coal-fired power station
+16,"16,20,10",ND,Industrial chemical & ferilizer producer,ND,Titanium dioxide producer,Bore water,Process water
+16,"16,20,11",ND,Alumina refinery,ND,Industrial gas producer,Electricity,Process energy
+16,"16,20,12",ND,Pig iron plant,ND,Industrial gas producer,Steam,Process heat
+16,"16,20,13",ND,Titanium dioxide producer,ND,Chlor alkali plant,Electricity,Process energy
+16,"16,20,14",ND,Titanium dioxide producer,ND,Chlor alkali plant,Steam,Process heat
+16,"16,20,15",ND,Titanium dioxide producer,ND,Chlor alkali plant,Potable water,Process water
+16,"16,20,16",ND,Chlor alkali plant,ND,Titanium dioxide producer,Waste water,Process water
+16,"16,20,17",ND,Power plant,ND,Titanium dioxide producer,Electricity,Process energy
+16,"16,20,18",ND,Power plant,ND,Titanium dioxide producer,Steam,Process heat
+16,"16,20,19",ND,Titanium dioxide producer,ND,Power plant,Potable water,Process water
+16,"16,20,20",ND,Titanium dioxide producer,ND,Power plant,Air,Raw material for Power plant
+16,"16,20,21",ND,Titanium dioxide producer,ND,Power plant,Reverse osmosis water,Process water
+16,"16,20,22",ND,Power plant,ND,Titanium dioxide producer,Waste water,Process water
+16,"16,20,23",ND,Alumina refinery,ND,Worm farm,Domestic organic waste,Raw material for Worm farm
+16,"16,20,24",ND,Alumina refinery,ND,Water supply and treatment company,Bauxite residue,Raw material for Water supply and treatment company
+16,"16,20,25",ND,Industrial gas producer,ND,Alumina refinery,Carbon dioxide,Raw material for Alumina refinery
+16,"16,20,26",ND,Industrial chemical & ferilizer producer,ND,Alumina refinery,Carbon dioxide,Raw material for Alumina refinery
+16,"16,20,27",ND,Industrial chemical & ferilizer producer,ND,Alumina refinery,Gypsum,Raw material for Alumina refinery
+16,"16,20,28",ND,Fused alumina and zircon producer,ND,Cement production,Silica fume,Raw material for Cement production
+16,"16,20,29",ND,Cement mill,ND,Blokpave producer,Concrete wastes,Raw material for Blokpave producer
+16,"16,20,30",ND,Cement mill,ND,Insulation plant,Cardboard,ND
+16,"16,20,31",ND,Mineral processing plant,ND,Cement mill,Blast furnace slag,Raw material for Cement mill
+16,"16,20,32",ND,Oil refinery,ND,Nickel refinery,Hydrogen,Raw material for Nickel refinery
+16,"16,30,33",ND,Nickel refinery,ND,Industrial gas producer,Carbon dioxide,Raw material for Industrial gas producer
+16,"16,30,34",ND,Industrial chemical & ferilizer producer,ND,Industrial gas producer,Carbon dioxide,Raw material for Industrial gas producer
+16,"16,30,35",ND,Oil refinery,ND,Nickel refinery,Sulphur,Raw material for Nickel refinery
+16,"16,30,36",ND,Oil refinery,ND,Inorganic chemical producer,Sulphur,Raw material for Inorganic chemical producer
+16,"16,30,37",ND,Oil refinery,ND,Cement and lime producer,Spent catalysts,Raw material for Cement and lime producer
+16,"16,30,38",ND,Inorganic chemical producer,ND,Synthetic rutile plant,Ammonium chloride,Raw material for Synthetic rutile plant
+16,"16,30,39",ND,Inorganic chemical producer,ND,Chlor alkali plant,98% sulphuric acid,Raw material for Chlor alkali plant
+16,"16,30,40",ND,Chlor alkali plant,ND,Inorganic chemical producer,80% sulphuric acid,Raw material for Inorganic chemical producer
+16,"16,30,41",ND,Zirconia powder producer,ND,Inorganic chemical producer,Ammonium chloride solution,Raw material for Inorganic chemical producer
+16,"16,30,42",ND,Titanium dioxide producer,ND,Inorganic chemical producer,Hydrochloric acid,Raw material for Inorganic chemical producer
+16,"16,30,43",ND,Zirconia powder producer,ND,Titanium dioxide producer,Ammonium chloride solution,Raw material for Titanium dioxide producer
+16,"16,30,44",ND,Industrial chemical & ferilizer producer,ND,Industrial gas producer,Hydrogen,Raw material for Industrial gas producer
+16,"16,30,45",ND,Nickel refinery,ND,Industrial chemical & ferilizer producer,Hydrogen,Raw material for Industrial chemical & ferilizer producer
+16,"16,30,46",ND,Nickel refinery,ND,Industrial chemical & ferilizer producer,Ammonium sulphate,Raw material for Industrial chemical & ferilizer producer
+16,"16,30,47",ND,Industrial gas producer,ND,Coal-fired power station,Carbon dioxide,Raw material for Coal-fired power station
+16,"16,30,48",ND,Industrial gas producer,ND,Coal-fired power station,Hydrogen,Raw material for Coal-fired power station
+16,"16,30,49",ND,Nickel refinery,ND,Industrial gas producer,Carbon dioxide,Raw material for Industrial gas producer
+16,"16,30,50",ND,Coal-fired power station,ND,Construction company,Fly ash,Raw material for Construction company
+16,"16,30,51",ND,Water supply and treatment company,ND,Turf farm,Bio-sludge,Raw material for Turf farm
+16,"16,30,52",ND,Cement and lime producer,ND,Pig iron plant,Lime kiln dust,Raw material for Pig iron plant
+16,"16,30,53",ND,Cement and lime producer,ND,Titanium dioxide producer,Lime kiln dust,Raw material for Titanium dioxide producer
+16,"16,30,54",ND,Coal mine,ND,Cement and lime producer,Coal mine overburden,Raw material for Cement and lime producer
+16,"16,30,55",ND,Nickel refinery,ND,Nikel mine,Process residue,Raw material for Nikel mine
+16,"16,30,56",ND,Nickel refinery,ND,Nikel mine,Sulphur,Raw material for Nikel mine
+17,"17,7,1",ND,Poultry raising,ND,Tanning industry,Poultry dejections,Raw material for Tanning industry
+18,"18,11,1",Diageo,Alcoholic drinks manufacturer,Maltwood,Manufacturing of firewood from old whisky barrels,Hessian sacks,Raw material for Manufacturing of firewood from old whisky barrels
+19,"19,24,1",ND,Power plant,ND,Basic chemicals,Steam,Process heat
+19,"19,24,2",ND,Power plant,ND,Basic chemicals,Demineralised water,Process water
+19,"19,24,3",ND,Power plant,ND,Basic chemicals,Electricity,Process energy
+19,"19,24,4",ND,Basic chemicals,ND,Power plant,Sodium hydroxide,Raw material for Power plant
+19,"19,24,5",ND,Basic chemicals,ND,Power plant,Hydrochloric acid,Raw material for Power plant
+19,"19,24,6",ND,Basic chemicals,ND,Micronized silica,Sodium silicate,Raw material for Micronized silica
+19,"19,24,7",ND,Micronized silica,ND,Basic chemicals,Silica,Raw material for Basic chemicals
+19,"19,24,8",ND,Micronized silica,ND,Power plant,Silica,Raw material for Power plant
+19,"19,24,9",ND,Power plant,ND,Micronized silica,Steam,Process heat
+19,"19,24,10",ND,Power plant,ND,Micronized silica,Electricity,Process energy
+19,"19,24,11",ND,Micronized silica,ND,Galvanic treatments,Silica,Raw material for Galvanic treatments
+19,"19,24,12",ND,Basic chemicals,ND,Galvanic treatments,Sodium hydroxide,Raw material for Galvanic treatments
+19,"19,24,13",ND,Basic chemicals,ND,Galvanic treatments,Hydrochloric acid,Raw material for Galvanic treatments
+19,"19,24,14",ND,Pesticides,ND,Basic chemicals,Septic sludges,Raw material for Basic chemicals
+20,"20,25,1",Birmingham,Urban entity,Birmingham airport,Airport,Urban waste,Process and space heat
+20,"20,25,2",Birmingham,Urban entity,Birmingham airport,Airport,Urban waste,Process energy
+20,"20,25,3",Birmingham,Urban entity,National Exhibition Centre,Exhibition Centre,Urban waste,Process and space heat
+20,"20,25,4",Birmingham,Urban entity,National Exhibition Centre,Exhibition Centre,Urban waste,Process and space heat
+20,"20,25,5",ND,Automotive industry,ND,Blast media production,Waste plastics (AMP),Raw material for Blast media production
+22,"22,1,1",GrowHow UK (formerly Terra Nitrogen),Nitrogen production,John Baarda Ltd,Greenhouse,Steam,Process heat
+22,"22,1,2",GrowHow UK (formerly Terra Nitrogen),Nitrogen production,John Baarda Ltd,Greenhouse,CO2,Supports the growth of fruit and vegetables
+23,"23,1,1",ND,Dairy producers,Greenville Energy,Methane production from anaerobic digestion,Dairy effluent,Raw material for Methane production from anaerobic digestion
+24,"24,3,1",ND,ND,McAuley Engineering,Sheet metal parts production,Scrap wood,Space heat
+25,"25,5,1",AgrumiGel,Fruit juice producer,Mangimi Di Pasquale,Animal feed producer,Fruit pulp waste,Raw material for Animal feed producer
+25,"25,5,2",Agrobiopesca Distretto Tecnologico,Agroindustry consortium (olive and wine production),Plastica Alfa,Biofuel production,Lignocellusic biomass,Raw material for Biofuel production
+25,"25,5,3",Agrobiopesca Distretto Tecnologico,Agroindustry consortium (olive and wine production),Plastica Alfa,Production of algae for pharmaceutical and energy purposes,CO2,Supports the growth of plants
+25,"25,5,4",Agrobiopesca Distretto Tecnologico,Agroindustry consortium (olive and wine production),Plastica Alfa,Production of algae for pharmaceutical and energy purposes,Disposal water,Water
+26,"26,8,1",Barilla S.p.A.,Food industry,IRCI S.p.A.,Methane production from anaerobic digestion,Heat,Raw material for Methane production from anaerobic digestion
+26,"26,8,2",Barilla S.p.A.,Food industry,Schmack Biogas S.r.l.,Biogas production from biomass,Food production scraps,Raw material for Biogas production from biomass
+26,"26,8,3",Barilla S.p.A.,Food industry,ND,Methane production from anaerobic digestion,Food production scraps,Raw material for Methane production from anaerobic digestion
+26,"26,8,4",Barilla S.p.A.,Food industry,Opoe Cons. Coop. Agr. PA,Agroindustry,Food production scraps,ND
+26,"26,8,5",A.R.P. Soc. Agr. Coop.,Agroindustry,IRCI S.p.A.,Methane production from anaerobic digestion,"Agricultural wastes, packaging and muds",Raw material for Methane production from anaerobic digestion
+26,"26,8,6",A.R.P. Soc. Agr. Coop.,Agroindustry,ND,Energy production from biomass,"Agricultural wastes, packaging and muds",Fuel
+26,"26,8,7",A.R.P. Soc. Agr. Coop.,Agroindustry,Schmack Biogas S.r.l.,Biogas production from biomass,"Agricultural wastes, packaging and muds",Raw material for Biogas production from biomass
+26,"26,8,8",A.R.P. Soc. Agr. Coop.,Agroindustry,ND,Methane production from anaerobic digestion,"Agricultural wastes, packaging and muds",Raw material for Methane production from anaerobic digestion
+26,"26,8,9",A.R.P. Soc. Agr. Coop.,Agroindustry,CGM Spa,Plastic products production,Packaging,Raw material for Plastic products production
+26,"26,8,10",A.R.P. Soc. Agr. Coop.,Agroindustry,CCPL Group,Food packaging,Packaging,Raw material for Food packaging
+26,"26,8,11",A.R.P. Soc. Agr. Coop.,Agroindustry,ND,ND,Muds,ND
+26,"26,8,12",A.R.P. Soc. Agr. Coop.,Agroindustry,ND,ND,Muds,ND
+26,"26,8,13",A.R.P. Soc. Agr. Coop.,Agroindustry,ND,ND,Muds,ND
+26,"26,8,14",A.R.P. Soc. Agr. Coop.,Agroindustry,Opoe Cons. Coop. Agr. PA,Agroindustry,Agricultural wastes,ND
+26,"26,8,15",Softer Color Srl,Painters and pigments producer,Barilla S.p.A.,Food industry,Packaging,ND
+26,"26,8,16",Softer Color Srl,Painters and pigments producer,ND,Power plant,Packaging and wood wastes,Fuel
+26,"26,8,17",Softer Color Srl,Painters and pigments producer,CGM Spa,Plastic products production,Packaging,Raw material for Plastic products production
+26,"26,8,18",Softer Color Srl,Painters and pigments producer,CCPL Group,Food packaging,Packaging,Raw material for Food packaging
+27,"27,9,1",ND,Forest industry,ND,Ethanol plant,Wood chips,Process heat
+27,"27,9,2",ND,Forest industry,Norrköping ,Urban entity,Wood chips,Energy
+27,"27,9,3",ND,Forest industry,Norrköping ,Urban entity,Wood chips,Heat
+27,"27,9,4",ND,Ethanol plant,ND,CHP plant,Heat,Process heat
+27,"27,9,5",ND,Ethanol plant,ND,Animal raising,"Distillers dried grains with solubles, thin stillage, impurities",Animal feeding
+27,"27,9,6",ND,Ethanol plant,ND,Agriculture,"Distillers dried grains with solubles, thin stillage, impurities",Fertilizer
+27,"27,9,7",ND,Ethanol plant,ND,Biogas production from anaerobic digestion,Thin stillage and filtered impurities,Raw material for Biogas production from anaerobic digestion
+27,"27,9,8",ND,Biogas production from anaerobic digestion,ND,Agriculture,Digestate,Fertilizer
+27,"27,9,9",ND,Agriculture,ND,Ethanol plant,Grains,Fuel
+28,"28,11,1",Apetito Ltd,Supplier of frozen food,Andigestion,Methane production from anaerobic digestion,Pastry waste,Raw material for Methane production from anaerobic digestion
+29,"29,13,1",ND,Urban entity,ND,Photovoltaic modules production,Metals,Raw material for Photovoltaic modules production
+29,"29,13,2",ND,Urban entity,ND,Photovoltaic modules production,Glass,Raw material for Photovoltaic modules production
+29,"29,13,3",ND,Urban entity,ND,Packaging factory,Plastics,Raw material for Packaging factory
+29,"29,13,4",ND,Urban entity,ND,Greenhouse,Biodegradable kitchen and canteen waste,Compost
+29,"29,13,5",ND,Urban entity,ND,Mushrooms growrooms,Newspaper,Compost
+29,"29,13,6",ND,Urban entity,ND,Packaging factory,Shredded newspaper,Raw material for Packaging factory
+29,"29,13,7",ND,Urban entity,ND,Packaging factory,Wood pulp,Raw material for Packaging factory
+29,"29,13,8",ND,Sheet glass factory,ND,Greenhouse,Waste heat,Process heat
+29,"29,13,9",ND,Sheet glass factory,ND,Mushrooms growrooms,Waste heat,Process heat
+29,"29,13,10",ND,Photovoltaic modules production,ND,Photovoltaic modules production,End of life semiconductors,Raw material for Photovoltaic modules production
+30,"30,31,1",ND,Iron and steel production,ND,Power plant,Waste heat,Process heat
+30,"30,31,2",ND,Aluminium production,ND,Power plant,Waste heat,Process heat
+30,"30,31,3",ND,Phosphorus chemical industry,ND,Power plant,Waste heat,Process heat
+30,"30,31,4",ND,Iron and steel production,Guiyang,Urban entity,Waste heat,Heat
+30,"30,31,5",ND,Power plant,Guiyang,Urban entity,Electricity,Energy
+30,"30,31,6",Guiyang,Urban entity,ND,Iron and steel production,Waste steel,Raw material for Iron and steel production
+30,"30,31,7",Guiyang,Urban entity,ND,Iron and steel production,Waste plastics,Raw material for Iron and steel production
+30,"30,31,8",ND,Iron and steel production,ND,Cement manufacturing,Steel slag,Raw material for Cement manufacturing
+30,"30,31,9",ND,Aluminium production,ND,Cement manufacturing,Slag,Raw material for Cement manufacturing
+30,"30,31,10",ND,Phosphorus chemical industry,ND,Cement manufacturing,Phosphorous slag,Raw material for Cement manufacturing
+30,"30,31,11",ND,Coal industry,ND,Cement manufacturing,Slag,Raw material for Cement manufacturing
+30,"30,31,12",ND,Coal industry,ND,Power plant,Coal gangue,Fuel
+31,"31,29,1",ND,Power plant,ND,Ammonia production,Steam,Process heat
+31,"31,29,2",ND,Power plant,ND,Cement & Construction,Coal flying ash,Cement additive
+31,"31,29,3",ND,Iron and steel production,ND,Ammonia production,Steam,Process heat
+31,"31,29,4",ND,Iron and steel production,ND,Ammonia production,COG,Alternative hydrogen production
+31,"31,29,5",ND,Iron and steel production,ND,Fertiliser company,Ammonium sulfate,Raw material for Fertiliser company
+31,"31,29,6",ND,Iron and steel production,ND,Cement & Construction,BF slag,Raw material for Cement & Construction
+31,"31,29,7",ND,Iron and steel production,ND,Cement & Construction,Steel slag,Raw material for Cement & Construction
+31,"31,29,8",Liuzhou,Urban entity,ND,Iron and steel production,Waste steel,Raw material for Iron and steel production
+31,"31,29,9",Liuzhou,Urban entity,ND,Iron and steel production,Waste plastic,Raw material for Iron and steel production
+31,"31,29,10",Liuzhou,Urban entity,ND,Iron and steel production,Scrap tire,Process heat
+31,"31,29,11",Liuzhou,Urban entity,ND,Cement & Construction,Waste plastic,Raw material for Cement & Construction
+31,"31,29,12",Liuzhou,Urban entity,ND,Cement & Construction,Scrap tire,Process heat
+31,"31,29,13",Liuzhou,Urban entity,ND,Power plant,Straw / Food waste,Fuel
+31,"31,30,1",ND,Power plant,ND,Machinery,Steam,Process heat
+32,"32,30,1",JIS Corp.,Iron and steel production,ND,Ammonia production,Steam,Process heat
+32,"32,30,2",JIS Corp.,Iron and steel production,Jinan,Urban entity,Steam,Heat
+32,"32,30,3",JIS Corp.,Iron and steel production,ND,Ammonia production,BFG (blast furnace gas),Process energy
+32,"32,30,4",JIS Corp.,Iron and steel production,ND,Ammonia production,COG,Alternative hydrogen production
+32,"32,30,5",ND,Aluminium production,JIS Corp.,Iron and steel production,Red mud,Used to refine ferrous metal
+32,"32,30,6",JIS Corp.,Iron and steel production,ND,Cement & Construction,BF slag,Raw material for Cement & Construction
+32,"32,30,7",JIS Corp.,Iron and steel production,ND,Cement & Construction,Steel slag,Raw material for Cement & Construction
+32,"32,30,8",JIS Corp.,Iron and steel production,ND,Cement & Construction,Gypsum,Raw material for Cement & Construction
+32,"32,30,9",JIS Corp.,Iron and steel production,ND,Carbonate production,Steel slag,Sinter ore
+32,"32,30,10",ND,Chromium chemical production,JIS Corp.,Iron and steel production,Chromium slag,Raw material for Iron and steel production
+32,"32,30,11",Jinan,Urban entity,JIS Corp.,Iron and steel production,Waste steel,Raw material for Iron and steel production
+32,"32,30,12",Jinan,Urban entity,JIS Corp.,Iron and steel production,Waste plastic,Raw material for Iron and steel production
+32,"32,30,13",Jinan,Urban entity,JIS Corp.,Iron and steel production,Waste water,Process water
+33,"33,34,1",ND,Olive farm,ND,Power plant,Pruning,Fuel
+33,"33,34,2",ND,Power plant,ND,Olive mill,Waste heat,Process heat
+33,"33,34,3",ND,Power plant,ND,Olive mill,Electricity,Process energy
+33,"33,34,4",ND,Olive mill,ND,Power plant,Moist Pomace,Fuel
+33,"33,34,5",ND,Power plant,ND,Olive farm,Bio-char,Soil additive
+34,"34,19,1",ND,Pharmaceutical,AES,Power plant,Waste water,Process water
+34,"34,19,2",ND,Pharmaceutical,AES,Power plant,Waste water,Process water
+34,"34,19,3",AES,Power plant,Chevron Phillips Refinery,Refinery,Steam,Process heat
+34,"34,19,4",Chevron Phillips Refinery,Refinery,AES,Power plant,Condensate water,Process water
+34,"34,19,5",AES,Power plant,ND,Road construction,Fly ash,Raw material for Road construction
+36,"36,2,1",Michelin,Tyre production,ND,Mushroom casing manufacture,Talcum powder contaminated with plastic,Raw material for Mushroom casing manufacture
+37,"37,3,1",ThyssenKrupp Aerospace UK Ltd,Supplying of aluminium alloy technology solutions to aerospace sector,Tedfords Ltd,"Manufacture of bespoke products for the boating, banner and trailer markets",PVC waterproof tarpaulins,"Raw material for Manufacture of bespoke products for the boating, banner and trailer markets"
+38,"38,3,1",Confidential Services Ireland,"Confidential shredding, paper shredding and data destruction",Charles O'Doherty & Sons Ltd,Manufacture of coffins,Paper fines,Raw material for Manufacture of coffins
+38,"38,3,2",Limavady Linen Services,"Hire and laundering of bed linen and towels for hotel, residential and catering industries",Charles O'Doherty & Sons Ltd,Manufacture of coffins,Linen and towel waste,Raw material for Manufacture of coffins
+39,"39,18,1",ND,Brewery,ND,Mushrooms farming,Spent grain,Substrate to grow mushrooms
+39,"39,18,2",ND,Mushrooms farming,ND,Pig farming,Spent mushroom substrate,Animal feeding
+39,"39,18,3",ND,Pig farming,ND,Anaerobic biodigester,Waste water,Fuel
+39,"39,18,4",ND,Anaerobic biodigester,ND,Algae ponds,Nutrient rich water,Substrate to grow algae
+39,"39,18,5",ND,Algae ponds,ND,Fish farming,Nutrient rich water,Fish feeding
+39,"39,18,6",ND,Fish farming,ND,Vegetable farming,Nutrient rich water,Fertile soil for growing vegetables
+40,"40,18,1",ND,Gem manufacturer,ND,Plastics company,Acetone,Raw material for Plastics company
+41,"41,22,1",Borealis,Organic basic chemicals production,Akzo Nobel,Inorganic basic chemicals production,Ethylene,Raw material for Inorganic basic chemicals production
+41,"41,22,2",Borealis,Organic basic chemicals production,Akzo Nobel,Inorganic basic chemicals production,Fuel gas,Fuel
+41,"41,22,3",Borealis,Organic basic chemicals production,Perstorp Oxo,Organic basic chemicals production,Ethylene,Raw material for Organic basic chemicals production
+41,"41,22,4",Borealis,Organic basic chemicals production,Perstorp Oxo,Organic basic chemicals production,Fuel gas,Fuel
+41,"41,22,5",Borealis,Organic basic chemicals production,Perstorp Oxo,Organic basic chemicals production,Propylene,Raw material for Organic basic chemicals production
+41,"41,22,6",Ineos Sverige,Organic basic chemicals production,Perstorp Oxo,Organic basic chemicals production,Hydrogen,Raw material for Organic basic chemicals production
+41,"41,22,7",Borealis,Organic basic chemicals production,Ineos Sverige,Organic basic chemicals production,Ethylene,Raw material for Organic basic chemicals production
+41,"41,22,8",Borealis,Organic basic chemicals production,Ineos Sverige,Organic basic chemicals production,Fuel gas,Fuel
+43,"43,36,1",Kawasaki,Urban entity,ND,Iron and steel production,Waste car,Raw material for Iron and steel production
+43,"43,36,2",Kawasaki,Urban entity,ND,Iron and steel production,Discarded home appliances,Raw material for Iron and steel production
+43,"43,36,3",Kawasaki,Urban entity,ND,Iron and steel production,Discarded home appliances,Substitution for coke
+43,"43,36,4",Kawasaki,Urban entity,ND,Iron and steel production,Waste plastic,Substitution for coke
+43,"43,36,5",Kawasaki,Urban entity,ND,Chemical industry,Waste plastic,Raw material to produce ammonia
+43,"43,36,6",Kawasaki,Urban entity,ND,Cement industry,Waste plastic,Substitution for coal
+43,"43,36,7",ND,Iron and steel production,ND,Cement industry,BF slag,Raw material for Cement industry
+43,"43,36,8",Kawasaki,Urban entity,ND,Paper and pulp industry,Waste paper,Raw material for Paper and pulp industry
+43,"43,36,9",ND,Paper and pulp industry,ND,Cement industry,Paper sludge,Raw material for Cement industry
+43,"43,36,10",Kawasaki,Urban entity,ND,Cement industry,Sewage sludge,Raw material for Cement industry
+44,"44,37,1",ND,Agricultural companies,ND,Biogas production,General organic waste,Raw material for Biogas production
+44,"44,37,2",ND,Agricultural companies,ND,Paper plant,Paper and cardboard wastes,Raw material for Paper plant
+44,"44,37,3",ND,Agricultural companies,ND,PVC sewer pipes production,Plastic wastes,Raw material for PVC sewer pipes production
+44,"44,37,4",ND,Agricultural companies,ND,Pellets and plywood panels production,Wood and cardboard wastes,Raw material for Pellets and plywood panels production
+45,"45,38,1",Baishuo Computer / Gold Circuit Electronic / JingPeng Electronic / Sony Chemical Electronic / Dazhan Circuit / Ichia Technology,Manufacture of electronic components,Fukuda Metal,Copper production,Waste PCB / copper foil / Sludge containing copper,Raw material for Copper production
+45,"45,38,2",Matsushita Electric Works,Manufacture of electrical appliances,Fukuda Metal,Copper production,Waste PCB / Sludge containing copper,Raw material for Copper production
+46,"46,10,1",British Sugar,Sugar production,ND,Building trade,Stones separated during sugar beet washing,Raw material for Building trade
+46,"46,10,2",British Sugar,Sugar production,ND,Landscaping,Soil separated during sugar beet washing,Raw material for Landscaping
+46,"46,10,3",British Sugar,Sugar production,ND,Agroindustry,Calcium carbonate,Raw material for Agroindustry
+46,"46,10,4",British Sugar,Sugar production,ND,Animal raising,Bagasse,Raw material for Animal raising
+46,"46,10,5",British Sugar,Sugar production,ND,Tomato growing,Heat,Heat
+46,"46,10,6",British Sugar,Sugar production,ND,Tomato growing,CO2,Supports the growth of plants
+46,"46,10,7",British Sugar,Sugar production,ND,Health care sector (cosmetics production),Waste residual resins from the sugar crystallization process,Raw material for Health care sector (cosmetics production)
+46,"46,10,8",British Sugar,Sugar production,ND,Biofuel production,Waste sugar from resin separation,Raw material for Biofuel production
+46,"46,10,9",ND,Biofuel production,ND,Carbonated soft drinks production,CO2,Raw material for Carbonated soft drinks production
+46,"46,10,10",ND,Biofuel production,ND,Fire protection,CO2,Raw material for Fire protection

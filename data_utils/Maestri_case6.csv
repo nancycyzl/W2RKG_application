@@ -1,0 +1,22 @@
+case_id,exchange_id,donor_name,donor_business,receiver_name,receiver_business,waste,resource
+6,"6,21,1",Boyne Smelters Ltd,Smelting,Cement Australia's Gladstone,Cement production,Spent cell linings,Alternative fuel and raw material in clinker production
+6,"6,21,2",ND,ND,Cement Australia's Gladstone,Cement production,Waste solvent materials,Solvent-based fuels as AFR in clinker production
+6,"6,21,3",NRG,Power plant,Cement Australia's Gladstone,Cement production,Fly ash,Cement additive
+6,"6,21,4",ND,ND,NRG,Power plant,Waste water,Water used in red mud washing operations
+6,"6,21,5",ND,ND,Queensland alumina limited refinery,Alumina refinery,Water,Water used in red mud washing operations
+6,"6,21,6",Orica Ltd,Ammonium nitrate and sodium cyanide production,ND,Agricultural companies,Fertiliser,Fertiliser
+6,"6,21,7",Queensland Energy Resources Limited,Petroleum exctaction,Queensland alumina limited refinery,Alumina refinery,Spent shale,Spent shale is used in the rehabilitation of red muds from alumina refinery.
+6,"6,21,8",Queensland Energy Resources Limited,Petroleum exctaction,Cement Australia's Gladstone,Cement production,Spent shale,Alternative fuel and raw material in clinker production
+6,"6,21,9",ND,Urban entity,Queensland Energy Resources Limited,Petroleum exctaction,Old tyres,Processing of oil shale
+6,"6,21,10",Queensland Energy Resources Limited,Petroleum exctaction,Orica Ltd,Ammonium nitrate and sodium cyanide production,Sour gas,Raw material for Ammonium nitrate and sodium cyanide production
+6,"6,21,11",Queensland Energy Resources Limited,Petroleum exctaction,Gladstone Pacific Nickel Ltd,Nickel/cobalt refinery,Sour gas,Raw material for Nickel/cobalt refinery
+6,"6,21,12",Queensland alumina limited refinery/Rio Tinto Alcan Yarwun,Alumina refinery,Cement Australia's Gladstone,Cement production,Red mud,Raw material for Cement production
+6,"6,21,13",Gladstone Pacific Nickel Ltd,Nickel/cobalt refinery,Rio Tinto Alcan Yarwun,Alumina refinery,Barren liquor,Raw material for Alumina refinery
+6,"6,21,14",Boyne Smelters Ltd,Smelting,ND,Construction,Refractory materials,Raw material for Construction
+6,"6,21,15",Boyne Smelters Ltd,Smelting,Boulder Steel Limited,Steelworks,Metallurgical coke dust and fines,Fuel
+6,"6,21,16",NRG,Power plant,ND,Bricks manufacturer,Bottom ash,Raw material for Bricks manufacturer
+6,"6,21,17",Orica Ltd,Ammonium nitrate and sodium cyanide production,Gladstone Pacific Nickel Ltd,Nickel/cobalt refinery,Sulphuric acid,Raw material for Nickel/cobalt refinery
+6,"6,21,18",Cement Australia's Gladstone,Cement production,LNG projects,Liquified natural gas processing,Off-spec lime,Soil additive
+6,"6,21,19",Boulder Steel Limited,Steelworks,Cement Australia's Gladstone,Cement production,Steel slag,Raw material for Cement production
+6,"6,21,20",Boulder Steel Limited,Steelworks,ND,Road construction,Steel slag,Raw material for Road construction
+6,"6,21,21",ND,Urban entity,Northern oil,Oil refinery,Waste lubricants,Raw material for Oil refinery

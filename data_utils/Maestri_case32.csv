@@ -1,0 +1,14 @@
+case_id,exchange_id,donor_name,donor_business,receiver_name,receiver_business,waste,resource
+32,"32,30,1",JIS Corp.,Iron and steel production,ND,Ammonia production,Steam,Process heat
+32,"32,30,2",JIS Corp.,Iron and steel production,Jinan,Urban entity,Steam,Heat
+32,"32,30,3",JIS Corp.,Iron and steel production,ND,Ammonia production,BFG (blast furnace gas),Process energy
+32,"32,30,4",JIS Corp.,Iron and steel production,ND,Ammonia production,COG,Alternative hydrogen production
+32,"32,30,5",ND,Aluminium production,JIS Corp.,Iron and steel production,Red mud,Used to refine ferrous metal
+32,"32,30,6",JIS Corp.,Iron and steel production,ND,Cement & Construction,BF slag,Raw material for Cement & Construction
+32,"32,30,7",JIS Corp.,Iron and steel production,ND,Cement & Construction,Steel slag,Raw material for Cement & Construction
+32,"32,30,8",JIS Corp.,Iron and steel production,ND,Cement & Construction,Gypsum,Raw material for Cement & Construction
+32,"32,30,9",JIS Corp.,Iron and steel production,ND,Carbonate production,Steel slag,Sinter ore
+32,"32,30,10",ND,Chromium chemical production,JIS Corp.,Iron and steel production,Chromium slag,Raw material for Iron and steel production
+32,"32,30,11",Jinan,Urban entity,JIS Corp.,Iron and steel production,Waste steel,Raw material for Iron and steel production
+32,"32,30,12",Jinan,Urban entity,JIS Corp.,Iron and steel production,Waste plastic,Raw material for Iron and steel production
+32,"32,30,13",Jinan,Urban entity,JIS Corp.,Iron and steel production,Waste water,Process water

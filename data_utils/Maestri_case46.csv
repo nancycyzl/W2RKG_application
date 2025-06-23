@@ -1,0 +1,11 @@
+case_id,exchange_id,donor_name,donor_business,receiver_name,receiver_business,waste,resource
+46,"46,10,1",British Sugar,Sugar production,ND,Building trade,Stones separated during sugar beet washing,Raw material for Building trade
+46,"46,10,2",British Sugar,Sugar production,ND,Landscaping,Soil separated during sugar beet washing,Raw material for Landscaping
+46,"46,10,3",British Sugar,Sugar production,ND,Agroindustry,Calcium carbonate,Raw material for Agroindustry
+46,"46,10,4",British Sugar,Sugar production,ND,Animal raising,Bagasse,Raw material for Animal raising
+46,"46,10,5",British Sugar,Sugar production,ND,Tomato growing,Heat,Heat
+46,"46,10,6",British Sugar,Sugar production,ND,Tomato growing,CO2,Supports the growth of plants
+46,"46,10,7",British Sugar,Sugar production,ND,Health care sector (cosmetics production),Waste residual resins from the sugar crystallization process,Raw material for Health care sector (cosmetics production)
+46,"46,10,8",British Sugar,Sugar production,ND,Biofuel production,Waste sugar from resin separation,Raw material for Biofuel production
+46,"46,10,9",ND,Biofuel production,ND,Carbonated soft drinks production,CO2,Raw material for Carbonated soft drinks production
+46,"46,10,10",ND,Biofuel production,ND,Fire protection,CO2,Raw material for Fire protection

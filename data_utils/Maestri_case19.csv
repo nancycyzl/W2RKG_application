@@ -1,0 +1,15 @@
+case_id,exchange_id,donor_name,donor_business,receiver_name,receiver_business,waste,resource
+19,"19,24,1",ND,Power plant,ND,Basic chemicals,Steam,Process heat
+19,"19,24,2",ND,Power plant,ND,Basic chemicals,Demineralised water,Process water
+19,"19,24,3",ND,Power plant,ND,Basic chemicals,Electricity,Process energy
+19,"19,24,4",ND,Basic chemicals,ND,Power plant,Sodium hydroxide,Raw material for Power plant
+19,"19,24,5",ND,Basic chemicals,ND,Power plant,Hydrochloric acid,Raw material for Power plant
+19,"19,24,6",ND,Basic chemicals,ND,Micronized silica,Sodium silicate,Raw material for Micronized silica
+19,"19,24,7",ND,Micronized silica,ND,Basic chemicals,Silica,Raw material for Basic chemicals
+19,"19,24,8",ND,Micronized silica,ND,Power plant,Silica,Raw material for Power plant
+19,"19,24,9",ND,Power plant,ND,Micronized silica,Steam,Process heat
+19,"19,24,10",ND,Power plant,ND,Micronized silica,Electricity,Process energy
+19,"19,24,11",ND,Micronized silica,ND,Galvanic treatments,Silica,Raw material for Galvanic treatments
+19,"19,24,12",ND,Basic chemicals,ND,Galvanic treatments,Sodium hydroxide,Raw material for Galvanic treatments
+19,"19,24,13",ND,Basic chemicals,ND,Galvanic treatments,Hydrochloric acid,Raw material for Galvanic treatments
+19,"19,24,14",ND,Pesticides,ND,Basic chemicals,Septic sludges,Raw material for Basic chemicals

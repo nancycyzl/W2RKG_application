@@ -1,0 +1,19 @@
+case_id,exchange_id,donor_name,donor_business,receiver_name,receiver_business,waste,resource
+26,"26,8,1",Barilla S.p.A.,Food industry,IRCI S.p.A.,Methane production from anaerobic digestion,Heat,Raw material for Methane production from anaerobic digestion
+26,"26,8,2",Barilla S.p.A.,Food industry,Schmack Biogas S.r.l.,Biogas production from biomass,Food production scraps,Raw material for Biogas production from biomass
+26,"26,8,3",Barilla S.p.A.,Food industry,ND,Methane production from anaerobic digestion,Food production scraps,Raw material for Methane production from anaerobic digestion
+26,"26,8,4",Barilla S.p.A.,Food industry,Opoe Cons. Coop. Agr. PA,Agroindustry,Food production scraps,ND
+26,"26,8,5",A.R.P. Soc. Agr. Coop.,Agroindustry,IRCI S.p.A.,Methane production from anaerobic digestion,"Agricultural wastes, packaging and muds",Raw material for Methane production from anaerobic digestion
+26,"26,8,6",A.R.P. Soc. Agr. Coop.,Agroindustry,ND,Energy production from biomass,"Agricultural wastes, packaging and muds",Fuel
+26,"26,8,7",A.R.P. Soc. Agr. Coop.,Agroindustry,Schmack Biogas S.r.l.,Biogas production from biomass,"Agricultural wastes, packaging and muds",Raw material for Biogas production from biomass
+26,"26,8,8",A.R.P. Soc. Agr. Coop.,Agroindustry,ND,Methane production from anaerobic digestion,"Agricultural wastes, packaging and muds",Raw material for Methane production from anaerobic digestion
+26,"26,8,9",A.R.P. Soc. Agr. Coop.,Agroindustry,CGM Spa,Plastic products production,Packaging,Raw material for Plastic products production
+26,"26,8,10",A.R.P. Soc. Agr. Coop.,Agroindustry,CCPL Group,Food packaging,Packaging,Raw material for Food packaging
+26,"26,8,11",A.R.P. Soc. Agr. Coop.,Agroindustry,ND,ND,Muds,ND
+26,"26,8,12",A.R.P. Soc. Agr. Coop.,Agroindustry,ND,ND,Muds,ND
+26,"26,8,13",A.R.P. Soc. Agr. Coop.,Agroindustry,ND,ND,Muds,ND
+26,"26,8,14",A.R.P. Soc. Agr. Coop.,Agroindustry,Opoe Cons. Coop. Agr. PA,Agroindustry,Agricultural wastes,ND
+26,"26,8,15",Softer Color Srl,Painters and pigments producer,Barilla S.p.A.,Food industry,Packaging,ND
+26,"26,8,16",Softer Color Srl,Painters and pigments producer,ND,Power plant,Packaging and wood wastes,Fuel
+26,"26,8,17",Softer Color Srl,Painters and pigments producer,CGM Spa,Plastic products production,Packaging,Raw material for Plastic products production
+26,"26,8,18",Softer Color Srl,Painters and pigments producer,CCPL Group,Food packaging,Packaging,Raw material for Food packaging

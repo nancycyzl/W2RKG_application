@@ -1,0 +1,11 @@
+case_id,exchange_id,donor_name,donor_business,receiver_name,receiver_business,waste,resource
+29,"29,13,1",ND,Urban entity,ND,Photovoltaic modules production,Metals,Raw material for Photovoltaic modules production
+29,"29,13,2",ND,Urban entity,ND,Photovoltaic modules production,Glass,Raw material for Photovoltaic modules production
+29,"29,13,3",ND,Urban entity,ND,Packaging factory,Plastics,Raw material for Packaging factory
+29,"29,13,4",ND,Urban entity,ND,Greenhouse,Biodegradable kitchen and canteen waste,Compost
+29,"29,13,5",ND,Urban entity,ND,Mushrooms growrooms,Newspaper,Compost
+29,"29,13,6",ND,Urban entity,ND,Packaging factory,Shredded newspaper,Raw material for Packaging factory
+29,"29,13,7",ND,Urban entity,ND,Packaging factory,Wood pulp,Raw material for Packaging factory
+29,"29,13,8",ND,Sheet glass factory,ND,Greenhouse,Waste heat,Process heat
+29,"29,13,9",ND,Sheet glass factory,ND,Mushrooms growrooms,Waste heat,Process heat
+29,"29,13,10",ND,Photovoltaic modules production,ND,Photovoltaic modules production,End of life semiconductors,Raw material for Photovoltaic modules production

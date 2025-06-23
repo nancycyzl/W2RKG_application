@@ -1,0 +1,18 @@
+case_id,exchange_id,donor_name,donor_business,receiver_name,receiver_business,waste,resource
+2,"2,16,1",ND,Hydropower plant,ND,Pulp and paper plant,Electricity,Process energy
+2,"2,16,2",ND,Pulp mill,ND,Paper mill,Electricity,Process energy
+2,"2,16,3",ND,Pulp and paper plant,ND,Calcium carbonate plant,Electricity,Process energy
+2,"2,16,4",ND,Pulp and paper plant,ND,Calcium carbonate plant,CO2,Raw material for Calcium carbonate plant
+2,"2,16,5",ND,Calcium carbonate plant,ND,Pulp and paper plant,Calcium carbonate,Raw material for Pulp and paper plant
+2,"2,16,6",ND,Pulp and paper plant,ND,Chlorine dioxide plant,Electricity,Process energy
+2,"2,16,7",ND,Chlorine dioxide plant,ND,Pulp and paper plant,Chlorine dioxide,Raw material for Pulp and paper plant
+2,"2,16,8",ND,Chlorine dioxide plant,ND,Pulp and paper plant,Sodium hydroxide,Raw material for Pulp and paper plant
+2,"2,16,9",ND,Pulp and paper plant,ND,Power plant,Bark,Fuel
+2,"2,16,10",ND,Pulp and paper plant,ND,Power plant,Sodium hydroxide,Raw material for Power plant
+2,"2,16,11",ND,Power plant,ND,Pulp and paper plant,Electricity,Process energy
+2,"2,16,12",ND,Pulp and paper plant,ND,Urban entity,Bark,Heat
+2,"2,16,13",ND,Chlorine dioxide plant,ND,Pulp and paper plant,Waste water,Water
+2,"2,16,14",ND,Chlorine dioxide plant,ND,Power plant,Waste water,Water
+2,"2,16,15",ND,Chlorine dioxide plant,ND,Calcium carbonate plant,Waste water,Water
+2,"2,16,16",ND,Chlorine dioxide plant,ND,Water purification plant,Chlorine,Raw material for Water purification plant
+2,"2,16,17",ND,Pulp and paper plant,ND,Power plant,Sludge,Fuel

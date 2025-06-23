@@ -1,0 +1,19 @@
+case_id,exchange_id,donor_name,donor_business,receiver_name,receiver_business,waste,resource
+5,"5,25,1",ND,Food and fish processing,ND,Refinery,Waste edible oils,Raw material for Refinery
+5,"5,25,2",ND,Refinery,ND,CHP plant,Refinery by-products,Fuel
+5,"5,25,3",ND,CHP plant,ND,Refinery,Steam,Process heat
+5,"5,25,4",ND,CHP plant,ND,Chemical industry,Steam,Process heat
+5,"5,25,5",ND,Chemical industry,ND,Refinery,Hydrogen,Process material
+5,"5,25,6",ND,Chemical industry,ND,Plaster board manufacturer,Gypsum,Raw material for Plaster board manufacturer
+5,"5,25,7",ND,CHP plant,ND,Food and fish processing,Steam,Process heat
+5,"5,25,8",ND,CHP plant,ND,Gasifier,Steam,Process heat
+5,"5,25,9",ND,Wastewater treatment,ND,Gasifier,Dry organic pellets,Raw material for Gasifier
+5,"5,25,10",ND,Food and fish processing,ND,Gasifier,Organic waste,Raw material for Gasifier
+5,"5,25,11",ND,Local farms,ND,Gasifier,Organic waste,Raw material for Gasifier
+5,"5,25,12",ND,Wastewater treatment,ND,Local farms,Dry organic pellets,Raw material for Local farms
+5,"5,25,13",ND,Food and fish processing,ND,Local farms,Organic waste,Raw material for Local farms
+5,"5,25,14",ND,Furniture production,ND,Local farms,Wood dust and chips,Process energy
+5,"5,25,15",ND,Food and fish processing,ND,Pet food,Organic waste,Raw material for Pet food
+5,"5,25,16",ND,Food and fish processing,ND,Interior decoration products,Polystyrene waste,Raw material for Interior decoration products
+5,"5,25,17",ND,Food and fish processing,ND,Protein extraction,Offal,Raw material for Protein extraction
+5,"5,25,18",ND,Iron and steel production,ND,Cement manufacturing,Steel slag,Raw material for Cement manufacturing

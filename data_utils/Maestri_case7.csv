@@ -1,0 +1,27 @@
+case_id,exchange_id,donor_name,donor_business,receiver_name,receiver_business,waste,resource
+7,"7,33,1",QD beer brewery,Beer brewery,CQ fertiliser factory,Fertiliser company,Vinesse,Raw material for Fertiliser company
+7,"7,33,2",RW distillery,Distillery,CQ fertiliser factory,Fertiliser company,Vinesse,Raw material for Fertiliser company
+7,"7,33,3",RW distillery,Distillery,ND,Feed mill,Vinesse,Raw material for Feed mill
+7,"7,33,4",ND,Citrate acid factory,ND,Feed mill,Residue,Raw material for Feed mill
+7,"7,33,5",YTSB Pulp and Paper Limited Company,Pulp and paper plant,SB fertilizer factory,Fertiliser company,Sludge,Raw material for Fertiliser company
+7,"7,33,6",YTSB Pulp and Paper Limited Company,Pulp and paper plant,ND,Citrate acid factory,White sludge,Used instead of calcium carbonate
+7,"7,33,7",YTSB Pulp and Paper Limited Company,Pulp and paper plant,YT building material factory,Building material production,Green mud,Raw material for Building material production
+7,"7,33,8",YTSB Pulp and Paper Limited Company,Pulp and paper plant,Port of Rizhao,Port,Reclaimed water,Water
+7,"7,33,9",YTSB Pulp and Paper Limited Company,Pulp and paper plant,ND,Aquaculture mill,Waste hot water,Process heat
+7,"7,33,10",YTSB Pulp and Paper Limited Company,Pulp and paper plant,JZ charcoal factory,Charcoal production,Wood chips,Fuel
+7,"7,33,11",CQ wood factory,Wood factory,YTSB Pulp and Paper Limited Company,Pulp and paper plant,Wood board,Raw material for Pulp and paper plant
+7,"7,33,12",YTSB Pulp and Paper Limited Company,Pulp and paper plant,HY cement plant,Cement production,White sludge,Raw material for Cement production
+7,"7,33,13",YTSB Pulp and Paper Limited Company,Pulp and paper plant,HY cement plant,Cement production,Fly ash,Raw material for Cement production
+7,"7,33,14",ND,Power plant,HY cement plant,Cement production,Fly ash,Raw material for Cement production
+7,"7,33,15",ND,Power plant,YT building material factory,Building material production,Coal slag,Raw material for Building material production
+7,"7,33,16",XL Oil / BYSW Oil,Oil and fat factory,ND,Power plant,Condensed water,Water
+7,"7,33,17",JJ algae plant,Algae growing,YK organic agricultural company,Agricultural company,Seaweed residues,Raw material for Agricultural company
+7,"7,33,18",YK organic agricultural company,Agricultural company,XT fertiliser factory,Fertiliser company,Waste residue,Raw material for Fertiliser company
+7,"7,33,19",YQ clay-oil factory,Clay-oil production,XT fertiliser factory,Fertiliser company,Waste clay,Raw material for Fertiliser company
+7,"7,33,20",XL Oil / BYSW Oil,Oil and fat factory,YQ clay-oil factory,Clay-oil production,Clay-oil,Raw material for Clay-oil production
+7,"7,33,21",SY textile mill,Textile production,ND,Toy factory,Leftovers,Raw material for Toy factory
+7,"7,33,22",HX knitwear mill,Knitwear production,ND,Toy factory,Leftovers,Raw material for Toy factory
+7,"7,33,23",LYH sugar plant,Sugar refinery,HD alcohol plant,Alcohol production,Waste molasses,Used instead of manihot
+7,"7,33,24",HD alcohol plant,Alcohol production,LY packing house,Packaging site,Carbon dioxide,Raw material for Packaging site
+7,"7,33,25",WY auto engine works,Auto engine production,ND,Metallurgical enterprises,Scrap metal,Raw material for Metallurgical enterprises
+7,"7,33,26",HB machinery making factory,Machinery production,ND,Metallurgical enterprises,Scrap metal,Raw material for Metallurgical enterprises

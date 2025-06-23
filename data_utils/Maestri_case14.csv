@@ -1,0 +1,17 @@
+case_id,exchange_id,donor_name,donor_business,receiver_name,receiver_business,waste,resource
+14,"14,15,1",ND,Distillery,ND,Alcohol distributor,Paddy husk,Process energy
+14,"14,15,2",ND,Distillery,ND,ND,CO2,Raw material for ND
+14,"14,15,3",ND,Distillery,ND,Dairy industry,Isopropyl alcohol,Sterilizer
+14,"14,15,4",ND,Sugar refinery,ND,Agriculture,Bagasse,Soil amendment
+14,"14,15,5",ND,Sugar refinery,ND,Distillery,Molasses,Raw material for Distillery
+14,"14,15,6",ND,Distillery,ND,Paper manufacturer,Paddy husk,Process heat
+14,"14,15,7",ND,Distillery,ND,Paper manufacturer,Paddy husk,Process energy
+14,"14,15,8",ND,Paper manufacturer,ND,Agriculture,Boiler and fly ashes,Soil amendment
+14,"14,15,9",ND,Paper manufacturer,ND,Fertilizer company,ETP sludge,Raw material for Fertilizer company
+14,"14,15,10",ND,Coffee and milk beverage producer,ND,Oil extraction facility,Spent coffee grounds,Raw material for Oil extraction facility
+14,"14,15,11",ND,Oil extraction facility,ND,Coffee and milk beverage producer,Biomass fuel,Fuel
+14,"14,15,12",ND,Oil extraction facility,ND,Brick manufacturer,Fly ash,Raw material for Brick manufacturer
+14,"14,15,13",ND,Oil extraction facility,ND,ND,Dessiccated coffee grounds,Fuel
+14,"14,15,14",ND,Oil extraction facility,ND,Cattle feed production,Residual coconut,Raw material for Cattle feed production
+14,"14,15,15",ND,Plywood manufacturing,ND,Oil extraction facility,Sawdust,Process heat
+14,"14,15,16",ND,Plywood manufacturing,ND,Granite polishing facilities,Boiler ash,Raw material for Granite polishing facilities

@@ -2,7 +2,8 @@ import streamlit as st
 from streamlit_agraph import agraph, Config
 from utils import nx_to_agraph
 
-def render_network_planning_tab(G, kg_file, prof_file):
+def render_network_planning_tab(G, G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
+                                P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings):
     c2_left, c2_mid, c2_right = st.columns([1,2,1])
     with c2_left:
         st.subheader("🔧 Filters")
@@ -32,8 +33,8 @@ def render_network_planning_tab(G, kg_file, prof_file):
     
     with c2_mid:
         st.subheader("🌐 Collaboration map")
-        if not kg_file or not prof_file:
-            st.info("Upload both files to enable full network view.")
+        if len(G_waste_list) == 0 or len(P_waste_list) == 0:
+            st.info("Upload W2RKG JSON and company profile CSV to enable full network view.")
         else:
             n2, e2 = nx_to_agraph(J)
             cfg2 = Config(width=700, height=550, directed=True, physics=True, selection=True)

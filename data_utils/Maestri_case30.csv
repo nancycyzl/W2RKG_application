@@ -1,0 +1,13 @@
+case_id,exchange_id,donor_name,donor_business,receiver_name,receiver_business,waste,resource
+30,"30,31,1",ND,Iron and steel production,ND,Power plant,Waste heat,Process heat
+30,"30,31,2",ND,Aluminium production,ND,Power plant,Waste heat,Process heat
+30,"30,31,3",ND,Phosphorus chemical industry,ND,Power plant,Waste heat,Process heat
+30,"30,31,4",ND,Iron and steel production,Guiyang,Urban entity,Waste heat,Heat
+30,"30,31,5",ND,Power plant,Guiyang,Urban entity,Electricity,Energy
+30,"30,31,6",Guiyang,Urban entity,ND,Iron and steel production,Waste steel,Raw material for Iron and steel production
+30,"30,31,7",Guiyang,Urban entity,ND,Iron and steel production,Waste plastics,Raw material for Iron and steel production
+30,"30,31,8",ND,Iron and steel production,ND,Cement manufacturing,Steel slag,Raw material for Cement manufacturing
+30,"30,31,9",ND,Aluminium production,ND,Cement manufacturing,Slag,Raw material for Cement manufacturing
+30,"30,31,10",ND,Phosphorus chemical industry,ND,Cement manufacturing,Phosphorous slag,Raw material for Cement manufacturing
+30,"30,31,11",ND,Coal industry,ND,Cement manufacturing,Slag,Raw material for Cement manufacturing
+30,"30,31,12",ND,Coal industry,ND,Power plant,Coal gangue,Fuel

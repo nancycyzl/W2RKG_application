@@ -1,0 +1,15 @@
+case_id,exchange_id,donor_name,donor_business,receiver_name,receiver_business,waste,resource
+31,"31,29,1",ND,Power plant,ND,Ammonia production,Steam,Process heat
+31,"31,29,2",ND,Power plant,ND,Cement & Construction,Coal flying ash,Cement additive
+31,"31,29,3",ND,Iron and steel production,ND,Ammonia production,Steam,Process heat
+31,"31,29,4",ND,Iron and steel production,ND,Ammonia production,COG,Alternative hydrogen production
+31,"31,29,5",ND,Iron and steel production,ND,Fertiliser company,Ammonium sulfate,Raw material for Fertiliser company
+31,"31,29,6",ND,Iron and steel production,ND,Cement & Construction,BF slag,Raw material for Cement & Construction
+31,"31,29,7",ND,Iron and steel production,ND,Cement & Construction,Steel slag,Raw material for Cement & Construction
+31,"31,29,8",Liuzhou,Urban entity,ND,Iron and steel production,Waste steel,Raw material for Iron and steel production
+31,"31,29,9",Liuzhou,Urban entity,ND,Iron and steel production,Waste plastic,Raw material for Iron and steel production
+31,"31,29,10",Liuzhou,Urban entity,ND,Iron and steel production,Scrap tire,Process heat
+31,"31,29,11",Liuzhou,Urban entity,ND,Cement & Construction,Waste plastic,Raw material for Cement & Construction
+31,"31,29,12",Liuzhou,Urban entity,ND,Cement & Construction,Scrap tire,Process heat
+31,"31,29,13",Liuzhou,Urban entity,ND,Power plant,Straw / Food waste,Fuel
+31,"31,30,1",ND,Power plant,ND,Machinery,Steam,Process heat

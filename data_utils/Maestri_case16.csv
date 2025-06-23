@@ -1,0 +1,57 @@
+case_id,exchange_id,donor_name,donor_business,receiver_name,receiver_business,waste,resource
+16,"16,20,1",ND,Oil refinery,ND,Power plant,Fuel gas,Fuel
+16,"16,20,2",ND,Power plant,ND,Oil refinery,Steam,Process heat
+16,"16,20,3",ND,Power plant,ND,Oil refinery,Electricity,Process energy
+16,"16,20,4",ND,Power plant,ND,Oil refinery,Waste water,Process water
+16,"16,20,5",ND,Oil refinery,ND,Industrial chemical & ferilizer producer,Waste water,Process water
+16,"16,20,6",ND,Industrial chemical producer,ND,Industrial chemical & ferilizer producer,Waste water,Process water
+16,"16,20,7",ND,Coal-fired power station,ND,Industrial chemical & ferilizer producer,Demineralised water,Process water
+16,"16,20,8",ND,Coal-fired power station,ND,Gas fired power station,Demineralised water,Process water
+16,"16,20,9",ND,Gas fired power station,ND,Coal-fired power station,Boiler blow-down,Raw material for Coal-fired power station
+16,"16,20,10",ND,Industrial chemical & ferilizer producer,ND,Titanium dioxide producer,Bore water,Process water
+16,"16,20,11",ND,Alumina refinery,ND,Industrial gas producer,Electricity,Process energy
+16,"16,20,12",ND,Pig iron plant,ND,Industrial gas producer,Steam,Process heat
+16,"16,20,13",ND,Titanium dioxide producer,ND,Chlor alkali plant,Electricity,Process energy
+16,"16,20,14",ND,Titanium dioxide producer,ND,Chlor alkali plant,Steam,Process heat
+16,"16,20,15",ND,Titanium dioxide producer,ND,Chlor alkali plant,Potable water,Process water
+16,"16,20,16",ND,Chlor alkali plant,ND,Titanium dioxide producer,Waste water,Process water
+16,"16,20,17",ND,Power plant,ND,Titanium dioxide producer,Electricity,Process energy
+16,"16,20,18",ND,Power plant,ND,Titanium dioxide producer,Steam,Process heat
+16,"16,20,19",ND,Titanium dioxide producer,ND,Power plant,Potable water,Process water
+16,"16,20,20",ND,Titanium dioxide producer,ND,Power plant,Air,Raw material for Power plant
+16,"16,20,21",ND,Titanium dioxide producer,ND,Power plant,Reverse osmosis water,Process water
+16,"16,20,22",ND,Power plant,ND,Titanium dioxide producer,Waste water,Process water
+16,"16,20,23",ND,Alumina refinery,ND,Worm farm,Domestic organic waste,Raw material for Worm farm
+16,"16,20,24",ND,Alumina refinery,ND,Water supply and treatment company,Bauxite residue,Raw material for Water supply and treatment company
+16,"16,20,25",ND,Industrial gas producer,ND,Alumina refinery,Carbon dioxide,Raw material for Alumina refinery
+16,"16,20,26",ND,Industrial chemical & ferilizer producer,ND,Alumina refinery,Carbon dioxide,Raw material for Alumina refinery
+16,"16,20,27",ND,Industrial chemical & ferilizer producer,ND,Alumina refinery,Gypsum,Raw material for Alumina refinery
+16,"16,20,28",ND,Fused alumina and zircon producer,ND,Cement production,Silica fume,Raw material for Cement production
+16,"16,20,29",ND,Cement mill,ND,Blokpave producer,Concrete wastes,Raw material for Blokpave producer
+16,"16,20,30",ND,Cement mill,ND,Insulation plant,Cardboard,ND
+16,"16,20,31",ND,Mineral processing plant,ND,Cement mill,Blast furnace slag,Raw material for Cement mill
+16,"16,20,32",ND,Oil refinery,ND,Nickel refinery,Hydrogen,Raw material for Nickel refinery
+16,"16,30,33",ND,Nickel refinery,ND,Industrial gas producer,Carbon dioxide,Raw material for Industrial gas producer
+16,"16,30,34",ND,Industrial chemical & ferilizer producer,ND,Industrial gas producer,Carbon dioxide,Raw material for Industrial gas producer
+16,"16,30,35",ND,Oil refinery,ND,Nickel refinery,Sulphur,Raw material for Nickel refinery
+16,"16,30,36",ND,Oil refinery,ND,Inorganic chemical producer,Sulphur,Raw material for Inorganic chemical producer
+16,"16,30,37",ND,Oil refinery,ND,Cement and lime producer,Spent catalysts,Raw material for Cement and lime producer
+16,"16,30,38",ND,Inorganic chemical producer,ND,Synthetic rutile plant,Ammonium chloride,Raw material for Synthetic rutile plant
+16,"16,30,39",ND,Inorganic chemical producer,ND,Chlor alkali plant,98% sulphuric acid,Raw material for Chlor alkali plant
+16,"16,30,40",ND,Chlor alkali plant,ND,Inorganic chemical producer,80% sulphuric acid,Raw material for Inorganic chemical producer
+16,"16,30,41",ND,Zirconia powder producer,ND,Inorganic chemical producer,Ammonium chloride solution,Raw material for Inorganic chemical producer
+16,"16,30,42",ND,Titanium dioxide producer,ND,Inorganic chemical producer,Hydrochloric acid,Raw material for Inorganic chemical producer
+16,"16,30,43",ND,Zirconia powder producer,ND,Titanium dioxide producer,Ammonium chloride solution,Raw material for Titanium dioxide producer
+16,"16,30,44",ND,Industrial chemical & ferilizer producer,ND,Industrial gas producer,Hydrogen,Raw material for Industrial gas producer
+16,"16,30,45",ND,Nickel refinery,ND,Industrial chemical & ferilizer producer,Hydrogen,Raw material for Industrial chemical & ferilizer producer
+16,"16,30,46",ND,Nickel refinery,ND,Industrial chemical & ferilizer producer,Ammonium sulphate,Raw material for Industrial chemical & ferilizer producer
+16,"16,30,47",ND,Industrial gas producer,ND,Coal-fired power station,Carbon dioxide,Raw material for Coal-fired power station
+16,"16,30,48",ND,Industrial gas producer,ND,Coal-fired power station,Hydrogen,Raw material for Coal-fired power station
+16,"16,30,49",ND,Nickel refinery,ND,Industrial gas producer,Carbon dioxide,Raw material for Industrial gas producer
+16,"16,30,50",ND,Coal-fired power station,ND,Construction company,Fly ash,Raw material for Construction company
+16,"16,30,51",ND,Water supply and treatment company,ND,Turf farm,Bio-sludge,Raw material for Turf farm
+16,"16,30,52",ND,Cement and lime producer,ND,Pig iron plant,Lime kiln dust,Raw material for Pig iron plant
+16,"16,30,53",ND,Cement and lime producer,ND,Titanium dioxide producer,Lime kiln dust,Raw material for Titanium dioxide producer
+16,"16,30,54",ND,Coal mine,ND,Cement and lime producer,Coal mine overburden,Raw material for Cement and lime producer
+16,"16,30,55",ND,Nickel refinery,ND,Nikel mine,Process residue,Raw material for Nikel mine
+16,"16,30,56",ND,Nickel refinery,ND,Nikel mine,Sulphur,Raw material for Nikel mine

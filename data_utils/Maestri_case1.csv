@@ -1,0 +1,46 @@
+case_id,exchange_id,donor_name,donor_business,receiver_name,receiver_business,waste,resource
+1,"1,12,1",Enipower power station,Power plant,ENI refinery,Refinery,Vapour and demineralised water,Process heat
+1,"1,12,2",Enipower power station,Power plant,ENI refinery,Refinery,Electricity,Process energy
+1,"1,12,3",Enipower power station,Power plant,ENI refinery,Refinery,"Sea and well water, condensing vapour",Water
+1,"1,12,4",ENI refinery,Refinery,Enipower power station,Power plant,Fuel gas,Fuel
+1,"1,12,5",ENI refinery,Refinery,Enipower power station,Power plant,Fuel oil,Fuel
+1,"1,12,6",ILVA,Steelworks,Enipower power station,Power plant,Demineralised water,Water
+1,"1,12,7",ILVA,Steelworks,Edison power station,Power plant,Exhaust gas,Process heat
+1,"1,12,8",Edison power station,Power plant,ILVA,Steelworks,Electricity,Process energy
+1,"1,12,9",Edison power station,Power plant,ILVA,Steelworks,Steam,Process heat
+1,"1,12,10",ILVA,Steelworks,CEMENTIR,Cement production,Mill scales,Raw material for Cement production
+1,"1,12,11",ILVA,Steelworks,CEMENTIR,Cement production,BF slag,Raw material for Cement production
+1,"1,12,12",CEMENTIR,Cement production,ND,Construction materials production,Coal fly ash,Raw material for Construction materials production
+1,"1,12,13",ND,Construction materials production,ND,Road construction,Construction and demolition waste,Raw material for Road construction
+1,"1,12,14",ND,Wine production,ND,Distilleries,Marc and dregs,Raw material for Distilleries
+1,"1,12,15",ND,Olive oil production,ND,Agroindustry,Oil mill waste water,Fertilizer
+1,"1,12,16",ILVA,Steelworks,Taranto,Urban entity,Waste heat,Heat
+1,"1,12,17",ILVA,Steelworks,Taranto,Urban entity,Waste coolant,Cooling
+1,"1,12,18",ILVA,Steelworks,ND,Road construction,Refractories,Raw materials
+1,"1,12,19",ILVA,Steelworks,ND,Road construction,BFS/BOSF,Road foundations
+1,"1,12,20",ILVA,Steelworks,ND,Road construction,BOSF,Paving
+1,"1,12,21",ILVA,Steelworks,ND,Agroindustry,BFS,Fertiliser
+1,"1,12,22",ILVA,Steelworks,ND,Marine embarkments,BFS/BOSF,Raw material for Marine embarkments
+1,"1,12,23",ILVA,Steelworks,ND,Isolated buildings,BFS,Removal or retention of phosphorous from wastewater
+1,"1,12,24",ILVA,Steelworks,ND,Steelworks,Mill scales,Raw material for Steelworks
+1,"1,12,25",ILVA,Steelworks,ND,Production of refractories,BFS,Raw material for Production of refractories
+1,"1,12,26",ILVA,Steelworks,ND,Production of concrete,BOFS as aggregate,Raw material for Production of concrete
+1,"1,12,27",ILVA,Steelworks,ND,Production of bricks,BFS,Raw material for Production of bricks
+1,"1,12,28",ILVA,Steelworks,ND,Rock wool production,BFS,Raw material for Rock wool production
+1,"1,12,29",ILVA,Steelworks,ND,Glass and glass-ceramic production,BFS,Raw material for Glass and glass-ceramic production
+1,"1,12,30",ND,Power plant,ND,Agroindustry,Fly ash,Soil quality improvement and fertiliser
+1,"1,12,31",ND,Power plant,ND,Road construction,Fly ash,Raw material for Road construction
+1,"1,12,32",ND,Power plant,ND,Glass and glass-ceramic production,Fly ash,Raw material for Glass and glass-ceramic production
+1,"1,12,33",ND,Power plant,ND,Production of bricks,Fly ash,Raw material for Production of bricks
+1,"1,12,34",Edison power station,Power plant,Taranto,Urban entity,Waste heat,Heat
+1,"1,12,35",EniPower power station,Power plant,Taranto,Urban entity,Waste heat,Heat
+1,"1,12,36",EniPower power station,Power plant,ND,Electricity production - Organic Rankine Cycle,Waste heat,Process heat
+1,"1,12,37",ENI refinery,Refinery,Taranto,Urban entity,Waste heat,Heat
+1,"1,12,38",ENI refinery,Refinery,ND,Electricity production - Organic Rankine Cycle,Waste heat,Process heat
+1,"1,12,39",CEMENTIR,Cement production,Taranto,Urban entity,Waste heat,Heat
+1,"1,12,40",CEMENTIR,Cement production,ND,Electricity production - Organic Rankine Cycle,Waste heat,Process heat
+1,"1,12,41",ND,Electricity production - Organic Rankine Cycle,CEMENTIR,Cement production,Electricity,Process energy
+1,"1,12,42",ND,Electricity production - Organic Rankine Cycle,ENI refinery,Refinery,Electricity,Process energy
+1,"1,12,43",ND,Electricity production - Organic Rankine Cycle,EniPower power station,Power plant,Electricity,Process energy
+1,"1,12,44",ND,Electricity production - Organic Rankine Cycle,Edison power station,Power plant,Electricity,Process energy
+1,"1,12,45",ND,Electricity production - Organic Rankine Cycle,ILVA,Steelworks,Electricity,Process energy

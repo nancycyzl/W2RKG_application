@@ -1,0 +1,19 @@
+case_id,exchange_id,donor_name,donor_business,receiver_name,receiver_business,waste,resource
+4,"4,28,1",Energy E2 Asnaes Power Station,Power plant,Statoil refinery,Refinery,Steam,Process heat
+4,"4,28,2",Energy E2 Asnaes Power Station,Power plant,"Novo Nordisk A/S
+Novozymes A/S
+Pharmaceuticals",Pharmaceuticals,Steam,Process heat
+4,"4,28,3",Energy E2 Asnaes Power Station,Power plant,ND,Fish farming,Steam,Process heat
+4,"4,28,4",Energy E2 Asnaes Power Station,Power plant,Kalundborg,Urban entity,Steam,Heat
+4,"4,28,5","Novo Nordisk A/S
+Novozymes A/S
+Pharmaceuticals",Pharmaceuticals,Kalundborg,Urban entity,Waste hot water,Heat
+4,"4,28,6",Statoil refinery,Refinery,ND,Liquid fertiliser producer,Sulfur,Raw material for Liquid fertiliser producer
+4,"4,28,7",Energy E2 Asnaes Power Station,Power plant,BPB Gyproc A/S,Wall-board plant,Scrubber sludge,Raw material for Wall-board plant
+4,"4,28,8",Statoil refinery,Refinery,Energy E2 Asnaes Power Station,Power plant,Waste water,Water
+4,"4,28,9",Statoil refinery,Refinery,Energy E2 Asnaes Power Station,Power plant,Cooling water,Process cooling
+4,"4,28,10",Energy E2 Asnaes Power Station,Power plant,ND,Cement manufacturing,Fly ash,Raw material for Cement manufacturing
+4,"4,28,11",ND,Fish farming,ND,Local farms,Organic residues,Animal feeding
+4,"4,28,12","Novo Nordisk A/S
+Novozymes A/S
+Pharmaceuticals",Pharmaceuticals,ND,Local farms,Yeast slurry and sludge,Animal feeding
