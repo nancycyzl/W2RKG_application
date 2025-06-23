@@ -15,6 +15,7 @@ import pandas as pd
 import numpy as np
 import json
 from sklearn.metrics.pairwise import cosine_similarity
+import networkx as nx
 
 from utils import save_list_to_text, read_list_from_text
 
@@ -128,6 +129,10 @@ def match_material_to_G(material, P_material_list, P_material_embeddings, G_mate
 def build_W2R_Comp_network(G, profiles_df, similarity_threshold,
                            G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
                            P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings):
+    '''
+    Input: W2RKG + company profiles
+    Output: W2RKG + company nodes connected
+    '''
     # Add company nodes and their connections to wastes/resources
     for _, row in profiles_df.iterrows():
         donor_name = row['donor_name']
@@ -179,4 +184,83 @@ def build_W2R_Comp_network(G, profiles_df, similarity_threshold,
             G.add_edge(G_resource_list[matched_G_resource_id], receiver_name, type='supplies')
 
     return G
+
+def filter_colloaration_links(G):
+    '''
+    Input: W2RKG + company nodes connected
+    Output: IS network
+
+    Each company node in H will have its 'waste' and 'resource' properties (if any) from G, accumulating all relevant values.
+    Each edge in H will have 'process' and 'reference' properties from the corresponding W2RKG path in G.  
+    '''
+    H = nx.MultiDiGraph()
+    num_collaborations = 0
+    # Find all company->waste->resource->company paths
+    for company1 in [n for n, d in G.nodes(data=True) if d.get('type') == 'company']:
+        for waste in G.successors(company1):
+            if G.nodes[waste].get('type') != 'waste':
+                continue
+            for resource in G.successors(waste):
+                if G.nodes[resource].get('type') != 'resource':
+                    continue
+                for company2 in G.successors(resource):
+                    if G.nodes[company2].get('type') != 'company':
+                        continue
+
+                    company_1_business = G.nodes[company1]['business']
+                    company_2_business = G.nodes[company2]['business']
+                    # Get process/reference from the first matching edge (handles MultiDiGraph and DiGraph)
+                    process = None
+                    reference = None
+                    if G.is_multigraph():
+                        for key, edge_data in G[waste][resource].items():
+                            process = edge_data.get('process', None)
+                            reference = edge_data.get('reference', None)
+                            break
+                    else:
+                        edge_data = G[waste][resource]
+                        process = edge_data.get('process', None)
+                        reference = edge_data.get('reference', None)
+                    # Add/append waste to company1
+                    if H.has_node(company1):
+                        wastes = H.nodes[company1].get('waste', [])
+                        if waste not in wastes:
+                            wastes.append(waste)
+                        H.nodes[company1]['waste'] = wastes
+                    else:
+                        H.add_node(company1, type='company', waste=[waste], business=company_1_business)
+                    # Add/append resource to company2
+                    if H.has_node(company2):
+                        resources = H.nodes[company2].get('resource', [])
+                        if resource not in resources:
+                            resources.append(resource)
+                        H.nodes[company2]['resource'] = resources
+                    else:
+                        H.add_node(company2, type='company', resource=[resource], business=company_2_business)
+                    H.add_edge(company1, company2, waste=waste, resource=resource, process=process, reference=reference)
+                    num_collaborations += 1
+    return H, num_collaborations
+
+
+def build_IS_network(G, profiles_df, similarity_threshold,
+                     G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
+                     P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings):
+    '''
+    Input: W2RKG network + profiles
+    Output: IS network
+    
+    Steps:
+    1. build W2RKG + company nodes connected
+    2. find all company->waste->resource->company paths to create the IS network
+    '''
+
+    # obtain W2RKG + company nodes connected
+    G = build_W2R_Comp_network(G, profiles_df, similarity_threshold,
+                               G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
+                               P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings)
+
+    # create IS network
+    H, num_collaborations = filter_colloaration_links(G)
+
+    return H, num_collaborations
 

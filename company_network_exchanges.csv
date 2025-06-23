@@ -1,0 +1,99 @@
+donor,receiver,waste,resource
+Enipower power station,ND - Agroindustry,energy consumption,biofertilizer
+Enipower power station,Enipower power station,energy consumption,biofuels
+Enipower power station,Enipower power station,energy,energy resources
+ENI refinery,ENI refinery,oils,clean water
+ENI refinery,Enipower power station,oils,clean water
+ENI refinery,Enipower power station,oils,biofuels
+ENI refinery,Enipower power station,fossil fuel diesel,biofuels
+ENI refinery,Enipower power station,heating oil,ethanol
+ENI refinery,Enipower power station,fossil fuel,biofuels
+ENI refinery,Enipower power station,fossil fuel,gas
+ENI refinery,Enipower power station,fossil fuel,renewable fuel
+ILVA,CEMENTIR,slag,feedstock for cement clinker production
+ILVA,ND - Construction materials production,slag,construction materials
+ILVA,ND - Construction materials production,copper slag,construction materials
+ILVA,ND - Agroindustry,blast furnace slag,fertilizer
+ILVA,ND - Construction materials production,blast furnace slag,construction materials
+ILVA,ND - Production of refractories,slag waste,refractory materials
+Edison power station,ND - Agroindustry,energy consumption,biofertilizer
+Edison power station,Enipower power station,energy consumption,biofuels
+Edison power station,Enipower power station,energy,energy resources
+CEMENTIR,ND - Agroindustry,coal mine waste,soil improver
+CEMENTIR,ND - Agroindustry,power plant ash,phosphorus
+CEMENTIR,Taranto,power plant ash,heat
+CEMENTIR,ND - Agroindustry,power plant ash,fertilizer
+CEMENTIR,CEMENTIR,coal,feedstock for cement clinker production
+CEMENTIR,Enipower power station,coal gasification fly ash,biofuels
+CEMENTIR,ND - Construction materials production,biomass fly ash,construction materials
+CEMENTIR,Enipower power station,dry ash,biofuels
+CEMENTIR,ND - Agroindustry,wood ash,fertilizer
+CEMENTIR,ND - Agroindustry,fly ash,fertilizer
+CEMENTIR,ND - Road construction,fly ash,asphalt concrete
+CEMENTIR,ND - Agroindustry,fly ash,soil improver
+CEMENTIR,ND - Agroindustry,fly ash,fertilizer substrate
+CEMENTIR,ND - Construction materials production,fly ash,construction materials
+CEMENTIR,ND - Road construction,fly ash,pavers
+CEMENTIR,CEMENTIR,fly ash,feedstock for cement clinker production
+CEMENTIR,ND - Road construction,fly ash,road materials
+CEMENTIR,ND - Road construction,fly ash,paving mixes
+CEMENTIR,Enipower power station,fly ash,biofuels
+CEMENTIR,ND - Agroindustry,fly ash,bio-fertilizer
+ND - Construction materials production,ND - Construction materials production,recycled construction and demolition materials,construction materials
+ND - Construction materials production,ND - Road construction,construction and demolition waste,sustainable raw materials
+ND - Construction materials production,ND - Road construction,construction and demolition waste,materials
+ND - Construction materials production,ND - Road construction,construction and demolition waste,raw materials
+ND - Construction materials production,ND - Road construction,construction and demolition waste,concrete paving blocks
+ND - Construction materials production,ND - Road construction,construction and demolition waste,secondary raw materials
+ND - Construction materials production,CEMENTIR,concrete waste,feedstock for cement clinker production
+ND - Construction materials production,Enipower power station,industrial waste,biofuels
+ND - Construction materials production,ND - Road construction,industrial waste,raw materials
+ND - Construction materials production,ND - Agroindustry,industrial waste,fertilizer products
+ND - Construction materials production,ND - Agroindustry,industrial waste,organo-mineral fertilizer
+ND - Construction materials production,Enipower power station,industrial waste,energy resources
+ND - Construction materials production,ND - Road construction,industrial waste,materials
+ND - Construction materials production,ENI refinery,industrial waste,water
+ND - Construction materials production,Enipower power station,industrial waste,water
+ND - Construction materials production,Taranto,industrial waste,heat
+ND - Construction materials production,ND - Road construction,industrial waste,secondary raw materials
+ND - Construction materials production,Enipower power station,industrial waste,ethanol
+ND - Construction materials production,CEMENTIR,industrial waste,raw building materials
+ND - Construction materials production,ND - Construction materials production,industrial waste,raw building materials
+ND - Construction materials production,ND - Road construction,industrial waste,raw building materials
+ND - Construction materials production,ND - Production of concrete,industrial waste,raw building materials
+ND - Construction materials production,ND - Production of bricks,industrial waste,raw building materials
+ND - Construction materials production,ND - Road construction,construction waste,materials
+ND - Construction materials production,ND - Agroindustry,construction waste,controlled-release fertilizer
+ND - Construction materials production,Enipower power station,construction waste,ethanol
+ND - Construction materials production,Enipower power station,discarded materials,biofuels
+ND - Construction materials production,ND - Agroindustry,discarded materials,fertiliser
+ND - Wine production,ND - Agroindustry,dregs,soil fertilizers
+ND - Olive oil production,Enipower power station,palm oil mill waste,biofuels
+ND - Olive oil production,ND - Agroindustry,olive mill wastewater,high-quality fertilizer
+ND - Olive oil production,ND - Agroindustry,olive mill wastewater,organo-mineral fertilizer
+ND - Olive oil production,ND - Road construction,olive mill wastewater,secondary raw materials
+ND - Olive oil production,Enipower power station,palm oil mill effluent,biofuels
+ND - Olive oil production,Enipower power station,palm oil mill effluent,gaseous fuel
+ND - Olive oil production,ND - Agroindustry,palm oil mill effluent,phosphorus
+ND - Power plant,ND - Agroindustry,power plant ash,phosphorus
+ND - Power plant,Taranto,power plant ash,heat
+ND - Power plant,ND - Agroindustry,power plant ash,fertilizer
+ND - Power plant,Enipower power station,ash waste,biofuels
+ND - Power plant,Enipower power station,coal gasification fly ash,biofuels
+ND - Power plant,ND - Construction materials production,biomass fly ash,construction materials
+ND - Power plant,Enipower power station,dry ash,biofuels
+ND - Power plant,ND - Agroindustry,wood ash,fertilizer
+ND - Power plant,ND - Agroindustry,fly ash,fertilizer
+ND - Power plant,ND - Road construction,fly ash,asphalt concrete
+ND - Power plant,ND - Agroindustry,fly ash,soil improver
+ND - Power plant,ND - Agroindustry,fly ash,fertilizer substrate
+ND - Power plant,ND - Construction materials production,fly ash,construction materials
+ND - Power plant,ND - Road construction,fly ash,pavers
+ND - Power plant,CEMENTIR,fly ash,feedstock for cement clinker production
+ND - Power plant,ND - Road construction,fly ash,road materials
+ND - Power plant,ND - Road construction,fly ash,paving mixes
+ND - Power plant,Enipower power station,fly ash,biofuels
+ND - Power plant,ND - Agroindustry,fly ash,bio-fertilizer
+ND - Electricity production - Organic Rankine Cycle,ND - Agroindustry,energy consumption,biofertilizer
+ND - Electricity production - Organic Rankine Cycle,Enipower power station,energy consumption,biofuels
+ND - Electricity production - Organic Rankine Cycle,Enipower power station,energy,energy resources

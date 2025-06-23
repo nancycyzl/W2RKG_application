@@ -1,25 +1,24 @@
 import json
 import io
 import networkx as nx
+import pandas as pd
 import matplotlib.pyplot as plt
 from sentence_transformers import SentenceTransformer
 
-from matching import obtain_W2RKG_embeddings, obtain_profile_embeddings, build_W2R_Comp_network
+from matching import obtain_W2RKG_embeddings, obtain_profile_embeddings, build_W2R_Comp_network, filter_colloaration_links
 from utils import load_kg_file, load_profiles_file, build_W2R_graph
 
 
-def create_network(threshold=0.8):
+def create_network(kg_file, prof_file, threshold=0.8):
     
     # the basic W2R graph
-    kg_file_default = 'data_utils/fused_triples_aggregated.json'
-    kg_triples = load_kg_file(kg_file_default)
+    kg_triples = load_kg_file(kg_file)
     G = build_W2R_graph(kg_triples)    # a networkx graph for W2RKG
     print(f"W2R graph has {G.number_of_nodes()} nodes and {G.number_of_edges()} edges.")
 
 
     # add company
-    prof_file_default = 'data_utils/Maestri_case1.csv'
-    profiles_df = load_profiles_file(prof_file_default)    # a dataframe
+    profiles_df = load_profiles_file(prof_file)    # a dataframe
 
     model = SentenceTransformer('Alibaba-NLP/gte-large-en-v1.5', trust_remote_code=True)
 
@@ -82,35 +81,46 @@ def visualize_network(G):
     plt.close()
 
 def visualize_network_collaboration(G):
-    # Create a new directed graph for collaborations
-    H = nx.DiGraph()
-    # Find all company->waste->resource->company paths
-    for company1 in [n for n, d in G.nodes(data=True) if d.get('type') == 'company']:
-        for waste in G.successors(company1):
-            if G.nodes[waste].get('type') != 'waste':
-                continue
-            for resource in G.successors(waste):
-                if G.nodes[resource].get('type') != 'resource':
-                    continue
-                for company2 in G.successors(resource):
-                    if G.nodes[company2].get('type') != 'company':
-                        continue
-                    # Add collaboration link
-                    H.add_edge(company1, company2)
+    # create IS network
+    H, num_collaborations = filter_colloaration_links(G)
+    print(f"Total collaborations: {num_collaborations}")
+    print(f"Total nodes: {H.number_of_nodes()}")
+    print(f"Total edges: {H.number_of_edges()}")
+
     # Draw the collaboration network
     plt.figure(figsize=(10, 7))
     pos = nx.spring_layout(H, seed=42)
     nx.draw_networkx_nodes(H, pos, node_color='#3162C2', node_size=700)
-    nx.draw_networkx_labels(H, pos, font_size=10)
+    # Node labels: company name + waste/resource
+    node_labels = {}
+    for n, d in H.nodes(data=True):
+        label = f"{n}\n"
+        if 'waste' in d:
+            label += f"waste: {', '.join(map(str, d['waste']))}\n"
+        if 'resource' in d:
+            label += f"resource: {', '.join(map(str, d['resource']))}"
+        node_labels[n] = label.strip()
+    nx.draw_networkx_labels(H, pos, labels=node_labels, font_size=7)
+    # Edge labels: process + reference
+    edge_labels = {}
+    for u, v, d in H.edges(data=True):
+        label = ''
+        if d.get('process'):
+            label += f"process: {d['process']}\n"
+        if d.get('reference'):
+            label += f"ref: {d['reference']}"
+        edge_labels[(u, v)] = label.strip()
     nx.draw_networkx_edges(H, pos, arrows=True, arrowstyle='-|>', edge_color='green', width=2)
+    nx.draw_networkx_edge_labels(H, pos, edge_labels=edge_labels, font_size=7)
     plt.title('Company Collaboration Network')
     plt.axis('off')
     plt.tight_layout()
     plt.savefig('company_network_collaboration.png')
     plt.close()
 
-def print_exchanges(G):
+def save_exchanges(G):
     # For each company, find all (company -> waste -> resource -> company) paths
+    all_exchanges = []
     print("---------------Exchanges---------------")
     for company1 in [n for n, d in G.nodes(data=True) if d.get('type') == 'company']:
         # Out edges from company1 to waste
@@ -126,12 +136,18 @@ def print_exchanges(G):
                     if G.nodes[company2].get('type') != 'company':
                         continue
                     # Print the exchange path
+                    all_exchanges.append([company1, company2, waste, resource])
                     print(f"[{company1}] --generates--> [{waste}] --transformed_into--> [{resource}] --needed_by--> [{company2}]")
     print("---------------------------------------")
+    
+    all_exchanges_df = pd.DataFrame(all_exchanges, columns=['donor', 'receiver', 'waste', 'resource'])
+    all_exchanges_df.to_csv('company_network_exchanges.csv', index=False)
 
 if __name__ == "__main__":
-    G = create_network(threshold=0.8)
-    print_exchanges(G)
+    kg_file = 'data_utils/fused_triples_aggregated.json'
+    prof_file = 'data_utils/Maestri_case1.csv'
+    G = create_network(kg_file, prof_file, threshold=0.8)
+    save_exchanges(G)
     visualize_network(G)
     visualize_network_collaboration(G)
 

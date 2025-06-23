@@ -73,9 +73,11 @@ st.write(f"W2RKG has {G.number_of_nodes()} nodes and {G.number_of_edges()} edges
 tab1, tab2 = st.tabs(["🧭 Opportunity identification", "🗺️ Network planning"])
 
 with tab1:
-    render_partner_finder_tab(G,
-                              G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
-                              P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings)
+    # render_partner_finder_tab(G,
+    #                           G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
+    #                           P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings)
+    st.write("🚧 Partner finder functionality coming soon!")
+
 with tab2:
     render_network_planning_tab(G, profiles_df,
                                 G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
