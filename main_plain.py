@@ -8,7 +8,7 @@ from matching import obtain_W2RKG_embeddings, obtain_profile_embeddings, build_W
 from utils import load_kg_file, load_profiles_file, build_W2R_graph
 
 
-def create_network():
+def create_network(threshold=0.8):
     
     # the basic W2R graph
     kg_file_default = 'data_utils/fused_triples_aggregated.json'
@@ -26,7 +26,7 @@ def create_network():
     G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings = obtain_W2RKG_embeddings(kg_triples, model)
     P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings = obtain_profile_embeddings(profiles_df, model)
 
-    G = build_W2R_Comp_network(G, profiles_df, 0.9,
+    G = build_W2R_Comp_network(G, profiles_df, threshold,
                             G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
                             P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings)
 
@@ -81,6 +81,34 @@ def visualize_network(G):
     plt.savefig('company_network.png')
     plt.close()
 
+def visualize_network_collaboration(G):
+    # Create a new directed graph for collaborations
+    H = nx.DiGraph()
+    # Find all company->waste->resource->company paths
+    for company1 in [n for n, d in G.nodes(data=True) if d.get('type') == 'company']:
+        for waste in G.successors(company1):
+            if G.nodes[waste].get('type') != 'waste':
+                continue
+            for resource in G.successors(waste):
+                if G.nodes[resource].get('type') != 'resource':
+                    continue
+                for company2 in G.successors(resource):
+                    if G.nodes[company2].get('type') != 'company':
+                        continue
+                    # Add collaboration link
+                    H.add_edge(company1, company2)
+    # Draw the collaboration network
+    plt.figure(figsize=(10, 7))
+    pos = nx.spring_layout(H, seed=42)
+    nx.draw_networkx_nodes(H, pos, node_color='#3162C2', node_size=700)
+    nx.draw_networkx_labels(H, pos, font_size=10)
+    nx.draw_networkx_edges(H, pos, arrows=True, arrowstyle='-|>', edge_color='green', width=2)
+    plt.title('Company Collaboration Network')
+    plt.axis('off')
+    plt.tight_layout()
+    plt.savefig('company_network_collaboration.png')
+    plt.close()
+
 def print_exchanges(G):
     # For each company, find all (company -> waste -> resource -> company) paths
     print("---------------Exchanges---------------")
@@ -102,7 +130,8 @@ def print_exchanges(G):
     print("---------------------------------------")
 
 if __name__ == "__main__":
-    G = create_network()
+    G = create_network(threshold=0.8)
     print_exchanges(G)
     visualize_network(G)
+    visualize_network_collaboration(G)
 

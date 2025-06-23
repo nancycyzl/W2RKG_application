@@ -40,8 +40,8 @@ st.markdown(
 )
 
 
-st.set_page_config(page_title="W2RKG Demo", layout="wide")
-st.title("⚡ Waste-to-Resource Matcher — demo")
+st.set_page_config(page_title="W2RKG Demonstration", layout="wide")
+st.title("⚡ Waste-to-Resource Knowledge Graph — Demonstration")
 
 
 
@@ -68,13 +68,15 @@ G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings = obtai
 P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings = obtain_profile_embeddings(profiles_df, model)
 
 G = build_W2R_graph(kg_triples)    # a networkx graph for W2RKG
-st.write(f"Graph has {G.number_of_nodes()} nodes and {G.number_of_edges()} edges.")
+st.write(f"W2RKG has {G.number_of_nodes()} nodes and {G.number_of_edges()} edges.")
 
-# tab1, tab2 = st.tabs(["🧭 Opportunity identification", "🗺️ Network planning"])
+tab1, tab2 = st.tabs(["🧭 Opportunity identification", "🗺️ Network planning"])
 
-# with tab1:
-#     render_partner_finder_tab(G, G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
-#                               P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings)
-# with tab2:
-#     render_network_planning_tab(G, G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
-#                                 P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings)
+with tab1:
+    render_partner_finder_tab(G,
+                              G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
+                              P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings)
+with tab2:
+    render_network_planning_tab(G, profiles_df,
+                                G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
+                                P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings)

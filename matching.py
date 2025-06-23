@@ -60,10 +60,10 @@ def embed_w2rkg_and_save(w2rkg_dict, model):
     resource_list = list(set(resource_list))
     
     # create embeddings
-    waste_embeddings = model.encode(waste_list, convert_to_tensor=True)
+    waste_embeddings = model.encode(waste_list, convert_to_tensor=True, batch_size=2)
     waste_embeddings_np = waste_embeddings.cpu().numpy()
 
-    resource_embeddings = model.encode(resource_list, convert_to_tensor=True)
+    resource_embeddings = model.encode(resource_list, convert_to_tensor=True, batch_size=2)
     resource_embeddings_np = resource_embeddings.cpu().numpy()
 
     # save list and embeddings
