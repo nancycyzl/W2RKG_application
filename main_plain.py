@@ -1,9 +1,13 @@
 import json
 import io
+import os
 import networkx as nx
 import pandas as pd
+from pyvis.network import Network
 import matplotlib.pyplot as plt
-from sentence_transformers import SentenceTransformer
+import argparse
+import pyvis
+
 
 from matching import obtain_W2RKG_embeddings, obtain_profile_embeddings, build_W2R_Comp_network, filter_colloaration_links
 from utils import load_kg_file, load_profiles_file, build_W2R_graph
@@ -20,7 +24,8 @@ def create_network(kg_file, prof_file, threshold=0.8):
     # add company
     profiles_df = load_profiles_file(prof_file)    # a dataframe
 
-    model = SentenceTransformer('Alibaba-NLP/gte-large-en-v1.5', trust_remote_code=True)
+    # model = SentenceTransformer('Alibaba-NLP/gte-large-en-v1.5', trust_remote_code=True)
+    model = "NA"
 
     G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings = obtain_W2RKG_embeddings(kg_triples, model)
     P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings = obtain_profile_embeddings(profiles_df, model)
@@ -33,7 +38,7 @@ def create_network(kg_file, prof_file, threshold=0.8):
 
     return G
 
-def visualize_network(G):
+def visualize_network(G, save_folder):
     # Find company nodes
     company_nodes = [n for n, d in G.nodes(data=True) if d.get('type') == 'company']
 
@@ -59,7 +64,7 @@ def visualize_network(G):
     H.remove_nodes_from(to_remove)
     # Draw
     plt.figure(figsize=(12, 8))
-    pos = nx.spring_layout(H, seed=42)
+    pos = nx.spring_layout(H)
     # Draw nodes by type
     node_colors = []
     for n in H.nodes():
@@ -77,10 +82,10 @@ def visualize_network(G):
     nx.draw_networkx_edges(H, pos, arrows=True, arrowstyle='-|>', min_source_margin=10, min_target_margin=10, edge_color='grey')
     plt.axis('off')
     plt.tight_layout()
-    plt.savefig('company_network.png')
+    plt.savefig(os.path.join(save_folder, 'company_network.png'))
     plt.close()
 
-def visualize_network_collaboration(G):
+def visualize_network_collaboration(G, save_folder):
     # create IS network
     H, num_collaborations = filter_colloaration_links(G)
     print(f"Total collaborations: {num_collaborations}")
@@ -91,37 +96,79 @@ def visualize_network_collaboration(G):
     plt.figure(figsize=(10, 7))
     pos = nx.spring_layout(H, seed=42)
     nx.draw_networkx_nodes(H, pos, node_color='#3162C2', node_size=700)
-    # Node labels: company name + waste/resource
-    node_labels = {}
-    for n, d in H.nodes(data=True):
-        label = f"{n}\n"
-        if 'waste' in d:
-            label += f"waste: {', '.join(map(str, d['waste']))}\n"
-        if 'resource' in d:
-            label += f"resource: {', '.join(map(str, d['resource']))}"
-        node_labels[n] = label.strip()
-    nx.draw_networkx_labels(H, pos, labels=node_labels, font_size=7)
-    # Edge labels: process + reference
-    edge_labels = {}
-    for u, v, d in H.edges(data=True):
-        label = ''
-        if d.get('process'):
-            label += f"process: {d['process']}\n"
-        if d.get('reference'):
-            label += f"ref: {d['reference']}"
-        edge_labels[(u, v)] = label.strip()
-    nx.draw_networkx_edges(H, pos, arrows=True, arrowstyle='-|>', edge_color='green', width=2)
-    nx.draw_networkx_edge_labels(H, pos, edge_labels=edge_labels, font_size=7)
+    # Node labels: only company name
+    nx.draw_networkx_labels(H, pos, font_size=10)
+    # Draw edges without labels
+    nx.draw_networkx_edges(H, pos, arrows=True, arrowstyle='-|>', edge_color='grey', width=2)
     plt.title('Company Collaboration Network')
     plt.axis('off')
     plt.tight_layout()
-    plt.savefig('company_network_collaboration.png')
+    plt.savefig(os.path.join(save_folder, 'company_network_collaboration.png'))
     plt.close()
 
-def save_exchanges(G):
+def visualize_network_html(G, save_folder):
+    """Create an interactive HTML visualization of the collaboration network"""
+
+    # create IS network
+    H, num_collaborations = filter_colloaration_links(G)
+    
+    # Create interactive network
+    net = Network(height='750px', width='100%', bgcolor='#ffffff')
+    
+    # Add nodes
+    for node, data in H.nodes(data=True):
+        # Create title with node information
+        title = f"Company: {node}"
+        if 'waste' in data:
+            title += f"\nWaste: {', '.join(map(str, data['waste']))}"
+        if 'resource' in data:
+            title += f"\nResource: {', '.join(map(str, data['resource']))}"
+        
+        net.add_node(node, label=node, title=title, 
+                    color='#3162C2', size=25)
+    
+    # Add edges
+    for u, v, data in H.edges(data=True):
+        # Create title with edge information
+        title = f"Collaboration: {u} → {v}"
+        if 'waste' in data:
+            title += f"\nWaste: {data['waste']}"
+        if 'resource' in data:
+            title += f"\nResource: {data['resource']}"
+        if 'process' in data:
+            title += f"\nProcess: {data['process']}"
+        if 'reference' in data:
+            title += f"\nReference: {data['reference']}"
+        
+        net.add_edge(u, v, title=title, color='#666666', arrows='to')
+    
+    # Set physics options for better layout
+    net.set_options("""
+    var options = {
+      "physics": {
+        "forceAtlas2Based": {
+          "gravitationalConstant": -50,
+          "centralGravity": 0.01,
+          "springLength": 200,
+          "springConstant": 0.08
+        },
+        "maxVelocity": 50,
+        "minVelocity": 0.1,
+        "solver": "forceAtlas2Based",
+        "timestep": 0.35
+      }
+    }
+    """)
+    
+    # Save as HTML file
+    html_path = os.path.join(save_folder, 'company_network_interactive.html')
+    net.save_graph(html_path)
+    print(f"Interactive visualization saved to: {html_path}")
+
+def save_exchanges(G, save_folder):
     # For each company, find all (company -> waste -> resource -> company) paths
     all_exchanges = []
-    print("---------------Exchanges---------------")
+
     for company1 in [n for n, d in G.nodes(data=True) if d.get('type') == 'company']:
         # Out edges from company1 to waste
         for waste in G.successors(company1):
@@ -137,17 +184,28 @@ def save_exchanges(G):
                         continue
                     # Print the exchange path
                     all_exchanges.append([company1, company2, waste, resource])
-                    print(f"[{company1}] --generates--> [{waste}] --transformed_into--> [{resource}] --needed_by--> [{company2}]")
-    print("---------------------------------------")
-    
+
     all_exchanges_df = pd.DataFrame(all_exchanges, columns=['donor', 'receiver', 'waste', 'resource'])
-    all_exchanges_df.to_csv('company_network_exchanges.csv', index=False)
+    all_exchanges_df.to_csv(os.path.join(save_folder, 'company_network_exchanges.csv'), index=False)
+
+
+def main(args):    
+    G = create_network(args.kg_file, args.prof_file, threshold=args.threshold)    # W2RKG + company nodes
+    save_exchanges(G, args.save_folder)
+    visualize_network(G, args.save_folder)    # connected waste/resource nodes + company nodes
+    visualize_network_collaboration(G, args.save_folder)    # collaboration network (all company nodes)
+    visualize_network_html(G, args.save_folder)    # interactive HTML visualization of the collaboration network
+
 
 if __name__ == "__main__":
-    kg_file = 'data_utils/fused_triples_aggregated.json'
-    prof_file = 'data_utils/Maestri_case1.csv'
-    G = create_network(kg_file, prof_file, threshold=0.8)
-    save_exchanges(G)
-    visualize_network(G)
-    visualize_network_collaboration(G)
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--kg_file', type=str, default='data_utils/fused_triples_aggregated.json')
+    parser.add_argument('--prof_file', type=str, default='data_utils/Maestri_case1.csv')
+    parser.add_argument('--threshold', type=float, default=0.8)
+    parser.add_argument('--save_folder', type=str, default='case_study1')
+    args = parser.parse_args()
 
+    if not os.path.exists(args.save_folder):
+        os.makedirs(args.save_folder)
+
+    main(args)

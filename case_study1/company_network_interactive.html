@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 750px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#3162C2", "id": "Enipower power station", "label": "Enipower power station", "shape": "dot", "size": 25, "title": "Company: Enipower power station\nWaste: energy consumption, energy\nResource: biofuels, energy resources, clean water, ethanol, gas, renewable fuel, water, gaseous fuel"}, {"color": "#3162C2", "id": "ND - Agroindustry", "label": "ND - Agroindustry", "shape": "dot", "size": 25, "title": "Company: ND - Agroindustry\nResource: biofertilizer, fertilizer, soil improver, phosphorus, fertilizer substrate, bio-fertilizer, fertilizer products, organo-mineral fertilizer, controlled-release fertilizer, fertiliser, soil fertilizers, high-quality fertilizer"}, {"color": "#3162C2", "id": "ENI refinery", "label": "ENI refinery", "shape": "dot", "size": 25, "title": "Company: ENI refinery\nWaste: oils, fossil fuel diesel, heating oil, fossil fuel\nResource: clean water, water"}, {"color": "#3162C2", "id": "ILVA", "label": "ILVA", "shape": "dot", "size": 25, "title": "Company: ILVA\nWaste: slag, copper slag, blast furnace slag, slag waste"}, {"color": "#3162C2", "id": "CEMENTIR", "label": "CEMENTIR", "shape": "dot", "size": 25, "title": "Company: CEMENTIR\nWaste: coal mine waste, power plant ash, coal, coal gasification fly ash, biomass fly ash, dry ash, wood ash, fly ash\nResource: feedstock for cement clinker production, raw building materials"}, {"color": "#3162C2", "id": "ND - Construction materials production", "label": "ND - Construction materials production", "shape": "dot", "size": 25, "title": "Company: ND - Construction materials production\nWaste: recycled construction and demolition materials, construction and demolition waste, concrete waste, industrial waste, construction waste, discarded materials\nResource: construction materials, raw building materials"}, {"color": "#3162C2", "id": "ND - Production of refractories", "label": "ND - Production of refractories", "shape": "dot", "size": 25, "title": "Company: ND - Production of refractories\nResource: refractory materials"}, {"color": "#3162C2", "id": "Edison power station", "label": "Edison power station", "shape": "dot", "size": 25, "title": "Company: Edison power station\nWaste: energy consumption, energy"}, {"color": "#3162C2", "id": "Taranto", "label": "Taranto", "shape": "dot", "size": 25, "title": "Company: Taranto\nResource: heat"}, {"color": "#3162C2", "id": "ND - Road construction", "label": "ND - Road construction", "shape": "dot", "size": 25, "title": "Company: ND - Road construction\nResource: asphalt concrete, pavers, road materials, paving mixes, sustainable raw materials, materials, raw materials, concrete paving blocks, secondary raw materials, raw building materials"}, {"color": "#3162C2", "id": "ND - Production of concrete", "label": "ND - Production of concrete", "shape": "dot", "size": 25, "title": "Company: ND - Production of concrete\nResource: raw building materials"}, {"color": "#3162C2", "id": "ND - Production of bricks", "label": "ND - Production of bricks", "shape": "dot", "size": 25, "title": "Company: ND - Production of bricks\nResource: raw building materials"}, {"color": "#3162C2", "id": "ND - Wine production", "label": "ND - Wine production", "shape": "dot", "size": 25, "title": "Company: ND - Wine production\nWaste: dregs"}, {"color": "#3162C2", "id": "ND - Olive oil production", "label": "ND - Olive oil production", "shape": "dot", "size": 25, "title": "Company: ND - Olive oil production\nWaste: palm oil mill waste, olive mill wastewater, palm oil mill effluent"}, {"color": "#3162C2", "id": "ND - Power plant", "label": "ND - Power plant", "shape": "dot", "size": 25, "title": "Company: ND - Power plant\nWaste: power plant ash, ash waste, coal gasification fly ash, biomass fly ash, dry ash, wood ash, fly ash"}, {"color": "#3162C2", "id": "ND - Electricity production - Organic Rankine Cycle", "label": "ND - Electricity production - Organic Rankine Cycle", "shape": "dot", "size": 25, "title": "Company: ND - Electricity production - Organic Rankine Cycle\nWaste: energy consumption, energy"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "#666666", "from": "Enipower power station", "title": "Collaboration: Enipower power station \u2192 ND - Agroindustry\nWaste: energy consumption\nResource: biofertilizer\nProcess: Solid State Fermentation, enzyme production, enzymatic saccharification\nReference: 10.1016/j.biortech.2022.127493", "to": "ND - Agroindustry"}, {"arrows": "to", "color": "#666666", "from": "Enipower power station", "title": "Collaboration: Enipower power station \u2192 Enipower power station\nWaste: energy consumption\nResource: biofuels\nProcess: microalgal cultivation, biorefinery concept, bioprocesses\nReference: 10.1016/B978-0-323-85403-0.00006-2", "to": "Enipower power station"}, {"arrows": "to", "color": "#666666", "from": "ENI refinery", "title": "Collaboration: ENI refinery \u2192 ENI refinery\nWaste: oils\nResource: clean water\nProcess: treatment of industrial effluents, technologies for effluents treatment, decontamination of industrial effluent\nReference: 10.1016/j.cep.2024.109826", "to": "ENI refinery"}, {"arrows": "to", "color": "#666666", "from": "ENI refinery", "title": "Collaboration: ENI refinery \u2192 Enipower power station\nWaste: oils\nResource: clean water\nProcess: treatment of industrial effluents, technologies for effluents treatment, decontamination of industrial effluent\nReference: 10.1016/j.cep.2024.109826", "to": "Enipower power station"}, {"arrows": "to", "color": "#666666", "from": "ILVA", "title": "Collaboration: ILVA \u2192 CEMENTIR\nWaste: slag\nResource: feedstock for cement clinker production\nProcess: industrial symbiosis, urban symbiosis, wastes reuse, recycling\nReference: 10.1016/j.jclepro.2020.120210", "to": "CEMENTIR"}, {"arrows": "to", "color": "#666666", "from": "ILVA", "title": "Collaboration: ILVA \u2192 ND - Construction materials production\nWaste: slag\nResource: construction materials\nProcess: gasification, conversion, plasma conversion, melting and quenching\nReference: ", "to": "ND - Construction materials production"}, {"arrows": "to", "color": "#666666", "from": "ILVA", "title": "Collaboration: ILVA \u2192 ND - Agroindustry\nWaste: blast furnace slag\nResource: fertilizer\nProcess: building material preparation, water treatment, air treatment, soil improvement, solidification/stabilization\nReference: 10.1016/j.jclepro.2024.142457", "to": "ND - Agroindustry"}, {"arrows": "to", "color": "#666666", "from": "ILVA", "title": "Collaboration: ILVA \u2192 ND - Production of refractories\nWaste: slag waste\nResource: refractory materials\nProcess: smelting with thermite reduction, remelting for homogenization and impurity removal\nReference: 10.1016/j.ceramint.2021.12.339", "to": "ND - Production of refractories"}, {"arrows": "to", "color": "#666666", "from": "CEMENTIR", "title": "Collaboration: CEMENTIR \u2192 ND - Agroindustry\nWaste: coal mine waste\nResource: soil improver\nProcess: application of waste to soil\nReference: 10.3390/land12020488", "to": "ND - Agroindustry"}, {"arrows": "to", "color": "#666666", "from": "CEMENTIR", "title": "Collaboration: CEMENTIR \u2192 Taranto\nWaste: power plant ash\nResource: heat\nProcess: incineration, anaerobic fermentation, composting, hydrolysis\nReference: 10.1016/j.biortech.2019.122223_chunk44", "to": "Taranto"}, {"arrows": "to", "color": "#666666", "from": "CEMENTIR", "title": "Collaboration: CEMENTIR \u2192 CEMENTIR\nWaste: coal\nResource: feedstock for cement clinker production\nProcess: industrial symbiosis, urban symbiosis, wastes reuse, recycling\nReference: 10.1016/j.jclepro.2020.120210", "to": "CEMENTIR"}, {"arrows": "to", "color": "#666666", "from": "CEMENTIR", "title": "Collaboration: CEMENTIR \u2192 Enipower power station\nWaste: coal gasification fly ash\nResource: biofuels\nProcess: gasification, secondary combustion\nReference: 10.1016/j.jclepro.2021.127395", "to": "Enipower power station"}, {"arrows": "to", "color": "#666666", "from": "CEMENTIR", "title": "Collaboration: CEMENTIR \u2192 ND - Construction materials production\nWaste: biomass fly ash\nResource: construction materials\nProcess: valorization, incorporation in natural hydraulic lime, incorporation in geopolymer-based mortars\nReference: 10.1007/s11367-021-01968-0", "to": "ND - Construction materials production"}, {"arrows": "to", "color": "#666666", "from": "CEMENTIR", "title": "Collaboration: CEMENTIR \u2192 ND - Road construction\nWaste: fly ash\nResource: asphalt concrete\nProcess: recycling, incorporation in asphalt mixtures, mechanical evaluation, incorporation in asphalt mixtures, treatment for use in road pavements\nReference: 10.3390/buildings14030672, 10.1007/978-3-319-91334-6_94", "to": "ND - Road construction"}, {"arrows": "to", "color": "#666666", "from": "ND - Construction materials production", "title": "Collaboration: ND - Construction materials production \u2192 ND - Construction materials production\nWaste: recycled construction and demolition materials\nResource: construction materials\nProcess: analysis of inclined plane shear behaviour, inclined plane shear tests\nReference: 10.1007/s40891-023-00507-1", "to": "ND - Construction materials production"}, {"arrows": "to", "color": "#666666", "from": "ND - Construction materials production", "title": "Collaboration: ND - Construction materials production \u2192 ND - Road construction\nWaste: construction and demolition waste\nResource: sustainable raw materials\nProcess: waste valorization, waste reduction, waste recovery, waste recycling, construction product modification, application of the waste hierarchy, energy recovery, backfilling, policy interventions\nReference: 10.1007/978-3-031-55665-4_8", "to": "ND - Road construction"}, {"arrows": "to", "color": "#666666", "from": "ND - Construction materials production", "title": "Collaboration: ND - Construction materials production \u2192 Enipower power station\nWaste: industrial waste\nResource: biofuels\nProcess: Conversion of waste-to-energy, Waste valorization, transformation into co-products, reverse logistics, system dynamics principles, distribution process analysis, description of variables and parameters, causal loop diagram construction, Forrester diagram creation, simulation, scenario construction through sensitivity analysis, GUI development, pretreatment, biological methods, valorizing, valorization of waste, green processing technologies, screening, biomass-to-fuel transformation, transesterification, esterification, valorisation, utilization of zeolite-based catalysts, biomass valorization, bio-fuel production, production of bioenergy, use of yeast strains\nReference: 10.1016/C2022-0-01259-9, 10.1007/s10098-023-02474-7, 10.1016/B978-0-323-95449-5.00009-6, 10.1201/9781003354475-10, 10.2298/HEMIND220804007M, 10.1007/978-3-030-11881-5_14", "to": "Enipower power station"}, {"arrows": "to", "color": "#666666", "from": "ND - Construction materials production", "title": "Collaboration: ND - Construction materials production \u2192 ND - Agroindustry\nWaste: industrial waste\nResource: fertilizer products\nProcess: vermicomposting, windrow vermicomposting, small-scale batch vermicomposting, large-scale continuous flow systems, continuous flow vermireactor system, batch techniques using plastic vermireactors, frame compartmentalized composite vermireactors\nReference: 10.1016/j.jenvman.2023.118585", "to": "ND - Agroindustry"}, {"arrows": "to", "color": "#666666", "from": "ND - Construction materials production", "title": "Collaboration: ND - Construction materials production \u2192 ENI refinery\nWaste: industrial waste\nResource: water\nProcess: biorefinery, desalination plant, livestock feed developer\nReference: 10.1016/B978-0-443-15274-0.50343-7", "to": "ENI refinery"}, {"arrows": "to", "color": "#666666", "from": "ND - Construction materials production", "title": "Collaboration: ND - Construction materials production \u2192 Taranto\nWaste: industrial waste\nResource: heat\nProcess: valorisation, anaerobic digestion, biodigested, biogas-based energy production, open-loop recycling, closed-loop recycling, mechanical breakdown, pyrolysis, incineration, quaternary recycling, upcycling\nReference: 10.3389/fenrg.2022.903775, 10.1016/j.crbiot.2024.100225_chunk6", "to": "Taranto"}, {"arrows": "to", "color": "#666666", "from": "ND - Construction materials production", "title": "Collaboration: ND - Construction materials production \u2192 ND - Production of concrete\nWaste: industrial waste\nResource: raw building materials\nProcess: carbonation curing process, recycling\nReference: 10.1016/j.jcou.2017.07.003", "to": "ND - Production of concrete"}, {"arrows": "to", "color": "#666666", "from": "ND - Construction materials production", "title": "Collaboration: ND - Construction materials production \u2192 ND - Production of bricks\nWaste: industrial waste\nResource: raw building materials\nProcess: carbonation curing process, recycling\nReference: 10.1016/j.jcou.2017.07.003", "to": "ND - Production of bricks"}, {"arrows": "to", "color": "#666666", "from": "Edison power station", "title": "Collaboration: Edison power station \u2192 ND - Agroindustry\nWaste: energy consumption\nResource: biofertilizer\nProcess: Solid State Fermentation, enzyme production, enzymatic saccharification\nReference: 10.1016/j.biortech.2022.127493", "to": "ND - Agroindustry"}, {"arrows": "to", "color": "#666666", "from": "Edison power station", "title": "Collaboration: Edison power station \u2192 Enipower power station\nWaste: energy consumption\nResource: biofuels\nProcess: microalgal cultivation, biorefinery concept, bioprocesses\nReference: 10.1016/B978-0-323-85403-0.00006-2", "to": "Enipower power station"}, {"arrows": "to", "color": "#666666", "from": "ND - Wine production", "title": "Collaboration: ND - Wine production \u2192 ND - Agroindustry\nWaste: dregs\nResource: soil fertilizers\nProcess: valorization, production of biobased products, anaerobic digestion\nReference: 10.3390/fermentation7020051", "to": "ND - Agroindustry"}, {"arrows": "to", "color": "#666666", "from": "ND - Olive oil production", "title": "Collaboration: ND - Olive oil production \u2192 Enipower power station\nWaste: palm oil mill waste\nResource: biofuels\nProcess: Thermochemical conversion, Fast pyrolysis, conventional pyrolysis, microwave pyrolysis, thermo-catalytic pyrolysis\nReference: 10.1007/s41660-023-00327-w", "to": "Enipower power station"}, {"arrows": "to", "color": "#666666", "from": "ND - Olive oil production", "title": "Collaboration: ND - Olive oil production \u2192 ND - Agroindustry\nWaste: olive mill wastewater\nResource: high-quality fertilizer\nProcess: microbial screening, inoculation using a mixture of OMWS and rock phosphate (RP), fungal inoculation\nReference: 10.1016/j.jenvman.2024.120317", "to": "ND - Agroindustry"}, {"arrows": "to", "color": "#666666", "from": "ND - Olive oil production", "title": "Collaboration: ND - Olive oil production \u2192 ND - Road construction\nWaste: olive mill wastewater\nResource: secondary raw materials\nProcess: recycling, re-use, recovery, fractionation, microfiltration, ultrafiltration, nanofiltration, centrifugation, recycling, reuse, valorisation, membrane technologies, nanofiltration, ultrafiltration\nReference: 10.3303/CET1760046, ", "to": "ND - Road construction"}, {"arrows": "to", "color": "#666666", "from": "ND - Power plant", "title": "Collaboration: ND - Power plant \u2192 ND - Agroindustry\nWaste: power plant ash\nResource: phosphorus\nProcess: incineration, anaerobic fermentation, composting, hydrolysis\nReference: 10.1016/j.biortech.2019.122223_chunk44", "to": "ND - Agroindustry"}, {"arrows": "to", "color": "#666666", "from": "ND - Power plant", "title": "Collaboration: ND - Power plant \u2192 Taranto\nWaste: power plant ash\nResource: heat\nProcess: incineration, anaerobic fermentation, composting, hydrolysis\nReference: 10.1016/j.biortech.2019.122223_chunk44", "to": "Taranto"}, {"arrows": "to", "color": "#666666", "from": "ND - Power plant", "title": "Collaboration: ND - Power plant \u2192 Enipower power station\nWaste: ash waste\nResource: biofuels\nProcess: incineration, landfill, pretreatment techniques\nReference: 10.1016/j.biteb.2020.100524", "to": "Enipower power station"}, {"arrows": "to", "color": "#666666", "from": "ND - Power plant", "title": "Collaboration: ND - Power plant \u2192 ND - Construction materials production\nWaste: biomass fly ash\nResource: construction materials\nProcess: valorization, incorporation in natural hydraulic lime, incorporation in geopolymer-based mortars\nReference: 10.1007/s11367-021-01968-0", "to": "ND - Construction materials production"}, {"arrows": "to", "color": "#666666", "from": "ND - Power plant", "title": "Collaboration: ND - Power plant \u2192 ND - Road construction\nWaste: fly ash\nResource: asphalt concrete\nProcess: recycling, incorporation in asphalt mixtures, mechanical evaluation, incorporation in asphalt mixtures, treatment for use in road pavements\nReference: 10.3390/buildings14030672, 10.1007/978-3-319-91334-6_94", "to": "ND - Road construction"}, {"arrows": "to", "color": "#666666", "from": "ND - Power plant", "title": "Collaboration: ND - Power plant \u2192 CEMENTIR\nWaste: fly ash\nResource: feedstock for cement clinker production\nProcess: industrial symbiosis, urban symbiosis, wastes reuse, recycling\nReference: 10.1016/j.jclepro.2020.120210", "to": "CEMENTIR"}, {"arrows": "to", "color": "#666666", "from": "ND - Electricity production - Organic Rankine Cycle", "title": "Collaboration: ND - Electricity production - Organic Rankine Cycle \u2192 ND - Agroindustry\nWaste: energy consumption\nResource: biofertilizer\nProcess: Solid State Fermentation, enzyme production, enzymatic saccharification\nReference: 10.1016/j.biortech.2022.127493", "to": "ND - Agroindustry"}, {"arrows": "to", "color": "#666666", "from": "ND - Electricity production - Organic Rankine Cycle", "title": "Collaboration: ND - Electricity production - Organic Rankine Cycle \u2192 Enipower power station\nWaste: energy consumption\nResource: biofuels\nProcess: microalgal cultivation, biorefinery concept, bioprocesses\nReference: 10.1016/B978-0-323-85403-0.00006-2", "to": "Enipower power station"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"forceAtlas2Based": {"gravitationalConstant": -50, "centralGravity": 0.01, "springLength": 200, "springConstant": 0.08}, "maxVelocity": 50, "minVelocity": 0.1, "solver": "forceAtlas2Based", "timestep": 0.35}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
