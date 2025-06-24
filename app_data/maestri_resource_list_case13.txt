@@ -1,0 +1,8 @@
+Raw material for Sugar production
+Compound fertilizer
+Raw material for Compound fertilizer production
+Raw material for Blocks production
+Waste gas is used to fuel boilers where coal ash is obtained
+Raw material for Alkali recovery
+Process material
+Raw material for Cement production
