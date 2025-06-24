@@ -201,15 +201,14 @@ def compare_with_maestri(all_exchanges_df, prof_file, save_folder):
     # get all donors and receivers
     all_donors = all_exchanges_df['donor'].unique().tolist() + prof_df['donor_name'].unique().tolist()
     all_receivers = all_exchanges_df['receiver'].unique().tolist() + prof_df['receiver_name'].unique().tolist()
-    all_donors = list(set(all_donors))
-    all_receivers = list(set(all_receivers))
-    all_donors.sort()
-    all_receivers.sort()
+    all_companies = list(set(all_donors + all_receivers))
+    all_companies.sort()
 
+    # save comparison table
     comparison_data = []
 
-    for donor in all_donors:
-        for receiver in all_receivers:
+    for donor in all_companies:
+        for receiver in all_companies:
             companies = f"{donor} -> {receiver}"
             # maestri exchanges
             maestri_exchanges_df = prof_df[(prof_df['donor_name'] == donor) & (prof_df['receiver_name'] == receiver)]
@@ -226,7 +225,82 @@ def compare_with_maestri(all_exchanges_df, prof_file, save_folder):
 
     comparison_df = pd.DataFrame(comparison_data, columns=['companies', 'maestri_num_exchanges', 'our_num_exchanges', 'maestri_exchanges_details', 'our_exchanges_details'])
     comparison_df.to_csv(os.path.join(save_folder, 'comparison_with_maestri.csv'), index=False)
+    print(f"Comparison table saved to: {os.path.join(save_folder, 'comparison_with_maestri.csv')}")
 
+    # --- Create networks for visualization ---
+    # 1. Maestri: MultiDiGraph (multiple edges)
+    G_maestri_multi = nx.MultiDiGraph()
+    for _, row in prof_df.iterrows():
+        G_maestri_multi.add_edge(row['donor_name'], row['receiver_name'])
+    # 2. Maestri: DiGraph (single edge)
+    G_maestri_single = nx.DiGraph()
+    for _, row in prof_df.iterrows():
+        G_maestri_single.add_edge(row['donor_name'], row['receiver_name'])
+    # 3. Ours: MultiDiGraph (multiple edges)
+    G_ours_multi = nx.MultiDiGraph()
+    for _, row in all_exchanges_df.iterrows():
+        G_ours_multi.add_edge(row['donor'], row['receiver'])
+    # 4. Ours: DiGraph (single edge)
+    G_ours_single = nx.DiGraph()
+    for _, row in all_exchanges_df.iterrows():
+        G_ours_single.add_edge(row['donor'], row['receiver'])
+
+    # Add all companies as nodes to each graph (to show isolated nodes)
+    for company in all_companies:
+        G_maestri_multi.add_node(company)
+        G_maestri_single.add_node(company)
+        G_ours_multi.add_node(company)
+        G_ours_single.add_node(company)
+
+    # Fix node positions for all graphs using the union of all nodes
+    all_nodes = set(G_maestri_multi.nodes()) | set(G_maestri_single.nodes()) | set(G_ours_multi.nodes()) | set(G_ours_single.nodes())
+    G_union = nx.DiGraph()
+    G_union.add_nodes_from(all_nodes)
+    pos = nx.spring_layout(G_union, seed=42)
+
+    # Plotting helper
+    def plot_graph(G, pos, title, filename):
+        # Print graph statistics
+        print(f"\n{title}:")
+        print(f"Number of nodes: {G.number_of_nodes()}, edges: {G.number_of_edges()}")
+
+        plt.figure(figsize=(10, 8))
+        nx.draw_networkx_nodes(G, pos, node_color='#3162C2', node_size=700)
+        nx.draw_networkx_labels(G, pos, font_size=9)
+        # Draw all edges, including multiple edges for MultiDiGraph
+        if isinstance(G, nx.MultiDiGraph):
+            # Group edges by (u, v)
+            from collections import defaultdict
+            edge_dict = defaultdict(list)
+            for u, v, k in G.edges(keys=True):
+                edge_dict[(u, v)].append(k)
+            # Draw each edge with a different curvature
+            for (u, v), keys in edge_dict.items():
+                n = len(keys)
+                if n == 1:
+                    nx.draw_networkx_edges(G, pos, edgelist=[(u, v, keys[0])], arrows=True, arrowstyle='-|>', edge_color='grey', width=2)
+                else:
+                    # Spread curvatures between -0.5 and 0.5
+                    for idx, k in enumerate(keys):
+                        rad = 0.5 * (2 * idx / (n - 1) - 1) if n > 1 else 0.0
+                        nx.draw_networkx_edges(
+                            G, pos, edgelist=[(u, v, k)],
+                            arrows=True, arrowstyle='-|>', edge_color='grey', width=2,
+                            connectionstyle=f'arc3,rad={rad}'
+                        )
+        else:
+            nx.draw_networkx_edges(G, pos, arrows=True, arrowstyle='-|>', edge_color='grey', width=2)
+        plt.title(title)
+        plt.axis('off')
+        plt.tight_layout()
+        plt.savefig(os.path.join(save_folder, filename))
+        plt.close()
+
+    plot_graph(G_maestri_multi, pos, 'Maestri (MultiDiGraph)', 'comparison_maestri_multiedge.png')
+    plot_graph(G_maestri_single, pos, 'Maestri (DiGraph)', 'comparison_maestri_singleedge.png')
+    plot_graph(G_ours_multi, pos, 'Ours (MultiDiGraph)', 'comparison_ours_multiedge.png')
+    plot_graph(G_ours_single, pos, 'Ours (DiGraph)', 'comparison_ours_singleedge.png')
+    print("Network plots saved.")
 
 def compare_multiple_thresholds(args):
     thresholds = [0.7, 0.75, 0.8, 0.85, 0.9, 0.95]
