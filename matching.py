@@ -18,7 +18,7 @@ import os
 from sklearn.metrics.pairwise import cosine_similarity
 import networkx as nx
 
-from utils import save_list_to_text, read_list_from_text
+from utils import save_list_to_text, read_list_from_text, remove_isolated_nodes, convert_str_to_list
 
 
 def embed_profile_and_save(profiles_df, model):
@@ -249,7 +249,11 @@ def filter_colloaration_links(G, center_company=None):
                         H.add_node(company2, type='company', resource=[resource], business=company_2_business)
                     if center_company is None or company1 == center_company or company2 == center_company:
                         H.add_edge(company1, company2, waste=waste, resource=resource, process=process, reference=reference)
-                    num_collaborations += 1
+                    #num_collaborations += 1
+
+    H = remove_isolated_nodes(H)
+    num_collaborations = H.number_of_edges()
+
     return H, num_collaborations
 
 
@@ -264,6 +268,7 @@ def build_IS_network(G, profiles_df, similarity_threshold,
     1. build W2RKG + company nodes connected
     2. find all company->waste->resource->company paths to create the IS network
     '''
+    G = G.copy()
 
     # obtain W2RKG + company nodes connected
     G = build_W2R_Comp_network(G, profiles_df, similarity_threshold,
@@ -278,41 +283,40 @@ def build_IS_network(G, profiles_df, similarity_threshold,
 
 def obtain_query_embedding(query, model):
     # first check if query exists in query_lookup
-    if os.path.exists(f'app_data/query_lookup.txt'):
-        query_lookup = read_list_from_text(f'app_data/query_lookup.txt')
+    lookup_file = f'app_data/query_lookup.txt'
+    embedding_file = f'app_data/query_embedding_lookup.npy'
+    if os.path.exists(lookup_file) and os.path.exists(embedding_file):
+        query_lookup = read_list_from_text(lookup_file)
+        embedding_lookup = np.load(embedding_file)
+
         if query in query_lookup:
             # load embedding
-            query_embedding_lookup = np.load(f'app_data/query_embedding_lookup.npy')
-            query_embedding = query_embedding_lookup[query_lookup.index(query)]
+            query_embedding = embedding_lookup[query_lookup.index(query)]
             print(f"Loaded query embedding for {query} from query_lookup.txt")
             return query_embedding
-        else:
-            # create embedding
-            query_embedding = model.encode(query, convert_to_tensor=True, batch_size=1)
-            query_embedding_np = query_embedding.cpu().numpy()
-            
-            # load existing embeddings and append new one
-            existing_embeddings = np.load('app_data/query_embedding_lookup.npy')
-            updated_embedding_np = np.vstack([existing_embeddings, query_embedding_np])
-            np.save('app_data/query_embedding_lookup.npy', updated_embedding_np)
-            
-            # save query
-            query_lookup.append(query)
-            save_list_to_text(query_lookup, 'app_data/query_lookup.txt')
-
-            print(f"Embedding for {query} does not exist in query_lookup.txt, created and saved.")
-            return query_embedding_np
     else:
-        # create embedding
-        query_embedding = model.encode(query, convert_to_tensor=True, batch_size=1)
-        query_embedding_np = query_embedding.cpu().numpy()
-        # save query
-        save_list_to_text([query], f'app_data/query_lookup.txt')
-        # save embedding
-        np.save(f'app_data/query_embedding_lookup.npy', query_embedding_np)
+        # initialize
+        query_lookup = []
+        embedding_lookup = np.empty((0 , 0))
 
-        print(f"No lookup file exists, created and saved embedding for {query}.")
-        return query_embedding_np
+    # create embedding
+    query_embedding = model.encode(query, convert_to_tensor=True)
+    query_embedding_np = query_embedding.cpu().numpy()    # shape (1024)
+    query_embedding_np = query_embedding_np[np.newaxis, :] # shape (1, 1024)
+    
+    # update query lookup and embedding lookup
+    query_lookup.append(query)
+    if embedding_lookup.size == 0:
+        embedding_lookup = query_embedding_np
+    else:
+        embedding_lookup = np.vstack([embedding_lookup, query_embedding_np])
+
+    # save query lookup and embedding lookup
+    if len(query_lookup) == embedding_lookup.shape[0]:
+        save_list_to_text(query_lookup, lookup_file)
+        np.save(embedding_file, embedding_lookup)
+
+    return query_embedding_np
 
 
 def match_query_company_to_G(G, company_id, waste_query, resource_query, similarity_threshold, model,
@@ -321,15 +325,18 @@ def match_query_company_to_G(G, company_id, waste_query, resource_query, similar
     Input: W2RKG network + company nodes connected
     Output: W2RKG + company nodes connected + query company node
     '''
-    G.add_node(company_id, type='company', waste=[waste_query], resource=[resource_query])
-    if waste_query:
-        waste_query_embedding = obtain_query_embedding(waste_query, model)
+    waste_query_list = convert_str_to_list(waste_query)
+    resource_query_list = convert_str_to_list(resource_query)
+
+    G.add_node(company_id, type='company', waste=waste_query_list, resource=resource_query_list)
+    for one_waste_query in waste_query_list:
+        waste_query_embedding = obtain_query_embedding(one_waste_query, model)
         matched_G_waste_ids = match_material_to_G(waste_query_embedding, G_waste_list, G_waste_embeddings, similarity_threshold)
         for matched_G_waste_id in matched_G_waste_ids:
             G.add_edge(company_id, G_waste_list[matched_G_waste_id], type='generates')
 
-    if resource_query:
-        resource_query_embedding = obtain_query_embedding(resource_query, model)
+    for one_resource_query in resource_query_list:
+        resource_query_embedding = obtain_query_embedding(one_resource_query, model)
         matched_G_resource_ids = match_material_to_G(resource_query_embedding, G_resource_list, G_resource_embeddings, similarity_threshold)
         for matched_G_resource_id in matched_G_resource_ids:
             G.add_edge(G_resource_list[matched_G_resource_id], company_id, type='supplies')
@@ -337,13 +344,14 @@ def match_query_company_to_G(G, company_id, waste_query, resource_query, similar
     return G
 
 
-def build_partner_linkages(G, profiles_df, waste_query, resource_query, similarity_threshold, model,
+def build_partner_linkages(G, profiles_df, company_id, waste_query, resource_query, similarity_threshold, model,
                            G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
                            P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings):
     '''
     Input: W2RKG network + profiles
     Output: query company + collaborators
     '''
+    G = G.copy()
 
     # obtain W2RKG + company nodes connected
     G = build_W2R_Comp_network(G, profiles_df, similarity_threshold,
@@ -351,7 +359,6 @@ def build_partner_linkages(G, profiles_df, waste_query, resource_query, similari
                                P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings)
     
     # add query company node
-    company_id = "Query company"
     G = match_query_company_to_G(G, company_id, waste_query, resource_query, similarity_threshold, model,
                                  G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings)
     

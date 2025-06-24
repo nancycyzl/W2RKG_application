@@ -101,6 +101,14 @@ def nx_to_agraph(Gsub, highlight_node=None):
     
     return nodes_data, edges_data
 
+def remove_isolated_nodes(G):
+    '''
+    Remove isolated nodes from the graph
+    '''
+    G.remove_nodes_from(list(nx.isolates(G)))
+    return G
+
+
 def save_list_to_text(alist, file_path):
     with open(file_path, 'w', encoding='utf-8') as f:
         for item in alist:
@@ -110,6 +118,19 @@ def read_list_from_text(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
         return [line.strip() for line in f.readlines()]
 
+
+def convert_str_to_list(text, sep=';'):
+    '''
+    Convert a string to a list based on separator
+    If no separator found, return a single-item list with the string
+    '''
+    if not text or text == 'n.a.' or text == "" or text == " " or text == "nan" or text == "null":
+        return []
+    
+    if sep in text:
+        return [item.strip() for item in text.split(sep) if item.strip()]
+    
+    return [text.strip()]
 
 
 
