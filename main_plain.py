@@ -186,7 +186,9 @@ def save_exchanges(G, save_folder):
                     all_exchanges.append([company1, company2, waste, resource])
 
     all_exchanges_df = pd.DataFrame(all_exchanges, columns=['donor', 'receiver', 'waste', 'resource'])
-    all_exchanges_df.to_csv(os.path.join(save_folder, 'company_network_exchanges.csv'), index=False)
+
+    if save_folder is not None:
+        all_exchanges_df.to_csv(os.path.join(save_folder, 'company_network_exchanges.csv'), index=False)
 
     return all_exchanges_df
 
@@ -195,7 +197,7 @@ def compare_with_maestri(all_exchanges_df, prof_file, save_folder):
     # Process company names in prof_df to match format in all_exchanges_df
     prof_df['donor_name'] = prof_df.apply(lambda row: f"ND - {row['donor_business']}" if row['donor_name'] == "ND" else row['donor_name'], axis=1)
     prof_df['receiver_name'] = prof_df.apply(lambda row: f"ND - {row['receiver_business']}" if row['receiver_name'] == "ND" else row['receiver_name'], axis=1)
-    
+
     # get all donors and receivers
     all_donors = all_exchanges_df['donor'].unique().tolist() + prof_df['donor_name'].unique().tolist()
     all_receivers = all_exchanges_df['receiver'].unique().tolist() + prof_df['receiver_name'].unique().tolist()
@@ -226,15 +228,55 @@ def compare_with_maestri(all_exchanges_df, prof_file, save_folder):
     comparison_df.to_csv(os.path.join(save_folder, 'comparison_with_maestri.csv'), index=False)
 
 
+def compare_multiple_thresholds(args):
+    thresholds = [0.7, 0.75, 0.8, 0.85, 0.9, 0.95]
+    num_exchanges_list = []
+    for threshold in thresholds:
+        print(f"Processing threshold: {threshold}...")
+        G = create_network(args.kg_file, args.prof_file, threshold=threshold)    # W2RKG + company nodes
+        all_exchanges_df = save_exchanges(G, save_folder=None)
+        num_exchanges_list.append(all_exchanges_df.shape[0])
+        print(f"Number of exchanges: {all_exchanges_df.shape[0]}")
+    
+    # create table and save to csv
+    threshold_data = pd.DataFrame({
+        'similarity_threshold': thresholds,
+        'number_of_exchanges': num_exchanges_list
+    })
+    threshold_data.to_csv(os.path.join(args.save_folder, 'num_exchanges_vs_threshold.csv'), index=False)
 
-def main(args):    
-    G = create_network(args.kg_file, args.prof_file, threshold=args.threshold)    # W2RKG + company nodes
-    all_exchanges_df = save_exchanges(G, args.save_folder)
-    visualize_network(G, args.save_folder)    # connected waste/resource nodes + company nodes
-    visualize_network_collaboration(G, args.save_folder)    # collaboration network (all company nodes)
-    visualize_network_html(G, args.save_folder)    # interactive HTML visualization of the collaboration network
+    # plot and save
+    plt.figure(figsize=(10, 6))
+    plt.plot(thresholds, num_exchanges_list, 
+            marker='o', linewidth=2, markersize=8)
+    plt.xlabel('Similarity threshold')
+    plt.ylabel('Number of exchanges')
+    plt.title('Number of exchanges vs Similarity threshold')
+    plt.grid(True)
+    plt.savefig(os.path.join(args.save_folder, 'num_exchanges_vs_threshold.png'))
+    plt.close()
+        
 
-    compare_with_maestri(all_exchanges_df, args.prof_file, args.save_folder)
+
+def main(args):
+    if args.test_one_case:    
+        G = create_network(args.kg_file, args.prof_file, threshold=args.threshold)    # W2RKG + company nodes
+        all_exchanges_df = save_exchanges(G, args.save_folder)
+
+    if args.save_visualization:
+        if not args.test_one_case:
+            raise ValueError("Need to enable test_one_case for visualization.")
+        visualize_network(G, args.save_folder)    # connected waste/resource nodes + company nodes
+        visualize_network_collaboration(G, args.save_folder)    # collaboration network (all company nodes)
+        visualize_network_html(G, args.save_folder)    # interactive HTML visualization of the collaboration network
+
+    if args.compare_with_maestri:
+        if not args.test_one_case:
+            raise ValueError("Need to enable test_one_case for comparison with Maestri.")
+        compare_with_maestri(all_exchanges_df, args.prof_file, args.save_folder)
+
+    if args.compare_multiple_thresholds:
+        compare_multiple_thresholds(args)
 
 
 if __name__ == "__main__":
@@ -243,6 +285,11 @@ if __name__ == "__main__":
     parser.add_argument('--prof_file', type=str, default='data_utils/Maestri_case1.csv')
     parser.add_argument('--threshold', type=float, default=0.8)
     parser.add_argument('--save_folder', type=str, default='case_study1')
+
+    parser.add_argument('--test_one_case', action='store_true')
+    parser.add_argument('--save_visualization', action='store_true')
+    parser.add_argument('--compare_with_maestri', action='store_true')
+    parser.add_argument('--compare_multiple_thresholds', action='store_true')
     args = parser.parse_args()
 
     if not os.path.exists(args.save_folder):
