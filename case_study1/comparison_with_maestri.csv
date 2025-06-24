@@ -1,0 +1,134 @@
+companies,maestri_num_exchanges,our_num_exchanges,maestri_exchanges_details,our_exchanges_details
+CEMENTIR -> CEMENTIR,0,2,,"coal -> feedstock for cement clinker production
+fly ash -> feedstock for cement clinker production"
+CEMENTIR -> Enipower power station,0,3,,"coal gasification fly ash -> biofuels
+dry ash -> biofuels
+fly ash -> biofuels"
+CEMENTIR -> ND - Agroindustry,0,8,,"coal mine waste -> soil improver
+power plant ash -> phosphorus
+power plant ash -> fertilizer
+wood ash -> fertilizer
+fly ash -> fertilizer
+fly ash -> soil improver
+fly ash -> fertilizer substrate
+fly ash -> bio-fertilizer"
+CEMENTIR -> ND - Construction materials production,1,2,Coal fly ash -> Raw material for Construction materials production,"biomass fly ash -> construction materials
+fly ash -> construction materials"
+CEMENTIR -> ND - Electricity production - Organic Rankine Cycle,1,0,Waste heat -> Process heat,
+CEMENTIR -> ND - Road construction,0,4,,"fly ash -> asphalt concrete
+fly ash -> pavers
+fly ash -> road materials
+fly ash -> paving mixes"
+CEMENTIR -> Taranto,1,1,Waste heat -> Heat,power plant ash -> heat
+ENI refinery -> ENI refinery,0,1,,oils -> clean water
+ENI refinery -> Enipower power station,2,7,"Fuel gas -> Fuel
+Fuel oil -> Fuel","oils -> clean water
+oils -> biofuels
+fossil fuel diesel -> biofuels
+heating oil -> ethanol
+fossil fuel -> biofuels
+fossil fuel -> gas
+fossil fuel -> renewable fuel"
+ENI refinery -> ND - Electricity production - Organic Rankine Cycle,1,0,Waste heat -> Process heat,
+ENI refinery -> Taranto,1,0,Waste heat -> Heat,
+Edison power station -> Enipower power station,0,2,,"energy consumption -> biofuels
+energy -> energy resources"
+Edison power station -> ILVA,2,0,"Electricity -> Process energy
+Steam -> Process heat",
+Edison power station -> ND - Agroindustry,0,1,,energy consumption -> biofertilizer
+Edison power station -> Taranto,1,0,Waste heat -> Heat,
+EniPower power station -> ND - Electricity production - Organic Rankine Cycle,1,0,Waste heat -> Process heat,
+EniPower power station -> Taranto,1,0,Waste heat -> Heat,
+Enipower power station -> ENI refinery,3,0,"Vapour and demineralised water -> Process heat
+Electricity -> Process energy
+Sea and well water, condensing vapour -> Water",
+Enipower power station -> Enipower power station,0,2,,"energy consumption -> biofuels
+energy -> energy resources"
+Enipower power station -> ND - Agroindustry,0,1,,energy consumption -> biofertilizer
+ILVA -> CEMENTIR,2,1,"Mill scales -> Raw material for Cement production
+BF slag -> Raw material for Cement production",slag -> feedstock for cement clinker production
+ILVA -> Edison power station,1,0,Exhaust gas -> Process heat,
+ILVA -> Enipower power station,1,0,Demineralised water -> Water,
+ILVA -> ND - Agroindustry,1,1,BFS -> Fertiliser,blast furnace slag -> fertilizer
+ILVA -> ND - Construction materials production,0,3,,"slag -> construction materials
+copper slag -> construction materials
+blast furnace slag -> construction materials"
+ILVA -> ND - Glass and glass-ceramic production,1,0,BFS -> Raw material for Glass and glass-ceramic production,
+ILVA -> ND - Isolated buildings,1,0,BFS -> Removal or retention of phosphorous from wastewater,
+ILVA -> ND - Marine embarkments,1,0,BFS/BOSF -> Raw material for Marine embarkments,
+ILVA -> ND - Production of bricks,1,0,BFS -> Raw material for Production of bricks,
+ILVA -> ND - Production of concrete,1,0,BOFS as aggregate -> Raw material for Production of concrete,
+ILVA -> ND - Production of refractories,1,1,BFS -> Raw material for Production of refractories,slag waste -> refractory materials
+ILVA -> ND - Road construction,3,0,"Refractories -> Raw materials
+BFS/BOSF -> Road foundations
+BOSF -> Paving",
+ILVA -> ND - Rock wool production,1,0,BFS -> Raw material for Rock wool production,
+ILVA -> ND - Steelworks,1,0,Mill scales -> Raw material for Steelworks,
+ILVA -> Taranto,2,0,"Waste heat -> Heat
+Waste coolant -> Cooling",
+ND - Construction materials production -> CEMENTIR,0,2,,"concrete waste -> feedstock for cement clinker production
+industrial waste -> raw building materials"
+ND - Construction materials production -> ENI refinery,0,1,,industrial waste -> water
+ND - Construction materials production -> Enipower power station,0,6,,"industrial waste -> biofuels
+industrial waste -> energy resources
+industrial waste -> water
+industrial waste -> ethanol
+construction waste -> ethanol
+discarded materials -> biofuels"
+ND - Construction materials production -> ND - Agroindustry,0,4,,"industrial waste -> fertilizer products
+industrial waste -> organo-mineral fertilizer
+construction waste -> controlled-release fertilizer
+discarded materials -> fertiliser"
+ND - Construction materials production -> ND - Construction materials production,0,2,,"recycled construction and demolition materials -> construction materials
+industrial waste -> raw building materials"
+ND - Construction materials production -> ND - Production of bricks,0,1,,industrial waste -> raw building materials
+ND - Construction materials production -> ND - Production of concrete,0,1,,industrial waste -> raw building materials
+ND - Construction materials production -> ND - Road construction,1,10,Construction and demolition waste -> Raw material for Road construction,"construction and demolition waste -> sustainable raw materials
+construction and demolition waste -> materials
+construction and demolition waste -> raw materials
+construction and demolition waste -> concrete paving blocks
+construction and demolition waste -> secondary raw materials
+industrial waste -> raw materials
+industrial waste -> materials
+industrial waste -> secondary raw materials
+industrial waste -> raw building materials
+construction waste -> materials"
+ND - Construction materials production -> Taranto,0,1,,industrial waste -> heat
+ND - Electricity production - Organic Rankine Cycle -> CEMENTIR,1,0,Electricity -> Process energy,
+ND - Electricity production - Organic Rankine Cycle -> ENI refinery,1,0,Electricity -> Process energy,
+ND - Electricity production - Organic Rankine Cycle -> Edison power station,1,0,Electricity -> Process energy,
+ND - Electricity production - Organic Rankine Cycle -> EniPower power station,1,0,Electricity -> Process energy,
+ND - Electricity production - Organic Rankine Cycle -> Enipower power station,0,2,,"energy consumption -> biofuels
+energy -> energy resources"
+ND - Electricity production - Organic Rankine Cycle -> ILVA,1,0,Electricity -> Process energy,
+ND - Electricity production - Organic Rankine Cycle -> ND - Agroindustry,0,1,,energy consumption -> biofertilizer
+ND - Olive oil production -> Enipower power station,0,3,,"palm oil mill waste -> biofuels
+palm oil mill effluent -> biofuels
+palm oil mill effluent -> gaseous fuel"
+ND - Olive oil production -> ND - Agroindustry,1,3,Oil mill waste water -> Fertilizer,"olive mill wastewater -> high-quality fertilizer
+olive mill wastewater -> organo-mineral fertilizer
+palm oil mill effluent -> phosphorus"
+ND - Olive oil production -> ND - Road construction,0,1,,olive mill wastewater -> secondary raw materials
+ND - Power plant -> CEMENTIR,0,1,,fly ash -> feedstock for cement clinker production
+ND - Power plant -> Enipower power station,0,4,,"ash waste -> biofuels
+coal gasification fly ash -> biofuels
+dry ash -> biofuels
+fly ash -> biofuels"
+ND - Power plant -> ND - Agroindustry,1,7,Fly ash -> Soil quality improvement and fertiliser,"power plant ash -> phosphorus
+power plant ash -> fertilizer
+wood ash -> fertilizer
+fly ash -> fertilizer
+fly ash -> soil improver
+fly ash -> fertilizer substrate
+fly ash -> bio-fertilizer"
+ND - Power plant -> ND - Construction materials production,0,2,,"biomass fly ash -> construction materials
+fly ash -> construction materials"
+ND - Power plant -> ND - Glass and glass-ceramic production,1,0,Fly ash -> Raw material for Glass and glass-ceramic production,
+ND - Power plant -> ND - Production of bricks,1,0,Fly ash -> Raw material for Production of bricks,
+ND - Power plant -> ND - Road construction,1,4,Fly ash -> Raw material for Road construction,"fly ash -> asphalt concrete
+fly ash -> pavers
+fly ash -> road materials
+fly ash -> paving mixes"
+ND - Power plant -> Taranto,0,1,,power plant ash -> heat
+ND - Wine production -> ND - Agroindustry,0,1,,dregs -> soil fertilizers
+ND - Wine production -> ND - Distilleries,1,0,Marc and dregs -> Raw material for Distilleries,

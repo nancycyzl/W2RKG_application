@@ -188,13 +188,53 @@ def save_exchanges(G, save_folder):
     all_exchanges_df = pd.DataFrame(all_exchanges, columns=['donor', 'receiver', 'waste', 'resource'])
     all_exchanges_df.to_csv(os.path.join(save_folder, 'company_network_exchanges.csv'), index=False)
 
+    return all_exchanges_df
+
+def compare_with_maestri(all_exchanges_df, prof_file, save_folder):
+    prof_df = pd.read_csv(prof_file)
+    # Process company names in prof_df to match format in all_exchanges_df
+    prof_df['donor_name'] = prof_df.apply(lambda row: f"ND - {row['donor_business']}" if row['donor_name'] == "ND" else row['donor_name'], axis=1)
+    prof_df['receiver_name'] = prof_df.apply(lambda row: f"ND - {row['receiver_business']}" if row['receiver_name'] == "ND" else row['receiver_name'], axis=1)
+    
+    # get all donors and receivers
+    all_donors = all_exchanges_df['donor'].unique().tolist() + prof_df['donor_name'].unique().tolist()
+    all_receivers = all_exchanges_df['receiver'].unique().tolist() + prof_df['receiver_name'].unique().tolist()
+    all_donors = list(set(all_donors))
+    all_receivers = list(set(all_receivers))
+    all_donors.sort()
+    all_receivers.sort()
+
+    comparison_data = []
+
+    for donor in all_donors:
+        for receiver in all_receivers:
+            companies = f"{donor} -> {receiver}"
+            # maestri exchanges
+            maestri_exchanges_df = prof_df[(prof_df['donor_name'] == donor) & (prof_df['receiver_name'] == receiver)]
+            maestri_num_exchanges = maestri_exchanges_df.shape[0]
+            maestri_exchanges_details = '\n'.join([f"{row['waste']} -> {row['resource']}" for _, row in maestri_exchanges_df.iterrows()])
+
+            # our exchanges
+            our_exchanges_df = all_exchanges_df[(all_exchanges_df['donor'] == donor) & (all_exchanges_df['receiver'] == receiver)]
+            our_num_exchanges = our_exchanges_df.shape[0]
+            our_exchanges_details = '\n'.join([f"{row['waste']} -> {row['resource']}" for _, row in our_exchanges_df.iterrows()])
+
+            if maestri_num_exchanges > 0 or our_num_exchanges > 0:
+                comparison_data.append([companies, maestri_num_exchanges, our_num_exchanges, maestri_exchanges_details, our_exchanges_details])
+
+    comparison_df = pd.DataFrame(comparison_data, columns=['companies', 'maestri_num_exchanges', 'our_num_exchanges', 'maestri_exchanges_details', 'our_exchanges_details'])
+    comparison_df.to_csv(os.path.join(save_folder, 'comparison_with_maestri.csv'), index=False)
+
+
 
 def main(args):    
     G = create_network(args.kg_file, args.prof_file, threshold=args.threshold)    # W2RKG + company nodes
-    save_exchanges(G, args.save_folder)
+    all_exchanges_df = save_exchanges(G, args.save_folder)
     visualize_network(G, args.save_folder)    # connected waste/resource nodes + company nodes
     visualize_network_collaboration(G, args.save_folder)    # collaboration network (all company nodes)
     visualize_network_html(G, args.save_folder)    # interactive HTML visualization of the collaboration network
+
+    compare_with_maestri(all_exchanges_df, args.prof_file, args.save_folder)
 
 
 if __name__ == "__main__":
