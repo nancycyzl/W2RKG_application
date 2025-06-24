@@ -21,7 +21,7 @@ def render_network_planning_tab(G, profiles_df,
                            P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings)
     
     with c2_right:
-        st.subheader("🌐 Collaboration map")
+        st.subheader("🌐 Collaboration network")
         st.write(f"Displaying {num_collaborations} collaborations, including {J.number_of_nodes()} companies.")
         if len(G_waste_list) == 0 or len(P_waste_list) == 0:
             st.info("Upload W2RKG JSON and company profile CSV to enable full network view.")
