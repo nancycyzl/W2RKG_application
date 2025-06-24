@@ -61,7 +61,7 @@ def build_W2R_graph(kg_triples):
 
 #     return nodes, edges
 
-def nx_to_agraph(Gsub, company_color="#3162C2"):
+def nx_to_agraph(Gsub, highlight_node=None):
     """
     Convert NetworkX graph to format compatible with st-link-analysis
     Returns nodes and edges data for st-link-analysis component
@@ -71,9 +71,10 @@ def nx_to_agraph(Gsub, company_color="#3162C2"):
     
     # Convert nodes
     for n in Gsub.nodes():
+        node_label = "query_company" if n == highlight_node else "company"
         node_data = {
             "id": n,
-            "label": "company"
+            "label": node_label
         }
         # Add node attributes if they exist
         if Gsub.nodes[n]:

@@ -1,51 +1,54 @@
 import streamlit as st
-from streamlit_agraph import agraph, Config
 import networkx as nx
 from utils import nx_to_agraph
+from st_link_analysis import st_link_analysis, NodeStyle, EdgeStyle
 
-def render_partner_finder_tab(G, G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
+from matching import build_partner_linkages
+
+def render_partner_finder_tab(G, profiles_df, model,
+                              G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
                               P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings):
-    c_left, c_mid, c_right = st.columns([1,2,1])
+    c_left, c_right = st.columns([1,3])
     with c_left:
         st.subheader("🔍 Query")
         with st.form("partner_finder_form"):
             query_waste  = st.text_input("Waste generated (keyword)", key="query_waste")
             query_resource  = st.text_input("Resource demanded (keyword)", key="query_resource")
-            query_threshold = st.slider("Similarity threshold", min_value=0.0, max_value=1.0, value=0.8, step=0.01, key="query_threshold")
-            st.caption("Match by embeddings")
+            query_threshold = st.slider("Similarity threshold", min_value=0.5, max_value=1.0, value=0.8, step=0.01, key="query_threshold")
             update = st.form_submit_button("Update")
-    # Only update graph if button pressed
-    if update:
-        st.session_state['pf_query_waste'] = st.session_state['query_waste']
-        st.session_state['pf_query_resource'] = st.session_state['query_resource']
-        st.session_state['pf_query_threshold'] = st.session_state['query_threshold']
-    query_waste_val = st.session_state.get('pf_query_waste', '')
-    query_resource_val = st.session_state.get('pf_query_resource', '')
-    query_threshold_val = st.session_state.get('pf_query_threshold', 0.8)
 
-    # create subgraph (test)
-    H = G.copy()
+    query_waste_val = st.session_state.get('query_waste', '')
+    query_resource_val = st.session_state.get('query_resource', '')
+    query_threshold_val = st.session_state.get('query_threshold', 0.8)
+
+    J, num_collaborations = build_partner_linkages(G, profiles_df, query_waste_val, query_resource_val, query_threshold_val, model,
+                                                    G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
+                                                    P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings)
     
-    with c_mid:
-        st.subheader("📈 Interactive graph")
-        if len(G_waste_list) == 0 or len(P_waste_list) == 0:
-            st.info("Upload W2RKG JSON and company profile CSV to enable full graph matching.")
-        elif not H:
-            st.info("Type a keyword to see matches.")
-        else:
-            nodes, edges = nx_to_agraph(H)
-            cfg = Config(width=700, height=550, directed=True, physics=True, hierarchical=False, selection=True)
-            result = agraph(nodes=nodes, edges=edges, config=cfg)
     with c_right:
-        st.subheader("ℹ️ Details")
-        if 'result' in locals() and result:
-            if result.get("nodes"):
-                nid = result["nodes"][0]
-                st.markdown(f"**Selected node:** `{nid}`")
-                st.json(G.nodes[nid])
-            elif result.get("edges"):
-                ed = result["edges"][0]
-                st.markdown("**Selected link:**")
-                st.json(ed["data"])
+        if not query_waste_val and not query_resource_val:
+            st.info("Please input a waste material and/or resource material to find potential partners.")
+        if model is None:
+            st.info("Please select an embedding model to proceed.")
         else:
-            st.write("Click a node or edge to view its data.") 
+            st.subheader("📈 Potential partners")
+            st.write(f"Displaying {num_collaborations} collaborations, including {J.number_of_nodes()} companies.")
+            if len(G_waste_list) == 0 or len(P_waste_list) == 0:
+                st.info("Upload W2RKG JSON and company profile CSV to enable full graph matching.")
+            else:
+                nodes_data, edges_data = nx_to_agraph(J)
+                elements = {
+                    "nodes": nodes_data,
+                    "edges": edges_data
+                }
+                node_style = [NodeStyle(label="company", color="#004d99", caption="id"),           # blue
+                            NodeStyle(label="query_company", color="#cc7a00", caption="id")]     # orange
+                edge_style = [EdgeStyle(label="collaboration", color="#999999", directed=True)]    # grey
+
+                result = st_link_analysis(
+                    layout="cola",       # cose, random, grid, circle, concentric, breadthfirst, fcose, cola
+                    elements=elements,
+                    node_styles=node_style,
+                    edge_styles=edge_style,
+                    height=530
+                )
