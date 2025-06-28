@@ -12,7 +12,7 @@ def render_network_planning_tab(G, profiles_df,
     with c2_left:
         st.subheader("🔧 Settings")
         with st.form("network_planning_form"):
-            planner_threshold = st.slider("Similarity threshold", min_value=0.0, max_value=1.0, value=0.8, step=0.01, key="planner_threshold")
+            planner_threshold = st.slider("Similarity threshold", min_value=0.5, max_value=1.0, value=0.8, step=0.01, key="planner_threshold")
             update2 = st.form_submit_button("Update")
     planner_threshold_val = st.session_state.get('planner_threshold', 0.8)
     

@@ -41,7 +41,7 @@ st.markdown(
 
 
 st.set_page_config(page_title="W2RKG Demonstration", layout="wide")
-st.title("⚡ Waste-to-Resource Knowledge Graph — Demonstration")
+st.title("W2RKG: Application in IS Opportunity Identification")
 
 
 
@@ -73,7 +73,7 @@ P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings = obtai
 G = build_W2R_graph(kg_triples)    # a networkx graph for W2RKG
 st.write(f"W2RKG has {G.number_of_nodes()} nodes and {G.number_of_edges()} edges.")
 
-tab1, tab2 = st.tabs(["🧭 Opportunity identification", "🗺️ Network planning"])
+tab1, tab2 = st.tabs(["🧭 Partner identification", "🗺️ Network planning"])
 
 with tab1:
     render_partner_finder_tab(G, profiles_df, model,

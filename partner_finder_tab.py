@@ -33,7 +33,7 @@ def render_partner_finder_tab(G, profiles_df, model,
         if model is None:
             st.info("Please select an embedding model to proceed.")
         else:
-            st.subheader("📈 Potential partners")
+            st.subheader("🎯 Potential partners")
             st.write(f"Displaying {num_collaborations} collaborations, including {J.number_of_nodes()} companies.")
             if len(G_waste_list) == 0 or len(P_waste_list) == 0:
                 st.info("Upload W2RKG JSON and company profile CSV to enable full graph matching.")
