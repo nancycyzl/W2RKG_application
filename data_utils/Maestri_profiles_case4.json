@@ -1,0 +1,70 @@
+{
+    "Energy E2 Asnaes Power Station": {
+        "waste": [
+            "Steam",
+            "Fly ash",
+            "Scrubber sludge"
+        ],
+        "resource": [
+            "Process cooling",
+            "Water"
+        ]
+    },
+    "Statoil refinery": {
+        "waste": [
+            "Cooling water",
+            "Sulfur",
+            "Waste water"
+        ],
+        "resource": [
+            "Process heat"
+        ]
+    },
+    "Novo Nordisk A/S\nNovozymes A/S\nPharmaceuticals": {
+        "waste": [
+            "Waste hot water",
+            "Yeast slurry and sludge"
+        ],
+        "resource": [
+            "Process heat"
+        ]
+    },
+    "ND - Fish farming": {
+        "waste": [
+            "Organic residues"
+        ],
+        "resource": [
+            "Process heat"
+        ]
+    },
+    "Kalundborg": {
+        "waste": [],
+        "resource": [
+            "Heat"
+        ]
+    },
+    "ND - Liquid fertiliser producer": {
+        "waste": [],
+        "resource": [
+            "Raw material for Liquid fertiliser producer"
+        ]
+    },
+    "BPB Gyproc A/S": {
+        "waste": [],
+        "resource": [
+            "Raw material for Wall-board plant"
+        ]
+    },
+    "ND - Cement manufacturing": {
+        "waste": [],
+        "resource": [
+            "Raw material for Cement manufacturing"
+        ]
+    },
+    "ND - Local farms": {
+        "waste": [],
+        "resource": [
+            "Animal feeding"
+        ]
+    }
+}

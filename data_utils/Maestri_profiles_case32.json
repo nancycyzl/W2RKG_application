@@ -1,0 +1,59 @@
+{
+    "JIS Corp.": {
+        "waste": [
+            "Steam",
+            "BFG (blast furnace gas)",
+            "Gypsum",
+            "Steel slag",
+            "COG",
+            "BF slag"
+        ],
+        "resource": [
+            "Process water",
+            "Used to refine ferrous metal",
+            "Raw material for Iron and steel production"
+        ]
+    },
+    "ND - Ammonia production": {
+        "waste": [],
+        "resource": [
+            "Alternative hydrogen production",
+            "Process heat",
+            "Process energy"
+        ]
+    },
+    "Jinan": {
+        "waste": [
+            "Waste plastic",
+            "Waste steel",
+            "Waste water"
+        ],
+        "resource": [
+            "Heat"
+        ]
+    },
+    "ND - Aluminium production": {
+        "waste": [
+            "Red mud"
+        ],
+        "resource": []
+    },
+    "ND - Cement & Construction": {
+        "waste": [],
+        "resource": [
+            "Raw material for Cement & Construction"
+        ]
+    },
+    "ND - Carbonate production": {
+        "waste": [],
+        "resource": [
+            "Sinter ore"
+        ]
+    },
+    "ND - Chromium chemical production": {
+        "waste": [
+            "Chromium slag"
+        ],
+        "resource": []
+    }
+}

@@ -5,7 +5,7 @@ from st_link_analysis import st_link_analysis, NodeStyle, EdgeStyle
 
 from matching import build_IS_network
 
-def render_network_planning_tab(G, profiles_df,
+def render_network_planning_tab(G, profiles_dict,
                                 G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
                                 P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings):
     c2_left, c2_right = st.columns([1,3])
@@ -16,7 +16,7 @@ def render_network_planning_tab(G, profiles_df,
             update2 = st.form_submit_button("Update")
     planner_threshold_val = st.session_state.get('planner_threshold', 0.8)
     
-    J, num_collaborations = build_IS_network(G, profiles_df, planner_threshold_val,
+    J, num_collaborations = build_IS_network(G, profiles_dict, planner_threshold_val,
                            G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
                            P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings)
     

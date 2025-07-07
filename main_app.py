@@ -65,10 +65,10 @@ prof_file = prof_file_uploaded if prof_file_uploaded is not None else prof_file_
 model = SentenceTransformer('Alibaba-NLP/gte-large-en-v1.5', trust_remote_code=True) if selected_model == "gte-large-en-v1.5" else None
 
 kg_triples = load_kg_file(kg_file)     # a list of dicts
-profiles_df = load_profiles_file(prof_file)    # a dataframe
+profiles_dict = load_profiles_file(prof_file)    # a dict
 
 G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings = obtain_W2RKG_embeddings(kg_triples, model)
-P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings = obtain_profile_embeddings(profiles_df, model)
+P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings = obtain_profile_embeddings(profiles_dict, prof_file, model)
 
 G = build_W2R_graph(kg_triples)    # a networkx graph for W2RKG
 st.write(f"W2RKG has {G.number_of_nodes()} nodes and {G.number_of_edges()} edges.")
@@ -76,11 +76,11 @@ st.write(f"W2RKG has {G.number_of_nodes()} nodes and {G.number_of_edges()} edges
 tab1, tab2 = st.tabs(["🧭 Partner identification", "🗺️ Network planning"])
 
 with tab1:
-    render_partner_finder_tab(G, profiles_df, model,
+    render_partner_finder_tab(G, profiles_dict, model,
                               G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
                               P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings)
 
 with tab2:
-    render_network_planning_tab(G, profiles_df,
+    render_network_planning_tab(G, profiles_dict,
                                 G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
                                 P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings)

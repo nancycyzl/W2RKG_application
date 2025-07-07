@@ -1,0 +1,185 @@
+{
+    "Enipower power station": {
+        "waste": [
+            "Electricity",
+            "Sea and well water, condensing vapour",
+            "Vapour and demineralised water"
+        ],
+        "resource": [
+            "Fuel",
+            "Water"
+        ]
+    },
+    "ENI refinery": {
+        "waste": [
+            "Fuel oil",
+            "Fuel gas",
+            "Waste heat"
+        ],
+        "resource": [
+            "Process heat",
+            "Water",
+            "Process energy"
+        ]
+    },
+    "ILVA": {
+        "waste": [
+            "Exhaust gas",
+            "Waste heat",
+            "Demineralised water",
+            "BOSF",
+            "Refractories",
+            "Waste coolant",
+            "Mill scales",
+            "BFS",
+            "BOFS as aggregate",
+            "BFS/BOSF",
+            "BF slag"
+        ],
+        "resource": [
+            "Process heat",
+            "Process energy"
+        ]
+    },
+    "Edison power station": {
+        "waste": [
+            "Steam",
+            "Waste heat",
+            "Electricity"
+        ],
+        "resource": [
+            "Process heat",
+            "Process energy"
+        ]
+    },
+    "CEMENTIR": {
+        "waste": [
+            "Waste heat",
+            "Coal fly ash"
+        ],
+        "resource": [
+            "Raw material for Cement production",
+            "Process energy"
+        ]
+    },
+    "ND - Construction materials production": {
+        "waste": [
+            "Construction and demolition waste"
+        ],
+        "resource": [
+            "Raw material for Construction materials production"
+        ]
+    },
+    "ND - Road construction": {
+        "waste": [],
+        "resource": [
+            "Raw material for Road construction",
+            "Road foundations",
+            "Raw materials",
+            "Paving"
+        ]
+    },
+    "ND - Wine production": {
+        "waste": [
+            "Marc and dregs"
+        ],
+        "resource": []
+    },
+    "ND - Distilleries": {
+        "waste": [],
+        "resource": [
+            "Raw material for Distilleries"
+        ]
+    },
+    "ND - Olive oil production": {
+        "waste": [
+            "Oil mill waste water"
+        ],
+        "resource": []
+    },
+    "ND - Agroindustry": {
+        "waste": [],
+        "resource": [
+            "Fertiliser",
+            "Soil quality improvement and fertiliser",
+            "Fertilizer"
+        ]
+    },
+    "Taranto": {
+        "waste": [],
+        "resource": [
+            "Cooling",
+            "Heat"
+        ]
+    },
+    "ND - Marine embarkments": {
+        "waste": [],
+        "resource": [
+            "Raw material for Marine embarkments"
+        ]
+    },
+    "ND - Isolated buildings": {
+        "waste": [],
+        "resource": [
+            "Removal or retention of phosphorous from wastewater"
+        ]
+    },
+    "ND - Steelworks": {
+        "waste": [],
+        "resource": [
+            "Raw material for Steelworks"
+        ]
+    },
+    "ND - Production of refractories": {
+        "waste": [],
+        "resource": [
+            "Raw material for Production of refractories"
+        ]
+    },
+    "ND - Production of concrete": {
+        "waste": [],
+        "resource": [
+            "Raw material for Production of concrete"
+        ]
+    },
+    "ND - Production of bricks": {
+        "waste": [],
+        "resource": [
+            "Raw material for Production of bricks"
+        ]
+    },
+    "ND - Rock wool production": {
+        "waste": [],
+        "resource": [
+            "Raw material for Rock wool production"
+        ]
+    },
+    "ND - Glass and glass-ceramic production": {
+        "waste": [],
+        "resource": [
+            "Raw material for Glass and glass-ceramic production"
+        ]
+    },
+    "ND - Power plant": {
+        "waste": [
+            "Fly ash"
+        ],
+        "resource": []
+    },
+    "EniPower power station": {
+        "waste": [
+            "Waste heat"
+        ],
+        "resource": [
+            "Process energy"
+        ]
+    },
+    "ND - Electricity production - Organic Rankine Cycle": {
+        "waste": [
+            "Electricity"
+        ],
+        "resource": [
+            "Process heat"
+        ]
+    }
+}

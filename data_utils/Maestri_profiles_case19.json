@@ -1,0 +1,47 @@
+{
+    "ND - Power plant": {
+        "waste": [
+            "Steam",
+            "Electricity",
+            "Demineralised water"
+        ],
+        "resource": [
+            "Raw material for Power plant"
+        ]
+    },
+    "ND - Basic chemicals": {
+        "waste": [
+            "Sodium silicate",
+            "Sodium hydroxide",
+            "Hydrochloric acid"
+        ],
+        "resource": [
+            "Raw material for Basic chemicals",
+            "Process heat",
+            "Process energy",
+            "Process water"
+        ]
+    },
+    "ND - Micronized silica": {
+        "waste": [
+            "Silica"
+        ],
+        "resource": [
+            "Process heat",
+            "Raw material for Micronized silica",
+            "Process energy"
+        ]
+    },
+    "ND - Galvanic treatments": {
+        "waste": [],
+        "resource": [
+            "Raw material for Galvanic treatments"
+        ]
+    },
+    "ND - Pesticides": {
+        "waste": [
+            "Septic sludges"
+        ],
+        "resource": []
+    }
+}

@@ -1,0 +1,105 @@
+{
+    "ND - Distillery": {
+        "waste": [
+            "Paddy husk",
+            "Isopropyl alcohol",
+            "CO2"
+        ],
+        "resource": [
+            "Raw material for Distillery"
+        ]
+    },
+    "ND - Alcohol distributor": {
+        "waste": [],
+        "resource": [
+            "Process energy"
+        ]
+    },
+    "ND - ND": {
+        "waste": [],
+        "resource": [
+            "Raw material for ND",
+            "Fuel"
+        ]
+    },
+    "ND - Dairy industry": {
+        "waste": [],
+        "resource": [
+            "Sterilizer"
+        ]
+    },
+    "ND - Sugar refinery": {
+        "waste": [
+            "Molasses",
+            "Bagasse"
+        ],
+        "resource": []
+    },
+    "ND - Agriculture": {
+        "waste": [],
+        "resource": [
+            "Soil amendment"
+        ]
+    },
+    "ND - Paper manufacturer": {
+        "waste": [
+            "Boiler and fly ashes",
+            "ETP sludge"
+        ],
+        "resource": [
+            "Process heat",
+            "Process energy"
+        ]
+    },
+    "ND - Fertilizer company": {
+        "waste": [],
+        "resource": [
+            "Raw material for Fertilizer company"
+        ]
+    },
+    "ND - Coffee and milk beverage producer": {
+        "waste": [
+            "Spent coffee grounds"
+        ],
+        "resource": [
+            "Fuel"
+        ]
+    },
+    "ND - Oil extraction facility": {
+        "waste": [
+            "Residual coconut",
+            "Fly ash",
+            "Dessiccated coffee grounds",
+            "Biomass fuel"
+        ],
+        "resource": [
+            "Raw material for Oil extraction facility",
+            "Process heat"
+        ]
+    },
+    "ND - Brick manufacturer": {
+        "waste": [],
+        "resource": [
+            "Raw material for Brick manufacturer"
+        ]
+    },
+    "ND - Cattle feed production": {
+        "waste": [],
+        "resource": [
+            "Raw material for Cattle feed production"
+        ]
+    },
+    "ND - Plywood manufacturing": {
+        "waste": [
+            "Sawdust",
+            "Boiler ash"
+        ],
+        "resource": []
+    },
+    "ND - Granite polishing facilities": {
+        "waste": [],
+        "resource": [
+            "Raw material for Granite polishing facilities"
+        ]
+    }
+}

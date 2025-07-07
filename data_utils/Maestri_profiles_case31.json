@@ -1,0 +1,60 @@
+{
+    "ND - Power plant": {
+        "waste": [
+            "Steam",
+            "Coal flying ash"
+        ],
+        "resource": [
+            "Fuel"
+        ]
+    },
+    "ND - Ammonia production": {
+        "waste": [],
+        "resource": [
+            "Alternative hydrogen production",
+            "Process heat"
+        ]
+    },
+    "ND - Cement & Construction": {
+        "waste": [],
+        "resource": [
+            "Raw material for Cement & Construction",
+            "Cement additive",
+            "Process heat"
+        ]
+    },
+    "ND - Iron and steel production": {
+        "waste": [
+            "Steam",
+            "Ammonium sulfate",
+            "Steel slag",
+            "COG",
+            "BF slag"
+        ],
+        "resource": [
+            "Process heat",
+            "Raw material for Iron and steel production"
+        ]
+    },
+    "ND - Fertiliser company": {
+        "waste": [],
+        "resource": [
+            "Raw material for Fertiliser company"
+        ]
+    },
+    "Liuzhou": {
+        "waste": [
+            "Waste plastic",
+            "Scrap tire",
+            "Straw / Food waste",
+            "Waste steel"
+        ],
+        "resource": []
+    },
+    "ND - Machinery": {
+        "waste": [],
+        "resource": [
+            "Process heat"
+        ]
+    }
+}

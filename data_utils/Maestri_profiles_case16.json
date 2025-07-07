@@ -1,0 +1,238 @@
+{
+    "ND - Oil refinery": {
+        "waste": [
+            "Waste water",
+            "Fuel gas",
+            "Spent catalysts",
+            "Sulphur",
+            "Hydrogen"
+        ],
+        "resource": [
+            "Process heat",
+            "Process water",
+            "Process energy"
+        ]
+    },
+    "ND - Power plant": {
+        "waste": [
+            "Steam",
+            "Electricity",
+            "Waste water"
+        ],
+        "resource": [
+            "Fuel",
+            "Raw material for Power plant",
+            "Process water"
+        ]
+    },
+    "ND - Industrial chemical & ferilizer producer": {
+        "waste": [
+            "Carbon dioxide",
+            "Hydrogen",
+            "Gypsum",
+            "Bore water"
+        ],
+        "resource": [
+            "Raw material for Industrial chemical & ferilizer producer",
+            "Process water"
+        ]
+    },
+    "ND - Industrial chemical producer": {
+        "waste": [
+            "Waste water"
+        ],
+        "resource": []
+    },
+    "ND - Coal-fired power station": {
+        "waste": [
+            "Fly ash",
+            "Demineralised water"
+        ],
+        "resource": [
+            "Raw material for Coal-fired power station"
+        ]
+    },
+    "ND - Gas fired power station": {
+        "waste": [
+            "Boiler blow-down"
+        ],
+        "resource": [
+            "Process water"
+        ]
+    },
+    "ND - Titanium dioxide producer": {
+        "waste": [
+            "Steam",
+            "Potable water",
+            "Electricity",
+            "Hydrochloric acid",
+            "Air",
+            "Reverse osmosis water"
+        ],
+        "resource": [
+            "Raw material for Titanium dioxide producer",
+            "Process heat",
+            "Process water",
+            "Process energy"
+        ]
+    },
+    "ND - Alumina refinery": {
+        "waste": [
+            "Bauxite residue",
+            "Domestic organic waste",
+            "Electricity"
+        ],
+        "resource": [
+            "Raw material for Alumina refinery"
+        ]
+    },
+    "ND - Industrial gas producer": {
+        "waste": [
+            "Carbon dioxide",
+            "Hydrogen"
+        ],
+        "resource": [
+            "Process heat",
+            "Process energy",
+            "Raw material for Industrial gas producer"
+        ]
+    },
+    "ND - Pig iron plant": {
+        "waste": [
+            "Steam"
+        ],
+        "resource": [
+            "Raw material for Pig iron plant"
+        ]
+    },
+    "ND - Chlor alkali plant": {
+        "waste": [
+            "80% sulphuric acid",
+            "Waste water"
+        ],
+        "resource": [
+            "Raw material for Chlor alkali plant",
+            "Process heat",
+            "Process energy",
+            "Process water"
+        ]
+    },
+    "ND - Worm farm": {
+        "waste": [],
+        "resource": [
+            "Raw material for Worm farm"
+        ]
+    },
+    "ND - Water supply and treatment company": {
+        "waste": [
+            "Bio-sludge"
+        ],
+        "resource": [
+            "Raw material for Water supply and treatment company"
+        ]
+    },
+    "ND - Fused alumina and zircon producer": {
+        "waste": [
+            "Silica fume"
+        ],
+        "resource": []
+    },
+    "ND - Cement production": {
+        "waste": [],
+        "resource": [
+            "Raw material for Cement production"
+        ]
+    },
+    "ND - Cement mill": {
+        "waste": [
+            "Concrete wastes",
+            "Cardboard"
+        ],
+        "resource": [
+            "Raw material for Cement mill"
+        ]
+    },
+    "ND - Blokpave producer": {
+        "waste": [],
+        "resource": [
+            "Raw material for Blokpave producer"
+        ]
+    },
+    "ND - Insulation plant": {
+        "waste": [],
+        "resource": [
+            "ND"
+        ]
+    },
+    "ND - Mineral processing plant": {
+        "waste": [
+            "Blast furnace slag"
+        ],
+        "resource": []
+    },
+    "ND - Nickel refinery": {
+        "waste": [
+            "Ammonium sulphate",
+            "Process residue",
+            "Carbon dioxide",
+            "Sulphur",
+            "Hydrogen"
+        ],
+        "resource": [
+            "Raw material for Nickel refinery"
+        ]
+    },
+    "ND - Inorganic chemical producer": {
+        "waste": [
+            "Ammonium chloride",
+            "98% sulphuric acid"
+        ],
+        "resource": [
+            "Raw material for Inorganic chemical producer"
+        ]
+    },
+    "ND - Cement and lime producer": {
+        "waste": [
+            "Lime kiln dust"
+        ],
+        "resource": [
+            "Raw material for Cement and lime producer"
+        ]
+    },
+    "ND - Synthetic rutile plant": {
+        "waste": [],
+        "resource": [
+            "Raw material for Synthetic rutile plant"
+        ]
+    },
+    "ND - Zirconia powder producer": {
+        "waste": [
+            "Ammonium chloride solution"
+        ],
+        "resource": []
+    },
+    "ND - Construction company": {
+        "waste": [],
+        "resource": [
+            "Raw material for Construction company"
+        ]
+    },
+    "ND - Turf farm": {
+        "waste": [],
+        "resource": [
+            "Raw material for Turf farm"
+        ]
+    },
+    "ND - Coal mine": {
+        "waste": [
+            "Coal mine overburden"
+        ],
+        "resource": []
+    },
+    "ND - Nikel mine": {
+        "waste": [],
+        "resource": [
+            "Raw material for Nikel mine"
+        ]
+    }
+}

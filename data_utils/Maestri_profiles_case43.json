@@ -1,0 +1,42 @@
+{
+    "Kawasaki": {
+        "waste": [
+            "Waste paper",
+            "Waste car",
+            "Waste plastic",
+            "Discarded home appliances",
+            "Sewage sludge"
+        ],
+        "resource": []
+    },
+    "ND - Iron and steel production": {
+        "waste": [
+            "BF slag"
+        ],
+        "resource": [
+            "Substitution for coke",
+            "Raw material for Iron and steel production"
+        ]
+    },
+    "ND - Chemical industry": {
+        "waste": [],
+        "resource": [
+            "Raw material to produce ammonia"
+        ]
+    },
+    "ND - Cement industry": {
+        "waste": [],
+        "resource": [
+            "Raw material for Cement industry",
+            "Substitution for coal"
+        ]
+    },
+    "ND - Paper and pulp industry": {
+        "waste": [
+            "Paper sludge"
+        ],
+        "resource": [
+            "Raw material for Paper and pulp industry"
+        ]
+    }
+}

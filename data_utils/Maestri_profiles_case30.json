@@ -1,0 +1,57 @@
+{
+    "ND - Iron and steel production": {
+        "waste": [
+            "Waste heat",
+            "Steel slag"
+        ],
+        "resource": [
+            "Raw material for Iron and steel production"
+        ]
+    },
+    "ND - Power plant": {
+        "waste": [
+            "Electricity"
+        ],
+        "resource": [
+            "Process heat",
+            "Fuel"
+        ]
+    },
+    "ND - Aluminium production": {
+        "waste": [
+            "Waste heat",
+            "Slag"
+        ],
+        "resource": []
+    },
+    "ND - Phosphorus chemical industry": {
+        "waste": [
+            "Phosphorous slag",
+            "Waste heat"
+        ],
+        "resource": []
+    },
+    "Guiyang": {
+        "waste": [
+            "Waste plastics",
+            "Waste steel"
+        ],
+        "resource": [
+            "Heat",
+            "Energy"
+        ]
+    },
+    "ND - Cement manufacturing": {
+        "waste": [],
+        "resource": [
+            "Raw material for Cement manufacturing"
+        ]
+    },
+    "ND - Coal industry": {
+        "waste": [
+            "Slag",
+            "Coal gangue"
+        ],
+        "resource": []
+    }
+}

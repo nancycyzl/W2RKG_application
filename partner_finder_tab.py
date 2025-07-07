@@ -5,7 +5,7 @@ from st_link_analysis import st_link_analysis, NodeStyle, EdgeStyle
 
 from matching import build_partner_linkages
 
-def render_partner_finder_tab(G, profiles_df, model,
+def render_partner_finder_tab(G, profiles_dict, model,
                               G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
                               P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings):
     c_left, c_right = st.columns([1,3])
@@ -23,7 +23,7 @@ def render_partner_finder_tab(G, profiles_df, model,
 
     query_company_id = "Query company"
 
-    J, num_collaborations = build_partner_linkages(G, profiles_df, query_company_id, query_waste_val, query_resource_val, query_threshold_val, model,
+    J, num_collaborations = build_partner_linkages(G, profiles_dict, query_company_id, query_waste_val, query_resource_val, query_threshold_val, model,
                                                     G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
                                                     P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings)
     

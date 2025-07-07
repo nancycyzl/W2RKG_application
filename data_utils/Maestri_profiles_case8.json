@@ -1,0 +1,88 @@
+{
+    "Ulsan metropolitan city": {
+        "waste": [
+            "General organic waste"
+        ],
+        "resource": []
+    },
+    "SK Chemical Corp.": {
+        "waste": [],
+        "resource": [
+            "Fuel"
+        ]
+    },
+    "ND - Metropolitan water treatment": {
+        "waste": [],
+        "resource": [
+            "Fuel"
+        ]
+    },
+    "Kumho Petrochem Corp.": {
+        "waste": [],
+        "resource": [
+            "Fuel"
+        ]
+    },
+    "ND - Different companies in the industrial park": {
+        "waste": [
+            "Industrial waste"
+        ],
+        "resource": []
+    },
+    "SK Corp.": {
+        "waste": [
+            "Steam",
+            "Pure water"
+        ],
+        "resource": [
+            "Process heat"
+        ]
+    },
+    "Taeyoug Industry Corp.": {
+        "waste": [],
+        "resource": [
+            "Process heat"
+        ]
+    },
+    "Koentec Corp.": {
+        "waste": [],
+        "resource": [
+            "Water"
+        ]
+    },
+    "LS-NIKKO Corp.": {
+        "waste": [
+            "Steam",
+            "Zn recovery"
+        ],
+        "resource": [
+            "Raw material for Electrolytic refining"
+        ]
+    },
+    "Hankuk Paper Corp.": {
+        "waste": [],
+        "resource": [
+            "Process heat"
+        ]
+    },
+    "Koreazinc Corp.": {
+        "waste": [
+            "Cu recovery"
+        ],
+        "resource": [
+            "Raw material for Zinc production"
+        ]
+    },
+    "Hyunday motors corp.": {
+        "waste": [
+            "Industrial waste"
+        ],
+        "resource": []
+    },
+    "Energy Corp.": {
+        "waste": [],
+        "resource": [
+            "Fuel"
+        ]
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "ND - Cane fields": {
+        "waste": [
+            "Cane"
+        ],
+        "resource": [
+            "Compound fertilizer"
+        ]
+    },
+    "Nanning Sugar Co., Ltd.": {
+        "waste": [
+            "Bagasse pitch",
+            "Filter sludge",
+            "Waste gas",
+            "Molasses"
+        ],
+        "resource": [
+            "Raw material for Sugar production"
+        ]
+    },
+    "ND - Compound fertilizer production": {
+        "waste": [],
+        "resource": [
+            "Raw material for Compound fertilizer production"
+        ]
+    },
+    "ND - Blocks production": {
+        "waste": [],
+        "resource": [
+            "Waste gas is used to fuel boilers where coal ash is obtained",
+            "Raw material for Blocks production"
+        ]
+    },
+    "ND - Pulp production": {
+        "waste": [
+            "Bleaching water",
+            "Black liquid"
+        ],
+        "resource": [
+            "Process material"
+        ]
+    },
+    "ND - Alkali recovery": {
+        "waste": [
+            "Alkali"
+        ],
+        "resource": [
+            "Raw material for Alkali recovery"
+        ]
+    },
+    "ND - Cement production": {
+        "waste": [],
+        "resource": [
+            "Raw material for Cement production"
+        ]
+    },
+    "ND - Paper production": {
+        "waste": [
+            "White water"
+        ],
+        "resource": []
+    }
+}

@@ -1,0 +1,72 @@
+{
+    "British Sugar": {
+        "waste": [
+            "Waste residual resins from the sugar crystallization process",
+            "Bagasse",
+            "Soil separated during sugar beet washing",
+            "Calcium carbonate",
+            "CO2",
+            "Waste sugar from resin separation",
+            "Stones separated during sugar beet washing",
+            "Heat"
+        ],
+        "resource": []
+    },
+    "ND - Building trade": {
+        "waste": [],
+        "resource": [
+            "Raw material for Building trade"
+        ]
+    },
+    "ND - Landscaping": {
+        "waste": [],
+        "resource": [
+            "Raw material for Landscaping"
+        ]
+    },
+    "ND - Agroindustry": {
+        "waste": [],
+        "resource": [
+            "Raw material for Agroindustry"
+        ]
+    },
+    "ND - Animal raising": {
+        "waste": [],
+        "resource": [
+            "Raw material for Animal raising"
+        ]
+    },
+    "ND - Tomato growing": {
+        "waste": [],
+        "resource": [
+            "Heat",
+            "Supports the growth of plants"
+        ]
+    },
+    "ND - Health care sector (cosmetics production)": {
+        "waste": [],
+        "resource": [
+            "Raw material for Health care sector (cosmetics production)"
+        ]
+    },
+    "ND - Biofuel production": {
+        "waste": [
+            "CO2"
+        ],
+        "resource": [
+            "Raw material for Biofuel production"
+        ]
+    },
+    "ND - Carbonated soft drinks production": {
+        "waste": [],
+        "resource": [
+            "Raw material for Carbonated soft drinks production"
+        ]
+    },
+    "ND - Fire protection": {
+        "waste": [],
+        "resource": [
+            "Raw material for Fire protection"
+        ]
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "ND - Urban entity": {
+        "waste": [
+            "Glass",
+            "Biodegradable kitchen and canteen waste",
+            "Shredded newspaper",
+            "Plastics",
+            "Metals",
+            "Newspaper",
+            "Wood pulp"
+        ],
+        "resource": []
+    },
+    "ND - Photovoltaic modules production": {
+        "waste": [
+            "End of life semiconductors"
+        ],
+        "resource": [
+            "Raw material for Photovoltaic modules production"
+        ]
+    },
+    "ND - Packaging factory": {
+        "waste": [],
+        "resource": [
+            "Raw material for Packaging factory"
+        ]
+    },
+    "ND - Greenhouse": {
+        "waste": [],
+        "resource": [
+            "Process heat",
+            "Compost"
+        ]
+    },
+    "ND - Mushrooms growrooms": {
+        "waste": [],
+        "resource": [
+            "Process heat",
+            "Compost"
+        ]
+    },
+    "ND - Sheet glass factory": {
+        "waste": [
+            "Waste heat"
+        ],
+        "resource": []
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "ND - Hydropower plant": {
+        "waste": [
+            "Electricity"
+        ],
+        "resource": []
+    },
+    "ND - Pulp and paper plant": {
+        "waste": [
+            "Electricity",
+            "Sodium hydroxide",
+            "Bark",
+            "CO2",
+            "Sludge"
+        ],
+        "resource": [
+            "Process energy",
+            "Water",
+            "Raw material for Pulp and paper plant"
+        ]
+    },
+    "ND - Pulp mill": {
+        "waste": [
+            "Electricity"
+        ],
+        "resource": []
+    },
+    "ND - Paper mill": {
+        "waste": [],
+        "resource": [
+            "Process energy"
+        ]
+    },
+    "ND - Calcium carbonate plant": {
+        "waste": [
+            "Calcium carbonate"
+        ],
+        "resource": [
+            "Process energy",
+            "Raw material for Calcium carbonate plant",
+            "Water"
+        ]
+    },
+    "ND - Chlorine dioxide plant": {
+        "waste": [
+            "Chlorine",
+            "Sodium hydroxide",
+            "Waste water",
+            "Chlorine dioxide"
+        ],
+        "resource": [
+            "Process energy"
+        ]
+    },
+    "ND - Power plant": {
+        "waste": [
+            "Electricity"
+        ],
+        "resource": [
+            "Fuel",
+            "Raw material for Power plant",
+            "Water"
+        ]
+    },
+    "ND - Urban entity": {
+        "waste": [],
+        "resource": [
+            "Heat"
+        ]
+    },
+    "ND - Water purification plant": {
+        "waste": [],
+        "resource": [
+            "Raw material for Water purification plant"
+        ]
+    }
+}

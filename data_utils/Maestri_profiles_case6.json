@@ -1,0 +1,134 @@
+{
+    "Boyne Smelters Ltd": {
+        "waste": [
+            "Spent cell linings",
+            "Refractory materials",
+            "Metallurgical coke dust and fines"
+        ],
+        "resource": []
+    },
+    "Cement Australia's Gladstone": {
+        "waste": [
+            "Off-spec lime"
+        ],
+        "resource": [
+            "Alternative fuel and raw material in clinker production",
+            "Solvent-based fuels as AFR in clinker production",
+            "Raw material for Cement production",
+            "Cement additive"
+        ]
+    },
+    "ND - ND": {
+        "waste": [
+            "Waste solvent materials",
+            "Water",
+            "Waste water"
+        ],
+        "resource": []
+    },
+    "NRG": {
+        "waste": [
+            "Fly ash",
+            "Bottom ash"
+        ],
+        "resource": [
+            "Water used in red mud washing operations"
+        ]
+    },
+    "Queensland alumina limited refinery": {
+        "waste": [],
+        "resource": [
+            "Water used in red mud washing operations",
+            "Spent shale is used in the rehabilitation of red muds from alumina refinery."
+        ]
+    },
+    "Orica Ltd": {
+        "waste": [
+            "Fertiliser",
+            "Sulphuric acid"
+        ],
+        "resource": [
+            "Raw material for Ammonium nitrate and sodium cyanide production"
+        ]
+    },
+    "ND - Agricultural companies": {
+        "waste": [],
+        "resource": [
+            "Fertiliser"
+        ]
+    },
+    "Queensland Energy Resources Limited": {
+        "waste": [
+            "Spent shale",
+            "Sour gas"
+        ],
+        "resource": [
+            "Processing of oil shale"
+        ]
+    },
+    "ND - Urban entity": {
+        "waste": [
+            "Waste lubricants",
+            "Old tyres"
+        ],
+        "resource": []
+    },
+    "Gladstone Pacific Nickel Ltd": {
+        "waste": [
+            "Barren liquor"
+        ],
+        "resource": [
+            "Raw material for Nickel/cobalt refinery"
+        ]
+    },
+    "Queensland alumina limited refinery/Rio Tinto Alcan Yarwun": {
+        "waste": [
+            "Red mud"
+        ],
+        "resource": []
+    },
+    "Rio Tinto Alcan Yarwun": {
+        "waste": [],
+        "resource": [
+            "Raw material for Alumina refinery"
+        ]
+    },
+    "ND - Construction": {
+        "waste": [],
+        "resource": [
+            "Raw material for Construction"
+        ]
+    },
+    "Boulder Steel Limited": {
+        "waste": [
+            "Steel slag"
+        ],
+        "resource": [
+            "Fuel"
+        ]
+    },
+    "ND - Bricks manufacturer": {
+        "waste": [],
+        "resource": [
+            "Raw material for Bricks manufacturer"
+        ]
+    },
+    "LNG projects": {
+        "waste": [],
+        "resource": [
+            "Soil additive"
+        ]
+    },
+    "ND - Road construction": {
+        "waste": [],
+        "resource": [
+            "Raw material for Road construction"
+        ]
+    },
+    "Northern oil": {
+        "waste": [],
+        "resource": [
+            "Raw material for Oil refinery"
+        ]
+    }
+}

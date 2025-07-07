@@ -14,10 +14,11 @@ def load_kg_file(kg_file):
 def load_profiles_file(prof_file):
     if prof_file:
         try:
-            return pd.read_csv(prof_file)
+            with open(prof_file, 'r') as f:
+                return json.load(f)
         except Exception as e:
-            st.error(f"Error loading company profile CSV: {e}")
-    return pd.DataFrame()
+            st.error(f"Error loading company profile JSON: {e}")
+    return {}
 
 def build_W2R_graph(kg_triples):
     G = nx.MultiDiGraph()

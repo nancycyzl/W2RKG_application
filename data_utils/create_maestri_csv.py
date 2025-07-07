@@ -1,4 +1,5 @@
 import pandas as pd
+import json
 
 def read_maestri_data(file_path):
 
@@ -30,6 +31,37 @@ def read_maestri_data(file_path):
     return w2r_df
 
 
+def convert_maestri_to_profiles(maestri_df):
+    '''Maestri format (one row is one exchange) ->  company profile format (one row is one company)'''
+    company_profiles = {}
+    for index, row in maestri_df.iterrows():
+        provider_name = row['donor_name']
+        receiver_name = row['receiver_name']
+        waste = row['waste']
+        resource = row['resource']
+
+        # if provider_name or receiver_name is "ND", then use "ND - {business}"
+        if provider_name == "ND":
+            provider_name = f"ND - {row['donor_business']}"
+        if receiver_name == "ND":
+            receiver_name = f"ND - {row['receiver_business']}"
+        
+        # add to profile JSON file
+        if provider_name not in company_profiles:
+            company_profiles[provider_name] = {'waste': [], 'resource': []}
+        if receiver_name not in company_profiles:
+            company_profiles[receiver_name] = {'waste': [], 'resource': []}
+        company_profiles[provider_name]['waste'].append(waste)
+        company_profiles[receiver_name]['resource'].append(resource)
+
+        # remove duplicates
+    for company in company_profiles:
+        company_profiles[company]['waste'] = list(set(company_profiles[company]['waste']))
+        company_profiles[company]['resource'] = list(set(company_profiles[company]['resource']))
+
+    return company_profiles
+
+
 
 def main():
 
@@ -43,9 +75,18 @@ def main():
         case_df = maestri_df[maestri_df['case_id'] == case]
         if case_df.shape[0] >= 10:
             print(f"Case {case} has {case_df.shape[0]} rows")
+
+            # save maestri data
             output_file = f'data_utils/Maestri_case{case}.csv'
             case_df.to_csv(output_file, index=False)
             print(f"Saved case {case} data to {output_file}")
+
+            # save company profiles
+            company_profiles_df = convert_maestri_to_profiles(case_df)
+            output_file = f'data_utils/Maestri_profiles_case{case}.json'
+            with open(output_file, 'w') as f:
+                json.dump(company_profiles_df, f, indent=4)
+            print(f"Saved company profiles for case {case} to {output_file}")
 
 
 if __name__ == '__main__':

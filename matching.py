@@ -21,14 +21,17 @@ import networkx as nx
 from utils import save_list_to_text, read_list_from_text, remove_isolated_nodes, convert_str_to_list
 
 
-def embed_profile_and_save(profiles_df, model):
-    # obtain case_id
-    case_id_all = profiles_df['case_id'].unique().tolist()
-    case_id = case_id_all[0] if len(case_id_all) == 1 else None
-
+def embed_profile_and_save(profiles_dict, model, case_id):
     # obtain waste / resource names and create embeddings
-    waste_list = profiles_df['waste'].unique().tolist()
-    resource_list = profiles_df['resource'].unique().tolist()
+    waste_list = []
+    resource_list = []
+    for company in profiles_dict:
+        waste_list.extend(profiles_dict[company]['waste generation'])
+        resource_list.extend(profiles_dict[company]['resource demand'])
+
+    # remove duplicates
+    waste_list = list(set(waste_list))
+    resource_list = list(set(resource_list))
 
     if model is None:
         model = SentenceTransformer('Alibaba-NLP/gte-large-en-v1.5', trust_remote_code=True)
@@ -85,10 +88,9 @@ def embed_w2rkg_and_save(w2rkg_dict, model):
     return waste_list, resource_list, waste_embeddings_np, resource_embeddings_np
 
 
-def obtain_profile_embeddings(profiles_df, model):
+def obtain_profile_embeddings(profiles_dict, prof_file, model):
     # obtain case_id
-    case_id_all = profiles_df['case_id'].unique().tolist()
-    case_id = case_id_all[0] if len(case_id_all) == 1 else None
+    case_id = prof_file.basename().split('.')[0].split('case')[1]
     case_id_placeholder = f"_case{case_id}" if case_id is not None else ""
 
     try:
@@ -100,7 +102,7 @@ def obtain_profile_embeddings(profiles_df, model):
     except Exception as e:
         print(f"Error loading profile embeddings: {e}")
         print("Creating profile embeddings from scratch...")
-        waste_list, resource_list, waste_embeddings, resource_embeddings = embed_profile_and_save(profiles_df, model)
+        waste_list, resource_list, waste_embeddings, resource_embeddings = embed_profile_and_save(profiles_dict, model, case_id)
      
     return waste_list, resource_list, waste_embeddings, resource_embeddings
 
@@ -132,7 +134,7 @@ def match_material_to_G(material_embedding, G_material_list, G_material_embeddin
     return matched_indices
 
 
-def build_W2R_Comp_network(G, profiles_df, similarity_threshold,
+def build_W2R_Comp_network(G, profiles_dict, similarity_threshold,
                            G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
                            P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings):
     '''
@@ -140,56 +142,47 @@ def build_W2R_Comp_network(G, profiles_df, similarity_threshold,
     Output: W2RKG + company nodes connected
     '''
     # Add company nodes and their connections to wastes/resources
-    for _, row in profiles_df.iterrows():
-        donor_name = row['donor_name']
-        donor_business = row['donor_business'] 
-        receiver_name = row['receiver_name']
-        receiver_business = row['receiver_business']
-        waste = row['waste']
-        resource = row['resource']
 
-        if donor_name == "ND":
-            donor_name = f"ND - {donor_business}"
-        if receiver_name == "ND":
-            receiver_name = f"ND - {receiver_business}"
+    for company in profiles_dict:
+        waste_list = profiles_dict[company]['waste generation']
+        resource_list = profiles_dict[company]['resource demand']
 
-        # add company node and its properties
-        if G.has_node(donor_name):
+        # check if company node exists
+        if G.has_node(company):
             # If 'waste' already exists, append; else, create a new list
-            if 'waste' in G.nodes[donor_name]:
-                if isinstance(G.nodes[donor_name]['waste'], list):
-                    G.nodes[donor_name]['waste'].append(waste)
+            if 'waste' in G.nodes[company]:
+                if isinstance(G.nodes[company]['waste'], list):
+                    G.nodes[company]['waste'].extend(waste_list)
                 else:
-                    G.nodes[donor_name]['waste'] = [G.nodes[donor_name]['waste'], waste]
+                    G.nodes[company]['waste'] = [G.nodes[company]['waste'], waste_list]
             else:
-                G.nodes[donor_name]['waste'] = [waste]
-        else:
-            G.add_node(donor_name, type='company', business=donor_business, waste=[waste])
+                G.nodes[company]['waste'] = waste_list
 
-        if G.has_node(receiver_name):
             # If 'resource' already exists, append; else, create a new list
-            if 'resource' in G.nodes[receiver_name]:
-                if isinstance(G.nodes[receiver_name]['resource'], list):
-                    G.nodes[receiver_name]['resource'].append(resource)
+            if 'resource' in G.nodes[company]:
+                if isinstance(G.nodes[company]['resource'], list):
+                    G.nodes[company]['resource'].extend(resource_list)
                 else:
-                    G.nodes[receiver_name]['resource'] = [G.nodes[receiver_name]['resource'], resource]
+                    G.nodes[company]['resource'] = [G.nodes[company]['resource'], resource_list]
             else:
-                G.nodes[receiver_name]['resource'] = [resource]
-        else:
-            G.add_node(receiver_name, type='company', business=receiver_business, resource=[resource])
+                G.nodes[company]['resource'] = resource_list
 
+        else:
+            G.add_node(company, type='company', waste=waste_list, resource=resource_list)
 
         # match company's waste
-        waste_embedding = P_waste_embeddings[P_waste_list.index(waste)]
-        matched_G_waste_ids = match_material_to_G(waste_embedding, G_waste_list, G_waste_embeddings, similarity_threshold)
-        for matched_G_waste_id in matched_G_waste_ids:
-            G.add_edge(donor_name, G_waste_list[matched_G_waste_id], type='generates')
-
+        for waste in waste_list:
+            waste_embedding = P_waste_embeddings[P_waste_list.index(waste)]
+            matched_G_waste_ids = match_material_to_G(waste_embedding, G_waste_list, G_waste_embeddings, similarity_threshold)
+            for matched_G_waste_id in matched_G_waste_ids:
+                G.add_edge(company, G_waste_list[matched_G_waste_id], type='generates')
+        
         # match company's resource
-        resource_embedding = P_resource_embeddings[P_resource_list.index(resource)]
-        matched_G_resource_ids = match_material_to_G(resource_embedding, G_resource_list, G_resource_embeddings, similarity_threshold)
-        for matched_G_resource_id in matched_G_resource_ids:
-            G.add_edge(G_resource_list[matched_G_resource_id], receiver_name, type='supplies')
+        for resource in resource_list:
+            resource_embedding = P_resource_embeddings[P_resource_list.index(resource)]
+            matched_G_resource_ids = match_material_to_G(resource_embedding, G_resource_list, G_resource_embeddings, similarity_threshold)
+            for matched_G_resource_id in matched_G_resource_ids:
+                G.add_edge(G_resource_list[matched_G_resource_id], company, type='supplies')
 
     return G
 
@@ -257,7 +250,7 @@ def filter_colloaration_links(G, center_company=None):
     return H, num_collaborations
 
 
-def build_IS_network(G, profiles_df, similarity_threshold,
+def build_IS_network(G, profiles_dict, similarity_threshold,
                      G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
                      P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings):
     '''
@@ -271,7 +264,7 @@ def build_IS_network(G, profiles_df, similarity_threshold,
     G = G.copy()
 
     # obtain W2RKG + company nodes connected
-    G = build_W2R_Comp_network(G, profiles_df, similarity_threshold,
+    G = build_W2R_Comp_network(G, profiles_dict, similarity_threshold,
                                G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
                                P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings)
 
@@ -344,7 +337,7 @@ def match_query_company_to_G(G, company_id, waste_query, resource_query, similar
     return G
 
 
-def build_partner_linkages(G, profiles_df, company_id, waste_query, resource_query, similarity_threshold, model,
+def build_partner_linkages(G, profiles_dict, company_id, waste_query, resource_query, similarity_threshold, model,
                            G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
                            P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings):
     '''
@@ -354,7 +347,7 @@ def build_partner_linkages(G, profiles_df, company_id, waste_query, resource_que
     G = G.copy()
 
     # obtain W2RKG + company nodes connected
-    G = build_W2R_Comp_network(G, profiles_df, similarity_threshold,
+    G = build_W2R_Comp_network(G, profiles_dict, similarity_threshold,
                                G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
                                P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings)
     

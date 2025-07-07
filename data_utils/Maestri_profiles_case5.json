@@ -1,0 +1,104 @@
+{
+    "ND - Food and fish processing": {
+        "waste": [
+            "Waste edible oils",
+            "Organic waste",
+            "Polystyrene waste",
+            "Offal"
+        ],
+        "resource": [
+            "Process heat"
+        ]
+    },
+    "ND - Refinery": {
+        "waste": [
+            "Refinery by-products"
+        ],
+        "resource": [
+            "Process heat",
+            "Raw material for Refinery",
+            "Process material"
+        ]
+    },
+    "ND - CHP plant": {
+        "waste": [
+            "Steam"
+        ],
+        "resource": [
+            "Fuel"
+        ]
+    },
+    "ND - Chemical industry": {
+        "waste": [
+            "Hydrogen",
+            "Gypsum"
+        ],
+        "resource": [
+            "Process heat"
+        ]
+    },
+    "ND - Plaster board manufacturer": {
+        "waste": [],
+        "resource": [
+            "Raw material for Plaster board manufacturer"
+        ]
+    },
+    "ND - Gasifier": {
+        "waste": [],
+        "resource": [
+            "Raw material for Gasifier",
+            "Process heat"
+        ]
+    },
+    "ND - Wastewater treatment": {
+        "waste": [
+            "Dry organic pellets"
+        ],
+        "resource": []
+    },
+    "ND - Local farms": {
+        "waste": [
+            "Organic waste"
+        ],
+        "resource": [
+            "Process energy",
+            "Raw material for Local farms"
+        ]
+    },
+    "ND - Furniture production": {
+        "waste": [
+            "Wood dust and chips"
+        ],
+        "resource": []
+    },
+    "ND - Pet food": {
+        "waste": [],
+        "resource": [
+            "Raw material for Pet food"
+        ]
+    },
+    "ND - Interior decoration products": {
+        "waste": [],
+        "resource": [
+            "Raw material for Interior decoration products"
+        ]
+    },
+    "ND - Protein extraction": {
+        "waste": [],
+        "resource": [
+            "Raw material for Protein extraction"
+        ]
+    },
+    "ND - Iron and steel production": {
+        "waste": [
+            "Steel slag"
+        ],
+        "resource": []
+    },
+    "ND - Cement manufacturing": {
+        "waste": [],
+        "resource": [
+            "Raw material for Cement manufacturing"
+        ]
+    }
+}

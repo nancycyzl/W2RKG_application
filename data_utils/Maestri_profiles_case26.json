@@ -1,0 +1,81 @@
+{
+    "Barilla S.p.A.": {
+        "waste": [
+            "Heat",
+            "Food production scraps"
+        ],
+        "resource": [
+            "ND"
+        ]
+    },
+    "IRCI S.p.A.": {
+        "waste": [],
+        "resource": [
+            "Raw material for Methane production from anaerobic digestion"
+        ]
+    },
+    "Schmack Biogas S.r.l.": {
+        "waste": [],
+        "resource": [
+            "Raw material for Biogas production from biomass"
+        ]
+    },
+    "ND - Methane production from anaerobic digestion": {
+        "waste": [],
+        "resource": [
+            "Raw material for Methane production from anaerobic digestion"
+        ]
+    },
+    "Opoe Cons. Coop. Agr. PA": {
+        "waste": [],
+        "resource": [
+            "ND"
+        ]
+    },
+    "A.R.P. Soc. Agr. Coop.": {
+        "waste": [
+            "Muds",
+            "Agricultural wastes",
+            "Packaging",
+            "Agricultural wastes, packaging and muds"
+        ],
+        "resource": []
+    },
+    "ND - Energy production from biomass": {
+        "waste": [],
+        "resource": [
+            "Fuel"
+        ]
+    },
+    "CGM Spa": {
+        "waste": [],
+        "resource": [
+            "Raw material for Plastic products production"
+        ]
+    },
+    "CCPL Group": {
+        "waste": [],
+        "resource": [
+            "Raw material for Food packaging"
+        ]
+    },
+    "ND - ND": {
+        "waste": [],
+        "resource": [
+            "ND"
+        ]
+    },
+    "Softer Color Srl": {
+        "waste": [
+            "Packaging and wood wastes",
+            "Packaging"
+        ],
+        "resource": []
+    },
+    "ND - Power plant": {
+        "waste": [],
+        "resource": [
+            "Fuel"
+        ]
+    }
+}

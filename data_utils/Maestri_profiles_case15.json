@@ -1,0 +1,80 @@
+{
+    "ND - Steel dust recycling": {
+        "waste": [
+            "Heat"
+        ],
+        "resource": []
+    },
+    "Landskrona": {
+        "waste": [],
+        "resource": [
+            "Heat"
+        ]
+    },
+    "ND - Lead battery recycling": {
+        "waste": [
+            "Heat"
+        ],
+        "resource": []
+    },
+    "ND - Agricultural seeds production": {
+        "waste": [
+            "Organic waste",
+            "Dusty organic materials"
+        ],
+        "resource": [
+            "Ingredient to bind the dusty organic material"
+        ]
+    },
+    "ND - Production of binders for paint manufacturing": {
+        "waste": [
+            "\"Glue like\" waste"
+        ],
+        "resource": []
+    },
+    "ND - Industrial and urban waste management": {
+        "waste": [
+            "Plastic pellets"
+        ],
+        "resource": []
+    },
+    "ND - Car glass production": {
+        "waste": [
+            "Waste water",
+            "Glass waste"
+        ],
+        "resource": []
+    },
+    "ND - Glass fiber production": {
+        "waste": [],
+        "resource": [
+            "Raw material for Glass fiber production"
+        ]
+    },
+    "ND - Construction industry": {
+        "waste": [],
+        "resource": [
+            "Raw material for Construction industry"
+        ]
+    },
+    "ND - Printing": {
+        "waste": [
+            "Ethanol"
+        ],
+        "resource": [
+            "Water used to replace quality drinking water in the wet scrubber removing VOCs from the flue gases"
+        ]
+    },
+    "ND - Heat generation": {
+        "waste": [],
+        "resource": [
+            "Ethanol content of wastewater is increased after exchange 15,17,8 because the scrubber becomes more efficient and is used in the wastewater treatment "
+        ]
+    },
+    "ND - Electricity generation": {
+        "waste": [],
+        "resource": [
+            "Fuel"
+        ]
+    }
+}

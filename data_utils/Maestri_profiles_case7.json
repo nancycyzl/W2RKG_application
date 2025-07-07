@@ -1,0 +1,190 @@
+{
+    "QD beer brewery": {
+        "waste": [
+            "Vinesse"
+        ],
+        "resource": []
+    },
+    "CQ fertiliser factory": {
+        "waste": [],
+        "resource": [
+            "Raw material for Fertiliser company"
+        ]
+    },
+    "RW distillery": {
+        "waste": [
+            "Vinesse"
+        ],
+        "resource": []
+    },
+    "ND - Feed mill": {
+        "waste": [],
+        "resource": [
+            "Raw material for Feed mill"
+        ]
+    },
+    "ND - Citrate acid factory": {
+        "waste": [
+            "Residue"
+        ],
+        "resource": [
+            "Used instead of calcium carbonate"
+        ]
+    },
+    "YTSB Pulp and Paper Limited Company": {
+        "waste": [
+            "White sludge",
+            "Waste hot water",
+            "Wood chips",
+            "Fly ash",
+            "Green mud",
+            "Sludge",
+            "Reclaimed water"
+        ],
+        "resource": [
+            "Raw material for Pulp and paper plant"
+        ]
+    },
+    "SB fertilizer factory": {
+        "waste": [],
+        "resource": [
+            "Raw material for Fertiliser company"
+        ]
+    },
+    "YT building material factory": {
+        "waste": [],
+        "resource": [
+            "Raw material for Building material production"
+        ]
+    },
+    "Port of Rizhao": {
+        "waste": [],
+        "resource": [
+            "Water"
+        ]
+    },
+    "ND - Aquaculture mill": {
+        "waste": [],
+        "resource": [
+            "Process heat"
+        ]
+    },
+    "JZ charcoal factory": {
+        "waste": [],
+        "resource": [
+            "Fuel"
+        ]
+    },
+    "CQ wood factory": {
+        "waste": [
+            "Wood board"
+        ],
+        "resource": []
+    },
+    "HY cement plant": {
+        "waste": [],
+        "resource": [
+            "Raw material for Cement production"
+        ]
+    },
+    "ND - Power plant": {
+        "waste": [
+            "Fly ash",
+            "Coal slag"
+        ],
+        "resource": [
+            "Water"
+        ]
+    },
+    "XL Oil / BYSW Oil": {
+        "waste": [
+            "Clay-oil",
+            "Condensed water"
+        ],
+        "resource": []
+    },
+    "JJ algae plant": {
+        "waste": [
+            "Seaweed residues"
+        ],
+        "resource": []
+    },
+    "YK organic agricultural company": {
+        "waste": [
+            "Waste residue"
+        ],
+        "resource": [
+            "Raw material for Agricultural company"
+        ]
+    },
+    "XT fertiliser factory": {
+        "waste": [],
+        "resource": [
+            "Raw material for Fertiliser company"
+        ]
+    },
+    "YQ clay-oil factory": {
+        "waste": [
+            "Waste clay"
+        ],
+        "resource": [
+            "Raw material for Clay-oil production"
+        ]
+    },
+    "SY textile mill": {
+        "waste": [
+            "Leftovers"
+        ],
+        "resource": []
+    },
+    "ND - Toy factory": {
+        "waste": [],
+        "resource": [
+            "Raw material for Toy factory"
+        ]
+    },
+    "HX knitwear mill": {
+        "waste": [
+            "Leftovers"
+        ],
+        "resource": []
+    },
+    "LYH sugar plant": {
+        "waste": [
+            "Waste molasses"
+        ],
+        "resource": []
+    },
+    "HD alcohol plant": {
+        "waste": [
+            "Carbon dioxide"
+        ],
+        "resource": [
+            "Used instead of manihot"
+        ]
+    },
+    "LY packing house": {
+        "waste": [],
+        "resource": [
+            "Raw material for Packaging site"
+        ]
+    },
+    "WY auto engine works": {
+        "waste": [
+            "Scrap metal"
+        ],
+        "resource": []
+    },
+    "ND - Metallurgical enterprises": {
+        "waste": [],
+        "resource": [
+            "Raw material for Metallurgical enterprises"
+        ]
+    },
+    "HB machinery making factory": {
+        "waste": [
+            "Scrap metal"
+        ],
+        "resource": []
+    }
+}
