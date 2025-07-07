@@ -1,24 +1,24 @@
-Process heat
-Process energy
-Water
-Fuel
-Raw material for Cement production
-Raw material for Construction materials production
-Raw material for Road construction
-Raw material for Distilleries
-Fertilizer
-Heat
 Cooling
-Raw materials
-Road foundations
-Paving
-Fertiliser
-Raw material for Marine embarkments
-Removal or retention of phosphorous from wastewater
-Raw material for Steelworks
-Raw material for Production of refractories
-Raw material for Production of concrete
-Raw material for Production of bricks
-Raw material for Rock wool production
+Raw material for Distilleries
+Process energy
 Raw material for Glass and glass-ceramic production
+Raw material for Cement production
+Raw material for Production of concrete
+Raw material for Road construction
+Raw material for Production of bricks
+Process heat
+Fuel
+Raw material for Steelworks
+Raw material for Rock wool production
+Paving
+Road foundations
+Water
 Soil quality improvement and fertiliser
+Raw material for Construction materials production
+Heat
+Raw material for Production of refractories
+Raw material for Marine embarkments
+Fertiliser
+Removal or retention of phosphorous from wastewater
+Raw materials
+Fertilizer

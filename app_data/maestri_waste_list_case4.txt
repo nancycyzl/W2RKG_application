@@ -1,9 +1,9 @@
-Steam
 Waste hot water
-Sulfur
-Scrubber sludge
-Waste water
-Cooling water
 Fly ash
-Organic residues
+Sulfur
 Yeast slurry and sludge
+Steam
+Waste water
+Scrubber sludge
+Cooling water
+Organic residues

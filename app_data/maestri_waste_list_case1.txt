@@ -1,22 +1,22 @@
-Vapour and demineralised water
-Electricity
 Sea and well water, condensing vapour
-Fuel gas
-Fuel oil
-Demineralised water
-Exhaust gas
-Steam
-Mill scales
-BF slag
-Coal fly ash
 Construction and demolition waste
-Marc and dregs
-Oil mill waste water
-Waste heat
-Waste coolant
-Refractories
-BFS/BOSF
 BOSF
+Coal fly ash
 BFS
-BOFS as aggregate
+BF slag
+Refractories
+Demineralised water
+Mill scales
+Electricity
+Marc and dregs
 Fly ash
+Exhaust gas
+Fuel oil
+Waste heat
+BOFS as aggregate
+Waste coolant
+Fuel gas
+Vapour and demineralised water
+Oil mill waste water
+Steam
+BFS/BOSF

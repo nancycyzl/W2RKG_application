@@ -5,19 +5,28 @@ import numpy as np
 def load_kg_file(kg_file):
     if kg_file:
         try:
-            with open(kg_file, 'r') as f:
-                return json.load(f)
+            if isinstance(kg_file, str):
+                with open(kg_file, 'r', encoding='utf-8') as f:
+                    return json.load(f)
+            else:  # Assume it's a file-like object (e.g., UploadedFile)
+                # Reset pointer in case it was read before
+                kg_file.seek(0)
+                return json.load(io.TextIOWrapper(kg_file, encoding='utf-8'))
         except Exception as e:
-            st.error(f"Error loading KG JSON: {e}")
+            st.error(f"Error loading KG JSON {kg_file}: {e}")
     return []
 
 def load_profiles_file(prof_file):
     if prof_file:
         try:
-            with open(prof_file, 'r') as f:
-                return json.load(f)
+            if isinstance(prof_file, str):
+                with open(prof_file, 'r', encoding='utf-8') as f:
+                    return json.load(f)
+            else:  # Assume it's a file-like object (e.g., UploadedFile)
+                prof_file.seek(0)
+                return json.load(io.TextIOWrapper(prof_file, encoding='utf-8'))
         except Exception as e:
-            st.error(f"Error loading company profile JSON: {e}")
+            st.error(f"Error loading company profile JSON {prof_file}: {e}")
     return {}
 
 def build_W2R_graph(kg_triples):

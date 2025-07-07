@@ -47,14 +47,14 @@ st.title("W2RKG: Application in IS Opportunity Identification")
 
 # intialize kg_file and prof_file
 kg_file_default = 'data_utils/fused_triples_aggregated.json'
-prof_file_default = 'data_utils/Maestri_case1.csv'
+prof_file_default = 'data_utils/Maestri_profiles_case1.json'
 model = None
 col_up1, col_up2, col_up3, _ = st.columns([1, 1, 0.6, 1.2])  # Three columns for file uploaders and model selection
 
 with col_up1:
     kg_file_uploaded = st.file_uploader("📤 Upload W2RKG JSON", type="json", key="kg_main")
 with col_up2:
-    prof_file_uploaded = st.file_uploader("📤 Upload company profile CSV", type="csv", key="profile_main")
+    prof_file_uploaded = st.file_uploader("📤 Upload company profile JSON", type="json", key="profile_main")
 with col_up3:
     model_options = ["null", "gte-large-en-v1.5"]
     selected_model = st.selectbox("🤖 Select embedding model", model_options, index=0)

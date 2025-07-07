@@ -1,8 +1,8 @@
-Process heat
-Heat
-Raw material for Liquid fertiliser producer
-Raw material for Wall-board plant
-Water
-Process cooling
-Raw material for Cement manufacturing
 Animal feeding
+Process cooling
+Raw material for Wall-board plant
+Heat
+Raw material for Cement manufacturing
+Process heat
+Water
+Raw material for Liquid fertiliser producer

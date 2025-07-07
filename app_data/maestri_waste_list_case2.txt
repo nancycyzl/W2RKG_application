@@ -1,9 +1,9 @@
-Electricity
-CO2
-Calcium carbonate
 Chlorine dioxide
-Sodium hydroxide
-Bark
+Calcium carbonate
+CO2
 Waste water
-Chlorine
 Sludge
+Chlorine
+Bark
+Electricity
+Sodium hydroxide

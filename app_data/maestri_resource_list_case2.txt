@@ -1,8 +1,8 @@
 Process energy
-Raw material for Calcium carbonate plant
-Raw material for Pulp and paper plant
-Fuel
-Raw material for Power plant
 Heat
+Raw material for Power plant
+Fuel
 Water
+Raw material for Pulp and paper plant
+Raw material for Calcium carbonate plant
 Raw material for Water purification plant

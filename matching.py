@@ -26,8 +26,8 @@ def embed_profile_and_save(profiles_dict, model, case_id):
     waste_list = []
     resource_list = []
     for company in profiles_dict:
-        waste_list.extend(profiles_dict[company]['waste generation'])
-        resource_list.extend(profiles_dict[company]['resource demand'])
+        waste_list.extend(profiles_dict[company]['waste'])
+        resource_list.extend(profiles_dict[company]['resource'])
 
     # remove duplicates
     waste_list = list(set(waste_list))
@@ -90,7 +90,15 @@ def embed_w2rkg_and_save(w2rkg_dict, model):
 
 def obtain_profile_embeddings(profiles_dict, prof_file, model):
     # obtain case_id
-    case_id = prof_file.basename().split('.')[0].split('case')[1]
+    if isinstance(prof_file, str):
+       case_id = os.path.basename(prof_file).split('.')[0].split('case')[1]
+    else:
+        try:
+            prof_filename = prof_file.name
+            case_id = prof_filename.split('.')[0].split('case')[1]
+        except:
+            case_id = None
+    
     case_id_placeholder = f"_case{case_id}" if case_id is not None else ""
 
     try:
@@ -144,8 +152,8 @@ def build_W2R_Comp_network(G, profiles_dict, similarity_threshold,
     # Add company nodes and their connections to wastes/resources
 
     for company in profiles_dict:
-        waste_list = profiles_dict[company]['waste generation']
-        resource_list = profiles_dict[company]['resource demand']
+        waste_list = profiles_dict[company]['waste']
+        resource_list = profiles_dict[company]['resource']
 
         # check if company node exists
         if G.has_node(company):
