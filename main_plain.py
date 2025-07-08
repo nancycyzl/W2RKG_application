@@ -7,13 +7,14 @@ from pyvis.network import Network
 import matplotlib.pyplot as plt
 import argparse
 import pyvis
-
+from sklearn.metrics.pairwise import cosine_similarity
+import numpy as np
 
 from matching import obtain_W2RKG_embeddings, obtain_profile_embeddings, build_W2R_Comp_network, filter_colloaration_links
 from utils import load_kg_file, load_profiles_file, build_W2R_graph
 
 
-def create_network(kg_file, prof_file, threshold=0.8):
+def create_network(kg_file, prof_file, threshold=0.8, return_embeddings=False):
     
     # the basic W2R graph
     kg_triples = load_kg_file(kg_file)
@@ -28,7 +29,7 @@ def create_network(kg_file, prof_file, threshold=0.8):
     model = "NA"
 
     G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings = obtain_W2RKG_embeddings(kg_triples, model)
-    P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings = obtain_profile_embeddings(profiles_df, model)
+    P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings = obtain_profile_embeddings(profiles_df, prof_file, model)
 
     G = build_W2R_Comp_network(G, profiles_df, threshold,
                             G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings,
@@ -36,7 +37,14 @@ def create_network(kg_file, prof_file, threshold=0.8):
 
     print(f"W2R graph has {G.number_of_nodes()} nodes and {G.number_of_edges()} edges.")
 
-    return G
+
+    graph_embeddings = [G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings]
+    profile_embeddings = [P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings]
+
+    if return_embeddings:
+        return G, graph_embeddings, profile_embeddings
+    else:
+        return G
 
 def visualize_network(G, save_folder):
     # Find company nodes
@@ -165,9 +173,30 @@ def visualize_network_html(G, save_folder):
     net.save_graph(html_path)
     print(f"Interactive visualization saved to: {html_path}")
 
-def save_exchanges(G, save_folder):
+def match_G_material_to_P(provider_wastes, receiver_resources, waste, resource, graph_embeddings, profile_embeddings, threshold=0.8):
+    # G waste embedding & P waste embedding list -> matched P waste list
+    G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings = graph_embeddings
+    P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings = profile_embeddings
+
+    G_waste_embed = G_waste_embeddings[G_waste_list.index(waste)]
+    P_waste_embeds = [P_waste_embeddings[P_waste_list.index(waste)] for waste in provider_wastes]
+    G_waste_sims = cosine_similarity(G_waste_embed.reshape(1, -1), np.array(P_waste_embeds))[0]
+    matched_prof_wastes = [provider_wastes[i] for i, sim in enumerate(G_waste_sims) if sim >= threshold]
+    
+    # G resource embedding -> P resource embedding list
+    G_resource_embed = G_resource_embeddings[G_resource_list.index(resource)]
+    P_resource_embeds = [P_resource_embeddings[P_resource_list.index(resource)] for resource in receiver_resources]
+    G_resource_sims = cosine_similarity(G_resource_embed.reshape(1, -1), np.array(P_resource_embeds))[0]
+    matched_prof_resources = [receiver_resources[i] for i, sim in enumerate(G_resource_sims) if sim >= threshold]
+
+    return matched_prof_wastes, matched_prof_resources
+
+
+def save_exchanges(G, graph_embeddings, profile_embeddings, threshold=0.8, save_folder=None):
     # For each company, find all (company -> waste -> resource -> company) paths
     all_exchanges = []
+    G_waste_list, G_resource_list, G_waste_embeddings, G_resource_embeddings = graph_embeddings
+    P_waste_list, P_resource_list, P_waste_embeddings, P_resource_embeddings = profile_embeddings
 
     for company1 in [n for n, d in G.nodes(data=True) if d.get('type') == 'company']:
         # Out edges from company1 to waste
@@ -182,18 +211,27 @@ def save_exchanges(G, save_folder):
                 for company2 in G.successors(resource):
                     if G.nodes[company2].get('type') != 'company':
                         continue
-                    # Print the exchange path
-                    all_exchanges.append([company1, company2, waste, resource])
+                    # get the exchange path
+                    # all_exchanges.append([company1, company2, waste, resource])    # company -> graph waste node -> graph resource node -> company
 
-    all_exchanges_df = pd.DataFrame(all_exchanges, columns=['donor', 'receiver', 'waste', 'resource'])
+                    # match the graph materials to the profile materials
+                    provider_wastes = G.nodes[company1].get('waste', [])
+                    receiver_resources = G.nodes[company2].get('resource', [])
+
+                    matched_prof_wastes, matched_prof_resources = match_G_material_to_P(provider_wastes, receiver_resources, waste, resource, graph_embeddings, profile_embeddings, threshold)
+
+                    all_exchanges.append([company1, company2, ";".join(matched_prof_wastes), ";".join(matched_prof_resources), waste, resource])
+
+
+    all_exchanges_df = pd.DataFrame(all_exchanges, columns=['donor', 'receiver', 'P_wastes', 'P_resources', 'G_waste', 'G_resource'])
 
     if save_folder is not None:
         all_exchanges_df.to_csv(os.path.join(save_folder, 'company_network_exchanges.csv'), index=False)
 
     return all_exchanges_df
 
-def compare_with_maestri(all_exchanges_df, prof_file, save_folder):
-    prof_df = pd.read_csv(prof_file)
+def compare_with_maestri(all_exchanges_df, case_file, save_folder):
+    prof_df = pd.read_csv(case_file)
     # Process company names in prof_df to match format in all_exchanges_df
     prof_df['donor_name'] = prof_df.apply(lambda row: f"ND - {row['donor_business']}" if row['donor_name'] == "ND" else row['donor_name'], axis=1)
     prof_df['receiver_name'] = prof_df.apply(lambda row: f"ND - {row['receiver_business']}" if row['receiver_name'] == "ND" else row['receiver_name'], axis=1)
@@ -204,12 +242,30 @@ def compare_with_maestri(all_exchanges_df, prof_file, save_folder):
     all_companies = list(set(all_donors + all_receivers))
     all_companies.sort()
 
+    # get donors' wastes and receivers' resources
+    waste_dict = {}
+    resource_dict = {}
+    for company in all_companies:
+        waste_dict[company] = []
+        resource_dict[company] = []
+        # get its wastes
+        donor_df = prof_df[prof_df['donor_name'] == company]
+        waste_dict[company] = donor_df['waste'].unique().tolist()
+        # get its resources
+        receiver_df = prof_df[prof_df['receiver_name'] == company]
+        resource_dict[company] = receiver_df['resource'].unique().tolist()
+    
+
     # save comparison table
     comparison_data = []
 
     for donor in all_companies:
         for receiver in all_companies:
-            companies = f"{donor} -> {receiver}"
+
+            # wastes and resources
+            wastes = '\n'.join(waste_dict[donor])
+            resources = '\n'.join(resource_dict[receiver])
+
             # maestri exchanges
             maestri_exchanges_df = prof_df[(prof_df['donor_name'] == donor) & (prof_df['receiver_name'] == receiver)]
             maestri_num_exchanges = maestri_exchanges_df.shape[0]
@@ -218,14 +274,38 @@ def compare_with_maestri(all_exchanges_df, prof_file, save_folder):
             # our exchanges
             our_exchanges_df = all_exchanges_df[(all_exchanges_df['donor'] == donor) & (all_exchanges_df['receiver'] == receiver)]
             our_num_exchanges = our_exchanges_df.shape[0]
-            our_exchanges_details = '\n'.join([f"{row['waste']} -> {row['resource']}" for _, row in our_exchanges_df.iterrows()])
+            our_exchanges_details = '\n'.join([f"{row['G_waste']} -> {row['G_resource']}" for _, row in our_exchanges_df.iterrows()])
+            
+            # final identified exchanges
+            final_exchanges = []
+            for _, row in our_exchanges_df.iterrows():
+                matched_P_wastes = row['P_wastes'].split(';')
+                matched_P_resources = row['P_resources'].split(';')
+                for matched_P_waste in matched_P_wastes:
+                    for matched_P_resource in matched_P_resources:
+                        final_exchanges.append(f"{matched_P_waste} -> {matched_P_resource}")
+            final_exchanges = list(set(final_exchanges))
+            final_exchanges_details = '\n'.join(final_exchanges)
+            final_num_exchanges = len(final_exchanges)
 
             if maestri_num_exchanges > 0 or our_num_exchanges > 0:
-                comparison_data.append([companies, maestri_num_exchanges, our_num_exchanges, maestri_exchanges_details, our_exchanges_details])
+                comparison_data.append([donor, receiver, wastes, resources, maestri_num_exchanges, our_num_exchanges, final_num_exchanges, maestri_exchanges_details, our_exchanges_details, final_exchanges_details])
 
-    comparison_df = pd.DataFrame(comparison_data, columns=['companies', 'maestri_num_exchanges', 'our_num_exchanges', 'maestri_exchanges_details', 'our_exchanges_details'])
+    comparison_df = pd.DataFrame(comparison_data, columns=['donor', 'receiver', 'donor_wastes', 'receiver_resources', 'maestri_num_exchanges', 'our_num_exchanges', 'final_num_exchanges', 'maestri_exchanges_details', 'our_exchanges_details', 'final_exchanges_details'])
     comparison_df.to_csv(os.path.join(save_folder, 'comparison_with_maestri.csv'), index=False)
     print(f"Comparison table saved to: {os.path.join(save_folder, 'comparison_with_maestri.csv')}")
+
+    # check how many maestri collaborations are in our identified ones
+    # Count overlapping collaborations (where both Maestri and our approach identified exchanges)
+    maestri_num_collaborations = len(comparison_df[comparison_df['maestri_num_exchanges'] >= 1])
+    our_num_collaborations = len(comparison_df[comparison_df['our_num_exchanges'] >= 1])
+    final_num_collaborations = len(comparison_df[comparison_df['final_num_exchanges'] >= 1])
+    overlapping_collaborations = len(comparison_df[(comparison_df['maestri_num_exchanges'] >= 1) & (comparison_df['final_num_exchanges'] >= 1)])
+    print(f"Number of collaborations identified by Maestri: {maestri_num_collaborations}")
+    print(f"Number of collaborations identified by our approach (before matching): {our_num_collaborations}")
+    print(f"Number of collaborations identified by our approach (after matching): {final_num_collaborations}")
+    print(f"\nNumber of overlapping collaborations between Maestri and our approach: {overlapping_collaborations}")
+    
 
     # --- Create networks for visualization ---
     # 1. Maestri: MultiDiGraph (multiple edges)
@@ -236,14 +316,17 @@ def compare_with_maestri(all_exchanges_df, prof_file, save_folder):
     G_maestri_single = nx.DiGraph()
     for _, row in prof_df.iterrows():
         G_maestri_single.add_edge(row['donor_name'], row['receiver_name'])
+
     # 3. Ours: MultiDiGraph (multiple edges)
     G_ours_multi = nx.MultiDiGraph()
-    for _, row in all_exchanges_df.iterrows():
-        G_ours_multi.add_edge(row['donor'], row['receiver'])
+    for _, row in comparison_df.iterrows():
+        for _ in range(int(row["final_num_exchanges"])):
+            G_ours_multi.add_edge(row['donor'], row['receiver'])
     # 4. Ours: DiGraph (single edge)
     G_ours_single = nx.DiGraph()
-    for _, row in all_exchanges_df.iterrows():
-        G_ours_single.add_edge(row['donor'], row['receiver'])
+    for _, row in comparison_df.iterrows():
+        for _ in range(int(row["final_num_exchanges"])):
+            G_ours_single.add_edge(row['donor'], row['receiver'])
 
     # Add all companies as nodes to each graph (to show isolated nodes)
     for company in all_companies:
@@ -253,10 +336,11 @@ def compare_with_maestri(all_exchanges_df, prof_file, save_folder):
         G_ours_single.add_node(company)
 
     # Fix node positions for all graphs using the union of all nodes
-    all_nodes = set(G_maestri_multi.nodes()) | set(G_maestri_single.nodes()) | set(G_ours_multi.nodes()) | set(G_ours_single.nodes())
+    # Use sorted list to ensure consistent node order across runs
+    all_nodes = sorted(set(G_maestri_multi.nodes()) | set(G_maestri_single.nodes()) | set(G_ours_multi.nodes()) | set(G_ours_single.nodes()))
     G_union = nx.DiGraph()
     G_union.add_nodes_from(all_nodes)
-    pos = nx.spring_layout(G_union, seed=42)
+    pos = nx.spring_layout(G_union, seed=15)
 
     # Plotting helper
     def plot_graph(G, pos, title, filename):
@@ -296,19 +380,20 @@ def compare_with_maestri(all_exchanges_df, prof_file, save_folder):
         plt.savefig(os.path.join(save_folder, filename))
         plt.close()
 
-    plot_graph(G_maestri_multi, pos, 'Maestri (MultiDiGraph)', 'comparison_maestri_multiedge.png')
-    plot_graph(G_maestri_single, pos, 'Maestri (DiGraph)', 'comparison_maestri_singleedge.png')
-    plot_graph(G_ours_multi, pos, 'Ours (MultiDiGraph)', 'comparison_ours_multiedge.png')
-    plot_graph(G_ours_single, pos, 'Ours (DiGraph)', 'comparison_ours_singleedge.png')
-    print("Network plots saved.")
 
-def compare_multiple_thresholds(args):
+    plot_graph(G_maestri_multi, pos, 'Maestri (MultiDiGraph)', f'comparison_maestri_multiedge.png')
+    plot_graph(G_maestri_single, pos, 'Maestri (DiGraph)', f'comparison_maestri_singleedge.png')
+    plot_graph(G_ours_multi, pos, 'Ours (MultiDiGraph)', f'comparison_ours_multiedge.png')
+    plot_graph(G_ours_single, pos, 'Ours (DiGraph)', f'comparison_ours_singleedge.png')
+    print(f"Network plots saved.")
+
+def compare_multiple_thresholds(args, graph_embeddings, profile_embeddings):
     thresholds = [0.7, 0.75, 0.8, 0.85, 0.9, 0.95]
     num_exchanges_list = []
     for threshold in thresholds:
         print(f"Processing threshold: {threshold}...")
         G = create_network(args.kg_file, args.prof_file, threshold=threshold)    # W2RKG + company nodes
-        all_exchanges_df = save_exchanges(G, save_folder=None)
+        all_exchanges_df = save_exchanges(G, graph_embeddings, profile_embeddings, threshold=threshold, save_folder=None)
         num_exchanges_list.append(all_exchanges_df.shape[0])
         print(f"Number of exchanges: {all_exchanges_df.shape[0]}")
     
@@ -334,8 +419,8 @@ def compare_multiple_thresholds(args):
 
 def main(args):
     if args.test_one_case:    
-        G = create_network(args.kg_file, args.prof_file, threshold=args.threshold)    # W2RKG + company nodes
-        all_exchanges_df = save_exchanges(G, args.save_folder)
+        G, graph_embeddings, profile_embeddings = create_network(args.kg_file, args.prof_file, threshold=args.threshold, return_embeddings=True)    # W2RKG + company nodes
+        all_exchanges_df = save_exchanges(G, graph_embeddings, profile_embeddings, threshold=args.threshold, save_folder=args.save_folder)
 
     if args.save_visualization:
         if not args.test_one_case:
@@ -347,16 +432,17 @@ def main(args):
     if args.compare_with_maestri:
         if not args.test_one_case:
             raise ValueError("Need to enable test_one_case for comparison with Maestri.")
-        compare_with_maestri(all_exchanges_df, args.prof_file, args.save_folder)
+        compare_with_maestri(all_exchanges_df, args.case_file, args.save_folder)
 
     if args.compare_multiple_thresholds:
-        compare_multiple_thresholds(args)
+        compare_multiple_thresholds(args, graph_embeddings, profile_embeddings)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--kg_file', type=str, default='data_utils/fused_triples_aggregated.json')
-    parser.add_argument('--prof_file', type=str, default='data_utils/Maestri_case1.csv')
+    parser.add_argument('--prof_file', type=str, default='data_utils/Maestri_profiles_case1.json')
+    parser.add_argument('--case_file', type=str, default='data_utils/Maestri_case1.csv')
     parser.add_argument('--threshold', type=float, default=0.8)
     parser.add_argument('--save_folder', type=str, default='case_study1')
 
@@ -366,7 +452,9 @@ if __name__ == "__main__":
     parser.add_argument('--compare_multiple_thresholds', action='store_true')
     args = parser.parse_args()
 
-    if not os.path.exists(args.save_folder):
-        os.makedirs(args.save_folder)
+    save_folder = os.path.join(args.save_folder, f'threshold_{args.threshold}')
+    if not os.path.exists(save_folder):
+        os.makedirs(save_folder)
+    args.save_folder = save_folder
 
     main(args)

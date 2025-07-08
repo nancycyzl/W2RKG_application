@@ -1,0 +1,12 @@
+donor,receiver,P_wastes,P_resources,G_waste,G_resource
+ILVA,ND - Agroindustry,BF slag,Fertiliser;Fertilizer,blast furnace slag,fertilizer
+CEMENTIR,Taranto,Coal fly ash,Heat,power plant ash,heat
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertiliser;Fertilizer,power plant ash,fertilizer
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertiliser;Fertilizer,fly ash,fertilizer
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertilizer,fly ash,bio-fertilizer
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,construction and demolition waste,materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,construction and demolition waste,raw materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,construction and demolition waste,secondary raw materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,construction waste,materials
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Fertilizer,fly ash,fertilizer
+ND - Power plant,ND - Agroindustry,Fly ash,Fertilizer,fly ash,bio-fertilizer

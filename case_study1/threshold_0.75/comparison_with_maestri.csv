@@ -1,0 +1,1737 @@
+donor,receiver,donor_wastes,receiver_resources,maestri_num_exchanges,our_num_exchanges,final_num_exchanges,maestri_exchanges_details,our_exchanges_details,final_exchanges_details
+CEMENTIR,CEMENTIR,"Coal fly ash
+Waste heat","Raw material for Cement production
+Process energy",0,8,1,,"slag -> feedstock for cement clinker production
+petroleum coke fly ash -> cement
+coal -> feedstock for cement clinker production
+biomass combustion ash -> cement
+sewage sludge ash -> cementitious materials
+fly ash -> cementitious materials
+fly ash -> feedstock for cement clinker production
+fly ash -> cement",Coal fly ash -> Raw material for Cement production
+CEMENTIR,ENI refinery,"Coal fly ash
+Waste heat","Process heat
+Process energy
+Water",0,3,3,,"waste -> hot water
+power plant ash -> heat
+fly ash -> hydrogen","Waste heat -> Water
+Coal fly ash -> Process heat
+Coal fly ash -> Water"
+CEMENTIR,Edison power station,"Coal fly ash
+Waste heat","Process heat
+Process energy",0,1,1,,power plant ash -> heat,Coal fly ash -> Process heat
+CEMENTIR,Enipower power station,"Coal fly ash
+Waste heat","Fuel
+Water",0,12,4,,"waste oil -> biodiesel
+waste oil -> crude oil
+waste -> hot water
+ash waste -> biofuels
+incineration fly ash -> biofuels
+charcoal production residues -> bioenergy
+coal gasification fly ash -> biofuels
+biomass combustion ash -> improved fuel characteristics
+sewage sludge ash -> bioenergy
+dry ash -> biofuels
+fly ash -> hydrogen
+fly ash -> biofuels","Waste heat -> Water
+Waste heat -> Fuel
+Coal fly ash -> Fuel
+Coal fly ash -> Water"
+CEMENTIR,ILVA,"Coal fly ash
+Waste heat","Process energy
+Process heat",0,1,1,,power plant ash -> heat,Coal fly ash -> Process heat
+CEMENTIR,ND - Agroindustry,"Coal fly ash
+Waste heat","Fertilizer
+Fertiliser
+Soil quality improvement and fertiliser",0,50,6,,"energy waste -> biogas
+high-calorific waste -> compost
+high-calorific waste -> biogas
+waste heat -> biogas
+waste carbon -> ammonia
+waste -> fertilizer
+lignite -> biogas
+coal-based solid waste -> soil improver
+coal mine waste -> soil improver
+power plant ash -> phosphorus
+power plant ash -> fertilizer
+coal -> biochar
+coal gangue -> fertilizer
+blast furnace slag -> fertilizer
+blast furnace slag -> zeolite
+biomass combustion ash -> zeolite
+biomass combustion ash -> biogas
+biomass combustion ash -> fertilizer
+biomass combustion ash -> organic fertilizer
+ash from combustion -> phosphorus
+ash from combustion -> plant nutrients
+ash from combustion -> fertilizer
+bituminous coal -> biogas
+sewage sludge ash -> organo-mineral fertilizer
+sewage sludge ash -> organic fertilizer
+sewage sludge ash -> biogas
+sewage sludge ash -> chemical fertilizers
+sewage sludge ash -> bio-fertilizer
+sewage sludge ash -> biofertilizer
+sewage sludge ash -> phosphorus
+sewage sludge ash -> biochar
+sewage sludge ash -> phosphorus fertilizer
+sewage sludge ash -> soil nitrogen
+sewage sludge ash -> phosphate
+sewage sludge ash -> fertilizer
+sewage sludge ash -> fertilizer alternatives
+lignite waste -> humic acid fertilizer
+agricultural waste ash -> compost
+wood ash -> fertilizer
+wood ash -> plant nutrients
+unburned carbon in fly ash -> biochar
+fly ash -> fertilizer
+fly ash -> soil improver
+fly ash -> zeolite
+fly ash -> biochar
+fly ash -> fertilizer substrate
+fly ash -> soil amendment
+fly ash -> bio-fertilizer
+fly ash -> plant nutrients
+fly ash -> stabilised soil","Coal fly ash -> Fertilizer
+Waste heat -> Fertiliser
+Waste heat -> Fertilizer
+Coal fly ash -> Fertiliser
+Waste heat -> Soil quality improvement and fertiliser
+Coal fly ash -> Soil quality improvement and fertiliser"
+CEMENTIR,ND - Construction materials production,"Coal fly ash
+Waste heat",Raw material for Construction materials production,1,14,1,Coal fly ash -> Raw material for Construction materials production,"slag -> construction materials
+slag -> building materials
+fluidized bed fly ash -> building materials
+blast furnace slag -> value-added construction materials
+blast furnace slag -> building materials
+blast furnace slag -> construction materials
+coal waste -> construction products
+biomass combustion ash -> building materials
+sewage sludge ash -> value-added construction materials
+biomass fly ash -> construction materials
+fly ash -> building materials
+fly ash -> construction materials
+fly ash -> value-added construction materials
+fly ash -> low-cost construction material",Coal fly ash -> Raw material for Construction materials production
+CEMENTIR,ND - Distilleries,"Coal fly ash
+Waste heat",Raw material for Distilleries,0,2,1,,"ash from combustion -> secondary raw materials
+agricultural waste ash -> secondary raw materials",Coal fly ash -> Raw material for Distilleries
+CEMENTIR,ND - Electricity production - Organic Rankine Cycle,"Coal fly ash
+Waste heat",Process heat,1,1,1,Waste heat -> Process heat,power plant ash -> heat,Coal fly ash -> Process heat
+CEMENTIR,ND - Glass and glass-ceramic production,"Coal fly ash
+Waste heat",Raw material for Glass and glass-ceramic production,0,3,1,,"blast furnace slag -> transparent glass
+sewage sludge ash -> low-temperature glass-ceramics
+fly ash -> transparent glass",Coal fly ash -> Raw material for Glass and glass-ceramic production
+CEMENTIR,ND - Production of bricks,"Coal fly ash
+Waste heat",Raw material for Production of bricks,0,3,1,,"coal gangue -> bricks
+blast furnace slag -> bricks
+fly ash -> bricks",Coal fly ash -> Raw material for Production of bricks
+CEMENTIR,ND - Production of concrete,"Coal fly ash
+Waste heat",Raw material for Production of concrete,0,11,1,,"slag -> concrete
+slag -> feedstock for cement clinker production
+municipal solid waste ash -> concrete
+coal -> feedstock for cement clinker production
+coal gangue -> concrete
+blast furnace slag -> concrete
+biomass combustion ash -> concrete aggregate
+sewage sludge ash -> concrete
+mining residue sludge -> concrete aggregate
+fly ash -> concrete
+fly ash -> feedstock for cement clinker production",Coal fly ash -> Raw material for Production of concrete
+CEMENTIR,ND - Road construction,"Coal fly ash
+Waste heat","Raw material for Road construction
+Raw materials
+Road foundations
+Paving",0,34,5,,"waste oil -> chemical products
+waste oil -> recycled materials
+high-calorific waste -> recycled materials
+waste -> materials
+waste -> chemical products
+slag -> concrete
+slag -> minerals
+slag -> recycled materials
+slag -> construction materials
+slag -> building materials
+municipal solid waste ash -> concrete
+fluidized bed fly ash -> building materials
+coal -> recovered materials
+coal gangue -> concrete
+blast furnace slag -> concrete
+blast furnace slag -> pavement granules
+blast furnace slag -> building materials
+blast furnace slag -> construction materials
+biomass combustion ash -> building materials
+ash from combustion -> secondary raw materials
+sewage sludge ash -> concrete
+biomass fly ash -> construction materials
+agricultural waste ash -> secondary raw materials
+fly ash -> concrete
+fly ash -> asphalt concrete
+fly ash -> waste reuse in road construction
+fly ash -> pavement granules
+fly ash -> building materials
+fly ash -> construction materials
+fly ash -> valuable materials
+fly ash -> pavers
+fly ash -> road materials
+fly ash -> paving mixes
+fly ash -> recovered materials","Waste heat -> Raw materials
+Coal fly ash -> Raw material for Road construction
+Coal fly ash -> Raw materials
+Coal fly ash -> Road foundations
+Coal fly ash -> Paving"
+CEMENTIR,Taranto,"Coal fly ash
+Waste heat","Heat
+Cooling",1,2,3,Waste heat -> Heat,"waste -> hot water
+power plant ash -> heat","Waste heat -> Heat
+Coal fly ash -> Heat
+Coal fly ash -> Cooling"
+ENI refinery,ENI refinery,"Fuel gas
+Fuel oil
+Waste heat","Process heat
+Process energy
+Water",0,4,3,,"oils -> clean water
+synthetic gas -> hydrogen
+fossil fuel -> hydrogen
+waste -> hot water","Fuel oil -> Water
+Waste heat -> Water
+Fuel gas -> Water"
+ENI refinery,Enipower power station,"Fuel gas
+Fuel oil
+Waste heat","Fuel
+Water",2,20,6,"Fuel gas -> Fuel
+Fuel oil -> Fuel","oils -> clean water
+oils -> biodiesel
+oils -> biofuels
+waste oil -> biodiesel
+waste oil -> crude oil
+fossil fuel diesel -> biofuels
+synthetic gas -> hydrogen
+used cooking oil -> biodiesel
+used cooking oil -> crude oil
+heating oil -> ethanol
+hydrocarbons -> biofuels
+hydrocarbons -> biodiesel
+biomass fuel -> chemical fuels
+fossil fuel -> hydrogen
+fossil fuel -> crude oil
+fossil fuel -> biofuels
+fossil fuel -> gas
+fossil fuel -> renewable fuel
+fossil fuel -> energy efficiency
+waste -> hot water","Fuel oil -> Water
+Waste heat -> Fuel
+Fuel gas -> Fuel
+Waste heat -> Water
+Fuel oil -> Fuel
+Fuel gas -> Water"
+ENI refinery,ND - Agroindustry,"Fuel gas
+Fuel oil
+Waste heat","Fertilizer
+Fertiliser
+Soil quality improvement and fertiliser",0,12,5,,"synthetic gas -> ammonia nitrogen
+used cooking oil -> biochar
+petroleum-derived products -> biochar
+hydrocarbons -> biogas
+fossil fuel -> biochar
+fossil fuel -> biogas
+energy waste -> biogas
+high-calorific waste -> compost
+high-calorific waste -> biogas
+waste heat -> biogas
+waste carbon -> ammonia
+waste -> fertilizer","Fuel oil -> Fertilizer
+Waste heat -> Fertiliser
+Waste heat -> Fertilizer
+Waste heat -> Soil quality improvement and fertiliser
+Fuel gas -> Fertilizer"
+ENI refinery,ND - Construction materials production,"Fuel gas
+Fuel oil
+Waste heat",Raw material for Construction materials production,0,1,1,,petroleum-derived products -> building materials,Fuel oil -> Raw material for Construction materials production
+ENI refinery,ND - Electricity production - Organic Rankine Cycle,"Fuel gas
+Fuel oil
+Waste heat",Process heat,1,0,0,Waste heat -> Process heat,,
+ENI refinery,ND - Road construction,"Fuel gas
+Fuel oil
+Waste heat","Raw material for Road construction
+Raw materials
+Road foundations
+Paving",0,8,3,,"oils -> recovered materials
+waste oil -> chemical products
+waste oil -> recycled materials
+petroleum-derived products -> building materials
+fossil fuel -> chemical products
+high-calorific waste -> recycled materials
+waste -> materials
+waste -> chemical products","Fuel gas -> Raw materials
+Fuel oil -> Raw materials
+Waste heat -> Raw materials"
+ENI refinery,Taranto,"Fuel gas
+Fuel oil
+Waste heat","Heat
+Cooling",1,1,1,Waste heat -> Heat,waste -> hot water,Waste heat -> Heat
+Edison power station,CEMENTIR,"Electricity
+Steam
+Waste heat","Raw material for Cement production
+Process energy",0,3,1,,"energy -> energy resources
+energy -> usable energy
+energy -> energy recovery",Electricity -> Process energy
+Edison power station,ENI refinery,"Electricity
+Steam
+Waste heat","Process heat
+Process energy
+Water",0,5,3,,"waste -> hot water
+batteries -> hydrogen
+energy -> energy resources
+energy -> usable energy
+energy -> energy recovery","Electricity -> Water
+Waste heat -> Water
+Electricity -> Process energy"
+Edison power station,Edison power station,"Electricity
+Steam
+Waste heat","Process heat
+Process energy",0,3,1,,"energy -> energy resources
+energy -> usable energy
+energy -> energy recovery",Electricity -> Process energy
+Edison power station,EniPower power station,"Electricity
+Steam
+Waste heat",Process energy,0,3,1,,"energy -> energy resources
+energy -> usable energy
+energy -> energy recovery",Electricity -> Process energy
+Edison power station,Enipower power station,"Electricity
+Steam
+Waste heat","Fuel
+Water",0,8,4,,"waste oil -> biodiesel
+waste oil -> crude oil
+waste -> hot water
+batteries -> hydrogen
+energy consumption -> bioenergy
+energy consumption -> biofuels
+energy -> energy resources
+energy -> energy efficiency","Electricity -> Water
+Waste heat -> Water
+Waste heat -> Fuel
+Electricity -> Fuel"
+Edison power station,ILVA,"Electricity
+Steam
+Waste heat","Process energy
+Process heat",2,3,1,"Electricity -> Process energy
+Steam -> Process heat","energy -> energy resources
+energy -> usable energy
+energy -> energy recovery",Electricity -> Process energy
+Edison power station,ND - Agroindustry,"Electricity
+Steam
+Waste heat","Fertilizer
+Fertiliser
+Soil quality improvement and fertiliser",0,8,5,,"energy waste -> biogas
+high-calorific waste -> compost
+high-calorific waste -> biogas
+waste heat -> biogas
+waste carbon -> ammonia
+waste -> fertilizer
+energy consumption -> biofertilizer
+energy -> compost","Waste heat -> Fertiliser
+Waste heat -> Fertilizer
+Waste heat -> Soil quality improvement and fertiliser
+Electricity -> Fertilizer
+Electricity -> Fertiliser"
+Edison power station,ND - Distilleries,"Electricity
+Steam
+Waste heat",Raw material for Distilleries,0,1,1,,household electrical appliances -> secondary raw materials,Electricity -> Raw material for Distilleries
+Edison power station,ND - Road construction,"Electricity
+Steam
+Waste heat","Raw material for Road construction
+Raw materials
+Road foundations
+Paving",0,11,2,,"waste oil -> chemical products
+waste oil -> recycled materials
+high-calorific waste -> recycled materials
+waste -> materials
+waste -> chemical products
+batteries -> metals
+energy consumption -> minerals
+household electrical appliances -> secondary raw materials
+household electrical appliances -> metals
+energy -> recovered materials
+electrical and electronic equipment -> recycled materials","Waste heat -> Raw materials
+Electricity -> Raw materials"
+Edison power station,Taranto,"Electricity
+Steam
+Waste heat","Heat
+Cooling",1,1,1,Waste heat -> Heat,waste -> hot water,Waste heat -> Heat
+EniPower power station,ENI refinery,Waste heat,"Process heat
+Process energy
+Water",0,1,1,,waste -> hot water,Waste heat -> Water
+EniPower power station,Enipower power station,Waste heat,"Fuel
+Water",0,3,2,,"waste oil -> biodiesel
+waste oil -> crude oil
+waste -> hot water","Waste heat -> Water
+Waste heat -> Fuel"
+EniPower power station,ND - Agroindustry,Waste heat,"Fertilizer
+Fertiliser
+Soil quality improvement and fertiliser",0,6,3,,"energy waste -> biogas
+high-calorific waste -> compost
+high-calorific waste -> biogas
+waste heat -> biogas
+waste carbon -> ammonia
+waste -> fertilizer","Waste heat -> Soil quality improvement and fertiliser
+Waste heat -> Fertiliser
+Waste heat -> Fertilizer"
+EniPower power station,ND - Electricity production - Organic Rankine Cycle,Waste heat,Process heat,1,0,0,Waste heat -> Process heat,,
+EniPower power station,ND - Road construction,Waste heat,"Raw material for Road construction
+Raw materials
+Road foundations
+Paving",0,5,1,,"waste oil -> chemical products
+waste oil -> recycled materials
+high-calorific waste -> recycled materials
+waste -> materials
+waste -> chemical products",Waste heat -> Raw materials
+EniPower power station,Taranto,Waste heat,"Heat
+Cooling",1,1,1,Waste heat -> Heat,waste -> hot water,Waste heat -> Heat
+Enipower power station,CEMENTIR,"Vapour and demineralised water
+Electricity
+Sea and well water, condensing vapour","Raw material for Cement production
+Process energy",0,3,1,,"energy -> energy resources
+energy -> usable energy
+energy -> energy recovery",Electricity -> Process energy
+Enipower power station,ENI refinery,"Vapour and demineralised water
+Electricity
+Sea and well water, condensing vapour","Process heat
+Process energy
+Water",3,5,3,"Vapour and demineralised water -> Process heat
+Electricity -> Process energy
+Sea and well water, condensing vapour -> Water","batteries -> hydrogen
+energy -> energy resources
+energy -> usable energy
+energy -> energy recovery
+saline water -> clean water","Electricity -> Water
+Sea and well water, condensing vapour -> Water
+Electricity -> Process energy"
+Enipower power station,Edison power station,"Vapour and demineralised water
+Electricity
+Sea and well water, condensing vapour","Process heat
+Process energy",0,3,1,,"energy -> energy resources
+energy -> usable energy
+energy -> energy recovery",Electricity -> Process energy
+Enipower power station,EniPower power station,"Vapour and demineralised water
+Electricity
+Sea and well water, condensing vapour",Process energy,0,3,1,,"energy -> energy resources
+energy -> usable energy
+energy -> energy recovery",Electricity -> Process energy
+Enipower power station,Enipower power station,"Vapour and demineralised water
+Electricity
+Sea and well water, condensing vapour","Fuel
+Water",0,10,4,,"batteries -> hydrogen
+energy consumption -> bioenergy
+energy consumption -> biofuels
+energy -> energy resources
+energy -> energy efficiency
+saline water -> clean water
+saline water -> biofuels
+saline water -> biodiesel
+water vapor -> value-added fuels
+water vapor -> solid fuel","Electricity -> Water
+Sea and well water, condensing vapour -> Water
+Electricity -> Fuel
+Sea and well water, condensing vapour -> Fuel"
+Enipower power station,ILVA,"Vapour and demineralised water
+Electricity
+Sea and well water, condensing vapour","Process energy
+Process heat",0,3,1,,"energy -> energy resources
+energy -> usable energy
+energy -> energy recovery",Electricity -> Process energy
+Enipower power station,ND - Agroindustry,"Vapour and demineralised water
+Electricity
+Sea and well water, condensing vapour","Fertilizer
+Fertiliser
+Soil quality improvement and fertiliser",0,4,3,,"energy consumption -> biofertilizer
+energy -> compost
+saline water -> biogas
+water vapor -> biochar","Electricity -> Fertilizer
+Sea and well water, condensing vapour -> Fertilizer
+Electricity -> Fertiliser"
+Enipower power station,ND - Distilleries,"Vapour and demineralised water
+Electricity
+Sea and well water, condensing vapour",Raw material for Distilleries,0,1,1,,household electrical appliances -> secondary raw materials,Electricity -> Raw material for Distilleries
+Enipower power station,ND - Production of concrete,"Vapour and demineralised water
+Electricity
+Sea and well water, condensing vapour",Raw material for Production of concrete,0,1,1,,seawater -> concrete,"Sea and well water, condensing vapour -> Raw material for Production of concrete"
+Enipower power station,ND - Road construction,"Vapour and demineralised water
+Electricity
+Sea and well water, condensing vapour","Raw material for Road construction
+Raw materials
+Road foundations
+Paving",0,8,3,,"batteries -> metals
+energy consumption -> minerals
+household electrical appliances -> secondary raw materials
+household electrical appliances -> metals
+energy -> recovered materials
+electrical and electronic equipment -> recycled materials
+saline water -> chemical products
+seawater -> concrete","Sea and well water, condensing vapour -> Paving
+Electricity -> Raw materials
+Sea and well water, condensing vapour -> Raw materials"
+ILVA,CEMENTIR,"Demineralised water
+Exhaust gas
+Mill scales
+BF slag
+Waste heat
+Waste coolant
+Refractories
+BFS/BOSF
+BOSF
+BFS
+BOFS as aggregate","Raw material for Cement production
+Process energy",2,5,1,"Mill scales -> Raw material for Cement production
+BF slag -> Raw material for Cement production","slag -> feedstock for cement clinker production
+BOF slag powder -> cement
+steelmaking slag -> cement
+carbonated slag -> cement
+EAF slag -> cement",BF slag -> Raw material for Cement production
+ILVA,ENI refinery,"Demineralised water
+Exhaust gas
+Mill scales
+BF slag
+Waste heat
+Waste coolant
+Refractories
+BFS/BOSF
+BOSF
+BFS
+BOFS as aggregate","Process heat
+Process energy
+Water",0,7,7,,"nitrogen oxides -> heat
+nitrogen oxides -> water
+waste -> hot water
+alumina -> hydrogen
+alumina -> heat
+fluid waste -> treated water
+slag waste -> hydrogen","Waste coolant -> Water
+Refractories -> Process heat
+Exhaust gas -> Process heat
+BF slag -> Water
+Waste heat -> Water
+Exhaust gas -> Water
+Refractories -> Water"
+ILVA,Edison power station,"Demineralised water
+Exhaust gas
+Mill scales
+BF slag
+Waste heat
+Waste coolant
+Refractories
+BFS/BOSF
+BOSF
+BFS
+BOFS as aggregate","Process heat
+Process energy",1,2,2,Exhaust gas -> Process heat,"nitrogen oxides -> heat
+alumina -> heat","Refractories -> Process heat
+Exhaust gas -> Process heat"
+ILVA,Enipower power station,"Demineralised water
+Exhaust gas
+Mill scales
+BF slag
+Waste heat
+Waste coolant
+Refractories
+BFS/BOSF
+BOSF
+BFS
+BOFS as aggregate","Fuel
+Water",1,25,11,Demineralised water -> Water,"flue gas -> biofuels
+flue gas -> biodiesel
+carbon monoxide -> biofuels
+carbon monoxide -> biodiesel
+smoke -> value-added fuels
+smoke -> solid fuel
+nitrogen oxides -> water
+nitrogen oxides -> gas
+nitrogen oxides -> power
+nitrogen oxides -> biofuels
+nitrogen oxides -> biodiesel
+waste oil -> biodiesel
+waste oil -> crude oil
+waste -> hot water
+alumina -> hydrogen
+sludge waste -> bioenergy
+process waste -> ethanol
+liquid waste -> crude oil
+liquid waste -> ethanol
+liquid waste -> biofuels
+fluid waste -> treated water
+slag waste -> hydrogen
+scale -> biodiesel
+scale -> oil
+scale -> biofuels","Waste coolant -> Water
+Mill scales -> Fuel
+Exhaust gas -> Fuel
+Waste heat -> Fuel
+Refractories -> Fuel
+BF slag -> Water
+BF slag -> Fuel
+Waste heat -> Water
+Exhaust gas -> Water
+Refractories -> Water
+Waste coolant -> Fuel"
+ILVA,ILVA,"Demineralised water
+Exhaust gas
+Mill scales
+BF slag
+Waste heat
+Waste coolant
+Refractories
+BFS/BOSF
+BOSF
+BFS
+BOFS as aggregate","Process energy
+Process heat",0,2,2,,"nitrogen oxides -> heat
+alumina -> heat","Refractories -> Process heat
+Exhaust gas -> Process heat"
+ILVA,ND - Agroindustry,"Demineralised water
+Exhaust gas
+Mill scales
+BF slag
+Waste heat
+Waste coolant
+Refractories
+BFS/BOSF
+BOSF
+BFS
+BOFS as aggregate","Fertilizer
+Fertiliser
+Soil quality improvement and fertiliser",1,37,13,BFS -> Fertiliser,"flue gas -> biogas
+odor emission -> biogas
+odor emission -> compost
+carbon monoxide -> biogas
+smoke -> biochar
+nitrogen oxides -> ammonia
+nitrogen oxides -> biogas
+energy waste -> biogas
+high-calorific waste -> compost
+high-calorific waste -> biogas
+waste heat -> biogas
+waste carbon -> ammonia
+waste -> fertilizer
+sludge waste -> bio-fertilizer
+sludge waste -> biogas
+sludge waste -> phosphorus
+sludge waste -> organic fertilisers
+sludge waste -> fertiliser
+sludge waste -> ammonia
+sludge waste -> biochar
+sludge waste -> soil nitrogen
+sludge waste -> fertilizer
+process waste -> biogas
+liquid waste -> compost
+liquid waste -> biochar
+scale -> fertiliser
+desulfurization slag -> soil improver
+iron and steel slag -> phosphorus
+steelmaking slag -> fertilizer
+steelmaking slag -> zeolite
+steelmaking slag -> biochar
+steelmaking slag -> biogas
+steelmaking slag -> phosphorous fertiliser
+blast furnace slag -> fertilizer
+blast furnace slag -> zeolite
+salt slag -> ammonia
+lithium slag -> fertilizer","Exhaust gas -> Fertilizer
+Waste coolant -> Fertiliser
+Mill scales -> Fertilizer
+Waste coolant -> Soil quality improvement and fertiliser
+BF slag -> Fertilizer
+Waste heat -> Fertiliser
+Waste heat -> Fertilizer
+BF slag -> Soil quality improvement and fertiliser
+Mill scales -> Fertiliser
+BF slag -> Fertiliser
+Waste heat -> Soil quality improvement and fertiliser
+Waste coolant -> Fertilizer
+Mill scales -> Soil quality improvement and fertiliser"
+ILVA,ND - Construction materials production,"Demineralised water
+Exhaust gas
+Mill scales
+BF slag
+Waste heat
+Waste coolant
+Refractories
+BFS/BOSF
+BOSF
+BFS
+BOFS as aggregate",Raw material for Construction materials production,0,12,1,,"slag -> construction materials
+slag -> building materials
+ferrous slag -> building materials
+copper slag -> building materials
+copper slag -> construction materials
+steelmaking slag -> civil construction materials
+steelmaking slag -> building materials
+steelmaking slag -> construction materials
+blast furnace slag -> value-added construction materials
+blast furnace slag -> building materials
+blast furnace slag -> construction materials
+ladle slag -> building materials",BF slag -> Raw material for Construction materials production
+ILVA,ND - Electricity production - Organic Rankine Cycle,"Demineralised water
+Exhaust gas
+Mill scales
+BF slag
+Waste heat
+Waste coolant
+Refractories
+BFS/BOSF
+BOSF
+BFS
+BOFS as aggregate",Process heat,0,2,2,,"nitrogen oxides -> heat
+alumina -> heat","Refractories -> Process heat
+Exhaust gas -> Process heat"
+ILVA,ND - Glass and glass-ceramic production,"Demineralised water
+Exhaust gas
+Mill scales
+BF slag
+Waste heat
+Waste coolant
+Refractories
+BFS/BOSF
+BOSF
+BFS
+BOFS as aggregate",Raw material for Glass and glass-ceramic production,1,3,2,BFS -> Raw material for Glass and glass-ceramic production,"mill scale -> iron-rich glass-ceramics
+ferrous slag -> ceramic materials
+blast furnace slag -> transparent glass","Mill scales -> Raw material for Glass and glass-ceramic production
+BF slag -> Raw material for Glass and glass-ceramic production"
+ILVA,ND - Isolated buildings,"Demineralised water
+Exhaust gas
+Mill scales
+BF slag
+Waste heat
+Waste coolant
+Refractories
+BFS/BOSF
+BOSF
+BFS
+BOFS as aggregate",Removal or retention of phosphorous from wastewater,1,0,0,BFS -> Removal or retention of phosphorous from wastewater,,
+ILVA,ND - Marine embarkments,"Demineralised water
+Exhaust gas
+Mill scales
+BF slag
+Waste heat
+Waste coolant
+Refractories
+BFS/BOSF
+BOSF
+BFS
+BOFS as aggregate",Raw material for Marine embarkments,1,0,0,BFS/BOSF -> Raw material for Marine embarkments,,
+ILVA,ND - Production of bricks,"Demineralised water
+Exhaust gas
+Mill scales
+BF slag
+Waste heat
+Waste coolant
+Refractories
+BFS/BOSF
+BOSF
+BFS
+BOFS as aggregate",Raw material for Production of bricks,1,3,1,BFS -> Raw material for Production of bricks,"steelmaking slag -> bricks
+blast furnace slag -> bricks
+lithium slag -> bricks",BF slag -> Raw material for Production of bricks
+ILVA,ND - Production of concrete,"Demineralised water
+Exhaust gas
+Mill scales
+BF slag
+Waste heat
+Waste coolant
+Refractories
+BFS/BOSF
+BOSF
+BFS
+BOFS as aggregate",Raw material for Production of concrete,1,9,1,BOFS as aggregate -> Raw material for Production of concrete,"slag -> concrete
+slag -> feedstock for cement clinker production
+copper slag -> concrete
+steelmaking slag -> concrete
+steelmaking slag -> concrete aggregate
+blast furnace slag -> concrete
+EAF slag -> concrete aggregate
+EAF slag -> concrete
+lithium slag -> concrete",BF slag -> Raw material for Production of concrete
+ILVA,ND - Production of refractories,"Demineralised water
+Exhaust gas
+Mill scales
+BF slag
+Waste heat
+Waste coolant
+Refractories
+BFS/BOSF
+BOSF
+BFS
+BOFS as aggregate",Raw material for Production of refractories,1,3,2,BFS -> Raw material for Production of refractories,"slag waste -> refractory materials
+ferrotitanium slag -> refractory materials
+ferrous slag -> ceramic materials","Waste coolant -> Raw material for Production of refractories
+BF slag -> Raw material for Production of refractories"
+ILVA,ND - Road construction,"Demineralised water
+Exhaust gas
+Mill scales
+BF slag
+Waste heat
+Waste coolant
+Refractories
+BFS/BOSF
+BOSF
+BFS
+BOFS as aggregate","Raw material for Road construction
+Raw materials
+Road foundations
+Paving",3,35,7,"Refractories -> Raw materials
+BFS/BOSF -> Road foundations
+BOSF -> Paving","off-gases -> byproducts
+flue gas -> byproducts
+nitrogen oxides -> materials
+waste oil -> chemical products
+waste oil -> recycled materials
+high-calorific waste -> recycled materials
+waste -> materials
+waste -> chemical products
+liquid waste -> materials
+liquid waste -> byproducts
+fluid waste -> recovered materials
+scale -> minerals
+slag -> concrete
+slag -> minerals
+slag -> recycled materials
+slag -> construction materials
+slag -> building materials
+desulfurization slag -> pavement materials
+ferrous slag -> building materials
+copper slag -> building materials
+copper slag -> construction materials
+copper slag -> concrete
+steelmaking slag -> concrete
+steelmaking slag -> recycled road materials
+steelmaking slag -> building materials
+steelmaking slag -> construction materials
+steelmaking slag -> asphalt concrete
+blast furnace slag -> concrete
+blast furnace slag -> pavement granules
+blast furnace slag -> building materials
+blast furnace slag -> construction materials
+ladle slag -> building materials
+EAF slag -> concrete
+lithium slag -> concrete
+lithium slag -> valuable materials","BF slag -> Raw materials
+Waste coolant -> Raw materials
+BF slag -> Raw material for Road construction
+Exhaust gas -> Raw materials
+Mill scales -> Raw materials
+BF slag -> Paving
+Waste heat -> Raw materials"
+ILVA,ND - Rock wool production,"Demineralised water
+Exhaust gas
+Mill scales
+BF slag
+Waste heat
+Waste coolant
+Refractories
+BFS/BOSF
+BOSF
+BFS
+BOFS as aggregate",Raw material for Rock wool production,1,0,0,BFS -> Raw material for Rock wool production,,
+ILVA,ND - Steelworks,"Demineralised water
+Exhaust gas
+Mill scales
+BF slag
+Waste heat
+Waste coolant
+Refractories
+BFS/BOSF
+BOSF
+BFS
+BOFS as aggregate",Raw material for Steelworks,1,0,0,Mill scales -> Raw material for Steelworks,,
+ILVA,Taranto,"Demineralised water
+Exhaust gas
+Mill scales
+BF slag
+Waste heat
+Waste coolant
+Refractories
+BFS/BOSF
+BOSF
+BFS
+BOFS as aggregate","Heat
+Cooling",2,3,5,"Waste heat -> Heat
+Waste coolant -> Cooling","nitrogen oxides -> heat
+waste -> hot water
+alumina -> heat","Exhaust gas -> Cooling
+Waste heat -> Heat
+Exhaust gas -> Heat
+Refractories -> Heat
+Refractories -> Cooling"
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,"Raw material for Cement production
+Process energy",0,30,2,,"dry waste -> thermal energy
+hazardous waste -> energy recovery
+household waste -> energy recovery
+construction and demolition waste -> raw materials
+construction and demolition waste -> cement materials
+renovation waste -> cement materials
+concrete waste -> feedstock for cement clinker production
+concrete waste -> energy recovery
+waste recycling -> raw materials
+non-hazardous waste -> energy recovery
+municipal solid waste -> energy recovery
+municipal solid waste -> energy resources
+municipal solid waste -> raw materials
+municipal solid waste -> feedstock for cement clinker production
+mixed waste -> energy recovery
+industrial waste -> raw materials
+industrial waste -> energy resources
+industrial waste -> raw building materials
+industrial waste -> cement
+clay brick waste -> cementitious materials
+environmental waste -> energy resources
+environmental waste -> raw materials
+environmental waste -> usable energy
+environmental waste -> energy recovery
+incinerated waste -> energy recovery
+solid waste -> critical raw materials
+solid waste -> cement
+solid waste -> thermal energy
+construction waste -> cement materials
+mining waste -> critical raw materials","Construction and demolition waste -> Raw material for Cement production
+Construction and demolition waste -> Process energy"
+ND - Construction materials production,ENI refinery,Construction and demolition waste,"Process heat
+Process energy
+Water",0,42,3,,"dry waste -> thermal energy
+dry waste -> heat
+mine waste -> drinking water
+hazardous waste -> water resources
+hazardous waste -> energy recovery
+household waste -> energy recovery
+household waste -> hydrogen
+brown waste -> hydrogen
+construction and demolition waste -> effluent
+concrete waste -> energy recovery
+non-hazardous waste -> energy recovery
+municipal solid waste -> hydrogen
+municipal solid waste -> energy recovery
+municipal solid waste -> water
+municipal solid waste -> energy resources
+municipal solid waste -> salt
+municipal solid waste -> heat
+mixed waste -> energy recovery
+industrial waste -> energy resources
+industrial waste -> water
+industrial waste -> heat
+industrial waste -> salt
+environmental waste -> salt
+environmental waste -> water treatment
+environmental waste -> water resources
+environmental waste -> clean water
+environmental waste -> energy resources
+environmental waste -> hydrogen
+environmental waste -> heat
+environmental waste -> usable energy
+environmental waste -> energy recovery
+environmental waste -> hot water
+incinerated waste -> energy recovery
+solid waste -> treated water
+solid waste -> hydrogen
+solid waste -> clean water
+solid waste -> heat
+solid waste -> effluent
+solid waste -> thermal energy
+construction waste -> hydrogen
+waste -> hot water
+non-processed waste -> hydrogen","Construction and demolition waste -> Process heat
+Construction and demolition waste -> Water
+Construction and demolition waste -> Process energy"
+ND - Construction materials production,Edison power station,Construction and demolition waste,"Process heat
+Process energy",0,19,2,,"dry waste -> thermal energy
+dry waste -> heat
+hazardous waste -> energy recovery
+household waste -> energy recovery
+concrete waste -> energy recovery
+non-hazardous waste -> energy recovery
+municipal solid waste -> energy recovery
+municipal solid waste -> energy resources
+municipal solid waste -> heat
+mixed waste -> energy recovery
+industrial waste -> energy resources
+industrial waste -> heat
+environmental waste -> energy resources
+environmental waste -> heat
+environmental waste -> usable energy
+environmental waste -> energy recovery
+incinerated waste -> energy recovery
+solid waste -> heat
+solid waste -> thermal energy","Construction and demolition waste -> Process heat
+Construction and demolition waste -> Process energy"
+ND - Construction materials production,EniPower power station,Construction and demolition waste,Process energy,0,14,1,,"dry waste -> thermal energy
+hazardous waste -> energy recovery
+household waste -> energy recovery
+concrete waste -> energy recovery
+non-hazardous waste -> energy recovery
+municipal solid waste -> energy recovery
+municipal solid waste -> energy resources
+mixed waste -> energy recovery
+industrial waste -> energy resources
+environmental waste -> energy resources
+environmental waste -> usable energy
+environmental waste -> energy recovery
+incinerated waste -> energy recovery
+solid waste -> thermal energy",Construction and demolition waste -> Process energy
+ND - Construction materials production,Enipower power station,Construction and demolition waste,"Fuel
+Water",0,93,2,,"landfill waste -> bioenergy
+sludge waste -> bioenergy
+inorganic waste -> biodiesel
+mine waste -> drinking water
+mixed refuse waste -> chemical fuels
+marine waste -> biofuels
+hazardous waste -> reduced emissions
+hazardous waste -> water resources
+hazardous waste -> biofuels
+hazardous waste -> bioenergy
+hazardous waste -> biodiesel
+hazardous waste -> ethanol
+household waste -> bioenergy
+household waste -> hydrogen
+contaminated waste -> biodiesel
+brown waste -> hydrogen
+construction and demolition waste -> effluent
+construction and demolition waste -> biodiesel
+process waste -> ethanol
+municipal solid waste -> hydrogen
+municipal solid waste -> chemical fuels
+municipal solid waste -> valuable fuels
+municipal solid waste -> liquid fuel
+municipal solid waste -> bioenergy
+municipal solid waste -> biofuels
+municipal solid waste -> water
+municipal solid waste -> solid fuel
+municipal solid waste -> biodiesel
+municipal solid waste -> energy sources
+municipal solid waste -> energy resources
+municipal solid waste -> crude oil
+municipal solid waste -> salt
+municipal solid waste -> vehicle fuel
+municipal solid waste -> feedstock
+municipal solid waste -> gasoline
+municipal solid waste -> diesel fuel
+municipal solid waste -> ethanol
+municipal solid waste -> gaseous fuel
+municipal solid waste -> fuel
+mixed waste -> feedstock
+industrial waste -> biofuels
+industrial waste -> bioenergy
+industrial waste -> energy resources
+industrial waste -> water
+industrial waste -> biodiesel
+industrial waste -> biobased fuel
+industrial waste -> ethanol
+industrial waste -> energy efficiency
+industrial waste -> salt
+environmental waste -> salt
+environmental waste -> water treatment
+environmental waste -> biofuels
+environmental waste -> water resources
+environmental waste -> reduced emissions
+environmental waste -> clean water
+environmental waste -> energy resources
+environmental waste -> hydrogen
+environmental waste -> power
+environmental waste -> bioenergy
+environmental waste -> biodiesel
+environmental waste -> ethanol
+environmental waste -> energy efficiency
+environmental waste -> feedstock
+environmental waste -> gaseous fuel
+environmental waste -> renewable fuel
+environmental waste -> hot water
+environmental waste -> fuel
+solid waste -> treated water
+solid waste -> crude oil
+solid waste -> biofuels
+solid waste -> hydrogen
+solid waste -> reduced emissions
+solid waste -> ethanol
+solid waste -> feedstock
+solid waste -> biodiesel
+solid waste -> clean water
+solid waste -> effluent
+construction waste -> ethanol
+construction waste -> hydrogen
+non-recyclable waste -> biofuels
+waste -> hot water
+carbon-rich waste -> biofuels
+carbon-rich waste -> power
+municipal waste -> biofuels
+discarded materials -> biofuels
+mining waste -> biodiesel
+non-organic waste -> renewable fuel
+non-organic waste -> energy sources
+raw material waste -> biodiesel
+raw material waste -> biofuels
+non-processed waste -> hydrogen
+non-processed waste -> gaseous fuel
+non-processed waste -> renewable fuel","Construction and demolition waste -> Fuel
+Construction and demolition waste -> Water"
+ND - Construction materials production,ILVA,Construction and demolition waste,"Process energy
+Process heat",0,19,2,,"dry waste -> thermal energy
+dry waste -> heat
+hazardous waste -> energy recovery
+household waste -> energy recovery
+concrete waste -> energy recovery
+non-hazardous waste -> energy recovery
+municipal solid waste -> energy recovery
+municipal solid waste -> energy resources
+municipal solid waste -> heat
+mixed waste -> energy recovery
+industrial waste -> energy resources
+industrial waste -> heat
+environmental waste -> energy resources
+environmental waste -> heat
+environmental waste -> usable energy
+environmental waste -> energy recovery
+incinerated waste -> energy recovery
+solid waste -> heat
+solid waste -> thermal energy","Construction and demolition waste -> Process heat
+Construction and demolition waste -> Process energy"
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,"Fertilizer
+Fertiliser
+Soil quality improvement and fertiliser",0,96,3,,"dry waste -> biogas
+landfill waste -> compost
+sludge waste -> bio-fertilizer
+sludge waste -> biogas
+sludge waste -> phosphorus
+sludge waste -> organic fertilisers
+sludge waste -> fertiliser
+sludge waste -> ammonia
+sludge waste -> biochar
+sludge waste -> soil nitrogen
+sludge waste -> fertilizer
+inorganic waste -> fertilizer
+post-consumer waste -> biogas
+post-consumer waste -> fertilizer
+marine waste -> biochar
+discarded material -> biogas
+hazardous waste -> compost
+household waste -> compost
+household waste -> fertilizer products
+household waste -> soil amendment
+household waste -> biochar
+household waste -> soil fertility
+household waste -> biogas
+household waste -> high-quality fertilizer
+household waste -> organic fertilizer
+waste utilization -> biogas
+complex waste -> biochar
+complex waste -> biogas
+construction and demolition waste -> agricultural by-products
+renovation waste -> agricultural by-products
+non-recyclable materials -> compost
+waste substrate -> fertilizer
+waste substrate -> frass fertilizer
+waste substrate -> organic fertilizer
+process waste -> biogas
+municipal solid waste -> compost
+municipal solid waste -> biogas
+municipal solid waste -> biofertilizer
+municipal solid waste -> fertilizer products
+municipal solid waste -> biochar
+municipal solid waste -> soil fertility
+municipal solid waste -> fertilizer
+municipal solid waste -> organic fertilizer
+municipal solid waste -> phosphorus
+municipal solid waste -> organo-mineral fertilizer
+municipal solid waste -> feedstock
+municipal solid waste -> ammonia
+mixed waste -> compost
+mixed waste -> feedstock
+industrial waste -> biogas
+industrial waste -> fertilizer products
+industrial waste -> organo-mineral fertilizer
+industrial waste -> zeolite
+industrial waste -> compost
+industrial waste -> biochar
+industrial waste -> soil fertility
+environmental waste -> fertilizer
+environmental waste -> biochar
+environmental waste -> ammonia
+environmental waste -> biofertilizer
+environmental waste -> bio-fertilizer
+environmental waste -> plant nutrients
+environmental waste -> biogas
+environmental waste -> organic fertilizer
+environmental waste -> fertilizer alternatives
+environmental waste -> savings in production costs of chemical fertilizers
+environmental waste -> feedstock
+environmental waste -> high-quality fertilizer
+environmental waste -> compost
+environmental waste -> phosphorus
+environmental waste -> improved soil properties
+environmental waste -> frass fertilizer
+recyclable waste -> compost
+solid waste -> compost
+solid waste -> biogas
+solid waste -> biochar
+solid waste -> soil conditioner
+solid waste -> soil improver
+solid waste -> feedstock
+construction waste -> biochar
+construction waste -> agricultural by-products
+construction waste -> controlled-release fertilizer
+construction waste -> biogas
+non-recyclable waste -> compost
+non-recyclable waste -> biochar
+waste -> fertilizer
+carbon-rich waste -> biogas
+discarded materials -> fertiliser
+mining waste -> fertilizer for Lactuca sativa L.
+mining waste -> biogas
+mining waste -> soil amendment
+mining waste -> fertilizer
+mining waste -> organic fertilizer
+miscellaneous waste -> biogas
+special waste -> biogas
+raw material waste -> biochar","Construction and demolition waste -> Fertilizer
+Construction and demolition waste -> Soil quality improvement and fertiliser
+Construction and demolition waste -> Fertiliser"
+ND - Construction materials production,ND - Construction materials production,Construction and demolition waste,Raw material for Construction materials production,0,20,1,,"inorganic waste -> low-cost construction material
+recycled construction and demolition materials -> construction materials
+construction and demolition waste -> secondary construction materials
+construction and demolition waste -> raw materials
+construction and demolition waste -> building materials
+waste recycling -> raw materials
+municipal solid waste -> building materials
+municipal solid waste -> raw materials
+industrial waste -> raw materials
+industrial waste -> raw building materials
+environmental waste -> raw materials
+solid waste -> critical raw materials
+solid waste -> functional construction material
+solid waste -> building materials
+construction waste -> secondary construction materials
+construction waste -> building materials
+insulation waste -> building materials
+mining waste -> building materials
+mining waste -> critical raw materials
+non-processed waste -> building materials",Construction and demolition waste -> Raw material for Construction materials production
+ND - Construction materials production,ND - Distilleries,Construction and demolition waste,Raw material for Distilleries,0,12,1,,"post-earthquake building waste -> secondary raw materials
+construction and demolition waste -> raw materials
+construction and demolition waste -> secondary raw materials
+waste recycling -> raw materials
+municipal solid waste -> raw materials
+industrial waste -> raw materials
+industrial waste -> secondary raw materials
+industrial waste -> raw building materials
+environmental waste -> raw materials
+environmental waste -> secondary raw materials
+solid waste -> critical raw materials
+mining waste -> critical raw materials",Construction and demolition waste -> Raw material for Distilleries
+ND - Construction materials production,ND - Electricity production - Organic Rankine Cycle,Construction and demolition waste,Process heat,0,5,1,,"dry waste -> heat
+municipal solid waste -> heat
+industrial waste -> heat
+environmental waste -> heat
+solid waste -> heat",Construction and demolition waste -> Process heat
+ND - Construction materials production,ND - Glass and glass-ceramic production,Construction and demolition waste,Raw material for Glass and glass-ceramic production,0,1,1,,industrial waste -> low-temperature glass-ceramics,Construction and demolition waste -> Raw material for Glass and glass-ceramic production
+ND - Construction materials production,ND - Production of bricks,Construction and demolition waste,Raw material for Production of bricks,0,7,1,,"inorganic waste -> bricks
+construction and demolition waste -> raw materials
+waste recycling -> raw materials
+municipal solid waste -> raw materials
+industrial waste -> raw materials
+industrial waste -> raw building materials
+environmental waste -> raw materials",Construction and demolition waste -> Raw material for Production of bricks
+ND - Construction materials production,ND - Production of concrete,Construction and demolition waste,Raw material for Production of concrete,0,13,1,,"concrete rubble -> concrete
+inorganic waste -> concrete
+mine waste -> concrete
+construction and demolition waste -> raw materials
+concrete waste -> feedstock for cement clinker production
+concrete waste -> concrete
+waste recycling -> raw materials
+municipal solid waste -> raw materials
+municipal solid waste -> feedstock for cement clinker production
+industrial waste -> raw materials
+industrial waste -> raw building materials
+environmental waste -> raw materials
+solid waste -> concrete",Construction and demolition waste -> Raw material for Production of concrete
+ND - Construction materials production,ND - Production of refractories,Construction and demolition waste,Raw material for Production of refractories,0,9,1,,"construction and demolition waste -> raw materials
+waste recycling -> raw materials
+municipal solid waste -> raw materials
+industrial waste -> raw materials
+industrial waste -> raw building materials
+environmental waste -> raw materials
+solid waste -> refractory materials
+solid waste -> critical raw materials
+mining waste -> critical raw materials",Construction and demolition waste -> Raw material for Production of refractories
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,"Raw material for Road construction
+Raw materials
+Road foundations
+Paving",1,99,4,Construction and demolition waste -> Raw material for Road construction,"concrete rubble -> concrete
+industrial non-hazardous waste -> valorized materials
+landfill waste -> recycled materials
+landfill waste -> metals
+landfill waste -> valorized materials
+inorganic waste -> concrete
+mine waste -> concrete
+mixed refuse waste -> chemical products
+post-consumer waste -> synthetic materials
+marine waste -> materials
+recycled construction and demolition materials -> construction materials
+discarded material -> high value materials
+hazardous waste -> recycled materials
+hazardous waste -> road surface structural beds
+household waste -> recycled materials
+household waste -> chemical products
+household waste -> materials
+contaminated waste -> recovered materials
+contaminated waste -> recycled materials
+post-earthquake building waste -> secondary raw materials
+construction and demolition waste -> recycled materials
+construction and demolition waste -> sustainable raw materials
+construction and demolition waste -> recovered materials
+construction and demolition waste -> recycled road materials
+construction and demolition waste -> materials
+construction and demolition waste -> raw materials
+construction and demolition waste -> concrete paving blocks
+construction and demolition waste -> secondary raw materials
+construction and demolition waste -> building materials
+concrete waste -> recycled materials
+concrete waste -> concrete
+non-recyclable materials -> recovered materials
+waste recycling -> raw materials
+waste recycling -> chemical products
+municipal solid waste -> chemical products
+municipal solid waste -> materials
+municipal solid waste -> recovered materials
+municipal solid waste -> recycled materials
+municipal solid waste -> valuable materials
+municipal solid waste -> building materials
+municipal solid waste -> raw materials
+municipal solid waste -> metals
+municipal solid waste -> concrete paving blocks
+municipal solid waste -> feedstock
+circular waste -> recycled materials
+mixed waste -> recovered materials
+mixed waste -> feedstock
+mixed waste -> materials
+industrial waste -> raw materials
+industrial waste -> chemical products
+industrial waste -> materials
+industrial waste -> secondary raw materials
+industrial waste -> byproducts
+industrial waste -> raw building materials
+industrial waste -> recycled materials
+environmental waste -> recycled materials
+environmental waste -> recovered materials
+environmental waste -> materials
+environmental waste -> metals
+environmental waste -> feedstock
+environmental waste -> raw materials
+environmental waste -> chemical products
+environmental waste -> road materials
+environmental waste -> secondary raw materials
+environmental waste -> minerals
+incinerated waste -> metals
+solid waste -> recycled materials
+solid waste -> recovered materials
+solid waste -> materials
+solid waste -> concrete
+solid waste -> critical raw materials
+solid waste -> byproducts
+solid waste -> feedstock
+solid waste -> sustainable raw materials
+solid waste -> metals
+solid waste -> building materials
+discarded building materials -> salvaged materials
+construction waste -> materials
+construction waste -> recycled materials
+construction waste -> recovered materials
+construction waste -> building materials
+non-recyclable waste -> recycled materials
+waste -> materials
+waste -> chemical products
+low grade construction and demolition waste -> recovered materials
+insulation waste -> building materials
+non-essential waste -> recycled materials
+non-essential waste -> materials
+commercial waste -> chemical products
+mining waste -> metals
+mining waste -> byproducts
+mining waste -> building materials
+mining waste -> critical raw materials
+mining waste -> minerals
+mining waste -> valuable materials
+spent materials -> recycled materials
+special waste -> metals
+non-processed waste -> building materials
+non-processed waste -> roadbed foundation","Construction and demolition waste -> Raw material for Road construction
+Construction and demolition waste -> Paving
+Construction and demolition waste -> Raw materials
+Construction and demolition waste -> Road foundations"
+ND - Construction materials production,ND - Rock wool production,Construction and demolition waste,Raw material for Rock wool production,0,1,1,,industrial waste -> raw building materials,Construction and demolition waste -> Raw material for Rock wool production
+ND - Construction materials production,ND - Steelworks,Construction and demolition waste,Raw material for Steelworks,0,8,1,,"construction and demolition waste -> raw materials
+waste recycling -> raw materials
+municipal solid waste -> raw materials
+industrial waste -> raw materials
+industrial waste -> raw building materials
+environmental waste -> raw materials
+solid waste -> critical raw materials
+mining waste -> critical raw materials",Construction and demolition waste -> Raw material for Steelworks
+ND - Construction materials production,Taranto,Construction and demolition waste,"Heat
+Cooling",0,9,2,,"dry waste -> heat
+construction and demolition waste -> thermal properties
+municipal solid waste -> cooling
+municipal solid waste -> heat
+industrial waste -> heat
+environmental waste -> heat
+environmental waste -> hot water
+solid waste -> heat
+waste -> hot water","Construction and demolition waste -> Heat
+Construction and demolition waste -> Cooling"
+ND - Electricity production - Organic Rankine Cycle,CEMENTIR,Electricity,"Raw material for Cement production
+Process energy",1,3,1,Electricity -> Process energy,"energy -> energy resources
+energy -> usable energy
+energy -> energy recovery",Electricity -> Process energy
+ND - Electricity production - Organic Rankine Cycle,ENI refinery,Electricity,"Process heat
+Process energy
+Water",1,4,2,Electricity -> Process energy,"batteries -> hydrogen
+energy -> energy resources
+energy -> usable energy
+energy -> energy recovery","Electricity -> Water
+Electricity -> Process energy"
+ND - Electricity production - Organic Rankine Cycle,Edison power station,Electricity,"Process heat
+Process energy",1,3,1,Electricity -> Process energy,"energy -> energy resources
+energy -> usable energy
+energy -> energy recovery",Electricity -> Process energy
+ND - Electricity production - Organic Rankine Cycle,EniPower power station,Electricity,Process energy,1,3,1,Electricity -> Process energy,"energy -> energy resources
+energy -> usable energy
+energy -> energy recovery",Electricity -> Process energy
+ND - Electricity production - Organic Rankine Cycle,Enipower power station,Electricity,"Fuel
+Water",0,5,2,,"batteries -> hydrogen
+energy consumption -> bioenergy
+energy consumption -> biofuels
+energy -> energy resources
+energy -> energy efficiency","Electricity -> Water
+Electricity -> Fuel"
+ND - Electricity production - Organic Rankine Cycle,ILVA,Electricity,"Process energy
+Process heat",1,3,1,Electricity -> Process energy,"energy -> energy resources
+energy -> usable energy
+energy -> energy recovery",Electricity -> Process energy
+ND - Electricity production - Organic Rankine Cycle,ND - Agroindustry,Electricity,"Fertilizer
+Fertiliser
+Soil quality improvement and fertiliser",0,2,2,,"energy consumption -> biofertilizer
+energy -> compost","Electricity -> Fertilizer
+Electricity -> Fertiliser"
+ND - Electricity production - Organic Rankine Cycle,ND - Distilleries,Electricity,Raw material for Distilleries,0,1,1,,household electrical appliances -> secondary raw materials,Electricity -> Raw material for Distilleries
+ND - Electricity production - Organic Rankine Cycle,ND - Road construction,Electricity,"Raw material for Road construction
+Raw materials
+Road foundations
+Paving",0,6,1,,"batteries -> metals
+energy consumption -> minerals
+household electrical appliances -> secondary raw materials
+household electrical appliances -> metals
+energy -> recovered materials
+electrical and electronic equipment -> recycled materials",Electricity -> Raw materials
+ND - Olive oil production,ENI refinery,Oil mill waste water,"Process heat
+Process energy
+Water",0,9,2,,"industrial wastewater -> treated water
+industrial wastewater -> hydrogen
+olive mill waste -> neutralized water
+olive mill waste -> clean water
+olive mill waste -> heat
+olive mill wastewater -> hydrogen
+olive mill wastewater -> treated water
+cooking oil waste -> heat
+cooking oil waste -> liquids","Oil mill waste water -> Water
+Oil mill waste water -> Process heat"
+ND - Olive oil production,Edison power station,Oil mill waste water,"Process heat
+Process energy",0,2,1,,"olive mill waste -> heat
+cooking oil waste -> heat",Oil mill waste water -> Process heat
+ND - Olive oil production,Enipower power station,Oil mill waste water,"Fuel
+Water",0,30,2,,"industrial wastewater -> biofuels
+industrial wastewater -> bioenergy
+industrial wastewater -> treated water
+industrial wastewater -> hydrogen
+olive mill waste -> neutralized water
+olive mill waste -> clean water
+waste oil -> biodiesel
+waste oil -> crude oil
+palm oil mill waste -> biofuels
+olive mill wastewater -> bioenergy
+olive mill wastewater -> hydrogen
+olive mill wastewater -> treated water
+palm oil waste -> bioenergy
+oily waste -> biodiesel
+oily waste -> crude oil
+oil palm waste -> biodiesel
+oil palm waste -> ethanol
+palm oil mill effluent -> biodiesel
+palm oil mill effluent -> biofuels
+palm oil mill effluent -> kerosene
+palm oil mill effluent -> gaseous fuel
+cooking oil waste -> biodiesel
+cooking oil waste -> bioenergy
+cooking oil waste -> liquids
+cooking oil waste -> biofuels
+cooking oil waste -> fuel
+cooking oil waste -> biobased fuel
+cooking oil waste -> ethanol
+cooking oil waste -> energy sources
+paper mill effluent -> biodiesel","Oil mill waste water -> Fuel
+Oil mill waste water -> Water"
+ND - Olive oil production,ILVA,Oil mill waste water,"Process energy
+Process heat",0,2,1,,"olive mill waste -> heat
+cooking oil waste -> heat",Oil mill waste water -> Process heat
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,"Fertilizer
+Fertiliser
+Soil quality improvement and fertiliser",1,29,3,Oil mill waste water -> Fertilizer,"industrial wastewater -> biofertilizer
+industrial wastewater -> ammonia
+industrial wastewater -> phosphorus
+industrial wastewater -> biogas
+olive mill waste -> organic fertilizer
+olive mill waste -> biogas
+olive mill waste -> soil fertility
+olive mill waste -> compost
+palm oil mill waste -> soil conditioner
+palm oil mill waste -> biochar
+palm oil mill waste -> ammonia
+olive mill wastewater -> high-quality fertilizer
+olive mill wastewater -> organo-mineral fertilizer
+olive mill wastewater -> biogas
+olive mill wastewater -> compost
+paper mill waste -> biofertilizer
+paper mill waste -> compost
+palm oil waste -> compost
+dephenolized olive mill wastewater -> organic fertilizer
+palm oil mill effluent -> biogas
+palm oil mill effluent -> ammonia
+palm oil mill effluent -> phosphorus
+cooking oil waste -> biochar
+cooking oil waste -> ammonia
+cooking oil waste -> biogas
+cooking oil waste -> soil fertility
+cooking oil waste -> powder
+paper mill effluent -> biogas
+paper mill effluent -> biofertilizer","Oil mill waste water -> Fertiliser
+Oil mill waste water -> Soil quality improvement and fertiliser
+Oil mill waste water -> Fertilizer"
+ND - Olive oil production,ND - Distilleries,Oil mill waste water,Raw material for Distilleries,0,1,1,,olive mill wastewater -> secondary raw materials,Oil mill waste water -> Raw material for Distilleries
+ND - Olive oil production,ND - Electricity production - Organic Rankine Cycle,Oil mill waste water,Process heat,0,2,1,,"olive mill waste -> heat
+cooking oil waste -> heat",Oil mill waste water -> Process heat
+ND - Olive oil production,ND - Production of bricks,Oil mill waste water,Raw material for Production of bricks,0,1,1,,oily waste -> bricks,Oil mill waste water -> Raw material for Production of bricks
+ND - Olive oil production,ND - Road construction,Oil mill waste water,"Raw material for Road construction
+Raw materials
+Road foundations
+Paving",0,9,1,,"industrial wastewater -> byproducts
+waste oil -> chemical products
+waste oil -> recycled materials
+olive mill wastewater -> chemical products
+olive mill wastewater -> secondary raw materials
+paper mill waste -> chemical products
+palm oil waste -> byproducts
+oilseed waste -> minerals
+cooking oil waste -> chemical products",Oil mill waste water -> Raw materials
+ND - Olive oil production,Taranto,Oil mill waste water,"Heat
+Cooling",0,2,2,,"olive mill waste -> heat
+cooking oil waste -> heat","Oil mill waste water -> Heat
+Oil mill waste water -> Cooling"
+ND - Power plant,CEMENTIR,Fly ash,"Raw material for Cement production
+Process energy",0,7,1,,"slag -> feedstock for cement clinker production
+petroleum coke fly ash -> cement
+biomass combustion ash -> cement
+sewage sludge ash -> cementitious materials
+fly ash -> cementitious materials
+fly ash -> feedstock for cement clinker production
+fly ash -> cement",Fly ash -> Raw material for Cement production
+ND - Power plant,ENI refinery,Fly ash,"Process heat
+Process energy
+Water",0,11,2,,"power plant ash -> heat
+sludge -> clean water
+sludge -> irrigation water
+sludge -> heat
+sludge -> hydrogen
+sugarcane bagasse ash -> treated water
+cement kiln dust -> salt
+cement kiln dust -> water treatment
+sawdust -> hydrogen
+slag waste -> hydrogen
+fly ash -> hydrogen","Fly ash -> Process heat
+Fly ash -> Water"
+ND - Power plant,Edison power station,Fly ash,"Process heat
+Process energy",0,2,1,,"power plant ash -> heat
+sludge -> heat",Fly ash -> Process heat
+ND - Power plant,Enipower power station,Fly ash,"Fuel
+Water",0,26,2,,"flue gas -> biofuels
+flue gas -> biodiesel
+ash waste -> biofuels
+incineration fly ash -> biofuels
+sludge -> clean water
+sludge -> biofuels
+sludge -> bioenergy
+sludge -> crude oil
+sludge -> irrigation water
+sludge -> biodiesel
+sludge -> hydrogen
+wastewater sludge -> biodiesel
+coal gasification fly ash -> biofuels
+sugarcane bagasse ash -> treated water
+cement kiln dust -> salt
+cement kiln dust -> water treatment
+cement kiln dust -> biofuels
+biomass combustion ash -> improved fuel characteristics
+sewage sludge ash -> bioenergy
+sawdust -> diesel fuel
+sawdust -> hydrogen
+sawdust -> biofuels
+dry ash -> biofuels
+slag waste -> hydrogen
+fly ash -> hydrogen
+fly ash -> biofuels","Fly ash -> Water
+Fly ash -> Fuel"
+ND - Power plant,ILVA,Fly ash,"Process energy
+Process heat",0,2,1,,"power plant ash -> heat
+sludge -> heat",Fly ash -> Process heat
+ND - Power plant,ND - Agroindustry,Fly ash,"Fertilizer
+Fertiliser
+Soil quality improvement and fertiliser",1,58,3,Fly ash -> Soil quality improvement and fertiliser,"industrial residue -> zeolite
+flue gas -> biogas
+power plant ash -> phosphorus
+power plant ash -> fertilizer
+sludge -> biogas
+sludge -> biochar
+sludge -> phosphorus
+sludge -> biofertilizer
+sludge -> humic acid fertilizer
+sludge -> soil nitrogen
+wastewater sludge -> phosphorus
+wastewater sludge -> biogas
+wastewater sludge -> ammonia
+blast furnace slag -> fertilizer
+blast furnace slag -> zeolite
+sugarcane bagasse ash -> zeolite
+sugarcane bagasse ash -> soil
+biomass combustion ash -> zeolite
+biomass combustion ash -> biogas
+biomass combustion ash -> fertilizer
+biomass combustion ash -> organic fertilizer
+ash from combustion -> phosphorus
+ash from combustion -> plant nutrients
+ash from combustion -> fertilizer
+sewage sludge ash -> organo-mineral fertilizer
+sewage sludge ash -> organic fertilizer
+sewage sludge ash -> biogas
+sewage sludge ash -> chemical fertilizers
+sewage sludge ash -> bio-fertilizer
+sewage sludge ash -> biofertilizer
+sewage sludge ash -> phosphorus
+sewage sludge ash -> biochar
+sewage sludge ash -> phosphorus fertilizer
+sewage sludge ash -> soil nitrogen
+sewage sludge ash -> phosphate
+sewage sludge ash -> fertilizer
+sewage sludge ash -> fertilizer alternatives
+sawdust -> compost
+sawdust -> soil amendment
+sawdust -> bio-fertilizer
+sawdust -> biofertilizer
+sawdust -> biochar
+sawdust -> fertilizer
+sawdust -> phosphorus
+agricultural waste ash -> compost
+wood ash -> fertilizer
+wood ash -> plant nutrients
+volcanic ash -> zeolite
+unburned carbon in fly ash -> biochar
+fly ash -> fertilizer
+fly ash -> soil improver
+fly ash -> zeolite
+fly ash -> biochar
+fly ash -> fertilizer substrate
+fly ash -> soil amendment
+fly ash -> bio-fertilizer
+fly ash -> plant nutrients
+fly ash -> stabilised soil","Fly ash -> Fertiliser
+Fly ash -> Soil quality improvement and fertiliser
+Fly ash -> Fertilizer"
+ND - Power plant,ND - Construction materials production,Fly ash,Raw material for Construction materials production,0,13,1,,"slag -> construction materials
+slag -> building materials
+fluidized bed fly ash -> building materials
+blast furnace slag -> value-added construction materials
+blast furnace slag -> building materials
+blast furnace slag -> construction materials
+biomass combustion ash -> building materials
+sewage sludge ash -> value-added construction materials
+biomass fly ash -> construction materials
+fly ash -> building materials
+fly ash -> construction materials
+fly ash -> value-added construction materials
+fly ash -> low-cost construction material",Fly ash -> Raw material for Construction materials production
+ND - Power plant,ND - Distilleries,Fly ash,Raw material for Distilleries,0,3,1,,"sludge -> secondary raw materials
+ash from combustion -> secondary raw materials
+agricultural waste ash -> secondary raw materials",Fly ash -> Raw material for Distilleries
+ND - Power plant,ND - Electricity production - Organic Rankine Cycle,Fly ash,Process heat,0,2,1,,"power plant ash -> heat
+sludge -> heat",Fly ash -> Process heat
+ND - Power plant,ND - Glass and glass-ceramic production,Fly ash,Raw material for Glass and glass-ceramic production,1,3,1,Fly ash -> Raw material for Glass and glass-ceramic production,"blast furnace slag -> transparent glass
+sewage sludge ash -> low-temperature glass-ceramics
+fly ash -> transparent glass",Fly ash -> Raw material for Glass and glass-ceramic production
+ND - Power plant,ND - Isolated buildings,Fly ash,Removal or retention of phosphorous from wastewater,0,1,1,,sludge -> wastewater treatment,Fly ash -> Removal or retention of phosphorous from wastewater
+ND - Power plant,ND - Production of bricks,Fly ash,Raw material for Production of bricks,1,3,1,Fly ash -> Raw material for Production of bricks,"blast furnace slag -> bricks
+sugarcane bagasse ash -> bricks
+fly ash -> bricks",Fly ash -> Raw material for Production of bricks
+ND - Power plant,ND - Production of concrete,Fly ash,Raw material for Production of concrete,0,9,1,,"slag -> concrete
+slag -> feedstock for cement clinker production
+municipal solid waste ash -> concrete
+blast furnace slag -> concrete
+sugarcane bagasse ash -> concrete
+biomass combustion ash -> concrete aggregate
+sewage sludge ash -> concrete
+fly ash -> concrete
+fly ash -> feedstock for cement clinker production",Fly ash -> Raw material for Production of concrete
+ND - Power plant,ND - Production of refractories,Fly ash,Raw material for Production of refractories,0,1,1,,slag waste -> refractory materials,Fly ash -> Raw material for Production of refractories
+ND - Power plant,ND - Road construction,Fly ash,"Raw material for Road construction
+Raw materials
+Road foundations
+Paving",1,35,4,Fly ash -> Raw material for Road construction,"slag -> concrete
+slag -> minerals
+slag -> recycled materials
+slag -> construction materials
+slag -> building materials
+flue gas -> byproducts
+municipal solid waste ash -> concrete
+sludge -> chemical products
+sludge -> paving block
+sludge -> materials
+sludge -> secondary raw materials
+fluidized bed fly ash -> building materials
+blast furnace slag -> concrete
+blast furnace slag -> pavement granules
+blast furnace slag -> building materials
+blast furnace slag -> construction materials
+sugarcane bagasse ash -> concrete
+biomass combustion ash -> building materials
+ash from combustion -> secondary raw materials
+sewage sludge ash -> concrete
+biomass fly ash -> construction materials
+agricultural waste ash -> secondary raw materials
+fly ash -> concrete
+fly ash -> asphalt concrete
+fly ash -> waste reuse in road construction
+fly ash -> pavement granules
+fly ash -> building materials
+fly ash -> construction materials
+fly ash -> valuable materials
+fly ash -> pavers
+fly ash -> road materials
+fly ash -> paving mixes
+fly ash -> recovered materials
+Portland cement -> road materials
+Portland cement -> paving mixes","Fly ash -> Road foundations
+Fly ash -> Paving
+Fly ash -> Raw materials
+Fly ash -> Raw material for Road construction"
+ND - Power plant,Taranto,Fly ash,"Heat
+Cooling",0,2,2,,"power plant ash -> heat
+sludge -> heat","Fly ash -> Heat
+Fly ash -> Cooling"
+ND - Wine production,Enipower power station,Marc and dregs,"Fuel
+Water",0,1,1,,dregs -> bioenergy,Marc and dregs -> Fuel
+ND - Wine production,ND - Agroindustry,Marc and dregs,"Fertilizer
+Fertiliser
+Soil quality improvement and fertiliser",0,1,2,,dregs -> soil fertilizers,"Marc and dregs -> Soil quality improvement and fertiliser
+Marc and dregs -> Fertilizer"
+ND - Wine production,ND - Distilleries,Marc and dregs,Raw material for Distilleries,1,0,0,Marc and dregs -> Raw material for Distilleries,,

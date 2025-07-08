@@ -29,6 +29,14 @@ def load_profiles_file(prof_file):
             st.error(f"Error loading company profile JSON {prof_file}: {e}")
     return {}
 
+def load_case_file(case_file):
+    '''Maestri_case{}.csv file'''
+    try:
+        return pd.read_csv(case_file)
+    except Exception as e:
+        st.error(f"Error loading case file {case_file}: {e}")
+    return pd.DataFrame()
+
 def build_W2R_graph(kg_triples):
     G = nx.MultiDiGraph()
 

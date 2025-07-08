@@ -1,0 +1,1237 @@
+donor,receiver,P_wastes,P_resources,G_waste,G_resource
+Enipower power station,Enipower power station,Electricity,Fuel;Water,batteries,hydrogen
+Enipower power station,ENI refinery,Electricity,Water,batteries,hydrogen
+Enipower power station,ND - Road construction,Electricity,Raw materials,batteries,metals
+Enipower power station,ND - Road construction,Electricity,Raw materials,energy consumption,minerals
+Enipower power station,ND - Agroindustry,Electricity,Fertiliser;Fertilizer,energy consumption,biofertilizer
+Enipower power station,Enipower power station,Electricity,Fuel,energy consumption,bioenergy
+Enipower power station,Enipower power station,Electricity,Fuel,energy consumption,biofuels
+Enipower power station,ND - Road construction,Electricity,Raw materials,household electrical appliances,secondary raw materials
+Enipower power station,ND - Distilleries,Electricity,Raw material for Distilleries,household electrical appliances,secondary raw materials
+Enipower power station,ND - Road construction,Electricity,Raw materials,household electrical appliances,metals
+Enipower power station,Enipower power station,Electricity,Fuel,energy,energy resources
+Enipower power station,ENI refinery,Electricity,Process energy,energy,energy resources
+Enipower power station,ILVA,Electricity,Process energy,energy,energy resources
+Enipower power station,Edison power station,Electricity,Process energy,energy,energy resources
+Enipower power station,CEMENTIR,Electricity,Process energy,energy,energy resources
+Enipower power station,EniPower power station,Electricity,Process energy,energy,energy resources
+Enipower power station,ENI refinery,Electricity,Process energy,energy,usable energy
+Enipower power station,ILVA,Electricity,Process energy,energy,usable energy
+Enipower power station,Edison power station,Electricity,Process energy,energy,usable energy
+Enipower power station,CEMENTIR,Electricity,Process energy,energy,usable energy
+Enipower power station,EniPower power station,Electricity,Process energy,energy,usable energy
+Enipower power station,ENI refinery,Electricity,Process energy,energy,energy recovery
+Enipower power station,ILVA,Electricity,Process energy,energy,energy recovery
+Enipower power station,Edison power station,Electricity,Process energy,energy,energy recovery
+Enipower power station,CEMENTIR,Electricity,Process energy,energy,energy recovery
+Enipower power station,EniPower power station,Electricity,Process energy,energy,energy recovery
+Enipower power station,ND - Road construction,Electricity,Raw materials,energy,recovered materials
+Enipower power station,Enipower power station,Electricity,Fuel,energy,energy efficiency
+Enipower power station,ND - Agroindustry,Electricity,Fertilizer,energy,compost
+Enipower power station,ND - Road construction,Electricity,Raw materials,electrical and electronic equipment,recycled materials
+Enipower power station,ND - Road construction,"Sea and well water, condensing vapour",Raw materials,saline water,chemical products
+Enipower power station,Enipower power station,"Sea and well water, condensing vapour",Water,saline water,clean water
+Enipower power station,ENI refinery,"Sea and well water, condensing vapour",Water,saline water,clean water
+Enipower power station,Enipower power station,"Sea and well water, condensing vapour",Fuel,saline water,biofuels
+Enipower power station,ND - Agroindustry,"Sea and well water, condensing vapour",Fertilizer,saline water,biogas
+Enipower power station,Enipower power station,"Sea and well water, condensing vapour",Fuel,saline water,biodiesel
+Enipower power station,ND - Road construction,"Sea and well water, condensing vapour",Paving,seawater,concrete
+Enipower power station,ND - Production of concrete,"Sea and well water, condensing vapour",Raw material for Production of concrete,seawater,concrete
+Enipower power station,Enipower power station,"Sea and well water, condensing vapour",Fuel,water vapor,value-added fuels
+Enipower power station,ND - Agroindustry,"Sea and well water, condensing vapour",Fertilizer,water vapor,biochar
+Enipower power station,Enipower power station,"Sea and well water, condensing vapour",Fuel,water vapor,solid fuel
+ENI refinery,Enipower power station,Fuel oil,Water,oils,clean water
+ENI refinery,ENI refinery,Fuel oil,Water,oils,clean water
+ENI refinery,Enipower power station,Fuel oil,Fuel,oils,biodiesel
+ENI refinery,Enipower power station,Fuel oil,Fuel,oils,biofuels
+ENI refinery,ND - Road construction,Fuel oil,Raw materials,oils,recovered materials
+ENI refinery,Enipower power station,Fuel oil;Waste heat,Fuel,waste oil,biodiesel
+ENI refinery,ND - Road construction,Fuel oil;Waste heat,Raw materials,waste oil,chemical products
+ENI refinery,Enipower power station,Fuel oil;Waste heat,Fuel,waste oil,crude oil
+ENI refinery,ND - Road construction,Fuel oil;Waste heat,Raw materials,waste oil,recycled materials
+ENI refinery,Enipower power station,Fuel oil;Fuel gas,Fuel,fossil fuel diesel,biofuels
+ENI refinery,Enipower power station,Fuel oil;Fuel gas,Fuel;Water,synthetic gas,hydrogen
+ENI refinery,ENI refinery,Fuel oil;Fuel gas,Water,synthetic gas,hydrogen
+ENI refinery,ND - Agroindustry,Fuel oil;Fuel gas,Fertilizer,synthetic gas,ammonia nitrogen
+ENI refinery,ND - Agroindustry,Fuel oil,Fertilizer,used cooking oil,biochar
+ENI refinery,Enipower power station,Fuel oil,Fuel,used cooking oil,biodiesel
+ENI refinery,Enipower power station,Fuel oil,Fuel,used cooking oil,crude oil
+ENI refinery,Enipower power station,Fuel oil,Fuel,heating oil,ethanol
+ENI refinery,ND - Agroindustry,Fuel oil,Fertilizer,petroleum-derived products,biochar
+ENI refinery,ND - Construction materials production,Fuel oil,Raw material for Construction materials production,petroleum-derived products,building materials
+ENI refinery,ND - Road construction,Fuel oil,Raw materials,petroleum-derived products,building materials
+ENI refinery,ND - Agroindustry,Fuel oil,Fertilizer,hydrocarbons,biogas
+ENI refinery,Enipower power station,Fuel oil,Fuel,hydrocarbons,biofuels
+ENI refinery,Enipower power station,Fuel oil,Fuel,hydrocarbons,biodiesel
+ENI refinery,Enipower power station,Fuel oil;Fuel gas,Fuel,biomass fuel,chemical fuels
+ENI refinery,Enipower power station,Fuel oil;Fuel gas,Fuel;Water,fossil fuel,hydrogen
+ENI refinery,ENI refinery,Fuel oil;Fuel gas,Water,fossil fuel,hydrogen
+ENI refinery,ND - Agroindustry,Fuel oil;Fuel gas,Fertilizer,fossil fuel,biochar
+ENI refinery,ND - Road construction,Fuel oil;Fuel gas,Raw materials,fossil fuel,chemical products
+ENI refinery,Enipower power station,Fuel oil;Fuel gas,Fuel,fossil fuel,crude oil
+ENI refinery,Enipower power station,Fuel oil;Fuel gas,Fuel,fossil fuel,biofuels
+ENI refinery,Enipower power station,Fuel oil;Fuel gas,Fuel,fossil fuel,gas
+ENI refinery,ND - Agroindustry,Fuel oil;Fuel gas,Fertilizer,fossil fuel,biogas
+ENI refinery,Enipower power station,Fuel oil;Fuel gas,Fuel,fossil fuel,renewable fuel
+ENI refinery,Enipower power station,Fuel oil;Fuel gas,Fuel,fossil fuel,energy efficiency
+ENI refinery,ND - Agroindustry,Waste heat,Fertilizer,energy waste,biogas
+ENI refinery,ND - Agroindustry,Waste heat,Fertilizer,high-calorific waste,compost
+ENI refinery,ND - Agroindustry,Waste heat,Fertilizer,high-calorific waste,biogas
+ENI refinery,ND - Road construction,Waste heat,Raw materials,high-calorific waste,recycled materials
+ENI refinery,ND - Agroindustry,Waste heat,Fertilizer,waste heat,biogas
+ENI refinery,ND - Agroindustry,Waste heat,Fertilizer,waste carbon,ammonia
+ENI refinery,ND - Road construction,Waste heat,Raw materials,waste,materials
+ENI refinery,ND - Agroindustry,Waste heat,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,waste,fertilizer
+ENI refinery,ND - Road construction,Waste heat,Raw materials,waste,chemical products
+ENI refinery,Enipower power station,Waste heat,Water,waste,hot water
+ENI refinery,ENI refinery,Waste heat,Water,waste,hot water
+ENI refinery,Taranto,Waste heat,Heat,waste,hot water
+ILVA,ND - Road construction,Exhaust gas,Raw materials,off-gases,byproducts
+ILVA,ND - Road construction,Exhaust gas,Raw materials,flue gas,byproducts
+ILVA,Enipower power station,Exhaust gas,Fuel,flue gas,biofuels
+ILVA,Enipower power station,Exhaust gas,Fuel,flue gas,biodiesel
+ILVA,ND - Agroindustry,Exhaust gas,Fertilizer,flue gas,biogas
+ILVA,ND - Agroindustry,Exhaust gas,Fertilizer,odor emission,biogas
+ILVA,ND - Agroindustry,Exhaust gas,Fertilizer,odor emission,compost
+ILVA,ND - Agroindustry,Exhaust gas,Fertilizer,carbon monoxide,biogas
+ILVA,Enipower power station,Exhaust gas,Fuel,carbon monoxide,biofuels
+ILVA,Enipower power station,Exhaust gas,Fuel,carbon monoxide,biodiesel
+ILVA,Enipower power station,Exhaust gas,Fuel,smoke,value-added fuels
+ILVA,ND - Agroindustry,Exhaust gas,Fertilizer,smoke,biochar
+ILVA,Enipower power station,Exhaust gas,Fuel,smoke,solid fuel
+ILVA,ND - Agroindustry,Exhaust gas,Fertilizer,nitrogen oxides,ammonia
+ILVA,ENI refinery,Exhaust gas,Process heat,nitrogen oxides,heat
+ILVA,ILVA,Exhaust gas,Process heat,nitrogen oxides,heat
+ILVA,Edison power station,Exhaust gas,Process heat,nitrogen oxides,heat
+ILVA,Taranto,Exhaust gas,Cooling;Heat,nitrogen oxides,heat
+ILVA,ND - Electricity production - Organic Rankine Cycle,Exhaust gas,Process heat,nitrogen oxides,heat
+ILVA,Enipower power station,Exhaust gas,Water,nitrogen oxides,water
+ILVA,ENI refinery,Exhaust gas,Water,nitrogen oxides,water
+ILVA,Enipower power station,Exhaust gas,Fuel,nitrogen oxides,gas
+ILVA,ND - Road construction,Exhaust gas,Raw materials,nitrogen oxides,materials
+ILVA,Enipower power station,Exhaust gas,Fuel,nitrogen oxides,power
+ILVA,Enipower power station,Exhaust gas,Fuel,nitrogen oxides,biofuels
+ILVA,ND - Agroindustry,Exhaust gas,Fertilizer,nitrogen oxides,biogas
+ILVA,Enipower power station,Exhaust gas,Fuel,nitrogen oxides,biodiesel
+ILVA,Enipower power station,Waste heat;Waste coolant,Fuel,waste oil,biodiesel
+ILVA,ND - Road construction,Waste heat;Waste coolant,Raw materials,waste oil,chemical products
+ILVA,Enipower power station,Waste heat;Waste coolant,Fuel,waste oil,crude oil
+ILVA,ND - Road construction,Waste heat;Waste coolant,Raw materials,waste oil,recycled materials
+ILVA,ND - Agroindustry,Waste heat,Fertilizer,energy waste,biogas
+ILVA,ND - Agroindustry,Waste heat,Fertilizer,high-calorific waste,compost
+ILVA,ND - Agroindustry,Waste heat,Fertilizer,high-calorific waste,biogas
+ILVA,ND - Road construction,Waste heat,Raw materials,high-calorific waste,recycled materials
+ILVA,ND - Agroindustry,Waste heat;Waste coolant,Fertilizer,waste heat,biogas
+ILVA,ND - Agroindustry,Waste heat,Fertilizer,waste carbon,ammonia
+ILVA,ND - Road construction,Waste heat,Raw materials,waste,materials
+ILVA,ND - Agroindustry,Waste heat,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,waste,fertilizer
+ILVA,ND - Road construction,Waste heat,Raw materials,waste,chemical products
+ILVA,Enipower power station,Waste heat,Water,waste,hot water
+ILVA,ENI refinery,Waste heat,Water,waste,hot water
+ILVA,Taranto,Waste heat,Heat,waste,hot water
+ILVA,Enipower power station,Refractories,Fuel;Water,alumina,hydrogen
+ILVA,ENI refinery,Refractories,Water,alumina,hydrogen
+ILVA,ENI refinery,Refractories,Process heat,alumina,heat
+ILVA,ILVA,Refractories,Process heat,alumina,heat
+ILVA,Edison power station,Refractories,Process heat,alumina,heat
+ILVA,Taranto,Refractories,Cooling;Heat,alumina,heat
+ILVA,ND - Electricity production - Organic Rankine Cycle,Refractories,Process heat,alumina,heat
+ILVA,Enipower power station,Waste coolant,Fuel,sludge waste,bioenergy
+ILVA,ND - Agroindustry,Waste coolant,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,sludge waste,bio-fertilizer
+ILVA,ND - Agroindustry,Waste coolant,Fertilizer,sludge waste,biogas
+ILVA,ND - Agroindustry,Waste coolant,Fertiliser;Fertilizer,sludge waste,phosphorus
+ILVA,ND - Agroindustry,Waste coolant,Fertiliser;Soil quality improvement and fertiliser,sludge waste,organic fertilisers
+ILVA,ND - Agroindustry,Waste coolant,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,sludge waste,fertiliser
+ILVA,ND - Agroindustry,Waste coolant,Fertilizer,sludge waste,ammonia
+ILVA,ND - Agroindustry,Waste coolant,Fertilizer,sludge waste,biochar
+ILVA,ND - Agroindustry,Waste coolant,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,sludge waste,soil nitrogen
+ILVA,ND - Agroindustry,Waste coolant,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,sludge waste,fertilizer
+ILVA,ND - Agroindustry,Waste coolant,Fertilizer,process waste,biogas
+ILVA,Enipower power station,Waste coolant,Fuel,process waste,ethanol
+ILVA,ND - Agroindustry,Waste coolant,Fertilizer,liquid waste,compost
+ILVA,ND - Agroindustry,Waste coolant,Fertilizer,liquid waste,biochar
+ILVA,Enipower power station,Waste coolant,Fuel,liquid waste,crude oil
+ILVA,Enipower power station,Waste coolant,Fuel,liquid waste,ethanol
+ILVA,ND - Road construction,Waste coolant,Raw materials,liquid waste,materials
+ILVA,ND - Road construction,Waste coolant,Raw materials,liquid waste,byproducts
+ILVA,Enipower power station,Waste coolant,Fuel,liquid waste,biofuels
+ILVA,ND - Road construction,Waste coolant,Raw materials,fluid waste,recovered materials
+ILVA,Enipower power station,Waste coolant,Water,fluid waste,treated water
+ILVA,ENI refinery,Waste coolant,Water,fluid waste,treated water
+ILVA,ND - Production of refractories,Waste coolant;BF slag,Raw material for Production of refractories,slag waste,refractory materials
+ILVA,Enipower power station,Waste coolant;BF slag,Fuel;Water,slag waste,hydrogen
+ILVA,ENI refinery,Waste coolant;BF slag,Water,slag waste,hydrogen
+ILVA,Enipower power station,Mill scales,Fuel,scale,biodiesel
+ILVA,Enipower power station,Mill scales,Fuel,scale,oil
+ILVA,ND - Road construction,Mill scales,Raw materials,scale,minerals
+ILVA,ND - Agroindustry,Mill scales,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,scale,fertiliser
+ILVA,Enipower power station,Mill scales,Fuel,scale,biofuels
+ILVA,ND - Glass and glass-ceramic production,Mill scales,Raw material for Glass and glass-ceramic production,mill scale,iron-rich glass-ceramics
+ILVA,ND - Road construction,BF slag,Paving,slag,concrete
+ILVA,ND - Production of concrete,BF slag,Raw material for Production of concrete,slag,concrete
+ILVA,CEMENTIR,BF slag,Raw material for Cement production,slag,feedstock for cement clinker production
+ILVA,ND - Production of concrete,BF slag,Raw material for Production of concrete,slag,feedstock for cement clinker production
+ILVA,ND - Road construction,BF slag,Raw materials,slag,minerals
+ILVA,ND - Road construction,BF slag,Raw materials,slag,recycled materials
+ILVA,ND - Construction materials production,BF slag,Raw material for Construction materials production,slag,construction materials
+ILVA,ND - Road construction,BF slag,Raw materials,slag,construction materials
+ILVA,ND - Construction materials production,BF slag,Raw material for Construction materials production,slag,building materials
+ILVA,ND - Road construction,BF slag,Raw materials,slag,building materials
+ILVA,ND - Production of refractories,BF slag,Raw material for Production of refractories,ferrotitanium slag,refractory materials
+ILVA,ND - Agroindustry,BF slag,Soil quality improvement and fertiliser;Fertilizer,desulfurization slag,soil improver
+ILVA,ND - Road construction,BF slag,Paving,desulfurization slag,pavement materials
+ILVA,CEMENTIR,BF slag,Raw material for Cement production,BOF slag powder,cement
+ILVA,ND - Production of refractories,BF slag,Raw material for Production of refractories,ferrous slag,ceramic materials
+ILVA,ND - Glass and glass-ceramic production,BF slag,Raw material for Glass and glass-ceramic production,ferrous slag,ceramic materials
+ILVA,ND - Construction materials production,BF slag,Raw material for Construction materials production,ferrous slag,building materials
+ILVA,ND - Road construction,BF slag,Raw materials,ferrous slag,building materials
+ILVA,ND - Construction materials production,BF slag,Raw material for Construction materials production,copper slag,building materials
+ILVA,ND - Road construction,BF slag,Raw materials,copper slag,building materials
+ILVA,ND - Construction materials production,BF slag,Raw material for Construction materials production,copper slag,construction materials
+ILVA,ND - Road construction,BF slag,Raw materials,copper slag,construction materials
+ILVA,ND - Road construction,BF slag,Paving,copper slag,concrete
+ILVA,ND - Production of concrete,BF slag,Raw material for Production of concrete,copper slag,concrete
+ILVA,ND - Agroindustry,BF slag,Fertiliser;Fertilizer,iron and steel slag,phosphorus
+ILVA,ND - Road construction,BF slag,Paving,steelmaking slag,concrete
+ILVA,ND - Production of concrete,BF slag,Raw material for Production of concrete,steelmaking slag,concrete
+ILVA,ND - Production of bricks,BF slag,Raw material for Production of bricks,steelmaking slag,bricks
+ILVA,ND - Agroindustry,BF slag,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,steelmaking slag,fertilizer
+ILVA,ND - Agroindustry,BF slag,Fertilizer,steelmaking slag,zeolite
+ILVA,ND - Construction materials production,BF slag,Raw material for Construction materials production,steelmaking slag,civil construction materials
+ILVA,ND - Road construction,BF slag,Raw material for Road construction,steelmaking slag,recycled road materials
+ILVA,ND - Agroindustry,BF slag,Fertilizer,steelmaking slag,biochar
+ILVA,ND - Construction materials production,BF slag,Raw material for Construction materials production,steelmaking slag,building materials
+ILVA,ND - Road construction,BF slag,Raw materials,steelmaking slag,building materials
+ILVA,ND - Construction materials production,BF slag,Raw material for Construction materials production,steelmaking slag,construction materials
+ILVA,ND - Road construction,BF slag,Raw materials,steelmaking slag,construction materials
+ILVA,ND - Agroindustry,BF slag,Fertilizer,steelmaking slag,biogas
+ILVA,ND - Road construction,BF slag,Paving,steelmaking slag,asphalt concrete
+ILVA,ND - Agroindustry,BF slag,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,steelmaking slag,phosphorous fertiliser
+ILVA,ND - Production of concrete,BF slag,Raw material for Production of concrete,steelmaking slag,concrete aggregate
+ILVA,CEMENTIR,BF slag,Raw material for Cement production,steelmaking slag,cement
+ILVA,ND - Road construction,BF slag,Paving,blast furnace slag,concrete
+ILVA,ND - Production of concrete,BF slag,Raw material for Production of concrete,blast furnace slag,concrete
+ILVA,ND - Production of bricks,BF slag,Raw material for Production of bricks,blast furnace slag,bricks
+ILVA,ND - Agroindustry,BF slag,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,blast furnace slag,fertilizer
+ILVA,ND - Agroindustry,BF slag,Fertilizer,blast furnace slag,zeolite
+ILVA,ND - Road construction,BF slag,Paving,blast furnace slag,pavement granules
+ILVA,ND - Construction materials production,BF slag,Raw material for Construction materials production,blast furnace slag,value-added construction materials
+ILVA,ND - Construction materials production,BF slag,Raw material for Construction materials production,blast furnace slag,building materials
+ILVA,ND - Road construction,BF slag,Raw materials,blast furnace slag,building materials
+ILVA,ND - Construction materials production,BF slag,Raw material for Construction materials production,blast furnace slag,construction materials
+ILVA,ND - Road construction,BF slag,Raw materials,blast furnace slag,construction materials
+ILVA,ND - Glass and glass-ceramic production,BF slag,Raw material for Glass and glass-ceramic production,blast furnace slag,transparent glass
+ILVA,CEMENTIR,BF slag,Raw material for Cement production,carbonated slag,cement
+ILVA,ND - Construction materials production,BF slag,Raw material for Construction materials production,ladle slag,building materials
+ILVA,ND - Road construction,BF slag,Raw materials,ladle slag,building materials
+ILVA,ND - Production of concrete,BF slag,Raw material for Production of concrete,EAF slag,concrete aggregate
+ILVA,CEMENTIR,BF slag,Raw material for Cement production,EAF slag,cement
+ILVA,ND - Road construction,BF slag,Paving,EAF slag,concrete
+ILVA,ND - Production of concrete,BF slag,Raw material for Production of concrete,EAF slag,concrete
+ILVA,ND - Agroindustry,BF slag,Fertilizer,salt slag,ammonia
+ILVA,ND - Road construction,BF slag,Paving,lithium slag,concrete
+ILVA,ND - Production of concrete,BF slag,Raw material for Production of concrete,lithium slag,concrete
+ILVA,ND - Production of bricks,BF slag,Raw material for Production of bricks,lithium slag,bricks
+ILVA,ND - Agroindustry,BF slag,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,lithium slag,fertilizer
+ILVA,ND - Road construction,BF slag,Raw materials,lithium slag,valuable materials
+Edison power station,Enipower power station,Waste heat,Fuel,waste oil,biodiesel
+Edison power station,ND - Road construction,Waste heat,Raw materials,waste oil,chemical products
+Edison power station,Enipower power station,Waste heat,Fuel,waste oil,crude oil
+Edison power station,ND - Road construction,Waste heat,Raw materials,waste oil,recycled materials
+Edison power station,ND - Agroindustry,Waste heat,Fertilizer,energy waste,biogas
+Edison power station,ND - Agroindustry,Waste heat,Fertilizer,high-calorific waste,compost
+Edison power station,ND - Agroindustry,Waste heat,Fertilizer,high-calorific waste,biogas
+Edison power station,ND - Road construction,Waste heat,Raw materials,high-calorific waste,recycled materials
+Edison power station,ND - Agroindustry,Waste heat,Fertilizer,waste heat,biogas
+Edison power station,ND - Agroindustry,Waste heat,Fertilizer,waste carbon,ammonia
+Edison power station,ND - Road construction,Waste heat,Raw materials,waste,materials
+Edison power station,ND - Agroindustry,Waste heat,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,waste,fertilizer
+Edison power station,ND - Road construction,Waste heat,Raw materials,waste,chemical products
+Edison power station,Enipower power station,Waste heat,Water,waste,hot water
+Edison power station,ENI refinery,Waste heat,Water,waste,hot water
+Edison power station,Taranto,Waste heat,Heat,waste,hot water
+Edison power station,Enipower power station,Electricity,Fuel;Water,batteries,hydrogen
+Edison power station,ENI refinery,Electricity,Water,batteries,hydrogen
+Edison power station,ND - Road construction,Electricity,Raw materials,batteries,metals
+Edison power station,ND - Road construction,Electricity,Raw materials,energy consumption,minerals
+Edison power station,ND - Agroindustry,Electricity,Fertiliser;Fertilizer,energy consumption,biofertilizer
+Edison power station,Enipower power station,Electricity,Fuel,energy consumption,bioenergy
+Edison power station,Enipower power station,Electricity,Fuel,energy consumption,biofuels
+Edison power station,ND - Road construction,Electricity,Raw materials,household electrical appliances,secondary raw materials
+Edison power station,ND - Distilleries,Electricity,Raw material for Distilleries,household electrical appliances,secondary raw materials
+Edison power station,ND - Road construction,Electricity,Raw materials,household electrical appliances,metals
+Edison power station,Enipower power station,Electricity,Fuel,energy,energy resources
+Edison power station,ENI refinery,Electricity,Process energy,energy,energy resources
+Edison power station,ILVA,Electricity,Process energy,energy,energy resources
+Edison power station,Edison power station,Electricity,Process energy,energy,energy resources
+Edison power station,CEMENTIR,Electricity,Process energy,energy,energy resources
+Edison power station,EniPower power station,Electricity,Process energy,energy,energy resources
+Edison power station,ENI refinery,Electricity,Process energy,energy,usable energy
+Edison power station,ILVA,Electricity,Process energy,energy,usable energy
+Edison power station,Edison power station,Electricity,Process energy,energy,usable energy
+Edison power station,CEMENTIR,Electricity,Process energy,energy,usable energy
+Edison power station,EniPower power station,Electricity,Process energy,energy,usable energy
+Edison power station,ENI refinery,Electricity,Process energy,energy,energy recovery
+Edison power station,ILVA,Electricity,Process energy,energy,energy recovery
+Edison power station,Edison power station,Electricity,Process energy,energy,energy recovery
+Edison power station,CEMENTIR,Electricity,Process energy,energy,energy recovery
+Edison power station,EniPower power station,Electricity,Process energy,energy,energy recovery
+Edison power station,ND - Road construction,Electricity,Raw materials,energy,recovered materials
+Edison power station,Enipower power station,Electricity,Fuel,energy,energy efficiency
+Edison power station,ND - Agroindustry,Electricity,Fertilizer,energy,compost
+Edison power station,ND - Road construction,Electricity,Raw materials,electrical and electronic equipment,recycled materials
+CEMENTIR,Enipower power station,Waste heat,Fuel,waste oil,biodiesel
+CEMENTIR,ND - Road construction,Waste heat,Raw materials,waste oil,chemical products
+CEMENTIR,Enipower power station,Waste heat,Fuel,waste oil,crude oil
+CEMENTIR,ND - Road construction,Waste heat,Raw materials,waste oil,recycled materials
+CEMENTIR,ND - Agroindustry,Waste heat,Fertilizer,energy waste,biogas
+CEMENTIR,ND - Agroindustry,Waste heat,Fertilizer,high-calorific waste,compost
+CEMENTIR,ND - Agroindustry,Waste heat,Fertilizer,high-calorific waste,biogas
+CEMENTIR,ND - Road construction,Waste heat,Raw materials,high-calorific waste,recycled materials
+CEMENTIR,ND - Agroindustry,Waste heat,Fertilizer,waste heat,biogas
+CEMENTIR,ND - Agroindustry,Waste heat,Fertilizer,waste carbon,ammonia
+CEMENTIR,ND - Road construction,Waste heat,Raw materials,waste,materials
+CEMENTIR,ND - Agroindustry,Waste heat,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,waste,fertilizer
+CEMENTIR,ND - Road construction,Waste heat,Raw materials,waste,chemical products
+CEMENTIR,Enipower power station,Waste heat,Water,waste,hot water
+CEMENTIR,ENI refinery,Waste heat,Water,waste,hot water
+CEMENTIR,Taranto,Waste heat,Heat,waste,hot water
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertilizer,lignite,biogas
+CEMENTIR,ND - Road construction,Coal fly ash,Paving,slag,concrete
+CEMENTIR,ND - Production of concrete,Coal fly ash,Raw material for Production of concrete,slag,concrete
+CEMENTIR,CEMENTIR,Coal fly ash,Raw material for Cement production,slag,feedstock for cement clinker production
+CEMENTIR,ND - Production of concrete,Coal fly ash,Raw material for Production of concrete,slag,feedstock for cement clinker production
+CEMENTIR,ND - Road construction,Coal fly ash,Raw materials,slag,minerals
+CEMENTIR,ND - Road construction,Coal fly ash,Raw materials,slag,recycled materials
+CEMENTIR,ND - Construction materials production,Coal fly ash,Raw material for Construction materials production,slag,construction materials
+CEMENTIR,ND - Road construction,Coal fly ash,Raw materials,slag,construction materials
+CEMENTIR,ND - Construction materials production,Coal fly ash,Raw material for Construction materials production,slag,building materials
+CEMENTIR,ND - Road construction,Coal fly ash,Raw materials,slag,building materials
+CEMENTIR,ND - Agroindustry,Coal fly ash,Soil quality improvement and fertiliser;Fertilizer,coal-based solid waste,soil improver
+CEMENTIR,ND - Agroindustry,Coal fly ash,Soil quality improvement and fertiliser;Fertilizer,coal mine waste,soil improver
+CEMENTIR,CEMENTIR,Coal fly ash,Raw material for Cement production,petroleum coke fly ash,cement
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertiliser;Fertilizer,power plant ash,phosphorus
+CEMENTIR,ENI refinery,Coal fly ash,Process heat,power plant ash,heat
+CEMENTIR,ILVA,Coal fly ash,Process heat,power plant ash,heat
+CEMENTIR,Edison power station,Coal fly ash,Process heat,power plant ash,heat
+CEMENTIR,Taranto,Coal fly ash,Cooling;Heat,power plant ash,heat
+CEMENTIR,ND - Electricity production - Organic Rankine Cycle,Coal fly ash,Process heat,power plant ash,heat
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,power plant ash,fertilizer
+CEMENTIR,Enipower power station,Coal fly ash,Fuel,ash waste,biofuels
+CEMENTIR,Enipower power station,Coal fly ash,Fuel,incineration fly ash,biofuels
+CEMENTIR,Enipower power station,Coal fly ash,Fuel,charcoal production residues,bioenergy
+CEMENTIR,ND - Road construction,Coal fly ash,Paving,municipal solid waste ash,concrete
+CEMENTIR,ND - Production of concrete,Coal fly ash,Raw material for Production of concrete,municipal solid waste ash,concrete
+CEMENTIR,ND - Construction materials production,Coal fly ash,Raw material for Construction materials production,fluidized bed fly ash,building materials
+CEMENTIR,ND - Road construction,Coal fly ash,Raw materials,fluidized bed fly ash,building materials
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertilizer,coal,biochar
+CEMENTIR,CEMENTIR,Coal fly ash,Raw material for Cement production,coal,feedstock for cement clinker production
+CEMENTIR,ND - Production of concrete,Coal fly ash,Raw material for Production of concrete,coal,feedstock for cement clinker production
+CEMENTIR,ND - Road construction,Coal fly ash,Raw materials,coal,recovered materials
+CEMENTIR,ND - Road construction,Coal fly ash,Paving,coal gangue,concrete
+CEMENTIR,ND - Production of concrete,Coal fly ash,Raw material for Production of concrete,coal gangue,concrete
+CEMENTIR,ND - Production of bricks,Coal fly ash,Raw material for Production of bricks,coal gangue,bricks
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,coal gangue,fertilizer
+CEMENTIR,ND - Road construction,Coal fly ash,Paving,blast furnace slag,concrete
+CEMENTIR,ND - Production of concrete,Coal fly ash,Raw material for Production of concrete,blast furnace slag,concrete
+CEMENTIR,ND - Production of bricks,Coal fly ash,Raw material for Production of bricks,blast furnace slag,bricks
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,blast furnace slag,fertilizer
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertilizer,blast furnace slag,zeolite
+CEMENTIR,ND - Road construction,Coal fly ash,Paving,blast furnace slag,pavement granules
+CEMENTIR,ND - Construction materials production,Coal fly ash,Raw material for Construction materials production,blast furnace slag,value-added construction materials
+CEMENTIR,ND - Construction materials production,Coal fly ash,Raw material for Construction materials production,blast furnace slag,building materials
+CEMENTIR,ND - Road construction,Coal fly ash,Raw materials,blast furnace slag,building materials
+CEMENTIR,ND - Construction materials production,Coal fly ash,Raw material for Construction materials production,blast furnace slag,construction materials
+CEMENTIR,ND - Road construction,Coal fly ash,Raw materials,blast furnace slag,construction materials
+CEMENTIR,ND - Glass and glass-ceramic production,Coal fly ash,Raw material for Glass and glass-ceramic production,blast furnace slag,transparent glass
+CEMENTIR,Enipower power station,Coal fly ash,Fuel,coal gasification fly ash,biofuels
+CEMENTIR,ND - Construction materials production,Coal fly ash,Raw material for Construction materials production,coal waste,construction products
+CEMENTIR,ND - Production of concrete,Coal fly ash,Raw material for Production of concrete,biomass combustion ash,concrete aggregate
+CEMENTIR,ND - Construction materials production,Coal fly ash,Raw material for Construction materials production,biomass combustion ash,building materials
+CEMENTIR,ND - Road construction,Coal fly ash,Raw materials,biomass combustion ash,building materials
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertilizer,biomass combustion ash,zeolite
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertilizer,biomass combustion ash,biogas
+CEMENTIR,Enipower power station,Coal fly ash,Fuel,biomass combustion ash,improved fuel characteristics
+CEMENTIR,CEMENTIR,Coal fly ash,Raw material for Cement production,biomass combustion ash,cement
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,biomass combustion ash,fertilizer
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,biomass combustion ash,organic fertilizer
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertiliser;Fertilizer,ash from combustion,phosphorus
+CEMENTIR,ND - Road construction,Coal fly ash,Raw materials,ash from combustion,secondary raw materials
+CEMENTIR,ND - Distilleries,Coal fly ash,Raw material for Distilleries,ash from combustion,secondary raw materials
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertilizer,ash from combustion,plant nutrients
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,ash from combustion,fertilizer
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertilizer,bituminous coal,biogas
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertiliser;Fertilizer,sewage sludge ash,organo-mineral fertilizer
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,sewage sludge ash,organic fertilizer
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertilizer,sewage sludge ash,biogas
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertiliser;Fertilizer,sewage sludge ash,chemical fertilizers
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,sewage sludge ash,bio-fertilizer
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertiliser;Fertilizer,sewage sludge ash,biofertilizer
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertiliser;Fertilizer,sewage sludge ash,phosphorus
+CEMENTIR,ND - Road construction,Coal fly ash,Paving,sewage sludge ash,concrete
+CEMENTIR,ND - Production of concrete,Coal fly ash,Raw material for Production of concrete,sewage sludge ash,concrete
+CEMENTIR,CEMENTIR,Coal fly ash,Raw material for Cement production,sewage sludge ash,cementitious materials
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertilizer,sewage sludge ash,biochar
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,sewage sludge ash,phosphorus fertilizer
+CEMENTIR,ND - Glass and glass-ceramic production,Coal fly ash,Raw material for Glass and glass-ceramic production,sewage sludge ash,low-temperature glass-ceramics
+CEMENTIR,ND - Construction materials production,Coal fly ash,Raw material for Construction materials production,sewage sludge ash,value-added construction materials
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,sewage sludge ash,soil nitrogen
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertilizer,sewage sludge ash,phosphate
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,sewage sludge ash,fertilizer
+CEMENTIR,Enipower power station,Coal fly ash,Fuel,sewage sludge ash,bioenergy
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertilizer,sewage sludge ash,fertilizer alternatives
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertilizer,lignite waste,humic acid fertilizer
+CEMENTIR,ND - Construction materials production,Coal fly ash,Raw material for Construction materials production,biomass fly ash,construction materials
+CEMENTIR,ND - Road construction,Coal fly ash,Raw materials,biomass fly ash,construction materials
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertilizer,agricultural waste ash,compost
+CEMENTIR,ND - Road construction,Coal fly ash,Raw materials,agricultural waste ash,secondary raw materials
+CEMENTIR,ND - Distilleries,Coal fly ash,Raw material for Distilleries,agricultural waste ash,secondary raw materials
+CEMENTIR,Enipower power station,Coal fly ash,Fuel,dry ash,biofuels
+CEMENTIR,ND - Production of concrete,Coal fly ash,Raw material for Production of concrete,mining residue sludge,concrete aggregate
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,wood ash,fertilizer
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertilizer,wood ash,plant nutrients
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertilizer,unburned carbon in fly ash,biochar
+CEMENTIR,ND - Road construction,Coal fly ash,Paving,fly ash,concrete
+CEMENTIR,ND - Production of concrete,Coal fly ash,Raw material for Production of concrete,fly ash,concrete
+CEMENTIR,ND - Production of bricks,Coal fly ash,Raw material for Production of bricks,fly ash,bricks
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,fly ash,fertilizer
+CEMENTIR,ND - Road construction,Coal fly ash,Paving,fly ash,asphalt concrete
+CEMENTIR,ND - Road construction,Coal fly ash,Raw material for Road construction,fly ash,waste reuse in road construction
+CEMENTIR,ND - Agroindustry,Coal fly ash,Soil quality improvement and fertiliser;Fertilizer,fly ash,soil improver
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertilizer,fly ash,zeolite
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertilizer,fly ash,biochar
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertiliser;Fertilizer,fly ash,fertilizer substrate
+CEMENTIR,ND - Road construction,Coal fly ash,Paving,fly ash,pavement granules
+CEMENTIR,ND - Construction materials production,Coal fly ash,Raw material for Construction materials production,fly ash,building materials
+CEMENTIR,ND - Road construction,Coal fly ash,Raw materials,fly ash,building materials
+CEMENTIR,ND - Construction materials production,Coal fly ash,Raw material for Construction materials production,fly ash,construction materials
+CEMENTIR,ND - Road construction,Coal fly ash,Raw materials,fly ash,construction materials
+CEMENTIR,Enipower power station,Coal fly ash,Fuel;Water,fly ash,hydrogen
+CEMENTIR,ENI refinery,Coal fly ash,Water,fly ash,hydrogen
+CEMENTIR,ND - Road construction,Coal fly ash,Raw materials,fly ash,valuable materials
+CEMENTIR,ND - Road construction,Coal fly ash,Paving,fly ash,pavers
+CEMENTIR,CEMENTIR,Coal fly ash,Raw material for Cement production,fly ash,cementitious materials
+CEMENTIR,CEMENTIR,Coal fly ash,Raw material for Cement production,fly ash,feedstock for cement clinker production
+CEMENTIR,ND - Production of concrete,Coal fly ash,Raw material for Production of concrete,fly ash,feedstock for cement clinker production
+CEMENTIR,ND - Construction materials production,Coal fly ash,Raw material for Construction materials production,fly ash,value-added construction materials
+CEMENTIR,ND - Construction materials production,Coal fly ash,Raw material for Construction materials production,fly ash,low-cost construction material
+CEMENTIR,ND - Glass and glass-ceramic production,Coal fly ash,Raw material for Glass and glass-ceramic production,fly ash,transparent glass
+CEMENTIR,CEMENTIR,Coal fly ash,Raw material for Cement production,fly ash,cement
+CEMENTIR,ND - Road construction,Coal fly ash,Raw material for Road construction;Road foundations;Paving,fly ash,road materials
+CEMENTIR,ND - Road construction,Coal fly ash,Paving,fly ash,paving mixes
+CEMENTIR,ND - Road construction,Coal fly ash,Raw materials,fly ash,recovered materials
+CEMENTIR,Enipower power station,Coal fly ash,Fuel,fly ash,biofuels
+CEMENTIR,ND - Agroindustry,Coal fly ash,Soil quality improvement and fertiliser;Fertilizer,fly ash,soil amendment
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,fly ash,bio-fertilizer
+CEMENTIR,ND - Agroindustry,Coal fly ash,Fertilizer,fly ash,plant nutrients
+CEMENTIR,ND - Agroindustry,Coal fly ash,Soil quality improvement and fertiliser,fly ash,stabilised soil
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Paving,concrete rubble,concrete
+ND - Construction materials production,ND - Production of concrete,Construction and demolition waste,Raw material for Production of concrete,concrete rubble,concrete
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,industrial non-hazardous waste,valorized materials
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Process energy,dry waste,thermal energy
+ND - Construction materials production,ILVA,Construction and demolition waste,Process energy,dry waste,thermal energy
+ND - Construction materials production,Edison power station,Construction and demolition waste,Process energy,dry waste,thermal energy
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Process energy,dry waste,thermal energy
+ND - Construction materials production,EniPower power station,Construction and demolition waste,Process energy,dry waste,thermal energy
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,dry waste,biogas
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Process heat,dry waste,heat
+ND - Construction materials production,ILVA,Construction and demolition waste,Process heat,dry waste,heat
+ND - Construction materials production,Edison power station,Construction and demolition waste,Process heat,dry waste,heat
+ND - Construction materials production,Taranto,Construction and demolition waste,Cooling;Heat,dry waste,heat
+ND - Construction materials production,ND - Electricity production - Organic Rankine Cycle,Construction and demolition waste,Process heat,dry waste,heat
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,landfill waste,bioenergy
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,landfill waste,recycled materials
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,landfill waste,compost
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,landfill waste,metals
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,landfill waste,valorized materials
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,sludge waste,bioenergy
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,sludge waste,bio-fertilizer
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,sludge waste,biogas
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Fertilizer,sludge waste,phosphorus
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Soil quality improvement and fertiliser,sludge waste,organic fertilisers
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,sludge waste,fertiliser
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,sludge waste,ammonia
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,sludge waste,biochar
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,sludge waste,soil nitrogen
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,sludge waste,fertilizer
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Paving,inorganic waste,concrete
+ND - Construction materials production,ND - Production of concrete,Construction and demolition waste,Raw material for Production of concrete,inorganic waste,concrete
+ND - Construction materials production,ND - Production of bricks,Construction and demolition waste,Raw material for Production of bricks,inorganic waste,bricks
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,inorganic waste,fertilizer
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,inorganic waste,biodiesel
+ND - Construction materials production,ND - Construction materials production,Construction and demolition waste,Raw material for Construction materials production,inorganic waste,low-cost construction material
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Water,mine waste,drinking water
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Water,mine waste,drinking water
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Paving,mine waste,concrete
+ND - Construction materials production,ND - Production of concrete,Construction and demolition waste,Raw material for Production of concrete,mine waste,concrete
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,mixed refuse waste,chemical products
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,mixed refuse waste,chemical fuels
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,post-consumer waste,biogas
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,post-consumer waste,fertilizer
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,post-consumer waste,synthetic materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,marine waste,materials
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,marine waste,biofuels
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,marine waste,biochar
+ND - Construction materials production,ND - Construction materials production,Construction and demolition waste,Raw material for Construction materials production,recycled construction and demolition materials,construction materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,recycled construction and demolition materials,construction materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,discarded material,high value materials
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,discarded material,biogas
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,hazardous waste,recycled materials
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,hazardous waste,reduced emissions
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Water,hazardous waste,water resources
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Water,hazardous waste,water resources
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,hazardous waste,biofuels
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,hazardous waste,bioenergy
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,hazardous waste,biodiesel
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,hazardous waste,ethanol
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Process energy,hazardous waste,energy recovery
+ND - Construction materials production,ILVA,Construction and demolition waste,Process energy,hazardous waste,energy recovery
+ND - Construction materials production,Edison power station,Construction and demolition waste,Process energy,hazardous waste,energy recovery
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Process energy,hazardous waste,energy recovery
+ND - Construction materials production,EniPower power station,Construction and demolition waste,Process energy,hazardous waste,energy recovery
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,hazardous waste,compost
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Road foundations,hazardous waste,road surface structural beds
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,household waste,compost
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Fertilizer,household waste,fertilizer products
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Soil quality improvement and fertiliser;Fertilizer,household waste,soil amendment
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,household waste,biochar
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,household waste,bioenergy
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Soil quality improvement and fertiliser;Fertilizer,household waste,soil fertility
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,household waste,biogas
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,household waste,recycled materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,household waste,chemical products
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Process energy,household waste,energy recovery
+ND - Construction materials production,ILVA,Construction and demolition waste,Process energy,household waste,energy recovery
+ND - Construction materials production,Edison power station,Construction and demolition waste,Process energy,household waste,energy recovery
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Process energy,household waste,energy recovery
+ND - Construction materials production,EniPower power station,Construction and demolition waste,Process energy,household waste,energy recovery
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel;Water,household waste,hydrogen
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Water,household waste,hydrogen
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,household waste,materials
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,household waste,high-quality fertilizer
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,household waste,organic fertilizer
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,contaminated waste,biodiesel
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,contaminated waste,recovered materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,contaminated waste,recycled materials
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,waste utilization,biogas
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,post-earthquake building waste,secondary raw materials
+ND - Construction materials production,ND - Distilleries,Construction and demolition waste,Raw material for Distilleries,post-earthquake building waste,secondary raw materials
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel;Water,brown waste,hydrogen
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Water,brown waste,hydrogen
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,complex waste,biochar
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,complex waste,biogas
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,construction and demolition waste,recycled materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,construction and demolition waste,sustainable raw materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,construction and demolition waste,recovered materials
+ND - Construction materials production,ND - Construction materials production,Construction and demolition waste,Raw material for Construction materials production,construction and demolition waste,secondary construction materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw material for Road construction,construction and demolition waste,recycled road materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,construction and demolition waste,materials
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Raw material for Cement production,construction and demolition waste,raw materials
+ND - Construction materials production,ND - Construction materials production,Construction and demolition waste,Raw material for Construction materials production,construction and demolition waste,raw materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,construction and demolition waste,raw materials
+ND - Construction materials production,ND - Distilleries,Construction and demolition waste,Raw material for Distilleries,construction and demolition waste,raw materials
+ND - Construction materials production,ND - Steelworks,Construction and demolition waste,Raw material for Steelworks,construction and demolition waste,raw materials
+ND - Construction materials production,ND - Production of refractories,Construction and demolition waste,Raw material for Production of refractories,construction and demolition waste,raw materials
+ND - Construction materials production,ND - Production of concrete,Construction and demolition waste,Raw material for Production of concrete,construction and demolition waste,raw materials
+ND - Construction materials production,ND - Production of bricks,Construction and demolition waste,Raw material for Production of bricks,construction and demolition waste,raw materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Paving,construction and demolition waste,concrete paving blocks
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Water,construction and demolition waste,effluent
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Water,construction and demolition waste,effluent
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,construction and demolition waste,secondary raw materials
+ND - Construction materials production,ND - Distilleries,Construction and demolition waste,Raw material for Distilleries,construction and demolition waste,secondary raw materials
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,construction and demolition waste,agricultural by-products
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Raw material for Cement production,construction and demolition waste,cement materials
+ND - Construction materials production,ND - Construction materials production,Construction and demolition waste,Raw material for Construction materials production,construction and demolition waste,building materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,construction and demolition waste,building materials
+ND - Construction materials production,Taranto,Construction and demolition waste,Heat,construction and demolition waste,thermal properties
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,construction and demolition waste,biodiesel
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,renovation waste,agricultural by-products
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Raw material for Cement production,renovation waste,cement materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,concrete waste,recycled materials
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Raw material for Cement production,concrete waste,feedstock for cement clinker production
+ND - Construction materials production,ND - Production of concrete,Construction and demolition waste,Raw material for Production of concrete,concrete waste,feedstock for cement clinker production
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Paving,concrete waste,concrete
+ND - Construction materials production,ND - Production of concrete,Construction and demolition waste,Raw material for Production of concrete,concrete waste,concrete
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Process energy,concrete waste,energy recovery
+ND - Construction materials production,ILVA,Construction and demolition waste,Process energy,concrete waste,energy recovery
+ND - Construction materials production,Edison power station,Construction and demolition waste,Process energy,concrete waste,energy recovery
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Process energy,concrete waste,energy recovery
+ND - Construction materials production,EniPower power station,Construction and demolition waste,Process energy,concrete waste,energy recovery
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,non-recyclable materials,recovered materials
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,non-recyclable materials,compost
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,waste substrate,fertilizer
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,waste substrate,frass fertilizer
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,waste substrate,organic fertilizer
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Raw material for Cement production,waste recycling,raw materials
+ND - Construction materials production,ND - Construction materials production,Construction and demolition waste,Raw material for Construction materials production,waste recycling,raw materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,waste recycling,raw materials
+ND - Construction materials production,ND - Distilleries,Construction and demolition waste,Raw material for Distilleries,waste recycling,raw materials
+ND - Construction materials production,ND - Steelworks,Construction and demolition waste,Raw material for Steelworks,waste recycling,raw materials
+ND - Construction materials production,ND - Production of refractories,Construction and demolition waste,Raw material for Production of refractories,waste recycling,raw materials
+ND - Construction materials production,ND - Production of concrete,Construction and demolition waste,Raw material for Production of concrete,waste recycling,raw materials
+ND - Construction materials production,ND - Production of bricks,Construction and demolition waste,Raw material for Production of bricks,waste recycling,raw materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,waste recycling,chemical products
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Process energy,non-hazardous waste,energy recovery
+ND - Construction materials production,ILVA,Construction and demolition waste,Process energy,non-hazardous waste,energy recovery
+ND - Construction materials production,Edison power station,Construction and demolition waste,Process energy,non-hazardous waste,energy recovery
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Process energy,non-hazardous waste,energy recovery
+ND - Construction materials production,EniPower power station,Construction and demolition waste,Process energy,non-hazardous waste,energy recovery
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,process waste,biogas
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,process waste,ethanol
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel;Water,municipal solid waste,hydrogen
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Water,municipal solid waste,hydrogen
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,municipal solid waste,chemical products
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,municipal solid waste,materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,municipal solid waste,recovered materials
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,municipal solid waste,compost
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,municipal solid waste,biogas
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Process energy,municipal solid waste,energy recovery
+ND - Construction materials production,ILVA,Construction and demolition waste,Process energy,municipal solid waste,energy recovery
+ND - Construction materials production,Edison power station,Construction and demolition waste,Process energy,municipal solid waste,energy recovery
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Process energy,municipal solid waste,energy recovery
+ND - Construction materials production,EniPower power station,Construction and demolition waste,Process energy,municipal solid waste,energy recovery
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Fertilizer,municipal solid waste,biofertilizer
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Fertilizer,municipal solid waste,fertilizer products
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,municipal solid waste,recycled materials
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,municipal solid waste,chemical fuels
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,municipal solid waste,valuable fuels
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,municipal solid waste,liquid fuel
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,municipal solid waste,valuable materials
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,municipal solid waste,bioenergy
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,municipal solid waste,biochar
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Soil quality improvement and fertiliser;Fertilizer,municipal solid waste,soil fertility
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,municipal solid waste,biofuels
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Water,municipal solid waste,water
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Water,municipal solid waste,water
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,municipal solid waste,solid fuel
+ND - Construction materials production,ND - Construction materials production,Construction and demolition waste,Raw material for Construction materials production,municipal solid waste,building materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,municipal solid waste,building materials
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,municipal solid waste,biodiesel
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,municipal solid waste,fertilizer
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,municipal solid waste,energy sources
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,municipal solid waste,organic fertilizer
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,municipal solid waste,energy resources
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Process energy,municipal solid waste,energy resources
+ND - Construction materials production,ILVA,Construction and demolition waste,Process energy,municipal solid waste,energy resources
+ND - Construction materials production,Edison power station,Construction and demolition waste,Process energy,municipal solid waste,energy resources
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Process energy,municipal solid waste,energy resources
+ND - Construction materials production,EniPower power station,Construction and demolition waste,Process energy,municipal solid waste,energy resources
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Raw material for Cement production,municipal solid waste,raw materials
+ND - Construction materials production,ND - Construction materials production,Construction and demolition waste,Raw material for Construction materials production,municipal solid waste,raw materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,municipal solid waste,raw materials
+ND - Construction materials production,ND - Distilleries,Construction and demolition waste,Raw material for Distilleries,municipal solid waste,raw materials
+ND - Construction materials production,ND - Steelworks,Construction and demolition waste,Raw material for Steelworks,municipal solid waste,raw materials
+ND - Construction materials production,ND - Production of refractories,Construction and demolition waste,Raw material for Production of refractories,municipal solid waste,raw materials
+ND - Construction materials production,ND - Production of concrete,Construction and demolition waste,Raw material for Production of concrete,municipal solid waste,raw materials
+ND - Construction materials production,ND - Production of bricks,Construction and demolition waste,Raw material for Production of bricks,municipal solid waste,raw materials
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Fertilizer,municipal solid waste,phosphorus
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,municipal solid waste,crude oil
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,municipal solid waste,metals
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Water,municipal solid waste,salt
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Water,municipal solid waste,salt
+ND - Construction materials production,Taranto,Construction and demolition waste,Cooling;Heat,municipal solid waste,cooling
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,municipal solid waste,vehicle fuel
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Raw material for Cement production,municipal solid waste,feedstock for cement clinker production
+ND - Construction materials production,ND - Production of concrete,Construction and demolition waste,Raw material for Production of concrete,municipal solid waste,feedstock for cement clinker production
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Process heat,municipal solid waste,heat
+ND - Construction materials production,ILVA,Construction and demolition waste,Process heat,municipal solid waste,heat
+ND - Construction materials production,Edison power station,Construction and demolition waste,Process heat,municipal solid waste,heat
+ND - Construction materials production,Taranto,Construction and demolition waste,Cooling;Heat,municipal solid waste,heat
+ND - Construction materials production,ND - Electricity production - Organic Rankine Cycle,Construction and demolition waste,Process heat,municipal solid waste,heat
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Fertilizer,municipal solid waste,organo-mineral fertilizer
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Paving,municipal solid waste,concrete paving blocks
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,municipal solid waste,feedstock
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,municipal solid waste,feedstock
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,municipal solid waste,feedstock
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,municipal solid waste,ammonia
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,municipal solid waste,gasoline
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,municipal solid waste,diesel fuel
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,municipal solid waste,ethanol
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,municipal solid waste,gaseous fuel
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,municipal solid waste,fuel
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,circular waste,recycled materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,mixed waste,recovered materials
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,mixed waste,compost
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Process energy,mixed waste,energy recovery
+ND - Construction materials production,ILVA,Construction and demolition waste,Process energy,mixed waste,energy recovery
+ND - Construction materials production,Edison power station,Construction and demolition waste,Process energy,mixed waste,energy recovery
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Process energy,mixed waste,energy recovery
+ND - Construction materials production,EniPower power station,Construction and demolition waste,Process energy,mixed waste,energy recovery
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,mixed waste,feedstock
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,mixed waste,feedstock
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,mixed waste,feedstock
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,mixed waste,materials
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,industrial waste,biofuels
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,industrial waste,biogas
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Raw material for Cement production,industrial waste,raw materials
+ND - Construction materials production,ND - Construction materials production,Construction and demolition waste,Raw material for Construction materials production,industrial waste,raw materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,industrial waste,raw materials
+ND - Construction materials production,ND - Distilleries,Construction and demolition waste,Raw material for Distilleries,industrial waste,raw materials
+ND - Construction materials production,ND - Steelworks,Construction and demolition waste,Raw material for Steelworks,industrial waste,raw materials
+ND - Construction materials production,ND - Production of refractories,Construction and demolition waste,Raw material for Production of refractories,industrial waste,raw materials
+ND - Construction materials production,ND - Production of concrete,Construction and demolition waste,Raw material for Production of concrete,industrial waste,raw materials
+ND - Construction materials production,ND - Production of bricks,Construction and demolition waste,Raw material for Production of bricks,industrial waste,raw materials
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Fertilizer,industrial waste,fertilizer products
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Fertilizer,industrial waste,organo-mineral fertilizer
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,industrial waste,zeolite
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,industrial waste,bioenergy
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,industrial waste,chemical products
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,industrial waste,energy resources
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Process energy,industrial waste,energy resources
+ND - Construction materials production,ILVA,Construction and demolition waste,Process energy,industrial waste,energy resources
+ND - Construction materials production,Edison power station,Construction and demolition waste,Process energy,industrial waste,energy resources
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Process energy,industrial waste,energy resources
+ND - Construction materials production,EniPower power station,Construction and demolition waste,Process energy,industrial waste,energy resources
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,industrial waste,compost
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,industrial waste,biochar
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Soil quality improvement and fertiliser;Fertilizer,industrial waste,soil fertility
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,industrial waste,materials
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Water,industrial waste,water
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Water,industrial waste,water
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,industrial waste,biodiesel
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Process heat,industrial waste,heat
+ND - Construction materials production,ILVA,Construction and demolition waste,Process heat,industrial waste,heat
+ND - Construction materials production,Edison power station,Construction and demolition waste,Process heat,industrial waste,heat
+ND - Construction materials production,Taranto,Construction and demolition waste,Cooling;Heat,industrial waste,heat
+ND - Construction materials production,ND - Electricity production - Organic Rankine Cycle,Construction and demolition waste,Process heat,industrial waste,heat
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,industrial waste,secondary raw materials
+ND - Construction materials production,ND - Distilleries,Construction and demolition waste,Raw material for Distilleries,industrial waste,secondary raw materials
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,industrial waste,biobased fuel
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,industrial waste,ethanol
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,industrial waste,byproducts
+ND - Construction materials production,ND - Glass and glass-ceramic production,Construction and demolition waste,Raw material for Glass and glass-ceramic production,industrial waste,low-temperature glass-ceramics
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,industrial waste,energy efficiency
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Raw material for Cement production,industrial waste,raw building materials
+ND - Construction materials production,ND - Construction materials production,Construction and demolition waste,Raw material for Construction materials production,industrial waste,raw building materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw material for Road construction;Raw materials,industrial waste,raw building materials
+ND - Construction materials production,ND - Distilleries,Construction and demolition waste,Raw material for Distilleries,industrial waste,raw building materials
+ND - Construction materials production,ND - Steelworks,Construction and demolition waste,Raw material for Steelworks,industrial waste,raw building materials
+ND - Construction materials production,ND - Production of refractories,Construction and demolition waste,Raw material for Production of refractories,industrial waste,raw building materials
+ND - Construction materials production,ND - Production of concrete,Construction and demolition waste,Raw material for Production of concrete,industrial waste,raw building materials
+ND - Construction materials production,ND - Production of bricks,Construction and demolition waste,Raw material for Production of bricks,industrial waste,raw building materials
+ND - Construction materials production,ND - Rock wool production,Construction and demolition waste,Raw material for Rock wool production,industrial waste,raw building materials
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Raw material for Cement production,industrial waste,cement
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,industrial waste,recycled materials
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Water,industrial waste,salt
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Water,industrial waste,salt
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Raw material for Cement production,clay brick waste,cementitious materials
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Water,environmental waste,salt
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Water,environmental waste,salt
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Water,environmental waste,water treatment
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Water,environmental waste,water treatment
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,environmental waste,biofuels
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,environmental waste,fertilizer
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,environmental waste,recycled materials
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Water,environmental waste,water resources
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Water,environmental waste,water resources
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,environmental waste,reduced emissions
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,environmental waste,biochar
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Water,environmental waste,clean water
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Water,environmental waste,clean water
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,environmental waste,energy resources
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Process energy,environmental waste,energy resources
+ND - Construction materials production,ILVA,Construction and demolition waste,Process energy,environmental waste,energy resources
+ND - Construction materials production,Edison power station,Construction and demolition waste,Process energy,environmental waste,energy resources
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Process energy,environmental waste,energy resources
+ND - Construction materials production,EniPower power station,Construction and demolition waste,Process energy,environmental waste,energy resources
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel;Water,environmental waste,hydrogen
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Water,environmental waste,hydrogen
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,environmental waste,ammonia
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,environmental waste,recovered materials
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Process heat,environmental waste,heat
+ND - Construction materials production,ILVA,Construction and demolition waste,Process heat,environmental waste,heat
+ND - Construction materials production,Edison power station,Construction and demolition waste,Process heat,environmental waste,heat
+ND - Construction materials production,Taranto,Construction and demolition waste,Cooling;Heat,environmental waste,heat
+ND - Construction materials production,ND - Electricity production - Organic Rankine Cycle,Construction and demolition waste,Process heat,environmental waste,heat
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Fertilizer,environmental waste,biofertilizer
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,environmental waste,power
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,environmental waste,bio-fertilizer
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,environmental waste,plant nutrients
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,environmental waste,biogas
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,environmental waste,bioenergy
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,environmental waste,biodiesel
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,environmental waste,organic fertilizer
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,environmental waste,ethanol
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,environmental waste,materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,environmental waste,metals
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,environmental waste,fertilizer alternatives
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,environmental waste,savings in production costs of chemical fertilizers
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,environmental waste,energy efficiency
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,environmental waste,feedstock
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,environmental waste,feedstock
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,environmental waste,feedstock
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,environmental waste,gaseous fuel
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,environmental waste,renewable fuel
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,environmental waste,high-quality fertilizer
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Raw material for Cement production,environmental waste,raw materials
+ND - Construction materials production,ND - Construction materials production,Construction and demolition waste,Raw material for Construction materials production,environmental waste,raw materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,environmental waste,raw materials
+ND - Construction materials production,ND - Distilleries,Construction and demolition waste,Raw material for Distilleries,environmental waste,raw materials
+ND - Construction materials production,ND - Steelworks,Construction and demolition waste,Raw material for Steelworks,environmental waste,raw materials
+ND - Construction materials production,ND - Production of refractories,Construction and demolition waste,Raw material for Production of refractories,environmental waste,raw materials
+ND - Construction materials production,ND - Production of concrete,Construction and demolition waste,Raw material for Production of concrete,environmental waste,raw materials
+ND - Construction materials production,ND - Production of bricks,Construction and demolition waste,Raw material for Production of bricks,environmental waste,raw materials
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Process energy,environmental waste,usable energy
+ND - Construction materials production,ILVA,Construction and demolition waste,Process energy,environmental waste,usable energy
+ND - Construction materials production,Edison power station,Construction and demolition waste,Process energy,environmental waste,usable energy
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Process energy,environmental waste,usable energy
+ND - Construction materials production,EniPower power station,Construction and demolition waste,Process energy,environmental waste,usable energy
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Process energy,environmental waste,energy recovery
+ND - Construction materials production,ILVA,Construction and demolition waste,Process energy,environmental waste,energy recovery
+ND - Construction materials production,Edison power station,Construction and demolition waste,Process energy,environmental waste,energy recovery
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Process energy,environmental waste,energy recovery
+ND - Construction materials production,EniPower power station,Construction and demolition waste,Process energy,environmental waste,energy recovery
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,environmental waste,chemical products
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Water,environmental waste,hot water
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Water,environmental waste,hot water
+ND - Construction materials production,Taranto,Construction and demolition waste,Heat,environmental waste,hot water
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw material for Road construction;Road foundations;Paving,environmental waste,road materials
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,environmental waste,compost
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,environmental waste,secondary raw materials
+ND - Construction materials production,ND - Distilleries,Construction and demolition waste,Raw material for Distilleries,environmental waste,secondary raw materials
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Fertilizer,environmental waste,phosphorus
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Soil quality improvement and fertiliser,environmental waste,improved soil properties
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,environmental waste,minerals
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,environmental waste,frass fertilizer
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,environmental waste,fuel
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,recyclable waste,compost
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Process energy,incinerated waste,energy recovery
+ND - Construction materials production,ILVA,Construction and demolition waste,Process energy,incinerated waste,energy recovery
+ND - Construction materials production,Edison power station,Construction and demolition waste,Process energy,incinerated waste,energy recovery
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Process energy,incinerated waste,energy recovery
+ND - Construction materials production,EniPower power station,Construction and demolition waste,Process energy,incinerated waste,energy recovery
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,incinerated waste,metals
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,solid waste,compost
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,solid waste,biogas
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,solid waste,biochar
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Water,solid waste,treated water
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Water,solid waste,treated water
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,solid waste,recycled materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,solid waste,recovered materials
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Soil quality improvement and fertiliser;Fertilizer,solid waste,soil conditioner
+ND - Construction materials production,ND - Production of refractories,Construction and demolition waste,Raw material for Production of refractories,solid waste,refractory materials
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,solid waste,crude oil
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,solid waste,materials
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,solid waste,biofuels
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Soil quality improvement and fertiliser;Fertilizer,solid waste,soil improver
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel;Water,solid waste,hydrogen
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Water,solid waste,hydrogen
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,solid waste,reduced emissions
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Paving,solid waste,concrete
+ND - Construction materials production,ND - Production of concrete,Construction and demolition waste,Raw material for Production of concrete,solid waste,concrete
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Raw material for Cement production,solid waste,critical raw materials
+ND - Construction materials production,ND - Construction materials production,Construction and demolition waste,Raw material for Construction materials production,solid waste,critical raw materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,solid waste,critical raw materials
+ND - Construction materials production,ND - Distilleries,Construction and demolition waste,Raw material for Distilleries,solid waste,critical raw materials
+ND - Construction materials production,ND - Steelworks,Construction and demolition waste,Raw material for Steelworks,solid waste,critical raw materials
+ND - Construction materials production,ND - Production of refractories,Construction and demolition waste,Raw material for Production of refractories,solid waste,critical raw materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,solid waste,byproducts
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,solid waste,ethanol
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,solid waste,feedstock
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,solid waste,feedstock
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,solid waste,feedstock
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,solid waste,sustainable raw materials
+ND - Construction materials production,ND - Construction materials production,Construction and demolition waste,Raw material for Construction materials production,solid waste,functional construction material
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,solid waste,biodiesel
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Water,solid waste,clean water
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Water,solid waste,clean water
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,solid waste,metals
+ND - Construction materials production,ND - Construction materials production,Construction and demolition waste,Raw material for Construction materials production,solid waste,building materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,solid waste,building materials
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Raw material for Cement production,solid waste,cement
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Process heat,solid waste,heat
+ND - Construction materials production,ILVA,Construction and demolition waste,Process heat,solid waste,heat
+ND - Construction materials production,Edison power station,Construction and demolition waste,Process heat,solid waste,heat
+ND - Construction materials production,Taranto,Construction and demolition waste,Cooling;Heat,solid waste,heat
+ND - Construction materials production,ND - Electricity production - Organic Rankine Cycle,Construction and demolition waste,Process heat,solid waste,heat
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Water,solid waste,effluent
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Water,solid waste,effluent
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Process energy,solid waste,thermal energy
+ND - Construction materials production,ILVA,Construction and demolition waste,Process energy,solid waste,thermal energy
+ND - Construction materials production,Edison power station,Construction and demolition waste,Process energy,solid waste,thermal energy
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Process energy,solid waste,thermal energy
+ND - Construction materials production,EniPower power station,Construction and demolition waste,Process energy,solid waste,thermal energy
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,discarded building materials,salvaged materials
+ND - Construction materials production,ND - Construction materials production,Construction and demolition waste,Raw material for Construction materials production,construction waste,secondary construction materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,construction waste,materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,construction waste,recycled materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,construction waste,recovered materials
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,construction waste,biochar
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,construction waste,agricultural by-products
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Raw material for Cement production,construction waste,cement materials
+ND - Construction materials production,ND - Construction materials production,Construction and demolition waste,Raw material for Construction materials production,construction waste,building materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,construction waste,building materials
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Fertilizer,construction waste,controlled-release fertilizer
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,construction waste,ethanol
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,construction waste,biogas
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel;Water,construction waste,hydrogen
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Water,construction waste,hydrogen
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,non-recyclable waste,compost
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,non-recyclable waste,biochar
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,non-recyclable waste,recycled materials
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,non-recyclable waste,biofuels
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,waste,materials
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,waste,fertilizer
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,waste,chemical products
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Water,waste,hot water
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Water,waste,hot water
+ND - Construction materials production,Taranto,Construction and demolition waste,Heat,waste,hot water
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,low grade construction and demolition waste,recovered materials
+ND - Construction materials production,ND - Construction materials production,Construction and demolition waste,Raw material for Construction materials production,insulation waste,building materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,insulation waste,building materials
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,carbon-rich waste,biogas
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,carbon-rich waste,biofuels
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,carbon-rich waste,power
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,municipal waste,biofuels
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,non-essential waste,recycled materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,non-essential waste,materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,commercial waste,chemical products
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,discarded materials,biofuels
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,discarded materials,fertiliser
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Fertilizer,mining waste,fertilizer for Lactuca sativa L.
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,mining waste,metals
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,mining waste,byproducts
+ND - Construction materials production,ND - Construction materials production,Construction and demolition waste,Raw material for Construction materials production,mining waste,building materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,mining waste,building materials
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,mining waste,biogas
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Soil quality improvement and fertiliser;Fertilizer,mining waste,soil amendment
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,mining waste,biodiesel
+ND - Construction materials production,CEMENTIR,Construction and demolition waste,Raw material for Cement production,mining waste,critical raw materials
+ND - Construction materials production,ND - Construction materials production,Construction and demolition waste,Raw material for Construction materials production,mining waste,critical raw materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,mining waste,critical raw materials
+ND - Construction materials production,ND - Distilleries,Construction and demolition waste,Raw material for Distilleries,mining waste,critical raw materials
+ND - Construction materials production,ND - Steelworks,Construction and demolition waste,Raw material for Steelworks,mining waste,critical raw materials
+ND - Construction materials production,ND - Production of refractories,Construction and demolition waste,Raw material for Production of refractories,mining waste,critical raw materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,mining waste,minerals
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,mining waste,valuable materials
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,mining waste,fertilizer
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,mining waste,organic fertilizer
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,non-organic waste,renewable fuel
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,non-organic waste,energy sources
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,miscellaneous waste,biogas
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,spent materials,recycled materials
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,special waste,biogas
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,special waste,metals
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,raw material waste,biodiesel
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,raw material waste,biofuels
+ND - Construction materials production,ND - Agroindustry,Construction and demolition waste,Fertilizer,raw material waste,biochar
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel;Water,non-processed waste,hydrogen
+ND - Construction materials production,ENI refinery,Construction and demolition waste,Water,non-processed waste,hydrogen
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,non-processed waste,gaseous fuel
+ND - Construction materials production,Enipower power station,Construction and demolition waste,Fuel,non-processed waste,renewable fuel
+ND - Construction materials production,ND - Construction materials production,Construction and demolition waste,Raw material for Construction materials production,non-processed waste,building materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Raw materials,non-processed waste,building materials
+ND - Construction materials production,ND - Road construction,Construction and demolition waste,Road foundations,non-processed waste,roadbed foundation
+ND - Wine production,ND - Agroindustry,Marc and dregs,Soil quality improvement and fertiliser;Fertilizer,dregs,soil fertilizers
+ND - Wine production,Enipower power station,Marc and dregs,Fuel,dregs,bioenergy
+ND - Olive oil production,Enipower power station,Oil mill waste water,Fuel,industrial wastewater,biofuels
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Fertiliser;Fertilizer,industrial wastewater,biofertilizer
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Fertilizer,industrial wastewater,ammonia
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Fertiliser;Fertilizer,industrial wastewater,phosphorus
+ND - Olive oil production,Enipower power station,Oil mill waste water,Fuel,industrial wastewater,bioenergy
+ND - Olive oil production,ND - Road construction,Oil mill waste water,Raw materials,industrial wastewater,byproducts
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Fertilizer,industrial wastewater,biogas
+ND - Olive oil production,Enipower power station,Oil mill waste water,Water,industrial wastewater,treated water
+ND - Olive oil production,ENI refinery,Oil mill waste water,Water,industrial wastewater,treated water
+ND - Olive oil production,Enipower power station,Oil mill waste water,Fuel;Water,industrial wastewater,hydrogen
+ND - Olive oil production,ENI refinery,Oil mill waste water,Water,industrial wastewater,hydrogen
+ND - Olive oil production,Enipower power station,Oil mill waste water,Water,olive mill waste,neutralized water
+ND - Olive oil production,ENI refinery,Oil mill waste water,Water,olive mill waste,neutralized water
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,olive mill waste,organic fertilizer
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Fertilizer,olive mill waste,biogas
+ND - Olive oil production,Enipower power station,Oil mill waste water,Water,olive mill waste,clean water
+ND - Olive oil production,ENI refinery,Oil mill waste water,Water,olive mill waste,clean water
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Soil quality improvement and fertiliser;Fertilizer,olive mill waste,soil fertility
+ND - Olive oil production,ENI refinery,Oil mill waste water,Process heat,olive mill waste,heat
+ND - Olive oil production,ILVA,Oil mill waste water,Process heat,olive mill waste,heat
+ND - Olive oil production,Edison power station,Oil mill waste water,Process heat,olive mill waste,heat
+ND - Olive oil production,Taranto,Oil mill waste water,Cooling;Heat,olive mill waste,heat
+ND - Olive oil production,ND - Electricity production - Organic Rankine Cycle,Oil mill waste water,Process heat,olive mill waste,heat
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Fertilizer,olive mill waste,compost
+ND - Olive oil production,Enipower power station,Oil mill waste water,Fuel,waste oil,biodiesel
+ND - Olive oil production,ND - Road construction,Oil mill waste water,Raw materials,waste oil,chemical products
+ND - Olive oil production,Enipower power station,Oil mill waste water,Fuel,waste oil,crude oil
+ND - Olive oil production,ND - Road construction,Oil mill waste water,Raw materials,waste oil,recycled materials
+ND - Olive oil production,Enipower power station,Oil mill waste water,Fuel,palm oil mill waste,biofuels
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Soil quality improvement and fertiliser;Fertilizer,palm oil mill waste,soil conditioner
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Fertilizer,palm oil mill waste,biochar
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Fertilizer,palm oil mill waste,ammonia
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,olive mill wastewater,high-quality fertilizer
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Fertiliser;Fertilizer,olive mill wastewater,organo-mineral fertilizer
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Fertilizer,olive mill wastewater,biogas
+ND - Olive oil production,Enipower power station,Oil mill waste water,Fuel,olive mill wastewater,bioenergy
+ND - Olive oil production,Enipower power station,Oil mill waste water,Fuel;Water,olive mill wastewater,hydrogen
+ND - Olive oil production,ENI refinery,Oil mill waste water,Water,olive mill wastewater,hydrogen
+ND - Olive oil production,ND - Road construction,Oil mill waste water,Raw materials,olive mill wastewater,chemical products
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Fertilizer,olive mill wastewater,compost
+ND - Olive oil production,ND - Road construction,Oil mill waste water,Raw materials,olive mill wastewater,secondary raw materials
+ND - Olive oil production,ND - Distilleries,Oil mill waste water,Raw material for Distilleries,olive mill wastewater,secondary raw materials
+ND - Olive oil production,Enipower power station,Oil mill waste water,Water,olive mill wastewater,treated water
+ND - Olive oil production,ENI refinery,Oil mill waste water,Water,olive mill wastewater,treated water
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Fertiliser;Fertilizer,paper mill waste,biofertilizer
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Fertilizer,paper mill waste,compost
+ND - Olive oil production,ND - Road construction,Oil mill waste water,Raw materials,paper mill waste,chemical products
+ND - Olive oil production,Enipower power station,Oil mill waste water,Fuel,palm oil waste,bioenergy
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Fertilizer,palm oil waste,compost
+ND - Olive oil production,ND - Road construction,Oil mill waste water,Raw materials,palm oil waste,byproducts
+ND - Olive oil production,Enipower power station,Oil mill waste water,Fuel,oily waste,biodiesel
+ND - Olive oil production,ND - Production of bricks,Oil mill waste water,Raw material for Production of bricks,oily waste,bricks
+ND - Olive oil production,Enipower power station,Oil mill waste water,Fuel,oily waste,crude oil
+ND - Olive oil production,Enipower power station,Oil mill waste water,Fuel,oil palm waste,biodiesel
+ND - Olive oil production,Enipower power station,Oil mill waste water,Fuel,oil palm waste,ethanol
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,dephenolized olive mill wastewater,organic fertilizer
+ND - Olive oil production,Enipower power station,Oil mill waste water,Fuel,palm oil mill effluent,biodiesel
+ND - Olive oil production,Enipower power station,Oil mill waste water,Fuel,palm oil mill effluent,biofuels
+ND - Olive oil production,Enipower power station,Oil mill waste water,Fuel,palm oil mill effluent,kerosene
+ND - Olive oil production,Enipower power station,Oil mill waste water,Fuel,palm oil mill effluent,gaseous fuel
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Fertilizer,palm oil mill effluent,biogas
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Fertilizer,palm oil mill effluent,ammonia
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Fertiliser;Fertilizer,palm oil mill effluent,phosphorus
+ND - Olive oil production,ND - Road construction,Oil mill waste water,Raw materials,oilseed waste,minerals
+ND - Olive oil production,Enipower power station,Oil mill waste water,Fuel,cooking oil waste,biodiesel
+ND - Olive oil production,Enipower power station,Oil mill waste water,Fuel,cooking oil waste,bioenergy
+ND - Olive oil production,ENI refinery,Oil mill waste water,Process heat,cooking oil waste,heat
+ND - Olive oil production,ILVA,Oil mill waste water,Process heat,cooking oil waste,heat
+ND - Olive oil production,Edison power station,Oil mill waste water,Process heat,cooking oil waste,heat
+ND - Olive oil production,Taranto,Oil mill waste water,Cooling;Heat,cooking oil waste,heat
+ND - Olive oil production,ND - Electricity production - Organic Rankine Cycle,Oil mill waste water,Process heat,cooking oil waste,heat
+ND - Olive oil production,Enipower power station,Oil mill waste water,Water,cooking oil waste,liquids
+ND - Olive oil production,ENI refinery,Oil mill waste water,Water,cooking oil waste,liquids
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Fertilizer,cooking oil waste,biochar
+ND - Olive oil production,Enipower power station,Oil mill waste water,Fuel,cooking oil waste,biofuels
+ND - Olive oil production,Enipower power station,Oil mill waste water,Fuel,cooking oil waste,fuel
+ND - Olive oil production,Enipower power station,Oil mill waste water,Fuel,cooking oil waste,biobased fuel
+ND - Olive oil production,Enipower power station,Oil mill waste water,Fuel,cooking oil waste,ethanol
+ND - Olive oil production,ND - Road construction,Oil mill waste water,Raw materials,cooking oil waste,chemical products
+ND - Olive oil production,Enipower power station,Oil mill waste water,Fuel,cooking oil waste,energy sources
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Fertilizer,cooking oil waste,ammonia
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Fertilizer,cooking oil waste,biogas
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Soil quality improvement and fertiliser;Fertilizer,cooking oil waste,soil fertility
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Fertilizer,cooking oil waste,powder
+ND - Olive oil production,Enipower power station,Oil mill waste water,Fuel,paper mill effluent,biodiesel
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Fertilizer,paper mill effluent,biogas
+ND - Olive oil production,ND - Agroindustry,Oil mill waste water,Fertiliser;Fertilizer,paper mill effluent,biofertilizer
+ND - Power plant,ND - Road construction,Fly ash,Paving,slag,concrete
+ND - Power plant,ND - Production of concrete,Fly ash,Raw material for Production of concrete,slag,concrete
+ND - Power plant,CEMENTIR,Fly ash,Raw material for Cement production,slag,feedstock for cement clinker production
+ND - Power plant,ND - Production of concrete,Fly ash,Raw material for Production of concrete,slag,feedstock for cement clinker production
+ND - Power plant,ND - Road construction,Fly ash,Raw materials,slag,minerals
+ND - Power plant,ND - Road construction,Fly ash,Raw materials,slag,recycled materials
+ND - Power plant,ND - Construction materials production,Fly ash,Raw material for Construction materials production,slag,construction materials
+ND - Power plant,ND - Road construction,Fly ash,Raw materials,slag,construction materials
+ND - Power plant,ND - Construction materials production,Fly ash,Raw material for Construction materials production,slag,building materials
+ND - Power plant,ND - Road construction,Fly ash,Raw materials,slag,building materials
+ND - Power plant,ND - Agroindustry,Fly ash,Fertilizer,industrial residue,zeolite
+ND - Power plant,CEMENTIR,Fly ash,Raw material for Cement production,petroleum coke fly ash,cement
+ND - Power plant,ND - Road construction,Fly ash,Raw materials,flue gas,byproducts
+ND - Power plant,Enipower power station,Fly ash,Fuel,flue gas,biofuels
+ND - Power plant,Enipower power station,Fly ash,Fuel,flue gas,biodiesel
+ND - Power plant,ND - Agroindustry,Fly ash,Fertilizer,flue gas,biogas
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Fertilizer,power plant ash,phosphorus
+ND - Power plant,ENI refinery,Fly ash,Process heat,power plant ash,heat
+ND - Power plant,ILVA,Fly ash,Process heat,power plant ash,heat
+ND - Power plant,Edison power station,Fly ash,Process heat,power plant ash,heat
+ND - Power plant,Taranto,Fly ash,Cooling;Heat,power plant ash,heat
+ND - Power plant,ND - Electricity production - Organic Rankine Cycle,Fly ash,Process heat,power plant ash,heat
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,power plant ash,fertilizer
+ND - Power plant,Enipower power station,Fly ash,Fuel,ash waste,biofuels
+ND - Power plant,Enipower power station,Fly ash,Fuel,incineration fly ash,biofuels
+ND - Power plant,ND - Road construction,Fly ash,Paving,municipal solid waste ash,concrete
+ND - Power plant,ND - Production of concrete,Fly ash,Raw material for Production of concrete,municipal solid waste ash,concrete
+ND - Power plant,Enipower power station,Fly ash,Water,sludge,clean water
+ND - Power plant,ENI refinery,Fly ash,Water,sludge,clean water
+ND - Power plant,Enipower power station,Fly ash,Fuel,sludge,biofuels
+ND - Power plant,Enipower power station,Fly ash,Fuel,sludge,bioenergy
+ND - Power plant,ND - Road construction,Fly ash,Raw materials,sludge,chemical products
+ND - Power plant,Enipower power station,Fly ash,Fuel,sludge,crude oil
+ND - Power plant,ND - Road construction,Fly ash,Paving,sludge,paving block
+ND - Power plant,ND - Agroindustry,Fly ash,Fertilizer,sludge,biogas
+ND - Power plant,Enipower power station,Fly ash,Water,sludge,irrigation water
+ND - Power plant,ENI refinery,Fly ash,Water,sludge,irrigation water
+ND - Power plant,ND - Agroindustry,Fly ash,Fertilizer,sludge,biochar
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Fertilizer,sludge,phosphorus
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Fertilizer,sludge,biofertilizer
+ND - Power plant,ND - Road construction,Fly ash,Raw materials,sludge,materials
+ND - Power plant,ENI refinery,Fly ash,Process heat,sludge,heat
+ND - Power plant,ILVA,Fly ash,Process heat,sludge,heat
+ND - Power plant,Edison power station,Fly ash,Process heat,sludge,heat
+ND - Power plant,Taranto,Fly ash,Cooling;Heat,sludge,heat
+ND - Power plant,ND - Electricity production - Organic Rankine Cycle,Fly ash,Process heat,sludge,heat
+ND - Power plant,Enipower power station,Fly ash,Fuel,sludge,biodiesel
+ND - Power plant,Enipower power station,Fly ash,Fuel;Water,sludge,hydrogen
+ND - Power plant,ENI refinery,Fly ash,Water,sludge,hydrogen
+ND - Power plant,ND - Road construction,Fly ash,Raw materials,sludge,secondary raw materials
+ND - Power plant,ND - Distilleries,Fly ash,Raw material for Distilleries,sludge,secondary raw materials
+ND - Power plant,ND - Isolated buildings,Fly ash,Removal or retention of phosphorous from wastewater,sludge,wastewater treatment
+ND - Power plant,ND - Agroindustry,Fly ash,Fertilizer,sludge,humic acid fertilizer
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,sludge,soil nitrogen
+ND - Power plant,ND - Construction materials production,Fly ash,Raw material for Construction materials production,fluidized bed fly ash,building materials
+ND - Power plant,ND - Road construction,Fly ash,Raw materials,fluidized bed fly ash,building materials
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Fertilizer,wastewater sludge,phosphorus
+ND - Power plant,ND - Agroindustry,Fly ash,Fertilizer,wastewater sludge,biogas
+ND - Power plant,Enipower power station,Fly ash,Fuel,wastewater sludge,biodiesel
+ND - Power plant,ND - Agroindustry,Fly ash,Fertilizer,wastewater sludge,ammonia
+ND - Power plant,ND - Road construction,Fly ash,Paving,blast furnace slag,concrete
+ND - Power plant,ND - Production of concrete,Fly ash,Raw material for Production of concrete,blast furnace slag,concrete
+ND - Power plant,ND - Production of bricks,Fly ash,Raw material for Production of bricks,blast furnace slag,bricks
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,blast furnace slag,fertilizer
+ND - Power plant,ND - Agroindustry,Fly ash,Fertilizer,blast furnace slag,zeolite
+ND - Power plant,ND - Road construction,Fly ash,Paving,blast furnace slag,pavement granules
+ND - Power plant,ND - Construction materials production,Fly ash,Raw material for Construction materials production,blast furnace slag,value-added construction materials
+ND - Power plant,ND - Construction materials production,Fly ash,Raw material for Construction materials production,blast furnace slag,building materials
+ND - Power plant,ND - Road construction,Fly ash,Raw materials,blast furnace slag,building materials
+ND - Power plant,ND - Construction materials production,Fly ash,Raw material for Construction materials production,blast furnace slag,construction materials
+ND - Power plant,ND - Road construction,Fly ash,Raw materials,blast furnace slag,construction materials
+ND - Power plant,ND - Glass and glass-ceramic production,Fly ash,Raw material for Glass and glass-ceramic production,blast furnace slag,transparent glass
+ND - Power plant,Enipower power station,Fly ash,Fuel,coal gasification fly ash,biofuels
+ND - Power plant,ND - Road construction,Fly ash,Paving,sugarcane bagasse ash,concrete
+ND - Power plant,ND - Production of concrete,Fly ash,Raw material for Production of concrete,sugarcane bagasse ash,concrete
+ND - Power plant,ND - Production of bricks,Fly ash,Raw material for Production of bricks,sugarcane bagasse ash,bricks
+ND - Power plant,ND - Agroindustry,Fly ash,Fertilizer,sugarcane bagasse ash,zeolite
+ND - Power plant,Enipower power station,Fly ash,Water,sugarcane bagasse ash,treated water
+ND - Power plant,ENI refinery,Fly ash,Water,sugarcane bagasse ash,treated water
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,sugarcane bagasse ash,soil
+ND - Power plant,Enipower power station,Fly ash,Water,cement kiln dust,salt
+ND - Power plant,ENI refinery,Fly ash,Water,cement kiln dust,salt
+ND - Power plant,Enipower power station,Fly ash,Water,cement kiln dust,water treatment
+ND - Power plant,ENI refinery,Fly ash,Water,cement kiln dust,water treatment
+ND - Power plant,Enipower power station,Fly ash,Fuel,cement kiln dust,biofuels
+ND - Power plant,ND - Production of concrete,Fly ash,Raw material for Production of concrete,biomass combustion ash,concrete aggregate
+ND - Power plant,ND - Construction materials production,Fly ash,Raw material for Construction materials production,biomass combustion ash,building materials
+ND - Power plant,ND - Road construction,Fly ash,Raw materials,biomass combustion ash,building materials
+ND - Power plant,ND - Agroindustry,Fly ash,Fertilizer,biomass combustion ash,zeolite
+ND - Power plant,ND - Agroindustry,Fly ash,Fertilizer,biomass combustion ash,biogas
+ND - Power plant,Enipower power station,Fly ash,Fuel,biomass combustion ash,improved fuel characteristics
+ND - Power plant,CEMENTIR,Fly ash,Raw material for Cement production,biomass combustion ash,cement
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,biomass combustion ash,fertilizer
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,biomass combustion ash,organic fertilizer
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Fertilizer,ash from combustion,phosphorus
+ND - Power plant,ND - Road construction,Fly ash,Raw materials,ash from combustion,secondary raw materials
+ND - Power plant,ND - Distilleries,Fly ash,Raw material for Distilleries,ash from combustion,secondary raw materials
+ND - Power plant,ND - Agroindustry,Fly ash,Fertilizer,ash from combustion,plant nutrients
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,ash from combustion,fertilizer
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Fertilizer,sewage sludge ash,organo-mineral fertilizer
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,sewage sludge ash,organic fertilizer
+ND - Power plant,ND - Agroindustry,Fly ash,Fertilizer,sewage sludge ash,biogas
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Fertilizer,sewage sludge ash,chemical fertilizers
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,sewage sludge ash,bio-fertilizer
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Fertilizer,sewage sludge ash,biofertilizer
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Fertilizer,sewage sludge ash,phosphorus
+ND - Power plant,ND - Road construction,Fly ash,Paving,sewage sludge ash,concrete
+ND - Power plant,ND - Production of concrete,Fly ash,Raw material for Production of concrete,sewage sludge ash,concrete
+ND - Power plant,CEMENTIR,Fly ash,Raw material for Cement production,sewage sludge ash,cementitious materials
+ND - Power plant,ND - Agroindustry,Fly ash,Fertilizer,sewage sludge ash,biochar
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,sewage sludge ash,phosphorus fertilizer
+ND - Power plant,ND - Glass and glass-ceramic production,Fly ash,Raw material for Glass and glass-ceramic production,sewage sludge ash,low-temperature glass-ceramics
+ND - Power plant,ND - Construction materials production,Fly ash,Raw material for Construction materials production,sewage sludge ash,value-added construction materials
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,sewage sludge ash,soil nitrogen
+ND - Power plant,ND - Agroindustry,Fly ash,Fertilizer,sewage sludge ash,phosphate
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,sewage sludge ash,fertilizer
+ND - Power plant,Enipower power station,Fly ash,Fuel,sewage sludge ash,bioenergy
+ND - Power plant,ND - Agroindustry,Fly ash,Fertilizer,sewage sludge ash,fertilizer alternatives
+ND - Power plant,Enipower power station,Fly ash,Fuel,sawdust,diesel fuel
+ND - Power plant,ND - Agroindustry,Fly ash,Fertilizer,sawdust,compost
+ND - Power plant,ND - Agroindustry,Fly ash,Soil quality improvement and fertiliser;Fertilizer,sawdust,soil amendment
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,sawdust,bio-fertilizer
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Fertilizer,sawdust,biofertilizer
+ND - Power plant,ND - Agroindustry,Fly ash,Fertilizer,sawdust,biochar
+ND - Power plant,Enipower power station,Fly ash,Fuel;Water,sawdust,hydrogen
+ND - Power plant,ENI refinery,Fly ash,Water,sawdust,hydrogen
+ND - Power plant,Enipower power station,Fly ash,Fuel,sawdust,biofuels
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,sawdust,fertilizer
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Fertilizer,sawdust,phosphorus
+ND - Power plant,ND - Construction materials production,Fly ash,Raw material for Construction materials production,biomass fly ash,construction materials
+ND - Power plant,ND - Road construction,Fly ash,Raw materials,biomass fly ash,construction materials
+ND - Power plant,ND - Agroindustry,Fly ash,Fertilizer,agricultural waste ash,compost
+ND - Power plant,ND - Road construction,Fly ash,Raw materials,agricultural waste ash,secondary raw materials
+ND - Power plant,ND - Distilleries,Fly ash,Raw material for Distilleries,agricultural waste ash,secondary raw materials
+ND - Power plant,Enipower power station,Fly ash,Fuel,dry ash,biofuels
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,wood ash,fertilizer
+ND - Power plant,ND - Agroindustry,Fly ash,Fertilizer,wood ash,plant nutrients
+ND - Power plant,ND - Production of refractories,Fly ash,Raw material for Production of refractories,slag waste,refractory materials
+ND - Power plant,Enipower power station,Fly ash,Fuel;Water,slag waste,hydrogen
+ND - Power plant,ENI refinery,Fly ash,Water,slag waste,hydrogen
+ND - Power plant,ND - Agroindustry,Fly ash,Fertilizer,volcanic ash,zeolite
+ND - Power plant,ND - Agroindustry,Fly ash,Fertilizer,unburned carbon in fly ash,biochar
+ND - Power plant,ND - Road construction,Fly ash,Paving,fly ash,concrete
+ND - Power plant,ND - Production of concrete,Fly ash,Raw material for Production of concrete,fly ash,concrete
+ND - Power plant,ND - Production of bricks,Fly ash,Raw material for Production of bricks,fly ash,bricks
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,fly ash,fertilizer
+ND - Power plant,ND - Road construction,Fly ash,Paving,fly ash,asphalt concrete
+ND - Power plant,ND - Road construction,Fly ash,Raw material for Road construction,fly ash,waste reuse in road construction
+ND - Power plant,ND - Agroindustry,Fly ash,Soil quality improvement and fertiliser;Fertilizer,fly ash,soil improver
+ND - Power plant,ND - Agroindustry,Fly ash,Fertilizer,fly ash,zeolite
+ND - Power plant,ND - Agroindustry,Fly ash,Fertilizer,fly ash,biochar
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Fertilizer,fly ash,fertilizer substrate
+ND - Power plant,ND - Road construction,Fly ash,Paving,fly ash,pavement granules
+ND - Power plant,ND - Construction materials production,Fly ash,Raw material for Construction materials production,fly ash,building materials
+ND - Power plant,ND - Road construction,Fly ash,Raw materials,fly ash,building materials
+ND - Power plant,ND - Construction materials production,Fly ash,Raw material for Construction materials production,fly ash,construction materials
+ND - Power plant,ND - Road construction,Fly ash,Raw materials,fly ash,construction materials
+ND - Power plant,Enipower power station,Fly ash,Fuel;Water,fly ash,hydrogen
+ND - Power plant,ENI refinery,Fly ash,Water,fly ash,hydrogen
+ND - Power plant,ND - Road construction,Fly ash,Raw materials,fly ash,valuable materials
+ND - Power plant,ND - Road construction,Fly ash,Paving,fly ash,pavers
+ND - Power plant,CEMENTIR,Fly ash,Raw material for Cement production,fly ash,cementitious materials
+ND - Power plant,CEMENTIR,Fly ash,Raw material for Cement production,fly ash,feedstock for cement clinker production
+ND - Power plant,ND - Production of concrete,Fly ash,Raw material for Production of concrete,fly ash,feedstock for cement clinker production
+ND - Power plant,ND - Construction materials production,Fly ash,Raw material for Construction materials production,fly ash,value-added construction materials
+ND - Power plant,ND - Construction materials production,Fly ash,Raw material for Construction materials production,fly ash,low-cost construction material
+ND - Power plant,ND - Glass and glass-ceramic production,Fly ash,Raw material for Glass and glass-ceramic production,fly ash,transparent glass
+ND - Power plant,CEMENTIR,Fly ash,Raw material for Cement production,fly ash,cement
+ND - Power plant,ND - Road construction,Fly ash,Raw material for Road construction;Road foundations;Paving,fly ash,road materials
+ND - Power plant,ND - Road construction,Fly ash,Paving,fly ash,paving mixes
+ND - Power plant,ND - Road construction,Fly ash,Raw materials,fly ash,recovered materials
+ND - Power plant,Enipower power station,Fly ash,Fuel,fly ash,biofuels
+ND - Power plant,ND - Agroindustry,Fly ash,Soil quality improvement and fertiliser;Fertilizer,fly ash,soil amendment
+ND - Power plant,ND - Agroindustry,Fly ash,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,fly ash,bio-fertilizer
+ND - Power plant,ND - Agroindustry,Fly ash,Fertilizer,fly ash,plant nutrients
+ND - Power plant,ND - Agroindustry,Fly ash,Soil quality improvement and fertiliser,fly ash,stabilised soil
+ND - Power plant,ND - Road construction,Fly ash,Raw material for Road construction;Road foundations;Paving,Portland cement,road materials
+ND - Power plant,ND - Road construction,Fly ash,Paving,Portland cement,paving mixes
+EniPower power station,Enipower power station,Waste heat,Fuel,waste oil,biodiesel
+EniPower power station,ND - Road construction,Waste heat,Raw materials,waste oil,chemical products
+EniPower power station,Enipower power station,Waste heat,Fuel,waste oil,crude oil
+EniPower power station,ND - Road construction,Waste heat,Raw materials,waste oil,recycled materials
+EniPower power station,ND - Agroindustry,Waste heat,Fertilizer,energy waste,biogas
+EniPower power station,ND - Agroindustry,Waste heat,Fertilizer,high-calorific waste,compost
+EniPower power station,ND - Agroindustry,Waste heat,Fertilizer,high-calorific waste,biogas
+EniPower power station,ND - Road construction,Waste heat,Raw materials,high-calorific waste,recycled materials
+EniPower power station,ND - Agroindustry,Waste heat,Fertilizer,waste heat,biogas
+EniPower power station,ND - Agroindustry,Waste heat,Fertilizer,waste carbon,ammonia
+EniPower power station,ND - Road construction,Waste heat,Raw materials,waste,materials
+EniPower power station,ND - Agroindustry,Waste heat,Fertiliser;Soil quality improvement and fertiliser;Fertilizer,waste,fertilizer
+EniPower power station,ND - Road construction,Waste heat,Raw materials,waste,chemical products
+EniPower power station,Enipower power station,Waste heat,Water,waste,hot water
+EniPower power station,ENI refinery,Waste heat,Water,waste,hot water
+EniPower power station,Taranto,Waste heat,Heat,waste,hot water
+ND - Electricity production - Organic Rankine Cycle,Enipower power station,Electricity,Fuel;Water,batteries,hydrogen
+ND - Electricity production - Organic Rankine Cycle,ENI refinery,Electricity,Water,batteries,hydrogen
+ND - Electricity production - Organic Rankine Cycle,ND - Road construction,Electricity,Raw materials,batteries,metals
+ND - Electricity production - Organic Rankine Cycle,ND - Road construction,Electricity,Raw materials,energy consumption,minerals
+ND - Electricity production - Organic Rankine Cycle,ND - Agroindustry,Electricity,Fertiliser;Fertilizer,energy consumption,biofertilizer
+ND - Electricity production - Organic Rankine Cycle,Enipower power station,Electricity,Fuel,energy consumption,bioenergy
+ND - Electricity production - Organic Rankine Cycle,Enipower power station,Electricity,Fuel,energy consumption,biofuels
+ND - Electricity production - Organic Rankine Cycle,ND - Road construction,Electricity,Raw materials,household electrical appliances,secondary raw materials
+ND - Electricity production - Organic Rankine Cycle,ND - Distilleries,Electricity,Raw material for Distilleries,household electrical appliances,secondary raw materials
+ND - Electricity production - Organic Rankine Cycle,ND - Road construction,Electricity,Raw materials,household electrical appliances,metals
+ND - Electricity production - Organic Rankine Cycle,Enipower power station,Electricity,Fuel,energy,energy resources
+ND - Electricity production - Organic Rankine Cycle,ENI refinery,Electricity,Process energy,energy,energy resources
+ND - Electricity production - Organic Rankine Cycle,ILVA,Electricity,Process energy,energy,energy resources
+ND - Electricity production - Organic Rankine Cycle,Edison power station,Electricity,Process energy,energy,energy resources
+ND - Electricity production - Organic Rankine Cycle,CEMENTIR,Electricity,Process energy,energy,energy resources
+ND - Electricity production - Organic Rankine Cycle,EniPower power station,Electricity,Process energy,energy,energy resources
+ND - Electricity production - Organic Rankine Cycle,ENI refinery,Electricity,Process energy,energy,usable energy
+ND - Electricity production - Organic Rankine Cycle,ILVA,Electricity,Process energy,energy,usable energy
+ND - Electricity production - Organic Rankine Cycle,Edison power station,Electricity,Process energy,energy,usable energy
+ND - Electricity production - Organic Rankine Cycle,CEMENTIR,Electricity,Process energy,energy,usable energy
+ND - Electricity production - Organic Rankine Cycle,EniPower power station,Electricity,Process energy,energy,usable energy
+ND - Electricity production - Organic Rankine Cycle,ENI refinery,Electricity,Process energy,energy,energy recovery
+ND - Electricity production - Organic Rankine Cycle,ILVA,Electricity,Process energy,energy,energy recovery
+ND - Electricity production - Organic Rankine Cycle,Edison power station,Electricity,Process energy,energy,energy recovery
+ND - Electricity production - Organic Rankine Cycle,CEMENTIR,Electricity,Process energy,energy,energy recovery
+ND - Electricity production - Organic Rankine Cycle,EniPower power station,Electricity,Process energy,energy,energy recovery
+ND - Electricity production - Organic Rankine Cycle,ND - Road construction,Electricity,Raw materials,energy,recovered materials
+ND - Electricity production - Organic Rankine Cycle,Enipower power station,Electricity,Fuel,energy,energy efficiency
+ND - Electricity production - Organic Rankine Cycle,ND - Agroindustry,Electricity,Fertilizer,energy,compost
+ND - Electricity production - Organic Rankine Cycle,ND - Road construction,Electricity,Raw materials,electrical and electronic equipment,recycled materials

@@ -1,4 +1,7 @@
-from sentence_transformers import SentenceTransformer
+import pandas as pd
 
-model = SentenceTransformer('Alibaba-NLP/gte-large-en-v1.5', trust_remote_code=True)
-print("Model initialized.")
+df = pd.read_csv('case_study1/threshold_0.9/company_network_exchanges.csv')
+
+print(df.columns)
+
+print(df["P_resources"])
