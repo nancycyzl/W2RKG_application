@@ -232,6 +232,7 @@ def filter_colloaration_links(G, center_company=None):
                         edge_data = G[waste][resource]
                         process = edge_data.get('process', None)
                         reference = edge_data.get('reference', None)
+
                     # Add/append waste to company1
                     if H.has_node(company1):
                         wastes = H.nodes[company1].get('waste', [])
@@ -248,6 +249,8 @@ def filter_colloaration_links(G, center_company=None):
                         H.nodes[company2]['resource'] = resources
                     else:
                         H.add_node(company2, type='company', resource=[resource], business=company_2_business)
+
+                    # add edge
                     if center_company is None or company1 == center_company or company2 == center_company:
                         H.add_edge(company1, company2, waste=waste, resource=resource, process=process, reference=reference)
                     #num_collaborations += 1
