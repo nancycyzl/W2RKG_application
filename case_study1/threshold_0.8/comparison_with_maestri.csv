@@ -18,9 +18,9 @@ wood ash -> fertilizer
 fly ash -> fertilizer
 fly ash -> soil improver
 fly ash -> fertilizer substrate
-fly ash -> bio-fertilizer","Coal fly ash -> Soil quality improvement and fertiliser
+fly ash -> bio-fertilizer","Coal fly ash -> Fertilizer
 Coal fly ash -> Fertiliser
-Coal fly ash -> Fertilizer"
+Coal fly ash -> Soil quality improvement and fertiliser"
 CEMENTIR,ND - Construction materials production,"Coal fly ash
 Waste heat",Raw material for Construction materials production,1,2,1,Coal fly ash -> Raw material for Construction materials production,"biomass fly ash -> construction materials
 fly ash -> construction materials",Coal fly ash -> Raw material for Construction materials production
@@ -33,8 +33,8 @@ Road foundations
 Paving",0,4,2,,"fly ash -> asphalt concrete
 fly ash -> pavers
 fly ash -> road materials
-fly ash -> paving mixes","Coal fly ash -> Raw material for Road construction
-Coal fly ash -> Paving"
+fly ash -> paving mixes","Coal fly ash -> Paving
+Coal fly ash -> Raw material for Road construction"
 CEMENTIR,Taranto,"Coal fly ash
 Waste heat","Heat
 Cooling",1,1,1,Waste heat -> Heat,power plant ash -> heat,Coal fly ash -> Heat
@@ -301,9 +301,9 @@ Fertiliser
 Soil quality improvement and fertiliser",0,4,3,,"industrial waste -> fertilizer products
 industrial waste -> organo-mineral fertilizer
 construction waste -> controlled-release fertilizer
-discarded materials -> fertiliser","Construction and demolition waste -> Fertiliser
-Construction and demolition waste -> Fertilizer
-Construction and demolition waste -> Soil quality improvement and fertiliser"
+discarded materials -> fertiliser","Construction and demolition waste -> Fertilizer
+Construction and demolition waste -> Soil quality improvement and fertiliser
+Construction and demolition waste -> Fertiliser"
 ND - Construction materials production,ND - Construction materials production,Construction and demolition waste,Raw material for Construction materials production,0,2,1,,"recycled construction and demolition materials -> construction materials
 industrial waste -> raw building materials",Construction and demolition waste -> Raw material for Construction materials production
 ND - Construction materials production,ND - Production of bricks,Construction and demolition waste,Raw material for Production of bricks,0,1,1,,industrial waste -> raw building materials,Construction and demolition waste -> Raw material for Production of bricks
@@ -320,9 +320,9 @@ industrial waste -> raw materials
 industrial waste -> materials
 industrial waste -> secondary raw materials
 industrial waste -> raw building materials
-construction waste -> materials","Construction and demolition waste -> Raw material for Road construction
-Construction and demolition waste -> Raw materials
-Construction and demolition waste -> Paving"
+construction waste -> materials","Construction and demolition waste -> Raw materials
+Construction and demolition waste -> Paving
+Construction and demolition waste -> Raw material for Road construction"
 ND - Construction materials production,Taranto,Construction and demolition waste,"Heat
 Cooling",0,1,1,,industrial waste -> heat,Construction and demolition waste -> Heat
 ND - Electricity production - Organic Rankine Cycle,CEMENTIR,Electricity,"Raw material for Cement production
@@ -349,8 +349,8 @@ ND - Olive oil production,ND - Agroindustry,Oil mill waste water,"Fertilizer
 Fertiliser
 Soil quality improvement and fertiliser",1,3,3,Oil mill waste water -> Fertilizer,"olive mill wastewater -> high-quality fertilizer
 olive mill wastewater -> organo-mineral fertilizer
-palm oil mill effluent -> phosphorus","Oil mill waste water -> Fertilizer
-Oil mill waste water -> Soil quality improvement and fertiliser
+palm oil mill effluent -> phosphorus","Oil mill waste water -> Soil quality improvement and fertiliser
+Oil mill waste water -> Fertilizer
 Oil mill waste water -> Fertiliser"
 ND - Olive oil production,ND - Road construction,Oil mill waste water,"Raw material for Road construction
 Raw materials
@@ -371,9 +371,9 @@ wood ash -> fertilizer
 fly ash -> fertilizer
 fly ash -> soil improver
 fly ash -> fertilizer substrate
-fly ash -> bio-fertilizer","Fly ash -> Fertilizer
+fly ash -> bio-fertilizer","Fly ash -> Fertiliser
 Fly ash -> Soil quality improvement and fertiliser
-Fly ash -> Fertiliser"
+Fly ash -> Fertilizer"
 ND - Power plant,ND - Construction materials production,Fly ash,Raw material for Construction materials production,0,2,1,,"biomass fly ash -> construction materials
 fly ash -> construction materials",Fly ash -> Raw material for Construction materials production
 ND - Power plant,ND - Glass and glass-ceramic production,Fly ash,Raw material for Glass and glass-ceramic production,1,0,0,Fly ash -> Raw material for Glass and glass-ceramic production,,

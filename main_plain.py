@@ -350,7 +350,7 @@ def compare_with_maestri(all_exchanges_df, case_file, save_folder):
 
         plt.figure(figsize=(10, 8))
         nx.draw_networkx_nodes(G, pos, node_color='#3162C2', node_size=700)
-        nx.draw_networkx_labels(G, pos, font_size=9)
+        # nx.draw_networkx_labels(G, pos, font_size=9)
         # Draw all edges, including multiple edges for MultiDiGraph
         if isinstance(G, nx.MultiDiGraph):
             # Group edges by (u, v)
@@ -374,7 +374,7 @@ def compare_with_maestri(all_exchanges_df, case_file, save_folder):
                         )
         else:
             nx.draw_networkx_edges(G, pos, arrows=True, arrowstyle='-|>', edge_color='grey', width=2)
-        plt.title(title)
+        # plt.title(title)
         plt.axis('off')
         plt.tight_layout()
         plt.savefig(os.path.join(save_folder, filename))
