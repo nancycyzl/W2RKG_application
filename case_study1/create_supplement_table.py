@@ -71,13 +71,18 @@ for index, row in tqdm.tqdm(all_exchanges_df.iterrows(), total=len(all_exchanges
                 all_results.append([donor_name, receiver_name, waste, resource, "novel", comment])
                 continue
 
-# save to excel
+# w2r betweeen companies
 all_results_df = pd.DataFrame(all_results, columns=['donor', 'receiver', 'waste', 'resource', 'label', 'comment'])
 all_results_df.drop_duplicates(inplace=True)
-all_results_df.to_excel(os.path.join(base_folder, 'supplement_table.xlsx'), index=False)
+all_results_df.to_excel(os.path.join(base_folder, 'supplement_table_full.xlsx'), index=False)
 print("Length of all_results_df: ", len(all_results_df))
 
                 
+# only w2r
+w2r_df = all_results_df[["waste", "resource", "label", "comment"]]
+w2r_df.drop_duplicates(subset=["waste", "resource"], keep="first", inplace=True)
+w2r_df.to_excel(os.path.join(base_folder, 'supplement_table_w2r.xlsx'), index=False)
+print("Length of w2r_df: ", len(w2r_df))
 
     
 

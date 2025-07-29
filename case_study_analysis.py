@@ -155,8 +155,8 @@ def main(args):
 
         contune_query = True
         while contune_query:
-            waste = input("Enter the waste: ")
-            resource = input("Enter the resource: ")
+            waste = input("Enter the waste (q to quit): ")
+            resource = input("Enter the resource (q to quit): ")
             if waste == "q" or resource == "q":
                 break
             
