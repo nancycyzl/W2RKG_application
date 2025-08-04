@@ -1,5 +1,4 @@
 import streamlit as st
-# from streamlit_agraph import agraph, Config
 from utils import nx_to_agraph
 from st_link_analysis import st_link_analysis, NodeStyle, EdgeStyle
 
@@ -42,35 +41,3 @@ def render_network_planning_tab(G, profiles_dict,
                 edge_styles=edge_style,
                 height=530
             )
-
-    # # ---------- fast look-up helpers ----------
-    # node_lookup = {node["data"]["id"]: node for node in nodes_data}
-    # # Create edge lookup for when edges are selected
-    # edge_lookup = {edge["data"]["id"]: edge for edge in edges_data}
-
-            
-    # with c2_right:
-    #     st.subheader("ℹ️ Details")
-    #     if result2:
-    #         st.write(f"result2: {result2}")
-    #         # Handle selection ------------------
-    #         # if isinstance(result2, str):
-    #         #     # Check if it's a node selection
-    #         #     if result2 in node_lookup:
-    #         #         nid = result2
-    #         #         props = J.nodes[nid]
-    #         #         st.write(f"**Selected node:** `{nid}`")
-    #         #         st.json(props)
-    #         #     # Check if it's an edge selection
-    #         #     elif result2 in edge_lookup:
-    #         #         edge_data = edge_lookup[result2]
-    #         #         st.write(f"**Selected edge:** `{edge_data['source']}` → `{edge_data['target']}`")
-    #         #         st.write("**Edge attributes:**")
-    #         #         st.json(edge_data.get("attributes", {}))
-    #         #     else:
-    #         #         st.write(f"Selected item is {result2}.")
-    #         #         st.write(f"node lookup: {list(node_lookup.keys())}")
-    #         #         st.write(f"edge lookup: {list(edge_lookup.keys())}")
-
-    #     else:
-    #         st.write("Click a node or edge to view its data.") 

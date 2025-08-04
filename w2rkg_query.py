@@ -1,3 +1,9 @@
+'''
+A simple query tool for the W2RKG.
+You can input waste and / or resource, and the tool will return the triples that match the query.
+'''
+
+
 import json
 from rapidfuzz import fuzz
 import re

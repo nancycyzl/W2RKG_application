@@ -1,14 +1,12 @@
 # ──────────────────────────────────────────────
 # Waste-to-Resource KG - quick demo UI
-# • Streamlit + streamlit-agraph (interactive graph)
+# • Streamlit + st_link_analysis (interactive graph)
 # • NetworkX for matching / filtering logic
-# install:  pip install streamlit networkx streamlit-agraph pandas
-# run:      streamlit run w2r_demo.py
+#
+# run:      streamlit run main_app.py
 # ──────────────────────────────────────────────
-import json, io, networkx as nx, pandas as pd, streamlit as st
-import matplotlib.pyplot as plt
-from streamlit_agraph import agraph, Node, Edge, Config
-# Import tab rendering functions from separate files for clarity
+
+import streamlit as st
 from partner_finder_tab import render_partner_finder_tab
 from network_planning_tab import render_network_planning_tab
 from sentence_transformers import SentenceTransformer
